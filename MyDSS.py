@@ -124,22 +124,22 @@ class Phi_from(MessagePassing):
 
         return self.MLP(tmp)
 
-class Loop(nn.Module): #never used
-    def __init__(self, in_channels, out_channels):
-        super(Loop, self).__init__()
-        self.MLP = nn.Sequential(   nn.Linear(in_channels, out_channels),
-                                    nn.ReLU(),
-                                    nn.Linear(out_channels, out_channels))
-
-    def forward(self, x, edge_index, edge_attr):
-
-        edge_index, edge_attr = utils.add_self_loops(edge_index, edge_attr[:,0], num_nodes = x.size(0))
-
-        adj = utils.to_scipy_sparse_matrix(edge_index, edge_attr)
-        loop = 1 - torch.tensor(adj.diagonal().reshape(-1,1), dtype = torch.float)
-        tmp = torch.cat([x, x, loop], dim = 1)
-
-        return self.MLP(tmp)
+# class Loop(nn.Module): #never used
+#     def __init__(self, in_channels, out_channels):
+#         super(Loop, self).__init__()
+#         self.MLP = nn.Sequential(   nn.Linear(in_channels, out_channels),
+#                                     nn.ReLU(),
+#                                     nn.Linear(out_channels, out_channels))
+#
+#     def forward(self, x, edge_index, edge_attr):
+#
+#         edge_index, edge_attr = utils.add_self_loops(edge_index, edge_attr[:,0], num_nodes = x.size(0))
+#
+#         adj = utils.to_scipy_sparse_matrix(edge_index, edge_attr)
+#         loop = 1 - torch.tensor(adj.diagonal().reshape(-1,1), dtype = torch.float)
+#         tmp = torch.cat([x, x, loop], dim = 1)
+#
+#         return self.MLP(tmp)
 
 class Psy(nn.Module):
     def __init__(self, in_size, out_size):
