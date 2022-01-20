@@ -171,7 +171,7 @@ class Train_DSS:
             else:
                 print("Training finished, took {:.2f}s".format(self.training_time))
 
-            if int(epoch) % 1000 == 0:
+            if int(epoch) % 2 == 0:
                 F_fin = F[str(k)].cpu().numpy()
                 np.save("./Results/results" + str(epoch) + ".npy", F_fin)
                 print("File saved!")
