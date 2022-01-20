@@ -18,14 +18,15 @@ args = parser.parse_args()
 n_epoch = args.n_epoch
 restart = args.restart
 
-train_cases = ['40','50','60','70','80','90','100','120','130','140','150']
+# train_cases = ['40','50','60','70','80','90','100','120','130','140','150']
+train_cases = ['110']
 val_cases = ['110']
 test_cases = ['140']
 
 print("#################### DATA ADAPTING FOR GNN #######################")
-# createdata = CreateData()
-# createdata.transform(train_cases, 'train')
-# createdata.transform(val_cases, 'val')
+createdata = CreateData()
+createdata.transform(train_cases, 'train')
+createdata.transform(val_cases, 'val')
 
 
 print("#################### CREATING Inner DATASET #######################")

@@ -96,8 +96,8 @@ class Train_DSS:
                             int(100 * (i + 1) / len(loader_train)),
                             running_loss / (len(loader_train) // 1)))
 
-                # running_loss = 0.0
-                # running_final_loss = 0
+                    running_loss = 0.0
+                    running_final_loss = 0
 
                 del F, train_loss, loss_dict
                 torch.cuda.empty_cache()
@@ -134,7 +134,6 @@ class Train_DSS:
 
             if final_loss_val / len(loader_val) <= min_val_loss:
 
-
                 checkpoint = {
                     'epoch': epoch + 1,
                     'min_val_loss': final_loss_val / len(loader_val),
@@ -153,7 +152,7 @@ class Train_DSS:
             else:
                 print("Training finished, took {:.2f}s".format(self.training_time))
 
-            if int(epoch) % 2 == 0:
+            if int(epoch) % 100 == 0:
                 F_fin = F[str(k)].cpu().numpy()
                 np.save("./Results/results" + str(epoch) + ".npy", F_fin)
                 print("File saved!")
