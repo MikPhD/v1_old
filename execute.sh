@@ -11,4 +11,4 @@
 #SBATCH -o logs/case.out
 #SBATCH -e logs/case.err
 
-srun python Main.py -e 10000
+srun python Main.py -e 1000000
