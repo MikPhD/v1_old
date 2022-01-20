@@ -6,7 +6,7 @@ import argparse
 import sys
 import torch
 from torch_geometric.data import DataListLoader
-from torch_geometric.loader import DataLoader
+from torch_geometric.data import DataLoader
 from torch_geometric.nn import DataParallel
 from pdb import set_trace
 
