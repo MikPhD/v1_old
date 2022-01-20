@@ -2,10 +2,10 @@ import numpy as np
 import torch
 import time
 import sys
-import torchvision
-import torch.nn as nn
 import os
-from MyStats import Stats
+import ast
+import matplotlib.pyplot as plt
+
 from progress.bar import Bar
 
 
@@ -23,7 +23,7 @@ class Train_DSS:
     def createOptimizerAndScheduler(self):
         optimizer = torch.optim.Adam(self.net.parameters(), lr = self.lr, weight_decay=0)
         scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size = 50, gamma=0.1)
-        min_val_loss = 0
+        min_val_loss = 1.e-1
         epoch = 0
         return optimizer, scheduler, epoch, min_val_loss
 
@@ -51,21 +51,45 @@ class Train_DSS:
 
         return optimizer, scheduler, checkpoint['epoch'], min_val_loss
 
-    def restart(self, path='./'):
+    def restart(self, optimizer, scheduler, path):
         optimizer, scheduler, epoch, min_val_loss = self.load_model(path, optimizer, scheduler)
 
         return optimizer, scheduler, epoch, min_val_loss
 
+    def plot_loss(self):
+        ### Open log files
+        with open('Stats/loss_train_log.txt', 'r') as f_train:
+            mydata_train = ast.literal_eval(f_train.read())
+        with open('Stats/loss_val_log.txt', 'r') as f_val:
+            mydata_val = ast.literal_eval(f_val.read())
+
+        ### define axis and data ###
+        dt = 1
+        x = np.arange(0, len(mydata_train), dt)
+        y_train = mydata_train
+        y_val = mydata_val
+
+        plt.plot(x, y_train, x, y_val)
+        plt.savefig("Stats/plot_loss.jpg")
+
+        ### Close Files ###
+        f_train.close()
+        f_val.close()
+
     def trainDSS(self, loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch_in, k):
         for epoch in range(epoch_in, self.n_epochs):
             time_counter = time.time()
+
             total_train_loss, running_loss = 0, 0
             final_loss, running_final_loss = 0, 0
             # rmse, running_rmse = 0, 0
 
+            #set net in train mode
             self.net.train()
 
             for i, train_data in enumerate(loader_train):
+
+                #training operation
                 optimizer.zero_grad()
                 train_data = train_data.to(self.device)
                 F, train_loss, loss_dict = self.net(train_data)
@@ -82,16 +106,16 @@ class Train_DSS:
                 running_loss += train_loss.sum().item()
                 running_final_loss += loss_dict[str(k)].sum().item()
 
-                # set_trace()
-                if (i + 1) % (len(loader_train) // 2 + 1) == 0:
+                ##print during training set cycle loop
+                if (i + 1) % (len(loader_train) // 5 + 1) == 0:
                     print(
                         "Epoch {}, {:d}% \t train_loss: {:.5e}".format(
                             epoch + 1,
                             int(100 * (i + 1) / len(loader_train)),
-                            running_loss / (len(loader_train) // 1)))  ##diminuita dimensione 10
+                            running_loss / (len(loader_train) // 1)))
 
-                    running_loss = 0.0
-                    running_final_loss = 0
+                # running_loss = 0.0
+                # running_final_loss = 0
 
                 del F, train_loss, loss_dict
                 torch.cuda.empty_cache()
@@ -104,7 +128,10 @@ class Train_DSS:
             total_val_loss = 0
             final_loss_val = 0
 
+            # set net in validation mode
             self.net.eval()
+
+            # validation operation
             with torch.no_grad():
                 for val_data in loader_val:
                     val_data = val_data.to(self.device)
@@ -124,6 +151,8 @@ class Train_DSS:
             sys.stdout.flush()
 
             if final_loss_val / len(loader_val) <= min_val_loss:
+
+
                 checkpoint = {
                     'epoch': epoch + 1,
                     'min_val_loss': final_loss_val / len(loader_val),
@@ -147,16 +176,7 @@ class Train_DSS:
                 np.save("./Results/results" + str(epoch) + ".npy", F_fin)
                 print("File saved!")
 
-        # save loss log
-        loss_log_train = open("loss_train_log.txt", "w")
-        loss_log_val = open("loss_val_log.txt", "w")
-
-        loss_log_train.write(str(self.hist["loss_train"]))
-        loss_log_val.write(str(self.hist["loss_val"]))
-
-        loss_log_train.close()
-        loss_log_val.close()
-
+        ## Save last model ##
         checkpoint = {
             'epoch': epoch + 1,
             'min_val_loss': final_loss_val / len(loader_val),
@@ -167,14 +187,29 @@ class Train_DSS:
             'loss_val': self.hist["loss_val"],
             'training_time': self.training_time
         }
-        # save model
         self.save_model(checkpoint, dirName="Model", model_name="best_model_normal_final")
 
         F_fin = F[str(k)].cpu().numpy()
         np.save("./Results/results.npy", F_fin)
         print("File saved!")
 
+        ### Save new log files ###
+        with open('Stats/loss_train_log.txt', 'w') as f_loss_train:
+            f_loss_train.write(str(self.hist["loss_train"]))
+
+        with open('Stats/loss_val_log.txt', 'w') as f_loss_val:
+            f_loss_val.write(str(self.hist["loss_val"]))
+
+        ### Close log files ###
+        f_loss_train.close()
+        f_loss_val.close()
+
+        ## Save plot training ##
+        self.plot_loss()
+
         return self.net
+
+
 
 # def loss_function(U, edge_index, edge_attr, y): ##non utilizzata --> utilizzo mse_loss
 #

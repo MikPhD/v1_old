@@ -23,9 +23,9 @@ val_cases = ['110']
 test_cases = ['140']
 
 print("#################### DATA ADAPTING FOR GNN #######################")
-# createdata = CreateData()
-# createdata.transform(train_cases, 'train')
-# createdata.transform(val_cases, 'val')
+createdata = CreateData()
+createdata.transform(train_cases, 'train')
+createdata.transform(val_cases, 'val')
 
 
 print("#################### CREATING Inner DATASET #######################")
@@ -62,13 +62,10 @@ DSS = DSS.to(device)
 print("#################### TRAINING #######################")
 train_dss = Train_DSS(net=DSS, learning_rate=0.01, n_epochs=n_epoch, device=device)
 
-# restart function loading Model/best_model.pt
-if restart:
-    optimizer, scheduler, epoch, min_val_loss = train_dss.restart(path='Model/best_model.pt')
-else:
-    optimizer, scheduler, epoch, min_val_loss = train_dss.createOptimizerAndScheduler()
+optimizer, scheduler, epoch, min_val_loss = train_dss.createOptimizerAndScheduler()
 
-min_val_loss = 1.e-1
+if restart:
+    optimizer, scheduler, epoch, min_val_loss = train_dss.restart(optimizer, scheduler, path='Model/best_model.pt')
 
 GNN = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k)
 #
