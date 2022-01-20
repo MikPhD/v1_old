@@ -23,8 +23,8 @@ class MyOwnDSSNet(nn.Module):
         self.device = device
 
         #Neural network
-        self.phi_to_list = nn.ModuleList([Phi_to(2*self.latent_dimension+2, self.latent_dimension) for i in range(self.k)])
-        self.phi_from_list = nn.ModuleList([Phi_from(2*self.latent_dimension+2, self.latent_dimension) for i in range(self.k)])
+        self.phi_to_list = nn.ModuleList([Phi_to(2*self.latent_dimension + 2, self.latent_dimension) for i in range(self.k)])
+        self.phi_from_list = nn.ModuleList([Phi_from(2*self.latent_dimension + 2, self.latent_dimension) for i in range(self.k)])
         # self.phi_loop_list = nn.ModuleList([Loop(2*self.latent_dimension+1, self.latent_dimension) for i in range(self.k)])
         self.psy_list = nn.ModuleList([Psy(3*self.latent_dimension + 4, self.latent_dimension) for i in range(self.k)])
         self.decoder_list = nn.ModuleList([Decoder(self.latent_dimension, 2) for i in range(self.k)])

@@ -44,6 +44,9 @@ class MyOwnDataset(InMemoryDataset):
         # set_trace()
         return files
 
+    @property
+    def processed_dir(self):
+        return self.root + "/processed/"
 
     @property
     def processed_file_names(self):

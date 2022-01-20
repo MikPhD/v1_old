@@ -11,7 +11,7 @@ from progress.bar import Bar
 
 
 class Train_DSS:
-    def __init__(self, net, learning_rate = 0.01, n_epochs = 20, device = "cpu"):
+    def __init__(self, net, learning_rate = 0.1, n_epochs = 20, device = "cpu"):
 
         #Initialize training parameters
         self.lr = learning_rate
@@ -23,7 +23,7 @@ class Train_DSS:
 
     def createOptimizerAndScheduler(self):
         optimizer = torch.optim.Adam(self.net.parameters(), lr = self.lr, weight_decay=0)
-        scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size = 50, gamma=0.1)
+        scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size = 100, gamma=0.5)
         min_val_loss = 1.e-1
         epoch = 0
         return optimizer, scheduler, epoch, min_val_loss
@@ -80,7 +80,7 @@ class Train_DSS:
                 # sol_lu = torch.cat([(next(iter(train_data))).x]).to(U[str(k)].device)
 
                 train_loss.sum().backward()
-                torch.nn.utils.clip_grad_norm_(self.net.parameters(), 1.e-2)  # da riattivare
+                torch.nn.utils.clip_grad_norm_(self.net.parameters(), 1.e-3)  # da riattivare
                 optimizer.step()
                 total_train_loss += train_loss.sum().item()
                 final_loss += loss_dict[str(k)].sum().item()
