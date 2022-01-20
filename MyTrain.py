@@ -3,6 +3,7 @@ import torch
 import time
 import sys
 import os
+from MyPlot import Plot
 import ast
 import matplotlib.pyplot as plt
 
@@ -56,25 +57,6 @@ class Train_DSS:
 
         return optimizer, scheduler, epoch, min_val_loss
 
-    def plot_loss(self):
-        ### Open log files
-        with open('Stats/loss_train_log.txt', 'r') as f_train:
-            mydata_train = ast.literal_eval(f_train.read())
-        with open('Stats/loss_val_log.txt', 'r') as f_val:
-            mydata_val = ast.literal_eval(f_val.read())
-
-        ### define axis and data ###
-        dt = 1
-        x = np.arange(0, len(mydata_train), dt)
-        y_train = mydata_train
-        y_val = mydata_val
-
-        plt.plot(x, y_train, x, y_val)
-        plt.savefig("Stats/plot_loss.jpg")
-
-        ### Close Files ###
-        f_train.close()
-        f_val.close()
 
     def trainDSS(self, loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch_in, k):
         for epoch in range(epoch_in, self.n_epochs):
@@ -205,11 +187,11 @@ class Train_DSS:
         f_loss_val.close()
 
         ## Save plot training ##
-        self.plot_loss()
+        MyPlot = Plot()
+        MyPlot.plot_loss()
+        MyPlot.plot_results()
 
         return self.net
-
-
 
 # def loss_function(U, edge_index, edge_attr, y): ##non utilizzata --> utilizzo mse_loss
 #

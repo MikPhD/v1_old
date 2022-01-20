@@ -1,66 +1,75 @@
-import numpy as np
-from fenics import *
+import ast
 import matplotlib.pyplot as plt
 import matplotlib.tri as tri
 import numpy as np
-import traceback
+from fenics import *
 import argparse
-from pdb import set_trace
 
-def mesh2triang(mesh):
-    xy = mesh.coordinates()
-    return tri.Triangulation(xy[:, 0], xy[:, 1], mesh.cells())
+class Plot:
+    def __init__(self):
+        pass
 
-def plot(obj):
-    plt.gca().set_aspect('equal')
-    if isinstance(obj, Function):
-        mesh = obj.function_space().mesh()
-        if obj.vector().size() == mesh.num_cells():
-            C = obj.vector().array()
-            plt.tripcolor(mesh2triang(mesh), C)
-        else:
-            C = obj.compute_vertex_values(mesh)
-            plt.tripcolor(mesh2triang(mesh), C, shading='gouraud')
-    elif isinstance(obj, Mesh):
-        plt.triplot(mesh2triang(obj), color='k')
+    def plot_loss(self):
+        ### Open log files
+        with open('Stats/loss_train_log.txt', 'r') as f_train:
+            mydata_train = ast.literal_eval(f_train.read())
+        with open('Stats/loss_val_log.txt', 'r') as f_val:
+            mydata_val = ast.literal_eval(f_val.read())
 
-parser = argparse.ArgumentParser()
-parser.add_argument('-i', '--n_epoch', help='epoch number', type=str, default="")
-args = parser.parse_args()
+        ### define axis and data ###
+        dt = 1
+        x = np.arange(0, len(mydata_train), dt)
+        y_train = mydata_train
+        y_val = mydata_val
 
-n_epoch = args.n_epoch
+        plt.plot(x, y_train, x, y_val)
+        plt.savefig("Stats/plot_loss.jpg")
 
-directory = "./Results/"
+        ### Close Files ###
+        f_train.close()
+        f_val.close()
 
-####### loading mesh ########
-mesh = Mesh()
-mesh_file = directory + "Mesh.h5"
-with HDF5File(MPI.comm_world, mesh_file, "r") as h5file:
-    h5file.read(mesh, "mesh", False)
-    facet = MeshFunction("size_t", mesh, mesh.topology().dim() - 1)
-    h5file.read(facet, "facet")
+    def mesh2triang(self, mesh):
+        xy = mesh.coordinates()
+        return tri.Triangulation(xy[:, 0], xy[:, 1], mesh.cells())
 
-####### initializing holder ########
-VelocityElement = VectorElement("CG", mesh.ufl_cell(), 1)
-Space = FunctionSpace(mesh, VelocityElement)
+    def plot(self, obj):
+        plt.gca().set_aspect('equal')
+        if isinstance(obj, Function):
+            mesh = obj.function_space().mesh()
+            if obj.vector().size() == mesh.num_cells():
+                C = obj.vector().array()
+                plt.tripcolor(self.mesh2triang(mesh), C)
+            else:
+                C = obj.compute_vertex_values(mesh)
+                plt.tripcolor(self.mesh2triang(mesh), C, shading='gouraud')
+        elif isinstance(obj, Mesh):
+            plt.triplot(self.mesh2triang(obj), color='k')
 
-F = Function(Space)
-# F.interpolate(Constant((0.0, 0.0)))
+    def plot_results(self, n_epoch = ""):
+        directory = "./Results/"
+        ####### loading mesh ########
+        mesh = Mesh()
+        mesh_file = directory + "Mesh.h5"
+        with HDF5File(MPI.comm_world, mesh_file, "r") as h5file:
+            h5file.read(mesh, "mesh", False)
+            facet = MeshFunction("size_t", mesh, mesh.topology().dim() - 1)
+            h5file.read(facet, "facet")
 
-# ####### loading forcing from GNN ################
-F_gnn = np.load(directory + 'results' + n_epoch + '.npy').flatten()
-# coord = np.load(directory + 'coord.npy')
-#
-d2v = dof_to_vertex_map(Space)
-a_new = [F_gnn[d2v[i]] for i in range(2*mesh.num_vertices())]
+        ####### initializing holder ########
+        VelocityElement = VectorElement("CG", mesh.ufl_cell(), 1)
+        Space = FunctionSpace(mesh, VelocityElement)
 
-F.vector().set_local(a_new)
-#
-# ####### plot ########
-plt.figure()
-plot(F.sub(0))
-plt.show()
-#
-# # print(w.vector()[:])
-# # print(U.flatten())
-# # print(mesh.num_vertices())
+        F = Function(Space)
+
+        # ####### loading forcing from GNN ################
+        F_gnn = np.load(directory + 'results' + n_epoch + '.npy').flatten()
+        d2v = dof_to_vertex_map(Space)
+        a_new = [F_gnn[d2v[i]] for i in range(2 * mesh.num_vertices())]
+
+        F.vector().set_local(a_new)
+
+        # ####### plot ########
+        plt.figure()
+        self.plot(F.sub(0))
+        plt.savefig("Stats/plot_results" + n_epoch + ".jpg")
