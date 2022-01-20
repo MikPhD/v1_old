@@ -23,7 +23,7 @@ class Train_DSS:
 
     def createOptimizerAndScheduler(self):
         optimizer = torch.optim.Adam(self.net.parameters(), lr = self.lr, weight_decay=0)
-        scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size = 100, gamma=0.5)
+        scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size = 100, gamma=1)
         min_val_loss = 1.e-1
         epoch = 0
         return optimizer, scheduler, epoch, min_val_loss
