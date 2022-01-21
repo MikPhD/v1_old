@@ -59,7 +59,7 @@ DSS = MyOwnDSSNet(latent_dimension = latent_dimension, k = k, gamma = gamma, alp
 # # # DSS = DataParallel(DSS)
 DSS = DSS.to(device)
 # # #DSS = DSS.double()
-#
+
 print("#################### TRAINING #######################")
 train_dss = Train_DSS(net=DSS, learning_rate=0.01, n_epochs=n_epoch, device=device)
 
