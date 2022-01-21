@@ -83,6 +83,8 @@ class MyOwnDataset(InMemoryDataset):
             data = Data(x = x, edge_index=edge_index.t().contiguous(), edge_attr=edge_attr, y=y)
             data_list.append(data)
 
+            set_trace()
+
             if self.pre_filter is not None:
                 data_list = [data for data in data_list if self.pre_filter(data)]
 
