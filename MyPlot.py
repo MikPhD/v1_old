@@ -109,7 +109,8 @@ class Plot:
 
         # ####### loading forcing from GNN ################
         F_gnn = np.load('./Results/results.npy').flatten()
-        mesh_points = np.load('./Results/mesh_points.npy').tolist()
+        # mesh_points = np.load('./Results/mesh_points.npy').tolist()
+        mesh_points = mesh.coordinates().tolist()
 
         dofs_coordinates_prev = Space.sub(0).collapse().tabulate_dof_coordinates().tolist()
 
