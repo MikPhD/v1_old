@@ -1,5 +1,5 @@
 #!/bin/sh
-#SBATCH -J casev2
+#SBATCH -J v1_master
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=64G
@@ -11,4 +11,5 @@
 #SBATCH -o logs/case.out
 #SBATCH -e logs/case.err
 
-srun python Main.py -e 1000000
+srun python Main.py -e 100000 -r False -tcase 110 -vcas 110 -lr 0.01 -n_out 1000
+

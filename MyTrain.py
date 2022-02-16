@@ -6,12 +6,14 @@ import os
 from MyPlot import Plot
 import ast
 import matplotlib.pyplot as plt
+import torch.nn as nn
+
 
 from progress.bar import Bar
 
 
 class Train_DSS:
-    def __init__(self, net, learning_rate = 0.1, n_epochs = 20, device = "cpu"):
+    def __init__(self, net, learning_rate = 0.01, n_epochs = 20, device = "cpu"):
 
         #Initialize training parameters
         self.lr = learning_rate
@@ -23,7 +25,9 @@ class Train_DSS:
 
     def createOptimizerAndScheduler(self):
         optimizer = torch.optim.Adam(self.net.parameters(), lr = self.lr, weight_decay=0)
-        scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size = 10000, gamma=0.9)
+        # scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size = 50, gamma=0.1)
+        scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.6, patience=10,
+                                                               min_lr=0.00001, verbose=True)
         min_val_loss = 1.e-1
         epoch = 0
         return optimizer, scheduler, epoch, min_val_loss
@@ -58,7 +62,7 @@ class Train_DSS:
         return optimizer, scheduler, epoch, min_val_loss
 
 
-    def trainDSS(self, loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch_in, k):
+    def trainDSS(self, loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch_in, k, n_output):
         for epoch in range(epoch_in, self.n_epochs):
             time_counter = time.time()
 
@@ -124,7 +128,7 @@ class Train_DSS:
                     # corr_val += corrcoef(U[str(k)], sol_lu)
                     # rmse_val += torch.sqrt(torch.mean(U[str(k)] - sol_lu) ** 2)
 
-            scheduler.step()
+            scheduler.step(total_val_loss)
 
             self.hist["loss_val"].append(final_loss_val / len(loader_val))
             self.training_time = self.training_time + (time.time() - time_counter)
@@ -152,10 +156,10 @@ class Train_DSS:
             else:
                 print("Training finished, took {:.2f}s".format(self.training_time))
 
-            if int(epoch) % 500 == 0:
+            if int(epoch) % n_output == 0:
                 F_fin = F[str(k)].cpu().numpy()
                 np.save("./Results/results" + str(epoch) + ".npy", F_fin)
-                print("File saved!")
+                print("Intermediate Plot Saved!")
 
         ## Save last model ##
         checkpoint = {
@@ -172,7 +176,7 @@ class Train_DSS:
 
         F_fin = F[str(k)].cpu().numpy()
         np.save("./Results/results.npy", F_fin)
-        print("File saved!")
+        print("Final Results Saved")
 
         ### Save new log files ###
         with open('Stats/loss_train_log.txt', 'w') as f_loss_train:
@@ -191,6 +195,7 @@ class Train_DSS:
         MyPlot.plot_results()
 
         return self.net
+
 
 # def loss_function(U, edge_index, edge_attr, y): ##non utilizzata --> utilizzo mse_loss
 #
