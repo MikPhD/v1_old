@@ -40,7 +40,7 @@ class MyOwnDataset(InMemoryDataset):
             files.append(dir + "D.npy")
             files.append(dir + "F.npy")
             files.append(dir + "re.npy")
-            files.append(dir + "U_P.npy")
+            files.append(dir + "U.npy")
         # set_trace()
         return files
 

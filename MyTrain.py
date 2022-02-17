@@ -13,9 +13,10 @@ from progress.bar import Bar
 
 
 class Train_DSS:
-    def __init__(self, net, learning_rate = 0.01, n_epochs = 20, device = "cpu"):
+    def __init__(self, net, learning_rate = 0.01, n_epochs = 20, device = "cpu", set_name=""):
 
         #Initialize training parameters
+        self.set_name = set_name
         self.lr = learning_rate
         self.n_epochs = n_epochs
         self.net = net
@@ -26,8 +27,8 @@ class Train_DSS:
     def createOptimizerAndScheduler(self):
         optimizer = torch.optim.Adam(self.net.parameters(), lr = self.lr, weight_decay=0)
         # scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size = 50, gamma=0.1)
-        scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.6, patience=10,
-                                                               min_lr=0.00001, verbose=True)
+        scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.8, patience=50,
+                                                               min_lr=0.001, verbose=True)
         min_val_loss = 1.e-1
         epoch = 0
         return optimizer, scheduler, epoch, min_val_loss
@@ -158,7 +159,7 @@ class Train_DSS:
 
             if int(epoch) % n_output == 0:
                 F_fin = F[str(k)].cpu().numpy()
-                np.save("./Results/results" + str(epoch) + ".npy", F_fin)
+                np.save("./Results/" + self.set_name + "/results" + str(epoch) + ".npy", F_fin)
                 print("Intermediate Plot Saved!")
 
         ## Save last model ##
@@ -175,14 +176,14 @@ class Train_DSS:
         self.save_model(checkpoint, dirName="Model", model_name="best_model_normal_final")
 
         F_fin = F[str(k)].cpu().numpy()
-        np.save("./Results/results.npy", F_fin)
+        np.save("./Results/" + self.set_name + "/results.npy", F_fin)
         print("Final Results Saved")
 
         ### Save new log files ###
-        with open('Stats/loss_train_log.txt', 'w') as f_loss_train:
+        with open('Stats/' + self.set_name + '/loss_train_log.txt', 'w') as f_loss_train:
             f_loss_train.write(str(self.hist["loss_train"]))
 
-        with open('Stats/loss_val_log.txt', 'w') as f_loss_val:
+        with open('Stats/' + self.set_name + '/loss_val_log.txt', 'w') as f_loss_val:
             f_loss_val.write(str(self.hist["loss_val"]))
 
         ### Close log files ###
@@ -190,9 +191,13 @@ class Train_DSS:
         f_loss_val.close()
 
         ## Save plot training ##
-        MyPlot = Plot()
-        MyPlot.plot_loss()
-        MyPlot.plot_results()
+        try:
+            MyPlot = Plot(self.set_name)
+            MyPlot.plot_loss()
+            MyPlot.plot_results()
+        except:
+            print("errore di plot")
+
 
         return self.net
 
