@@ -7,7 +7,7 @@
 #SBATCH --gres=gpu:4
 #SBATCH --gres-flags=enforce-binding
 #SBATCH --partition=all
-#SBATCH -t 24:00:00
+#SBATCH -t 48:00:00
 #SBATCH -o logs/case.out
 #SBATCH -e logs/case.err
 

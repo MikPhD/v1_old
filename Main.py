@@ -60,10 +60,10 @@ createdata.transform(train_cases, 'train')
 createdata.transform(val_cases, 'val')
 
 
-k_list=[30, 60, 100]
+k_list=[60, 100]
 gamma_list=[0.9, 0.5, 0.1]
-alpha_list=[1e-3, 1e-2, 1e-1]
-lr_list=[0.01, 0.1, 0.7]
+alpha_list=[1e-3, 1e-2, 1e-1, 0.5]
+lr_list=[0.01, 0.1, 0.3]
 
 for k in k_list:
     for gamma in gamma_list:
