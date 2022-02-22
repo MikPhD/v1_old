@@ -14,7 +14,7 @@ from pdb import set_trace
 import json
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=1)
+parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=10)
 parser.add_argument('-r', '--restart', type=eval, default=False, choices=[True, False], help='Restart training option')
 parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['40'])
 parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['40'])
@@ -74,15 +74,15 @@ print('Running on : ', device)
 
 
 #create hyperparameter
-latent_dimension = 18
+latent_dimension = 10
 print("Latent space dim : ", latent_dimension)
-k = 42
+k = 30
 print("Number of updates : ", k)
 gamma = 5e-03
 print("Gamma (loss function) : ", gamma)
 alpha = 6e-03
 print("Alpha (reduction correction) :", alpha)
-lr = 4e-02
+lr = 1e-02
 print("LR (Learning rate):", lr)
 
 

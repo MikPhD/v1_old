@@ -42,44 +42,15 @@ class Plot:
         return tri.Triangulation(xy[:, 0], xy[:, 1], mesh.cells())
 
     def plot(self, obj):
-        # plt.gca().set_aspect('equal')
-        mesh = obj.function_space().mesh()
-
+        plt.gca().set_aspect('equal')
         if isinstance(obj, Function):
+            mesh = obj.function_space().mesh()
             if obj.vector().size() == mesh.num_cells():
                 C = obj.vector().array()
-                plt.tripcolor(self.mesh2triang(mesh), C, cmap=self.cmaps, norm='Normalize')
-
+                plt.tripcolor(self.mesh2triang(mesh), C)
             else:
-                x = mesh.coordinates()[:, 0]
-                y = mesh.coordinates()[:, 1]
-                t = mesh.cells()
-                v = obj.compute_vertex_values(mesh)
-                vmin = v.min()
-                vmax = v.max()
-                v[v < vmin] = vmin + 1e-12
-                v[v > vmax] = vmax - 1e-12
-
-                cmap = 'viridis'
-                levels = np.linspace(vmin, vmax, 100)
-                formatter = ScalarFormatter()
-                norm = mpl.colors.Normalize(vmin=vmin, vmax=vmax)
-                fig = plt.figure(figsize=(10, 5))
-                ax = fig.add_subplot(111)
-                c = ax.tricontourf(x, y, t, v, levels=levels, norm=norm,
-                                   cmap=plt.get_cmap(cmap))
-                plt.axis('equal')
-                p = ax.triplot(x, y, t, '-', lw=0.5, alpha=0.0)
-                ax.set_xlim([x.min(), x.max()])
-                ax.set_ylim([y.min(), y.max()])
-                ax.set_xlabel(' $\it{Coordinata\:x}$')
-                ax.set_ylabel(' $\it{Coordinata\:y}$')
-                # tit = plt.title('Componente x del tensore di Reynolds')
-                divider = make_axes_locatable(plt.gca())
-                cax = divider.append_axes('right', "4%", pad="2%")
-                colorbar_format = '% 1.1f'
-                cbar = plt.colorbar(mpl.cm.ScalarMappable(norm=norm, cmap=cmap), cax=cax, format=colorbar_format)
-
+                C = obj.compute_vertex_values(mesh)
+                plt.tripcolor(self.mesh2triang(mesh), C, shading='gouraud')
         elif isinstance(obj, Mesh):
             plt.triplot(self.mesh2triang(obj), color='k')
 
@@ -101,7 +72,7 @@ class Plot:
         F = Function(Space)
 
         u, f = F.split(deepcopy=True)
-        f.set_allow_extrapolation(True)
+        # f.set_allow_extrapolation(True)
 
         # with HDF5File(MPI.comm_world, "../Dataset/" + case_num + "/Results.h5", "r") as h5file:
         #     h5file.read(f, "mean")

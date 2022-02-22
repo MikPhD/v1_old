@@ -93,7 +93,7 @@ class MyOwnDSSNet(nn.Module):
 
 class Phi_to(MessagePassing):
     def __init__(self, in_channels, out_channels):
-        super(Phi_to, self).__init__(aggr='mean', flow = 'source_to_target')
+        super(Phi_to, self).__init__(aggr='add', flow = 'source_to_target')
         self.MLP = nn.Sequential(   nn.Linear(in_channels, 15),
                                     nn.ReLU(),
                                     nn.Dropout(p=0.2),
