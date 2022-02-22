@@ -93,14 +93,16 @@ class MyOwnDSSNet(nn.Module):
 
 class Phi_to(MessagePassing):
     def __init__(self, in_channels, out_channels):
-        super(Phi_to, self).__init__(aggr='add', flow = 'source_to_target')
-        self.MLP = nn.Sequential(   nn.Linear(in_channels, out_channels),
+        super(Phi_to, self).__init__(aggr='mean', flow = 'source_to_target')
+        self.MLP = nn.Sequential(   nn.Linear(in_channels, 15),
                                     nn.ReLU(),
+                                    nn.Dropout(p=0.2),
+                                    nn.Linear(15, out_channels),
+                                    nn.ReLU(),
+                                    nn.Dropout(p=0.2),
                                     nn.Linear(out_channels, out_channels))
 
     def forward(self, x, edge_index, edge_attr):
-
-        edge_index, edge_attr = utils.dropout_adj(edge_index, edge_attr, p=0.2)
 
         edge_index, edge_attr = utils.remove_self_loops(edge_index, edge_attr)
 
@@ -115,12 +117,15 @@ class Phi_to(MessagePassing):
 class Phi_from(MessagePassing):
     def __init__(self, in_channels, out_channels):
         super(Phi_from, self).__init__(aggr='add', flow = "target_to_source")
-        self.MLP = nn.Sequential(   nn.Linear(in_channels, out_channels),
-                                    nn.ReLU(),
-                                    nn.Linear(out_channels, out_channels))
+        self.MLP = nn.Sequential(nn.Linear(in_channels, 15),
+                                 nn.ReLU(),
+                                 nn.Dropout(p=0.2),
+                                 nn.Linear(15, out_channels),
+                                 nn.ReLU(),
+                                 nn.Dropout(p=0.2),
+                                 nn.Linear(out_channels, out_channels))
 
     def forward(self, x, edge_index, edge_attr):
-        edge_index, edge_attr = utils.dropout_adj(edge_index, edge_attr, p=0.2)
 
         edge_index, edge_attr = utils.remove_self_loops(edge_index, edge_attr)
 
@@ -136,12 +141,15 @@ class Loop(nn.Module): #never used
     def __init__(self, in_channels, out_channels):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         super(Loop, self).__init__()
-        self.MLP = nn.Sequential(   nn.Linear(in_channels, out_channels),
-                                    nn.ReLU(),
-                                    nn.Linear(out_channels, out_channels))
+        self.MLP = nn.Sequential(nn.Linear(in_channels, 15),
+                                 nn.ReLU(),
+                                 nn.Dropout(p=0.2),
+                                 nn.Linear(15, out_channels),
+                                 nn.ReLU(),
+                                 nn.Dropout(p=0.2),
+                                 nn.Linear(out_channels, out_channels))
 
     def forward(self, x, edge_index, edge_attr):
-        edge_index, edge_attr = utils.dropout_adj(edge_index, edge_attr, p=0.2)
 
         edge_index, edge_attr = utils.add_self_loops(edge_index, edge_attr[:,0], num_nodes = x.size(0))
 
@@ -156,9 +164,14 @@ class Psy(nn.Module):
     def __init__(self, in_size, out_size):
         super(Psy, self).__init__()
 
-        self.MLP = nn.Sequential(   nn.Linear(in_size, out_size),
-                                    nn.ReLU(),
-                                    nn.Linear(out_size, out_size))
+        self.MLP = nn.Sequential(nn.Linear(in_size, 25),
+                                 nn.ReLU(),
+                                 nn.Dropout(p=0.2),
+                                 nn.Linear(25, 15),
+                                 nn.ReLU(),
+                                 nn.Dropout(p=0.2),
+                                 nn.Linear(15, out_size))
+
     def forward(self, x): #dimensione H + fi + fi + loop +B
         return self.MLP(x)
 
@@ -168,6 +181,7 @@ class Decoder(nn.Module):
 
         self.MLP = nn.Sequential(   nn.Linear(in_size, in_size),
                                     nn.ReLU(),
+                                    nn.Dropout(p=0.2),
                                     nn.Linear(in_size, out_size))
     def forward(self, x):
 
