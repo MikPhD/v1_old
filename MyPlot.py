@@ -9,6 +9,7 @@ from mpl_toolkits.axes_grid1.axes_divider import make_axes_locatable
 from collections import OrderedDict
 import ast
 import numpy as np
+from matplotlib.ticker import ScalarFormatter
 
 
 class Plot:
@@ -58,7 +59,7 @@ class Plot:
                 vmax = v.max()
                 v[v < vmin] = vmin + 1e-12
                 v[v > vmax] = vmax - 1e-12
-                from matplotlib.ticker import ScalarFormatter
+
                 cmap = 'viridis'
                 levels = np.linspace(vmin, vmax, 100)
                 formatter = ScalarFormatter()
@@ -107,7 +108,7 @@ class Plot:
         #     h5file.read(f, "forcing")
 
         # ####### loading forcing from GNN ################
-        F_gnn = np.load('./Results' + '/results.npy').flatten()
+        F_gnn = np.load('./Results/results.npy').flatten()
         # mesh_points = np.load('./Results/mesh_points.npy').tolist()
         mesh_points = mesh.coordinates().tolist()
 
@@ -121,4 +122,4 @@ class Plot:
         # ####### plot ########
         plt.figure()
         self.plot(u.sub(0))
-        plt.savefig("Stats/" + "plot_results" + n_epoch + ".jpg")
+        plt.savefig("Stats/plot_results" + n_epoch + ".jpg")
