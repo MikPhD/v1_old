@@ -1,5 +1,0 @@
-/mnt/beegfs/home/quattromini/NeuralNets/v1/MyPlot.py:68: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
-  fig = plt.figure(figsize=(10, 5))
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 165481.0 ON n3 CANCELLED AT 2022-02-19T10:49:27 DUE TO TIME LIMIT ***
-slurmstepd: error: *** JOB 165481 ON n3 CANCELLED AT 2022-02-19T10:49:27 DUE TO TIME LIMIT ***
