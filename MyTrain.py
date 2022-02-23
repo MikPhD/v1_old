@@ -24,7 +24,7 @@ class Train_DSS:
         self.hist = {"loss_train":[], "loss_val":[]}
 
     def createOptimizerAndScheduler(self):
-        optimizer = torch.optim.Adam(self.net.parameters(), lr = self.lr, weight_decay=1e-06)
+        optimizer = torch.optim.Adam(self.net.parameters(), lr = self.lr, weight_decay=0)
         # scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size = 50, gamma=0.1)
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.9, patience=50,
                                                                min_lr=0.001, verbose=True)

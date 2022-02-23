@@ -92,5 +92,5 @@ class Plot:
 
         # ####### plot ########
         plt.figure()
-        self.plot(u.sub(0))
+        self.plot(u.sub(1))
         plt.savefig("Stats/plot_results" + n_epoch + ".jpg")
