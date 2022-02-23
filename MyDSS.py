@@ -94,13 +94,11 @@ class MyOwnDSSNet(nn.Module):
 class Phi_to(MessagePassing):
     def __init__(self, in_channels, out_channels):
         super(Phi_to, self).__init__(aggr='add', flow = 'source_to_target')
-        self.MLP = nn.Sequential(   nn.Linear(in_channels, 15),
+        self.MLP = nn.Sequential(   nn.Linear(in_channels, out_channels),
                                     nn.ReLU(),
                                     nn.Dropout(p=0.2),
-                                    nn.Linear(15, out_channels),
-                                    nn.ReLU(),
-                                    nn.Dropout(p=0.2),
-                                    nn.Linear(out_channels, out_channels))
+                                    nn.Linear(out_channels, out_channels),
+                                    )
 
     def forward(self, x, edge_index, edge_attr):
 
@@ -117,13 +115,11 @@ class Phi_to(MessagePassing):
 class Phi_from(MessagePassing):
     def __init__(self, in_channels, out_channels):
         super(Phi_from, self).__init__(aggr='add', flow = "target_to_source")
-        self.MLP = nn.Sequential(nn.Linear(in_channels, 15),
+        self.MLP = nn.Sequential(nn.Linear(in_channels, out_channels),
                                  nn.ReLU(),
                                  nn.Dropout(p=0.2),
-                                 nn.Linear(15, out_channels),
-                                 nn.ReLU(),
-                                 nn.Dropout(p=0.2),
-                                 nn.Linear(out_channels, out_channels))
+                                 nn.Linear(out_channels, out_channels),
+                                 )
 
     def forward(self, x, edge_index, edge_attr):
 
@@ -141,13 +137,11 @@ class Loop(nn.Module): #never used
     def __init__(self, in_channels, out_channels):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         super(Loop, self).__init__()
-        self.MLP = nn.Sequential(nn.Linear(in_channels, 15),
+        self.MLP = nn.Sequential(nn.Linear(in_channels, out_channels),
                                  nn.ReLU(),
                                  nn.Dropout(p=0.2),
-                                 nn.Linear(15, out_channels),
-                                 nn.ReLU(),
-                                 nn.Dropout(p=0.2),
-                                 nn.Linear(out_channels, out_channels))
+                                 nn.Linear(out_channels, out_channels),
+                                 )
 
     def forward(self, x, edge_index, edge_attr):
 
@@ -164,13 +158,11 @@ class Psy(nn.Module):
     def __init__(self, in_size, out_size):
         super(Psy, self).__init__()
 
-        self.MLP = nn.Sequential(nn.Linear(in_size, 25),
+        self.MLP = nn.Sequential(nn.Linear(in_size, out_size),
                                  nn.ReLU(),
                                  nn.Dropout(p=0.2),
-                                 nn.Linear(25, 15),
-                                 nn.ReLU(),
-                                 nn.Dropout(p=0.2),
-                                 nn.Linear(15, out_size))
+                                 nn.Linear(out_size, out_size),
+                                 )
 
     def forward(self, x): #dimensione H + fi + fi + loop +B
         return self.MLP(x)
