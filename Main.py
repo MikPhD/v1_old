@@ -74,9 +74,9 @@ print('Running on : ', device)
 
 
 #create hyperparameter
-latent_dimension = 10
+latent_dimension = 18
 print("Latent space dim : ", latent_dimension)
-k = 30
+k = 42
 print("Number of updates : ", k)
 gamma = 5e-03
 print("Gamma (loss function) : ", gamma)
