@@ -1,5 +1,5 @@
 #!/bin/sh
-#SBATCH -J v1_set_opt
+#SBATCH -J v1_multi
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=64G

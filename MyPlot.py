@@ -9,19 +9,19 @@ from mpl_toolkits.axes_grid1.axes_divider import make_axes_locatable
 from collections import OrderedDict
 import ast
 import numpy as np
-from matplotlib.ticker import ScalarFormatter
 
 
 class Plot:
-    def __init__(self):
+    def __init__(self, set_name=""):
+        self.set_name = set_name
         self.cmaps = OrderedDict()
         self.cmaps['Perceptually Uniform Sequential'] = ['plasma_r']
 
     def plot_loss(self):
         ### Open log files
-        with open('Stats' + '/loss_train_log.txt', 'r') as f_train:
+        with open('Stats/' + self.set_name + '/loss_train_log.txt', 'r') as f_train:
             mydata_train = ast.literal_eval(f_train.read())
-        with open('Stats' + '/loss_train_log.txt', 'r') as f_val:
+        with open('Stats/' + self.set_name + '/loss_train_log.txt', 'r') as f_val:
             mydata_val = ast.literal_eval(f_val.read())
 
         ### define axis and data ###
@@ -31,7 +31,8 @@ class Plot:
         y_val = mydata_val
 
         plt.plot(x, y_train, x, y_val)
-        plt.savefig("Stats/"  + "plot_loss.jpg")
+        plt.savefig("Stats/" + self.set_name + "plot_loss.jpg")
+        plt.savefig("Stats/" + self.set_name + "/plot_loss.jpg")
 
         ### Close Files ###
         f_train.close()
@@ -42,15 +43,44 @@ class Plot:
         return tri.Triangulation(xy[:, 0], xy[:, 1], mesh.cells())
 
     def plot(self, obj):
-        plt.gca().set_aspect('equal')
+        # plt.gca().set_aspect('equal')
+        mesh = obj.function_space().mesh()
+
         if isinstance(obj, Function):
-            mesh = obj.function_space().mesh()
             if obj.vector().size() == mesh.num_cells():
                 C = obj.vector().array()
-                plt.tripcolor(self.mesh2triang(mesh), C)
+                plt.tripcolor(self.mesh2triang(mesh), C, cmap=self.cmaps, norm='Normalize')
+
             else:
-                C = obj.compute_vertex_values(mesh)
-                plt.tripcolor(self.mesh2triang(mesh), C, shading='gouraud')
+                x = mesh.coordinates()[:, 0]
+                y = mesh.coordinates()[:, 1]
+                t = mesh.cells()
+                v = obj.compute_vertex_values(mesh)
+                vmin = v.min()
+                vmax = v.max()
+                v[v < vmin] = vmin + 1e-12
+                v[v > vmax] = vmax - 1e-12
+                from matplotlib.ticker import ScalarFormatter
+                cmap = 'viridis'
+                levels = np.linspace(vmin, vmax, 100)
+                formatter = ScalarFormatter()
+                norm = mpl.colors.Normalize(vmin=vmin, vmax=vmax)
+                fig = plt.figure(figsize=(10, 5))
+                ax = fig.add_subplot(111)
+                c = ax.tricontourf(x, y, t, v, levels=levels, norm=norm,
+                                   cmap=plt.get_cmap(cmap))
+                plt.axis('equal')
+                p = ax.triplot(x, y, t, '-', lw=0.5, alpha=0.0)
+                ax.set_xlim([x.min(), x.max()])
+                ax.set_ylim([y.min(), y.max()])
+                ax.set_xlabel(' $\it{Coordinata\:x}$')
+                ax.set_ylabel(' $\it{Coordinata\:y}$')
+                # tit = plt.title('Componente x del tensore di Reynolds')
+                divider = make_axes_locatable(plt.gca())
+                cax = divider.append_axes('right', "4%", pad="2%")
+                colorbar_format = '% 1.1f'
+                cbar = plt.colorbar(mpl.cm.ScalarMappable(norm=norm, cmap=cmap), cax=cax, format=colorbar_format)
+
         elif isinstance(obj, Mesh):
             plt.triplot(self.mesh2triang(obj), color='k')
 
@@ -72,14 +102,14 @@ class Plot:
         F = Function(Space)
 
         u, f = F.split(deepcopy=True)
-        # f.set_allow_extrapolation(True)
+        f.set_allow_extrapolation(True)
 
         # with HDF5File(MPI.comm_world, "../Dataset/" + case_num + "/Results.h5", "r") as h5file:
         #     h5file.read(f, "mean")
         #     h5file.read(f, "forcing")
 
         # ####### loading forcing from GNN ################
-        F_gnn = np.load('./Results/results.npy').flatten()
+        F_gnn = np.load('./Results/' + self.set_name + '/results.npy').flatten()
         # mesh_points = np.load('./Results/mesh_points.npy').tolist()
         mesh_points = mesh.coordinates().tolist()
 
@@ -92,5 +122,6 @@ class Plot:
 
         # ####### plot ########
         plt.figure()
-        self.plot(u.sub(1))
-        plt.savefig("Stats/plot_results" + n_epoch + ".jpg")
+        self.plot(u.sub(0))
+        plt.savefig("Stats/" + self.set_name + "plot_results" + n_epoch + ".jpg")
+        plt.savefig("Stats/" + self.set_name + "/plot_results" + n_epoch + ".jpg")

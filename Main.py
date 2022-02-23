@@ -59,49 +59,67 @@ createdata = CreateData()
 createdata.transform(train_cases, 'train')
 createdata.transform(val_cases, 'val')
 
-print("#################### CREATING Inner DATASET #######################")
-loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases)
-loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases)
 
-#initialize the created dataset
-loader_train = DataLoader(loader_train) #opt args: shuffle, batchsize
-loader_val = DataLoader(loader_val)
+k_list=[50]
+gamma_list=[0.5]
+alpha_list=[1e-1]
+lr_list=[0.01]
 
-print("#################### DSS NET parameter #######################")
-#check if gpu is available
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-print('Running on : ', device)
+for k in k_list:
+    for gamma in gamma_list:
+        for alpha in alpha_list:
+            for lr in lr_list:
+
+                set_name = str(k) +'-'+ str(gamma).replace(".","") +'-'+ str(alpha).replace(".","") +'-'+ str(lr).replace(".","")
+                print("PARAMETER SET: k:{}, gamma:{}, alpha:{}, lr:{}".format(str(k), str(gamma), str(alpha), str(lr)))
+                os.makedirs("./Results/" + set_name, exist_ok=True)
+                os.makedirs("./Stats/" + set_name, exist_ok=True)
+
+                print("#################### CREATING Inner DATASET #######################")
+                loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases)
+                loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases)
+
+                #initialize the created dataset
+                loader_train = DataLoader(loader_train) #opt args: shuffle, batchsize
+                loader_val = DataLoader(loader_val)
+
+                print("#################### DSS NET parameter #######################")
+                #check if gpu is available
+                device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+                print('Running on : ', device)
 
 
-#create hyperparameter
-latent_dimension = 18
-print("Latent space dim : ", latent_dimension)
-k = 42
-print("Number of updates : ", k)
-gamma = 5e-03
-print("Gamma (loss function) : ", gamma)
-alpha = 6e-03
-print("Alpha (reduction correction) :", alpha)
-lr = 1e-02
-print("LR (Learning rate):", lr)
+                #create hyperparameter
+                latent_dimension = 10
+                print("Latent space dim : ", latent_dimension)
+                k = k
+                print("Number of updates : ", k)
+                gamma = gamma
+                print("Gamma (loss function) : ", gamma)
+                alpha = alpha
+                print("Alpha (reduction correction) :", alpha)
+                lr = lr
+                print("LR (Learning rate):", lr)
 
 
-print("#################### CREATING NETWORKS #######################")
-DSS = MyOwnDSSNet(latent_dimension = latent_dimension, k = k, gamma = gamma, alpha = alpha, device=device)
-# # # DSS = DataParallel(DSS)
-DSS = DSS.to(device)
-# # #DSS = DSS.double()
+                print("#################### CREATING NETWORKS #######################")
+                DSS = MyOwnDSSNet(latent_dimension = latent_dimension, k = k, gamma = gamma, alpha = alpha, device=device)
+                # # # DSS = DataParallel(DSS)
+                DSS = DSS.to(device)
+                # # #DSS = DSS.double()
 
-print("#################### TRAINING #######################")
-train_dss = Train_DSS(net=DSS, learning_rate=lr, n_epochs=n_epoch, device=device)
+                print("#################### TRAINING #######################")
+                train_dss = Train_DSS(net=DSS, learning_rate=lr, n_epochs=n_epoch, device=device, set_name=set_name)
 
-optimizer, scheduler, epoch, min_val_loss = train_dss.createOptimizerAndScheduler()
+                optimizer, scheduler, epoch, min_val_loss = train_dss.createOptimizerAndScheduler()
 
-if restart:
-    optimizer, scheduler, epoch, min_val_loss = train_dss.restart(optimizer, scheduler, path='Model/best_model.pt')
+                if restart:
+                    optimizer, scheduler, epoch, min_val_loss = train_dss.restart(optimizer, scheduler, path='Model/best_model.pt')
 
-GNN = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
-#
-# # set_trace()
-#
-sys.stdout.flush()
+                GNN = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
+                #
+                # # set_trace()
+                #
+                sys.stdout.flush()
+
+                del DSS, GNN, loader_val, loader_train, optimizer, scheduler
