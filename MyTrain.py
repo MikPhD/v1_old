@@ -78,8 +78,8 @@ class Train_DSS:
 
                 #training operation
                 optimizer.zero_grad()
-                train_data = train_data
-                print(train_data)
+
+                print(train_data.x.device)
                 F, train_loss, loss_dict = self.net(train_data)
                 # sol_lu = train_data.x.to(U[str(k)].device)
                 # sol_lu = torch.cat([data.x for data in train_data]).to(U[str(k)].device)
@@ -122,9 +122,9 @@ class Train_DSS:
             # validation operation
             with torch.no_grad():
                 for val_data in loader_val:
-                    print(val_data)
+                    print(val_data.x.device)
                     val_data = val_data.to(self.device)
-                    print(val_data)
+                    print(val_data.x.device)
                     F, val_loss, loss_dict = self.net(val_data)
                     # sol_lu = val_data.x.to(U[str(k)].device) #da riattivare
                     total_val_loss += val_loss.sum().item()
