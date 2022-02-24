@@ -133,6 +133,9 @@ class Train_DSS:
             self.training_time = self.training_time + (time.time() - time_counter)
             print("Validation loss = {:.5e}".format(total_val_loss / len(loader_val)))
 
+            del F, val_loss, loss_dict
+            torch.cuda.empty_cache()
+
             sys.stdout.flush()
 
             if final_loss_val / len(loader_val) <= min_val_loss:
