@@ -133,7 +133,7 @@ class Train_DSS:
             self.training_time = self.training_time + (time.time() - time_counter)
             print("Validation loss = {:.5e}".format(total_val_loss / len(loader_val)))
 
-            del F, val_loss, loss_dict
+
             torch.cuda.empty_cache()
 
             sys.stdout.flush()
@@ -162,6 +162,14 @@ class Train_DSS:
                 F_fin = F[str(k)].cpu().numpy()
                 np.save("./Results/" + self.set_name + "/results" + str(epoch) + ".npy", F_fin)
                 print("Intermediate Plot Saved!")
+                del F, val_loss, loss_dict
+            elif int(epoch) == n_output:
+                F_fin = F[str(k)].cpu().numpy()
+                np.save("./Results/" + self.set_name + "/results.npy", F_fin)
+                print("Final Results Saved")
+                del F, val_loss, loss_dict
+            else:
+                del F, val_loss, loss_dict
 
         ## Save last model ##
         checkpoint = {
@@ -175,10 +183,6 @@ class Train_DSS:
             'training_time': self.training_time
         }
         self.save_model(checkpoint, dirName="Model", model_name="best_model_normal_final")
-
-        F_fin = F[str(k)].cpu().numpy()
-        np.save("./Results/" + self.set_name + "/results.npy", F_fin)
-        print("Final Results Saved")
 
         ### Save new log files ###
         with open('Stats/' + self.set_name + '/loss_train_log.txt', 'w') as f_loss_train:
