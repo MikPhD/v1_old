@@ -13,7 +13,8 @@ from torch_geometric.data import InMemoryDataset, Data, DataLoader
 from pdb import set_trace
 
 class MyOwnDataset(InMemoryDataset):
-    def __init__(self, root, mode, cases, transform=None, pre_transform=None):
+    def __init__(self, root, mode, cases, device='cpu', transform=None, pre_transform=None):
+        self.device = device
         self.mode = mode
         self.cases = cases
         super(MyOwnDataset, self).__init__(root, transform, pre_transform)
@@ -74,11 +75,11 @@ class MyOwnDataset(InMemoryDataset):
 
             U_Re = np.insert(U, 2, Re, axis=1)
 
-            edge_index = torch.tensor(C, dtype=torch.long)
-            edge_attr = torch.tensor(D, dtype=torch.float)
+            edge_index = torch.tensor(C, dtype=torch.long).to(self.device)
+            edge_attr = torch.tensor(D, dtype=torch.float).to(self.device)
 
-            x = torch.tensor(U_Re, dtype=torch.float)
-            y = torch.tensor(F, dtype=torch.float)
+            x = torch.tensor(U_Re, dtype=torch.float).to(self.device)
+            y = torch.tensor(F, dtype=torch.float).to(self.device)
 
             data = Data(x = x, edge_index=edge_index.t().contiguous(), edge_attr=edge_attr, y=y)
             data_list.append(data)

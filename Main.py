@@ -14,11 +14,11 @@ from pdb import set_trace
 import json
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=100)
+parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=1)
 parser.add_argument('-r', '--restart', type=eval, default=False, choices=[True, False], help='Restart training option')
 parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['40'])
 parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['40'])
-parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=100)
+parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=1)
 
 args = parser.parse_args()
 
@@ -60,10 +60,14 @@ createdata.transform(train_cases, 'train')
 createdata.transform(val_cases, 'val')
 
 
-k_list=[50]
-gamma_list=[0.5]
-alpha_list=[1e-1]
+k_list=[30]
+gamma_list=[0.9]
+alpha_list=[1e-3]
 lr_list=[0.01]
+
+#check if gpu is available
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print('Running on : ', device)
 
 for k in k_list:
     for gamma in gamma_list:
@@ -76,7 +80,7 @@ for k in k_list:
                 os.makedirs("./Stats/" + set_name, exist_ok=True)
 
                 print("#################### CREATING Inner DATASET #######################")
-                loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases)
+                loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases, device=device)
                 loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases)
 
                 #initialize the created dataset
@@ -84,10 +88,6 @@ for k in k_list:
                 loader_val = DataLoader(loader_val)
 
                 print("#################### DSS NET parameter #######################")
-                #check if gpu is available
-                device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-                print('Running on : ', device)
-
 
                 #create hyperparameter
                 latent_dimension = 10

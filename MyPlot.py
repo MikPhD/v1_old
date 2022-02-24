@@ -109,7 +109,7 @@ class Plot:
         #     h5file.read(f, "forcing")
 
         # ####### loading forcing from GNN ################
-        F_gnn = np.load('./Results/' + self.set_name + '/results.npy').flatten()
+        F_gnn = np.load("./Results/" + self.set_name + "/results.npy").flatten()
         # mesh_points = np.load('./Results/mesh_points.npy').tolist()
         mesh_points = mesh.coordinates().tolist()
 
