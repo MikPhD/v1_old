@@ -80,7 +80,7 @@ for k in k_list:
 
                 print("#################### CREATING Inner DATASET #######################")
                 loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases, device=device)
-                loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases)
+                loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases, device=device)
 
                 #initialize the created dataset
                 loader_train = DataLoader(loader_train) #opt args: shuffle, batchsize

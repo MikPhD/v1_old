@@ -120,7 +120,6 @@ class Train_DSS:
             # validation operation
             with torch.no_grad():
                 for val_data in loader_val:
-                    val_data = val_data.to(self.device)
                     F, val_loss, loss_dict = self.net(val_data)
                     # sol_lu = val_data.x.to(U[str(k)].device) #da riattivare
                     total_val_loss += val_loss.sum().item()
