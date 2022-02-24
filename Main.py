@@ -59,9 +59,9 @@ createdata = CreateData()
 createdata.transform(train_cases, 'train')
 createdata.transform(val_cases, 'val')
 
-k_list=[30]
-gamma_list=[0.9]
-alpha_list=[1e-3]
+k_list=[50]
+gamma_list=[0.5]
+alpha_list=[1e-1]
 lr_list=[0.01]
 
 #check if gpu is available
@@ -89,7 +89,7 @@ for k in k_list:
                 print("#################### DSS NET parameter #######################")
 
                 #create hyperparameter
-                latent_dimension = 10
+                latent_dimension = 12
                 print("Latent space dim : ", latent_dimension)
                 k = k
                 print("Number of updates : ", k)
