@@ -60,7 +60,7 @@ print("#################### DATA ADAPTING FOR GNN #######################")
 # createdata.transform(val_cases, 'val')
 
 k_list=[30, 50, 70]
-latent_dimension=[5,10,20]
+latent_dimension_list=[5,10,20]
 gamma_list=[0.9]
 alpha_list=[1e-3]
 lr_list=[0.01]
@@ -71,13 +71,13 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Running on : ', device)
 
 for k in k_list:
-    for latent_dimension in latent_dimension:
+    for latent_dimension in latent_dimension_list:
         for gamma in gamma_list:
             for alpha in alpha_list:
                 for lr in lr_list:
 
                     set_name = str(k) +'-'+ str(latent_dimension).replace(".","") +'-'+ str(alpha).replace(".","") +'-'+ str(lr).replace(".","")
-                    print("PARAMETER SET: k:{}, gamma:{}, alpha:{}, lr:{}".format(str(k), str(latent_dimension), str(alpha), str(lr)))
+                    print("PARAMETER SET: k:{}, laten_dim:{}, alpha:{}, lr:{}".format(str(k), str(latent_dimension), str(alpha), str(lr)))
                     os.makedirs("./Results/" + set_name, exist_ok=True)
                     os.makedirs("./Stats/" + set_name, exist_ok=True)
 
