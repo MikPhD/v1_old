@@ -158,12 +158,13 @@ class Train_DSS:
             else:
                 print("Training finished, took {:.2f}s".format(self.training_time))
 
-            if int(epoch) % n_output == 0:
+            if (int(epoch + 1) % n_output == 0) and (int(epoch+1 != n_output)):
                 F_fin = F[str(k)].cpu().numpy()
                 np.save("./Results/" + self.set_name + "/results" + str(epoch) + ".npy", F_fin)
                 print("Intermediate Plot Saved!")
                 del F, val_loss, loss_dict
-            elif int(epoch) == n_output:
+
+            if int(epoch + 1) == n_output:
                 F_fin = F[str(k)].cpu().numpy()
                 np.save("./Results/" + self.set_name + "/results.npy", F_fin)
                 print("Final Results Saved")
