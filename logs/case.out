@@ -4,7 +4,7 @@ Trasformazione file di train completata!
 Elaborazione case:  110  in modalità:  val
 Trasformazione file di val completata!
 Running on :  cuda
-PARAMETER SET: k:30, gamma:0.5, alpha:0.1, lr:0.01
+PARAMETER SET: k:30, gamma:0.5, alpha:0.001, lr:0.01
 #################### CREATING Inner DATASET #######################
 Processing...
 Taking Data at Re n.:  110 in  train  mode.
@@ -16,409 +16,409 @@ Done!
 Latent space dim :  12
 Number of updates :  30
 Gamma (loss function) :  0.5
-Alpha (reduction correction) : 0.1
+Alpha (reduction correction) : 0.001
 LR (Learning rate): 0.01
 #################### CREATING NETWORKS #######################
 #################### TRAINING #######################
-Epoch 1, 100% 	 train_loss: 5.64528e-01
-Training loss = 5.64528e-01
-Validation loss = 5.90255e-01
-Training finished, took 1.50s
+Epoch 1, 100% 	 train_loss: 9.12962e-02
+Training loss = 9.12962e-02
+Validation loss = 6.60860e-02
+Training finished, took 1.55s, MODEL SAVED
 Intermediate Plot Saved!
-Epoch 2, 100% 	 train_loss: 5.90248e-01
-Training loss = 5.90248e-01
-Validation loss = 1.76322e-01
-Training finished, took 2.60s, MODEL SAVED
-Epoch 3, 100% 	 train_loss: 1.76376e-01
-Training loss = 1.76376e-01
-Validation loss = 1.03677e-01
-Training finished, took 3.71s, MODEL SAVED
-Epoch 4, 100% 	 train_loss: 1.03690e-01
-Training loss = 1.03690e-01
-Validation loss = 9.90756e-02
-Training finished, took 4.81s
-Epoch 5, 100% 	 train_loss: 9.90412e-02
-Training loss = 9.90412e-02
-Validation loss = 6.00068e-02
-Training finished, took 5.91s
-Epoch 6, 100% 	 train_loss: 6.00060e-02
-Training loss = 6.00060e-02
-Validation loss = 3.90297e-02
-Training finished, took 7.02s
-Epoch 7, 100% 	 train_loss: 3.90291e-02
-Training loss = 3.90291e-02
-Validation loss = 2.36323e-02
-Training finished, took 8.12s
-Epoch 8, 100% 	 train_loss: 2.36354e-02
-Training loss = 2.36354e-02
-Validation loss = 1.90002e-02
-Training finished, took 9.23s
-Epoch 9, 100% 	 train_loss: 1.89956e-02
-Training loss = 1.89956e-02
-Validation loss = 1.38603e-02
-Training finished, took 10.33s, MODEL SAVED
-Epoch 10, 100% 	 train_loss: 1.38594e-02
-Training loss = 1.38594e-02
-Validation loss = 1.14494e-02
-Training finished, took 11.44s, MODEL SAVED
-Epoch 11, 100% 	 train_loss: 1.14495e-02
-Training loss = 1.14495e-02
-Validation loss = 1.38242e-02
-Training finished, took 12.55s
-Epoch 12, 100% 	 train_loss: 1.38259e-02
-Training loss = 1.38259e-02
-Validation loss = 1.32899e-02
-Training finished, took 13.65s
-Epoch 13, 100% 	 train_loss: 1.32902e-02
-Training loss = 1.32902e-02
-Validation loss = 1.20525e-02
-Training finished, took 14.75s
-Epoch 14, 100% 	 train_loss: 1.20498e-02
-Training loss = 1.20498e-02
-Validation loss = 1.02131e-02
-Training finished, took 15.85s
-Epoch 15, 100% 	 train_loss: 1.02112e-02
-Training loss = 1.02112e-02
-Validation loss = 9.41982e-03
-Training finished, took 16.96s
-Epoch 16, 100% 	 train_loss: 9.41945e-03
-Training loss = 9.41945e-03
-Validation loss = 9.53292e-03
-Training finished, took 18.07s, MODEL SAVED
-Epoch 17, 100% 	 train_loss: 9.53186e-03
-Training loss = 9.53186e-03
-Validation loss = 8.95747e-03
-Training finished, took 19.17s
-Epoch 18, 100% 	 train_loss: 8.95934e-03
-Training loss = 8.95934e-03
-Validation loss = 1.11184e-02
-Training finished, took 20.27s
-Epoch 19, 100% 	 train_loss: 1.11200e-02
-Training loss = 1.11200e-02
-Validation loss = 9.64999e-03
-Training finished, took 21.38s
-Epoch 20, 100% 	 train_loss: 9.64762e-03
-Training loss = 9.64762e-03
-Validation loss = 1.18291e-02
-Training finished, took 22.48s
-Epoch 21, 100% 	 train_loss: 1.18290e-02
-Training loss = 1.18290e-02
-Validation loss = 9.26602e-03
-Training finished, took 23.59s, MODEL SAVED
-Epoch 22, 100% 	 train_loss: 9.26701e-03
-Training loss = 9.26701e-03
-Validation loss = 9.46556e-03
-Training finished, took 24.69s, MODEL SAVED
-Epoch 23, 100% 	 train_loss: 9.46626e-03
-Training loss = 9.46626e-03
-Validation loss = 8.60172e-03
-Training finished, took 25.80s
-Epoch 24, 100% 	 train_loss: 8.60485e-03
-Training loss = 8.60485e-03
-Validation loss = 1.07422e-02
-Training finished, took 26.91s
-Epoch 25, 100% 	 train_loss: 1.07421e-02
-Training loss = 1.07421e-02
-Validation loss = 9.82802e-03
-Training finished, took 28.01s
-Epoch 26, 100% 	 train_loss: 9.82880e-03
-Training loss = 9.82880e-03
-Validation loss = 9.91490e-03
-Training finished, took 29.12s
-Epoch 27, 100% 	 train_loss: 9.91348e-03
-Training loss = 9.91348e-03
-Validation loss = 9.13822e-03
-Training finished, took 30.22s
-Epoch 28, 100% 	 train_loss: 9.13631e-03
-Training loss = 9.13631e-03
-Validation loss = 8.71911e-03
-Training finished, took 31.33s
-Epoch 29, 100% 	 train_loss: 8.71907e-03
-Training loss = 8.71907e-03
-Validation loss = 8.64301e-03
-Training finished, took 32.43s
-Epoch 30, 100% 	 train_loss: 8.64110e-03
-Training loss = 8.64110e-03
-Validation loss = 8.35864e-03
-Training finished, took 33.53s
-Epoch 31, 100% 	 train_loss: 8.35730e-03
-Training loss = 8.35730e-03
-Validation loss = 8.55647e-03
-Training finished, took 34.64s
-Epoch 32, 100% 	 train_loss: 8.55758e-03
-Training loss = 8.55758e-03
-Validation loss = 8.28083e-03
-Training finished, took 35.74s
-Epoch 33, 100% 	 train_loss: 8.28105e-03
-Training loss = 8.28105e-03
-Validation loss = 8.22381e-03
-Training finished, took 36.85s
-Epoch 34, 100% 	 train_loss: 8.22381e-03
-Training loss = 8.22381e-03
-Validation loss = 8.18910e-03
-Training finished, took 37.95s
-Epoch 35, 100% 	 train_loss: 8.18847e-03
-Training loss = 8.18847e-03
-Validation loss = 8.19597e-03
-Training finished, took 39.06s
-Epoch 36, 100% 	 train_loss: 8.19609e-03
-Training loss = 8.19609e-03
-Validation loss = 8.00462e-03
-Training finished, took 40.16s
-Epoch 37, 100% 	 train_loss: 8.00392e-03
-Training loss = 8.00392e-03
-Validation loss = 8.14853e-03
-Training finished, took 41.27s
-Epoch 38, 100% 	 train_loss: 8.15026e-03
-Training loss = 8.15026e-03
-Validation loss = 7.87699e-03
-Training finished, took 42.37s, MODEL SAVED
-Epoch 39, 100% 	 train_loss: 7.87599e-03
-Training loss = 7.87599e-03
-Validation loss = 7.95237e-03
-Training finished, took 43.47s, MODEL SAVED
-Epoch 40, 100% 	 train_loss: 7.95197e-03
-Training loss = 7.95197e-03
-Validation loss = 8.10172e-03
-Training finished, took 44.58s
-Epoch 41, 100% 	 train_loss: 8.10512e-03
-Training loss = 8.10512e-03
-Validation loss = 7.86182e-03
-Training finished, took 45.68s
-Epoch 42, 100% 	 train_loss: 7.86289e-03
-Training loss = 7.86289e-03
-Validation loss = 8.09434e-03
-Training finished, took 46.79s
-Epoch 43, 100% 	 train_loss: 8.09473e-03
-Training loss = 8.09473e-03
-Validation loss = 7.94604e-03
-Training finished, took 47.89s, MODEL SAVED
-Epoch 44, 100% 	 train_loss: 7.94589e-03
-Training loss = 7.94589e-03
-Validation loss = 7.94192e-03
-Training finished, took 49.00s
-Epoch 45, 100% 	 train_loss: 7.94291e-03
-Training loss = 7.94291e-03
-Validation loss = 7.93593e-03
-Training finished, took 50.10s
-Epoch 46, 100% 	 train_loss: 7.93398e-03
-Training loss = 7.93398e-03
-Validation loss = 8.00631e-03
-Training finished, took 51.20s
-Epoch 47, 100% 	 train_loss: 8.00596e-03
-Training loss = 8.00596e-03
-Validation loss = 7.83695e-03
-Training finished, took 52.31s
-Epoch 48, 100% 	 train_loss: 7.83706e-03
-Training loss = 7.83706e-03
-Validation loss = 7.96571e-03
-Training finished, took 53.41s
-Epoch 49, 100% 	 train_loss: 7.96522e-03
-Training loss = 7.96522e-03
-Validation loss = 7.90428e-03
-Training finished, took 54.52s, MODEL SAVED
-Epoch 50, 100% 	 train_loss: 7.90531e-03
-Training loss = 7.90531e-03
-Validation loss = 7.79252e-03
-Training finished, took 55.63s
-Epoch 51, 100% 	 train_loss: 7.79296e-03
-Training loss = 7.79296e-03
-Validation loss = 8.06870e-03
-Training finished, took 56.73s
-Epoch 52, 100% 	 train_loss: 8.06956e-03
-Training loss = 8.06956e-03
-Validation loss = 7.76087e-03
-Training finished, took 57.84s, MODEL SAVED
-Epoch 53, 100% 	 train_loss: 7.76209e-03
-Training loss = 7.76209e-03
-Validation loss = 7.93628e-03
-Training finished, took 58.94s
-Epoch 54, 100% 	 train_loss: 7.93708e-03
-Training loss = 7.93708e-03
-Validation loss = 8.06599e-03
-Training finished, took 60.05s
-Epoch 55, 100% 	 train_loss: 8.06626e-03
-Training loss = 8.06626e-03
-Validation loss = 7.85931e-03
-Training finished, took 61.15s
-Epoch 56, 100% 	 train_loss: 7.85904e-03
-Training loss = 7.85904e-03
-Validation loss = 8.08786e-03
-Training finished, took 62.26s
-Epoch 57, 100% 	 train_loss: 8.08831e-03
-Training loss = 8.08831e-03
-Validation loss = 8.01370e-03
-Training finished, took 63.36s
-Epoch 58, 100% 	 train_loss: 8.01371e-03
-Training loss = 8.01371e-03
-Validation loss = 8.24492e-03
-Training finished, took 64.47s
-Epoch 59, 100% 	 train_loss: 8.24565e-03
-Training loss = 8.24565e-03
-Validation loss = 8.04043e-03
-Training finished, took 65.57s
-Epoch 60, 100% 	 train_loss: 8.04010e-03
-Training loss = 8.04010e-03
-Validation loss = 8.15712e-03
-Training finished, took 66.68s
-Epoch 61, 100% 	 train_loss: 8.15749e-03
-Training loss = 8.15749e-03
-Validation loss = 8.16139e-03
-Training finished, took 67.78s
-Epoch 62, 100% 	 train_loss: 8.16142e-03
-Training loss = 8.16142e-03
-Validation loss = 7.76273e-03
-Training finished, took 68.88s
-Epoch 63, 100% 	 train_loss: 7.76308e-03
-Training loss = 7.76308e-03
-Validation loss = 7.78249e-03
-Training finished, took 69.99s
-Epoch 64, 100% 	 train_loss: 7.78245e-03
-Training loss = 7.78245e-03
-Validation loss = 7.92399e-03
-Training finished, took 71.09s
-Epoch 65, 100% 	 train_loss: 7.92386e-03
-Training loss = 7.92386e-03
-Validation loss = 7.78095e-03
-Training finished, took 72.19s
-Epoch 66, 100% 	 train_loss: 7.78117e-03
-Training loss = 7.78117e-03
-Validation loss = 8.02157e-03
-Training finished, took 73.29s
-Epoch 67, 100% 	 train_loss: 8.02174e-03
-Training loss = 8.02174e-03
-Validation loss = 8.00629e-03
-Training finished, took 74.39s
-Epoch 68, 100% 	 train_loss: 8.00676e-03
-Training loss = 8.00676e-03
-Validation loss = 7.79588e-03
-Training finished, took 75.49s
-Epoch 69, 100% 	 train_loss: 7.79587e-03
-Training loss = 7.79587e-03
-Validation loss = 7.71020e-03
-Training finished, took 76.60s
-Epoch 70, 100% 	 train_loss: 7.70988e-03
-Training loss = 7.70988e-03
-Validation loss = 7.90145e-03
-Training finished, took 77.71s
-Epoch 71, 100% 	 train_loss: 7.90032e-03
-Training loss = 7.90032e-03
-Validation loss = 7.85512e-03
-Training finished, took 78.81s
-Epoch 72, 100% 	 train_loss: 7.85385e-03
-Training loss = 7.85385e-03
-Validation loss = 7.81041e-03
-Training finished, took 79.92s
-Epoch 73, 100% 	 train_loss: 7.81099e-03
-Training loss = 7.81099e-03
-Validation loss = 7.74070e-03
-Training finished, took 81.02s
-Epoch 74, 100% 	 train_loss: 7.74171e-03
-Training loss = 7.74171e-03
-Validation loss = 7.94706e-03
-Training finished, took 82.13s
-Epoch 75, 100% 	 train_loss: 7.94845e-03
-Training loss = 7.94845e-03
-Validation loss = 7.87431e-03
-Training finished, took 83.24s
-Epoch 76, 100% 	 train_loss: 7.87469e-03
-Training loss = 7.87469e-03
-Validation loss = 7.72248e-03
-Training finished, took 84.34s, MODEL SAVED
-Epoch 77, 100% 	 train_loss: 7.72353e-03
-Training loss = 7.72353e-03
-Validation loss = 7.68725e-03
-Training finished, took 85.45s
-Epoch 78, 100% 	 train_loss: 7.68887e-03
-Training loss = 7.68887e-03
-Validation loss = 7.77593e-03
-Training finished, took 86.55s
-Epoch 79, 100% 	 train_loss: 7.77676e-03
-Training loss = 7.77676e-03
-Validation loss = 7.66937e-03
-Training finished, took 87.66s
-Epoch 80, 100% 	 train_loss: 7.66929e-03
-Training loss = 7.66929e-03
-Validation loss = 7.95188e-03
-Training finished, took 88.76s
-Epoch 81, 100% 	 train_loss: 7.95181e-03
-Training loss = 7.95181e-03
-Validation loss = 7.90352e-03
-Training finished, took 89.87s
-Epoch 82, 100% 	 train_loss: 7.90425e-03
-Training loss = 7.90425e-03
-Validation loss = 7.66819e-03
-Training finished, took 90.98s, MODEL SAVED
-Epoch 83, 100% 	 train_loss: 7.66838e-03
-Training loss = 7.66838e-03
-Validation loss = 7.68915e-03
-Training finished, took 92.08s
-Epoch 84, 100% 	 train_loss: 7.68916e-03
-Training loss = 7.68916e-03
-Validation loss = 7.65223e-03
-Training finished, took 93.19s
-Epoch 85, 100% 	 train_loss: 7.65197e-03
-Training loss = 7.65197e-03
-Validation loss = 7.70819e-03
-Training finished, took 94.29s, MODEL SAVED
-Epoch 86, 100% 	 train_loss: 7.70832e-03
-Training loss = 7.70832e-03
-Validation loss = 7.64803e-03
-Training finished, took 95.40s, MODEL SAVED
-Epoch 87, 100% 	 train_loss: 7.64885e-03
-Training loss = 7.64885e-03
-Validation loss = 7.62011e-03
-Training finished, took 96.50s, MODEL SAVED
-Epoch 88, 100% 	 train_loss: 7.61916e-03
-Training loss = 7.61916e-03
-Validation loss = 7.74005e-03
-Training finished, took 97.61s
-Epoch 89, 100% 	 train_loss: 7.73991e-03
-Training loss = 7.73991e-03
-Validation loss = 7.62029e-03
-Training finished, took 98.71s, MODEL SAVED
-Epoch 90, 100% 	 train_loss: 7.62052e-03
-Training loss = 7.62052e-03
-Validation loss = 7.97636e-03
-Training finished, took 99.82s
-Epoch 91, 100% 	 train_loss: 7.97535e-03
-Training loss = 7.97535e-03
-Validation loss = 7.85243e-03
-Training finished, took 100.92s
-Epoch 92, 100% 	 train_loss: 7.85193e-03
-Training loss = 7.85193e-03
-Validation loss = 7.92132e-03
-Training finished, took 102.03s
-Epoch 93, 100% 	 train_loss: 7.92111e-03
-Training loss = 7.92111e-03
-Validation loss = 8.02236e-03
-Training finished, took 103.14s
-Epoch 94, 100% 	 train_loss: 8.02285e-03
-Training loss = 8.02285e-03
-Validation loss = 7.68372e-03
-Training finished, took 104.24s
-Epoch 95, 100% 	 train_loss: 7.68403e-03
-Training loss = 7.68403e-03
-Validation loss = 7.83041e-03
-Training finished, took 105.35s
-Epoch 96, 100% 	 train_loss: 7.83111e-03
-Training loss = 7.83111e-03
-Validation loss = 7.74131e-03
-Training finished, took 106.45s
-Epoch 97, 100% 	 train_loss: 7.74267e-03
-Training loss = 7.74267e-03
-Validation loss = 7.68769e-03
-Training finished, took 107.56s
-Epoch 98, 100% 	 train_loss: 7.68765e-03
-Training loss = 7.68765e-03
-Validation loss = 7.70886e-03
-Training finished, took 108.66s
-Epoch 99, 100% 	 train_loss: 7.70888e-03
-Training loss = 7.70888e-03
-Validation loss = 7.68722e-03
-Training finished, took 109.76s
-Epoch 100, 100% 	 train_loss: 7.68823e-03
-Training loss = 7.68823e-03
-Validation loss = 7.58728e-03
-Training finished, took 110.87s, MODEL SAVED
+Epoch 2, 100% 	 train_loss: 6.60863e-02
+Training loss = 6.60863e-02
+Validation loss = 4.60377e-02
+Training finished, took 2.66s, MODEL SAVED
+Epoch 3, 100% 	 train_loss: 4.60379e-02
+Training loss = 4.60379e-02
+Validation loss = 3.11755e-02
+Training finished, took 3.77s, MODEL SAVED
+Epoch 4, 100% 	 train_loss: 3.11754e-02
+Training loss = 3.11754e-02
+Validation loss = 2.17065e-02
+Training finished, took 4.88s, MODEL SAVED
+Epoch 5, 100% 	 train_loss: 2.17064e-02
+Training loss = 2.17064e-02
+Validation loss = 1.78911e-02
+Training finished, took 5.99s
+Epoch 6, 100% 	 train_loss: 1.78912e-02
+Training loss = 1.78912e-02
+Validation loss = 1.67093e-02
+Training finished, took 7.11s
+Epoch 7, 100% 	 train_loss: 1.67090e-02
+Training loss = 1.67090e-02
+Validation loss = 1.53173e-02
+Training finished, took 8.22s
+Epoch 8, 100% 	 train_loss: 1.53173e-02
+Training loss = 1.53173e-02
+Validation loss = 1.36838e-02
+Training finished, took 9.34s
+Epoch 9, 100% 	 train_loss: 1.36839e-02
+Training loss = 1.36839e-02
+Validation loss = 1.20692e-02
+Training finished, took 10.45s
+Epoch 10, 100% 	 train_loss: 1.20691e-02
+Training loss = 1.20691e-02
+Validation loss = 1.06127e-02
+Training finished, took 11.56s
+Epoch 11, 100% 	 train_loss: 1.06126e-02
+Training loss = 1.06126e-02
+Validation loss = 9.50266e-03
+Training finished, took 12.67s, MODEL SAVED
+Epoch 12, 100% 	 train_loss: 9.50256e-03
+Training loss = 9.50256e-03
+Validation loss = 8.80897e-03
+Training finished, took 13.79s
+Epoch 13, 100% 	 train_loss: 8.80901e-03
+Training loss = 8.80901e-03
+Validation loss = 8.49096e-03
+Training finished, took 14.90s
+Epoch 14, 100% 	 train_loss: 8.49103e-03
+Training loss = 8.49103e-03
+Validation loss = 8.42825e-03
+Training finished, took 16.02s, MODEL SAVED
+Epoch 15, 100% 	 train_loss: 8.42827e-03
+Training loss = 8.42827e-03
+Validation loss = 8.44982e-03
+Training finished, took 17.13s, MODEL SAVED
+Epoch 16, 100% 	 train_loss: 8.44978e-03
+Training loss = 8.44978e-03
+Validation loss = 8.45056e-03
+Training finished, took 18.25s, MODEL SAVED
+Epoch 17, 100% 	 train_loss: 8.45051e-03
+Training loss = 8.45051e-03
+Validation loss = 8.51269e-03
+Training finished, took 19.36s
+Epoch 18, 100% 	 train_loss: 8.51272e-03
+Training loss = 8.51272e-03
+Validation loss = 8.63846e-03
+Training finished, took 20.48s
+Epoch 19, 100% 	 train_loss: 8.63846e-03
+Training loss = 8.63846e-03
+Validation loss = 8.65760e-03
+Training finished, took 21.59s
+Epoch 20, 100% 	 train_loss: 8.65756e-03
+Training loss = 8.65756e-03
+Validation loss = 8.47863e-03
+Training finished, took 22.71s
+Epoch 21, 100% 	 train_loss: 8.47863e-03
+Training loss = 8.47863e-03
+Validation loss = 8.17531e-03
+Training finished, took 23.82s
+Epoch 22, 100% 	 train_loss: 8.17534e-03
+Training loss = 8.17534e-03
+Validation loss = 7.91474e-03
+Training finished, took 24.94s, MODEL SAVED
+Epoch 23, 100% 	 train_loss: 7.91468e-03
+Training loss = 7.91468e-03
+Validation loss = 7.84723e-03
+Training finished, took 26.06s
+Epoch 24, 100% 	 train_loss: 7.84720e-03
+Training loss = 7.84720e-03
+Validation loss = 7.90648e-03
+Training finished, took 27.17s
+Epoch 25, 100% 	 train_loss: 7.90653e-03
+Training loss = 7.90653e-03
+Validation loss = 7.92891e-03
+Training finished, took 28.28s
+Epoch 26, 100% 	 train_loss: 7.92893e-03
+Training loss = 7.92893e-03
+Validation loss = 7.90844e-03
+Training finished, took 29.39s
+Epoch 27, 100% 	 train_loss: 7.90840e-03
+Training loss = 7.90840e-03
+Validation loss = 7.90518e-03
+Training finished, took 30.51s, MODEL SAVED
+Epoch 28, 100% 	 train_loss: 7.90519e-03
+Training loss = 7.90519e-03
+Validation loss = 7.91528e-03
+Training finished, took 31.61s
+Epoch 29, 100% 	 train_loss: 7.91528e-03
+Training loss = 7.91528e-03
+Validation loss = 7.89522e-03
+Training finished, took 32.73s
+Epoch 30, 100% 	 train_loss: 7.89524e-03
+Training loss = 7.89524e-03
+Validation loss = 7.84525e-03
+Training finished, took 33.84s
+Epoch 31, 100% 	 train_loss: 7.84524e-03
+Training loss = 7.84524e-03
+Validation loss = 7.78060e-03
+Training finished, took 34.96s
+Epoch 32, 100% 	 train_loss: 7.78061e-03
+Training loss = 7.78061e-03
+Validation loss = 7.75682e-03
+Training finished, took 36.07s, MODEL SAVED
+Epoch 33, 100% 	 train_loss: 7.75682e-03
+Training loss = 7.75682e-03
+Validation loss = 7.78879e-03
+Training finished, took 37.19s
+Epoch 34, 100% 	 train_loss: 7.78881e-03
+Training loss = 7.78881e-03
+Validation loss = 7.79280e-03
+Training finished, took 38.30s
+Epoch 35, 100% 	 train_loss: 7.79285e-03
+Training loss = 7.79285e-03
+Validation loss = 7.77049e-03
+Training finished, took 39.41s, MODEL SAVED
+Epoch 36, 100% 	 train_loss: 7.77052e-03
+Training loss = 7.77052e-03
+Validation loss = 7.75837e-03
+Training finished, took 40.52s
+Epoch 37, 100% 	 train_loss: 7.75838e-03
+Training loss = 7.75838e-03
+Validation loss = 7.74349e-03
+Training finished, took 41.64s
+Epoch 38, 100% 	 train_loss: 7.74345e-03
+Training loss = 7.74345e-03
+Validation loss = 7.73651e-03
+Training finished, took 42.75s
+Epoch 39, 100% 	 train_loss: 7.73652e-03
+Training loss = 7.73652e-03
+Validation loss = 7.75777e-03
+Training finished, took 43.86s
+Epoch 40, 100% 	 train_loss: 7.75775e-03
+Training loss = 7.75775e-03
+Validation loss = 7.76652e-03
+Training finished, took 44.98s
+Epoch 41, 100% 	 train_loss: 7.76649e-03
+Training loss = 7.76649e-03
+Validation loss = 7.75472e-03
+Training finished, took 46.09s
+Epoch 42, 100% 	 train_loss: 7.75472e-03
+Training loss = 7.75472e-03
+Validation loss = 7.73909e-03
+Training finished, took 47.20s
+Epoch 43, 100% 	 train_loss: 7.73912e-03
+Training loss = 7.73912e-03
+Validation loss = 7.73055e-03
+Training finished, took 48.32s
+Epoch 44, 100% 	 train_loss: 7.73055e-03
+Training loss = 7.73055e-03
+Validation loss = 7.73509e-03
+Training finished, took 49.44s, MODEL SAVED
+Epoch 45, 100% 	 train_loss: 7.73511e-03
+Training loss = 7.73511e-03
+Validation loss = 7.74076e-03
+Training finished, took 50.55s
+Epoch 46, 100% 	 train_loss: 7.74075e-03
+Training loss = 7.74075e-03
+Validation loss = 7.73894e-03
+Training finished, took 51.67s
+Epoch 47, 100% 	 train_loss: 7.73893e-03
+Training loss = 7.73893e-03
+Validation loss = 7.72850e-03
+Training finished, took 52.78s, MODEL SAVED
+Epoch 48, 100% 	 train_loss: 7.72848e-03
+Training loss = 7.72848e-03
+Validation loss = 7.73952e-03
+Training finished, took 53.89s
+Epoch 49, 100% 	 train_loss: 7.73949e-03
+Training loss = 7.73949e-03
+Validation loss = 7.73472e-03
+Training finished, took 55.01s
+Epoch 50, 100% 	 train_loss: 7.73472e-03
+Training loss = 7.73472e-03
+Validation loss = 7.73745e-03
+Training finished, took 56.12s
+Epoch 51, 100% 	 train_loss: 7.73743e-03
+Training loss = 7.73743e-03
+Validation loss = 7.73022e-03
+Training finished, took 57.23s
+Epoch 52, 100% 	 train_loss: 7.73029e-03
+Training loss = 7.73029e-03
+Validation loss = 7.72878e-03
+Training finished, took 58.34s, MODEL SAVED
+Epoch 53, 100% 	 train_loss: 7.72880e-03
+Training loss = 7.72880e-03
+Validation loss = 7.72967e-03
+Training finished, took 59.45s
+Epoch 54, 100% 	 train_loss: 7.72964e-03
+Training loss = 7.72964e-03
+Validation loss = 7.72793e-03
+Training finished, took 60.56s, MODEL SAVED
+Epoch 55, 100% 	 train_loss: 7.72789e-03
+Training loss = 7.72789e-03
+Validation loss = 7.72407e-03
+Training finished, took 61.68s
+Epoch 56, 100% 	 train_loss: 7.72405e-03
+Training loss = 7.72405e-03
+Validation loss = 7.72971e-03
+Training finished, took 62.79s
+Epoch 57, 100% 	 train_loss: 7.72971e-03
+Training loss = 7.72971e-03
+Validation loss = 7.72951e-03
+Training finished, took 63.90s
+Epoch 58, 100% 	 train_loss: 7.72952e-03
+Training loss = 7.72952e-03
+Validation loss = 7.72636e-03
+Training finished, took 65.02s, MODEL SAVED
+Epoch 59, 100% 	 train_loss: 7.72632e-03
+Training loss = 7.72632e-03
+Validation loss = 7.72773e-03
+Training finished, took 66.13s
+Epoch 60, 100% 	 train_loss: 7.72776e-03
+Training loss = 7.72776e-03
+Validation loss = 7.72581e-03
+Training finished, took 67.25s, MODEL SAVED
+Epoch 61, 100% 	 train_loss: 7.72577e-03
+Training loss = 7.72577e-03
+Validation loss = 7.72796e-03
+Training finished, took 68.36s
+Epoch 62, 100% 	 train_loss: 7.72802e-03
+Training loss = 7.72802e-03
+Validation loss = 7.72315e-03
+Training finished, took 69.48s
+Epoch 63, 100% 	 train_loss: 7.72315e-03
+Training loss = 7.72315e-03
+Validation loss = 7.73156e-03
+Training finished, took 70.59s
+Epoch 64, 100% 	 train_loss: 7.73161e-03
+Training loss = 7.73161e-03
+Validation loss = 7.72824e-03
+Training finished, took 71.70s
+Epoch 65, 100% 	 train_loss: 7.72821e-03
+Training loss = 7.72821e-03
+Validation loss = 7.73004e-03
+Training finished, took 72.81s
+Epoch 66, 100% 	 train_loss: 7.73001e-03
+Training loss = 7.73001e-03
+Validation loss = 7.72758e-03
+Training finished, took 73.93s
+Epoch 67, 100% 	 train_loss: 7.72762e-03
+Training loss = 7.72762e-03
+Validation loss = 7.72223e-03
+Training finished, took 75.04s, MODEL SAVED
+Epoch 68, 100% 	 train_loss: 7.72214e-03
+Training loss = 7.72214e-03
+Validation loss = 7.73740e-03
+Training finished, took 76.15s
+Epoch 69, 100% 	 train_loss: 7.73741e-03
+Training loss = 7.73741e-03
+Validation loss = 7.73563e-03
+Training finished, took 77.27s
+Epoch 70, 100% 	 train_loss: 7.73562e-03
+Training loss = 7.73562e-03
+Validation loss = 7.72830e-03
+Training finished, took 78.38s
+Epoch 71, 100% 	 train_loss: 7.72830e-03
+Training loss = 7.72830e-03
+Validation loss = 7.72634e-03
+Training finished, took 79.49s
+Epoch 72, 100% 	 train_loss: 7.72639e-03
+Training loss = 7.72639e-03
+Validation loss = 7.72880e-03
+Training finished, took 80.60s
+Epoch 73, 100% 	 train_loss: 7.72879e-03
+Training loss = 7.72879e-03
+Validation loss = 7.72578e-03
+Training finished, took 81.72s
+Epoch 74, 100% 	 train_loss: 7.72575e-03
+Training loss = 7.72575e-03
+Validation loss = 7.72655e-03
+Training finished, took 82.83s
+Epoch 75, 100% 	 train_loss: 7.72657e-03
+Training loss = 7.72657e-03
+Validation loss = 7.72484e-03
+Training finished, took 83.95s
+Epoch 76, 100% 	 train_loss: 7.72489e-03
+Training loss = 7.72489e-03
+Validation loss = 7.72251e-03
+Training finished, took 85.06s
+Epoch 77, 100% 	 train_loss: 7.72246e-03
+Training loss = 7.72246e-03
+Validation loss = 7.72046e-03
+Training finished, took 86.17s
+Epoch 78, 100% 	 train_loss: 7.72050e-03
+Training loss = 7.72050e-03
+Validation loss = 7.72608e-03
+Training finished, took 87.29s
+Epoch 79, 100% 	 train_loss: 7.72606e-03
+Training loss = 7.72606e-03
+Validation loss = 7.72188e-03
+Training finished, took 88.40s
+Epoch 80, 100% 	 train_loss: 7.72194e-03
+Training loss = 7.72194e-03
+Validation loss = 7.72720e-03
+Training finished, took 89.51s
+Epoch 81, 100% 	 train_loss: 7.72721e-03
+Training loss = 7.72721e-03
+Validation loss = 7.72352e-03
+Training finished, took 90.62s
+Epoch 82, 100% 	 train_loss: 7.72352e-03
+Training loss = 7.72352e-03
+Validation loss = 7.72117e-03
+Training finished, took 91.73s
+Epoch 83, 100% 	 train_loss: 7.72117e-03
+Training loss = 7.72117e-03
+Validation loss = 7.71906e-03
+Training finished, took 92.85s
+Epoch 84, 100% 	 train_loss: 7.71906e-03
+Training loss = 7.71906e-03
+Validation loss = 7.72249e-03
+Training finished, took 93.96s
+Epoch 85, 100% 	 train_loss: 7.72245e-03
+Training loss = 7.72245e-03
+Validation loss = 7.71948e-03
+Training finished, took 95.07s
+Epoch 86, 100% 	 train_loss: 7.71943e-03
+Training loss = 7.71943e-03
+Validation loss = 7.72127e-03
+Training finished, took 96.18s
+Epoch 87, 100% 	 train_loss: 7.72128e-03
+Training loss = 7.72128e-03
+Validation loss = 7.71987e-03
+Training finished, took 97.30s
+Epoch 88, 100% 	 train_loss: 7.71996e-03
+Training loss = 7.71996e-03
+Validation loss = 7.71725e-03
+Training finished, took 98.41s, MODEL SAVED
+Epoch 89, 100% 	 train_loss: 7.71732e-03
+Training loss = 7.71732e-03
+Validation loss = 7.71597e-03
+Training finished, took 99.52s, MODEL SAVED
+Epoch 90, 100% 	 train_loss: 7.71588e-03
+Training loss = 7.71588e-03
+Validation loss = 7.72041e-03
+Training finished, took 100.64s
+Epoch 91, 100% 	 train_loss: 7.72043e-03
+Training loss = 7.72043e-03
+Validation loss = 7.71830e-03
+Training finished, took 101.75s
+Epoch 92, 100% 	 train_loss: 7.71829e-03
+Training loss = 7.71829e-03
+Validation loss = 7.71532e-03
+Training finished, took 102.87s
+Epoch 93, 100% 	 train_loss: 7.71535e-03
+Training loss = 7.71535e-03
+Validation loss = 7.71381e-03
+Training finished, took 103.98s, MODEL SAVED
+Epoch 94, 100% 	 train_loss: 7.71387e-03
+Training loss = 7.71387e-03
+Validation loss = 7.71653e-03
+Training finished, took 105.09s
+Epoch 95, 100% 	 train_loss: 7.71656e-03
+Training loss = 7.71656e-03
+Validation loss = 7.71357e-03
+Training finished, took 106.20s
+Epoch 96, 100% 	 train_loss: 7.71363e-03
+Training loss = 7.71363e-03
+Validation loss = 7.71519e-03
+Training finished, took 107.31s
+Epoch 97, 100% 	 train_loss: 7.71518e-03
+Training loss = 7.71518e-03
+Validation loss = 7.71268e-03
+Training finished, took 108.42s, MODEL SAVED
+Epoch 98, 100% 	 train_loss: 7.71278e-03
+Training loss = 7.71278e-03
+Validation loss = 7.71281e-03
+Training finished, took 109.53s, MODEL SAVED
+Epoch 99, 100% 	 train_loss: 7.71275e-03
+Training loss = 7.71275e-03
+Validation loss = 7.70946e-03
+Training finished, took 110.65s, MODEL SAVED
+Epoch 100, 100% 	 train_loss: 7.70952e-03
+Training loss = 7.70952e-03
+Validation loss = 7.71534e-03
+Training finished, took 111.76s
 errore di plot

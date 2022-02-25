@@ -61,7 +61,7 @@ createdata.transform(val_cases, 'val')
 
 k_list=[30]
 gamma_list=[0.5]
-alpha_list=[1e-1]
+alpha_list=[1e-3]
 lr_list=[0.01]
 
 #check if gpu is available
