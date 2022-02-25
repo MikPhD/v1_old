@@ -59,10 +59,10 @@ print("#################### DATA ADAPTING FOR GNN #######################")
 # createdata.transform(train_cases, 'train')
 # createdata.transform(val_cases, 'val')
 
-k_list=[30, 50, 70]
-latent_dimension_list=[5,10,20]
-gamma_list=[0.9]
-alpha_list=[1e-3]
+k_list=[70]
+latent_dimension_list=[20]
+gamma_list=[0.1,0.5,1]
+alpha_list=[1e-1,1e-2,1e-3]
 lr_list=[0.01]
 
 

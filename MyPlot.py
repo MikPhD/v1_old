@@ -80,6 +80,7 @@ class Plot:
                 cax = divider.append_axes('right', "4%", pad="2%")
                 colorbar_format = '% 1.1f'
                 cbar = plt.colorbar(mpl.cm.ScalarMappable(norm=norm, cmap=cmap), cax=cax, format=colorbar_format)
+                plt.close(fig)
 
         elif isinstance(obj, Mesh):
             plt.triplot(self.mesh2triang(obj), color='k')
@@ -121,7 +122,8 @@ class Plot:
             u.vector()[(index) + 1] = F_gnn[(i*2) + 1]
 
         # ####### plot ########
-        plt.figure()
+        fig1 = plt.figure()
         self.plot(u.sub(0))
         plt.savefig("Stats/" + self.set_name + "plot_results" + n_epoch + ".jpg")
         plt.savefig("Stats/" + self.set_name + "/plot_results" + n_epoch + ".jpg")
+        plt.close(fig1)
