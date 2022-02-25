@@ -60,7 +60,7 @@ createdata.transform(train_cases, 'train')
 createdata.transform(val_cases, 'val')
 
 k_list=[30]
-gamma_list=[0.5]
+gamma_list=[0.9]
 alpha_list=[1e-3]
 lr_list=[0.01]
 
@@ -89,7 +89,7 @@ for k in k_list:
                 print("#################### DSS NET parameter #######################")
 
                 #create hyperparameter
-                latent_dimension = 12
+                latent_dimension = 10
                 print("Latent space dim : ", latent_dimension)
                 k = k
                 print("Number of updates : ", k)
