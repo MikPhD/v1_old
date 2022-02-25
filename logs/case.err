@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1/Main.py", line 74, in <module>
+    for latent_dimension in latent_dimension:
+TypeError: 'int' object is not iterable
+srun: error: n2: task 0: Exited with exit code 1
