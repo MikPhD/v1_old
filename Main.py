@@ -59,7 +59,7 @@ createdata = CreateData()
 createdata.transform(train_cases, 'train')
 createdata.transform(val_cases, 'val')
 
-k_list=[50]
+k_list=[30]
 gamma_list=[0.5]
 alpha_list=[1e-1]
 lr_list=[0.01]
