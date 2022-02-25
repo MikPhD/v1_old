@@ -4,32 +4,8 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="set slurm multiexecution">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="interpolation first">
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyPlot.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyPlot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/70-20-0001-001/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/70-20-001-001/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/70-20-01-001/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-0001-001/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-0001-001/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-0001-001/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-0001-001/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-0001-001plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-0001-001plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-001-001/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-001-001/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-001-001/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-001-001/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-001-001plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-001-001plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-01-001/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-01-001/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-01-001/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-01-001/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-01-001plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-01-001plot_results.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,13 +238,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00057" summary="modified postprocess (works!)">
-      <created>1644226392777</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1644226392777</updated>
     </task>
     <task id="LOCAL-00058" summary="after call.. set to ground">
       <created>1644232906311</created>
@@ -606,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645795174627</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="interpolation first">
+      <created>1645797926730</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1645797926730</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -645,7 +621,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added postprocess e aggiustato il remove duplicate" />
     <MESSAGE value="set blank for slurm execution" />
     <MESSAGE value="removed between-edges connection (bidictional net)" />
     <MESSAGE value="removed set_trace()" />
@@ -670,6 +645,7 @@
     <MESSAGE value="optuna setting blank for slurm" />
     <MESSAGE value="set blank for slurm" />
     <MESSAGE value="set slurm multiexecution" />
-    <option name="LAST_COMMIT_MESSAGE" value="set slurm multiexecution" />
+    <MESSAGE value="interpolation first" />
+    <option name="LAST_COMMIT_MESSAGE" value="interpolation first" />
   </component>
 </project>

@@ -55,9 +55,9 @@ if not restart:
         os.remove("./Model/best_model_normal_final.pt")
 
 print("#################### DATA ADAPTING FOR GNN #######################")
-# createdata = CreateData()
-# createdata.transform(train_cases, 'train')
-# createdata.transform(val_cases, 'val')
+createdata = CreateData()
+createdata.transform(train_cases, 'train')
+createdata.transform(val_cases, 'val')
 
 k_list=[70]
 latent_dimension_list=[20]
