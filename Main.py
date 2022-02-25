@@ -61,8 +61,8 @@ print("#################### DATA ADAPTING FOR GNN #######################")
 
 k_list=[70]
 latent_dimension_list=[20]
-gamma_list=[0.1,0.5,1]
-alpha_list=[1e-1,1e-2,1e-3]
+gamma_list=[0.5]
+alpha_list=[1e-2]
 lr_list=[0.01]
 
 
