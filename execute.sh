@@ -11,5 +11,5 @@
 #SBATCH -o logs/case.out
 #SBATCH -e logs/case.err
 
-srun python Main.py -e 10000 -r False -tcase 110 -vcas 110 -n_out 5000
+srun python Main.py -e 100 -r False -tcase 110 -vcas 110 -n_out 100
 
