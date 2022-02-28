@@ -4,12 +4,11 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="interpolation first">
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="working on postprocess">
+      <change afterPath="$PROJECT_DIR$/PostProcessing/110/F.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyPlot_stand_alone.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyPlot_stand_alone.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/70-20-001-001/results.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Results/70-20-001-001/results.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-001-001/plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/70-20-001-001/plot_results.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/70-20-001-001plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/70-20-001-001plot_results.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/results.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/results.npy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,17 +58,18 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Scaricati/v1-095e098919acfe2f3d4b49c0d3d691175a39300c/MyPlot.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PostProcessing" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="two.files.diff.last.used.file" value="$USER_HOME$/Scaricati/v1-095e098919acfe2f3d4b49c0d3d691175a39300c/MyPlot.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PostProcessing" />
       <recent name="$PROJECT_DIR$/../v2/dataset/processed" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MyPlot_stand_alone">
+  <component name="RunManager" selected="Python.MyPostProcess (1)">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -133,7 +133,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MyPostProcess" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="MyPostProcess (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -141,14 +141,14 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../v2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PostProcessing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../v2/MyPostProcess.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -218,19 +218,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.MyPostProcess" />
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.prova" />
       <item itemvalue="Python.MyPlot_stand_alone" />
       <item itemvalue="Python.MyPlot" />
+      <item itemvalue="Python.MyPostProcess (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MyPostProcess (1)" />
         <item itemvalue="Python.MyPlot_stand_alone" />
         <item itemvalue="Python.MyPlot" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.prova" />
-        <item itemvalue="Python.MyPostProcess" />
       </list>
     </recent_temporary>
   </component>
@@ -242,20 +242,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00061" summary="setted automatition">
-      <created>1644245630507</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1644245630507</updated>
-    </task>
-    <task id="LOCAL-00062" summary="changed StepLR -&gt; ReduceLROnPlateau">
-      <created>1644246529595</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1644246529596</updated>
     </task>
     <task id="LOCAL-00063" summary="fake">
       <created>1644246574246</created>
@@ -586,7 +572,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646037806517</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="working on postprocess">
+      <created>1646064341282</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1646064341283</updated>
+    </task>
+    <task id="LOCAL-00111" summary="working on postprocess">
+      <created>1646064389266</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1646064389266</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -625,7 +625,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="set blank for slurm execution" />
     <MESSAGE value="removed between-edges connection (bidictional net)" />
     <MESSAGE value="removed set_trace()" />
     <MESSAGE value="updated with respect to v2(bcs)" />
@@ -650,6 +649,7 @@
     <MESSAGE value="set blank for slurm" />
     <MESSAGE value="set slurm multiexecution" />
     <MESSAGE value="interpolation first" />
-    <option name="LAST_COMMIT_MESSAGE" value="interpolation first" />
+    <MESSAGE value="working on postprocess" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on postprocess" />
   </component>
 </project>
