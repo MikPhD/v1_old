@@ -1,3 +1,7 @@
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** JOB 166718 ON n2 CANCELLED AT 2022-02-27T15:22:44 DUE TO TIME LIMIT ***
-slurmstepd: error: *** STEP 166718.0 ON n2 CANCELLED AT 2022-02-27T15:22:44 DUE TO TIME LIMIT ***
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1/Main.py", line 121, in <module>
+    GNN = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1/MyTrain.py", line 173, in trainDSS
+    del F, val_loss, loss_dict
+UnboundLocalError: local variable 'F' referenced before assignment
+srun: error: n2: task 0: Exited with exit code 1
