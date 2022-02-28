@@ -4,7 +4,13 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="interpolation first" />
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="interpolation first">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyPlot_stand_alone.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyPlot_stand_alone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/70-20-001-001/results.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Results/70-20-001-001/results.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/70-20-001-001/plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/70-20-001-001/plot_results.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/70-20-001-001plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/70-20-001-001plot_results.jpg" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +69,7 @@
       <recent name="$PROJECT_DIR$/../v2/dataset/processed" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MyPlot">
+  <component name="RunManager" selected="Python.MyPlot_stand_alone">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -212,17 +218,17 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.MyPostProcess" />
       <item itemvalue="Python.Main" />
-      <item itemvalue="Python.prova" />
-      <item itemvalue="Python.MyPlot_stand_alone" />
       <item itemvalue="Python.MyPlot" />
+      <item itemvalue="Python.MyPlot_stand_alone" />
+      <item itemvalue="Python.MyPostProcess" />
+      <item itemvalue="Python.prova" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MyPlot_stand_alone" />
         <item itemvalue="Python.MyPlot" />
         <item itemvalue="Python.Main" />
-        <item itemvalue="Python.MyPlot_stand_alone" />
         <item itemvalue="Python.prova" />
         <item itemvalue="Python.MyPostProcess" />
       </list>
@@ -236,13 +242,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00060" summary="setted automatition">
-      <created>1644245474075</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1644245474075</updated>
     </task>
     <task id="LOCAL-00061" summary="setted automatition">
       <created>1644245630507</created>
@@ -580,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645807715219</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="interpolation first">
+      <created>1646037806517</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1646037806517</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
