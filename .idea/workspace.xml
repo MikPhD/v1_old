@@ -218,11 +218,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Main" />
-      <item itemvalue="Python.MyPlot" />
-      <item itemvalue="Python.MyPlot_stand_alone" />
       <item itemvalue="Python.MyPostProcess" />
+      <item itemvalue="Python.Main" />
       <item itemvalue="Python.prova" />
+      <item itemvalue="Python.MyPlot_stand_alone" />
+      <item itemvalue="Python.MyPlot" />
     </list>
     <recent_temporary>
       <list>
