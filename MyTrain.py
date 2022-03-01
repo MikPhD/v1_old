@@ -158,19 +158,58 @@ class Train_DSS:
             else:
                 print("Training finished, took {:.2f}s".format(self.training_time))
 
-            if (int(epoch + 1) % n_output == 0) and (int(epoch+1 != n_output)):
+            if (int(epoch + 1) % n_output == 0) and (int(epoch + 1 != self.n_epochs)):
                 F_fin = F[str(k)].cpu().numpy()
-                np.save("./Results/" + self.set_name + "/results" + str(epoch) + ".npy", F_fin)
+                np.save("./Results/" + self.set_name + "/results" + str(epoch + 1) + ".npy", F_fin)
+
+                ## Save plot training ##
+                try:
+                    MyPlot = Plot(self.set_name)
+                    MyPlot.plot_loss()
+                    MyPlot.plot_results(epoch + 1)
+                except:
+                    print("errore di plot")
+
+                ### Save new log files ###
+                with open('Stats/' + self.set_name + '/loss_train_log.txt', 'w') as f_loss_train:
+                    f_loss_train.write(str(self.hist["loss_train"]))
+
+                with open('Stats/' + self.set_name + '/loss_val_log.txt', 'w') as f_loss_val:
+                    f_loss_val.write(str(self.hist["loss_val"]))
+
+                ### Close log files ###
+                f_loss_train.close()
+                f_loss_val.close()
+
                 print("Intermediate Plot Saved!")
                 del F, val_loss, loss_dict
 
-            if int(epoch + 1) == n_output:
+            if int(epoch + 1) == self.n_epochs:
                 F_fin = F[str(k)].cpu().numpy()
                 np.save("./Results/" + self.set_name + "/results.npy", F_fin)
+
+                ## Save plot training ##
+                try:
+                    MyPlot = Plot(self.set_name)
+                    MyPlot.plot_loss()
+                    MyPlot.plot_results("")
+                except:
+                    print("errore di plot")
+
+                ### Save new log files ###
+                with open('Stats/' + self.set_name + '/loss_train_log.txt', 'w') as f_loss_train:
+                    f_loss_train.write(str(self.hist["loss_train"]))
+
+                with open('Stats/' + self.set_name + '/loss_val_log.txt', 'w') as f_loss_val:
+                    f_loss_val.write(str(self.hist["loss_val"]))
+
+                ### Close log files ###
+                f_loss_train.close()
+                f_loss_val.close()
+
                 print("Final Results Saved")
                 del F, val_loss, loss_dict
-            else:
-                del F, val_loss, loss_dict
+
 
         ## Save last model ##
         checkpoint = {
@@ -184,26 +223,6 @@ class Train_DSS:
             'training_time': self.training_time
         }
         self.save_model(checkpoint, dirName="Model", model_name="best_model_normal_final")
-
-        ### Save new log files ###
-        with open('Stats/' + self.set_name + '/loss_train_log.txt', 'w') as f_loss_train:
-            f_loss_train.write(str(self.hist["loss_train"]))
-
-        with open('Stats/' + self.set_name + '/loss_val_log.txt', 'w') as f_loss_val:
-            f_loss_val.write(str(self.hist["loss_val"]))
-
-        ### Close log files ###
-        f_loss_train.close()
-        f_loss_val.close()
-
-        ## Save plot training ##
-        try:
-            MyPlot = Plot(self.set_name)
-            MyPlot.plot_loss()
-            MyPlot.plot_results()
-        except:
-            print("errore di plot")
-
 
         return self.net
 

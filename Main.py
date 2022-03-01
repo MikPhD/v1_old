@@ -14,11 +14,11 @@ from pdb import set_trace
 import json
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=10)
+parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=6)
 parser.add_argument('-r', '--restart', type=eval, default=False, choices=[True, False], help='Restart training option')
 parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['40'])
 parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['40'])
-parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=10)
+parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=2)
 
 args = parser.parse_args()
 
@@ -55,9 +55,9 @@ if not restart:
         os.remove("./Model/best_model_normal_final.pt")
 
 print("#################### DATA ADAPTING FOR GNN #######################")
-createdata = CreateData()
-createdata.transform(train_cases, 'train')
-createdata.transform(val_cases, 'val')
+# createdata = CreateData()
+# createdata.transform(train_cases, 'train')
+# createdata.transform(val_cases, 'val')
 
 k_list=[70]
 latent_dimension_list=[20]

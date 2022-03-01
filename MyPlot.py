@@ -34,6 +34,7 @@ class Plot:
         plt.savefig("Stats/" + self.set_name + "plot_loss.jpg")
         plt.savefig("Stats/" + self.set_name + "/plot_loss.jpg")
 
+
         ### Close Files ###
         f_train.close()
         f_val.close()
@@ -42,7 +43,7 @@ class Plot:
         xy = mesh.coordinates()
         return tri.Triangulation(xy[:, 0], xy[:, 1], mesh.cells())
 
-    def plot(self, obj):
+    def plot(self, obj, fig):
         # plt.gca().set_aspect('equal')
         mesh = obj.function_space().mesh()
 
@@ -65,7 +66,7 @@ class Plot:
                 levels = np.linspace(vmin, vmax, 100)
                 formatter = ScalarFormatter()
                 norm = mpl.colors.Normalize(vmin=vmin, vmax=vmax)
-                fig = plt.figure(figsize=(10, 5))
+
                 ax = fig.add_subplot(111)
                 c = ax.tricontourf(x, y, t, v, levels=levels, norm=norm,
                                    cmap=plt.get_cmap(cmap))
@@ -85,7 +86,7 @@ class Plot:
         elif isinstance(obj, Mesh):
             plt.triplot(self.mesh2triang(obj), color='k')
 
-    def plot_results(self, n_epoch = ""):
+    def plot_results(self, n_epoch):
 
         ####### loading mesh ########
         mesh = Mesh()
@@ -110,7 +111,7 @@ class Plot:
         #     h5file.read(f, "forcing")
 
         # ####### loading forcing from GNN ################
-        F_gnn = np.load("./Results/" + self.set_name + "/results.npy").flatten()
+        F_gnn = np.load("./Results/" + self.set_name + "/results" + str(n_epoch) + ".npy").flatten()
         # mesh_points = np.load('./Results/mesh_points.npy').tolist()
         mesh_points = mesh.coordinates().tolist()
 
@@ -122,7 +123,8 @@ class Plot:
             u.vector()[(index) + 1] = F_gnn[(i*2) + 1]
 
         # ####### plot ########
-        plt.figure()
-        self.plot(u.sub(0))
-        plt.savefig("Stats/" + self.set_name + "plot_results" + n_epoch + ".jpg")
-        plt.savefig("Stats/" + self.set_name + "/plot_results" + n_epoch + ".jpg")
+        fig = plt.figure(figsize=(10, 5))
+        self.plot(u.sub(0), fig)
+        plt.savefig("Stats/" + self.set_name + "plot_results.jpg")
+        plt.savefig("Stats/" + self.set_name + "/plot_results" + str(n_epoch) + ".jpg")
+        plt.close(fig)
