@@ -21,7 +21,7 @@ class Plot:
         ### Open log files
         with open('Stats/' + self.set_name + '/loss_train_log.txt', 'r') as f_train:
             mydata_train = ast.literal_eval(f_train.read())
-        with open('Stats/' + self.set_name + '/loss_train_log.txt', 'r') as f_val:
+        with open('Stats/' + self.set_name + '/loss_val_log.txt', 'r') as f_val:
             mydata_val = ast.literal_eval(f_val.read())
 
         ### define axis and data ###
@@ -30,9 +30,13 @@ class Plot:
         y_train = mydata_train
         y_val = mydata_val
 
-        plt.plot(x, y_train, x, y_val)
-        plt.savefig("Stats/" + self.set_name + "plot_loss.jpg")
-        plt.savefig("Stats/" + self.set_name + "/plot_loss.jpg")
+        fig_loss, ax_loss = plt.subplots(figsize=(10, 5))
+        ax_loss.plot(x, y_train, label='train')
+        ax_loss.plot(x, y_val, label='val')
+        ax_loss.legend()
+        fig_loss.savefig("Stats/" + self.set_name + "plot_loss.jpg")
+        fig_loss.savefig("Stats/" + self.set_name + "/plot_loss.jpg")
+        plt.close(fig=fig_loss)
 
 
         ### Close Files ###
@@ -43,7 +47,7 @@ class Plot:
         xy = mesh.coordinates()
         return tri.Triangulation(xy[:, 0], xy[:, 1], mesh.cells())
 
-    def plot(self, obj, fig):
+    def plot(self, obj, n_epoch):
         # plt.gca().set_aspect('equal')
         mesh = obj.function_space().mesh()
 
@@ -66,21 +70,25 @@ class Plot:
                 levels = np.linspace(vmin, vmax, 100)
                 formatter = ScalarFormatter()
                 norm = mpl.colors.Normalize(vmin=vmin, vmax=vmax)
-
-                ax = fig.add_subplot(111)
-                c = ax.tricontourf(x, y, t, v, levels=levels, norm=norm,
+                fig_plot, ax_plot = plt.subplots(figsize=(10, 5))
+                c = ax_plot.tricontourf(x, y, t, v, levels=levels, norm=norm,
                                    cmap=plt.get_cmap(cmap))
-                plt.axis('equal')
-                p = ax.triplot(x, y, t, '-', lw=0.5, alpha=0.0)
-                ax.set_xlim([x.min(), x.max()])
-                ax.set_ylim([y.min(), y.max()])
-                ax.set_xlabel(' $\it{Coordinata\:x}$')
-                ax.set_ylabel(' $\it{Coordinata\:y}$')
+                ax_plot.axis('equal')
+                # plt.axis('equal')
+                p = ax_plot.triplot(x, y, t, '-', lw=0.5, alpha=0.0)
+                ax_plot.set_xlim([x.min(), x.max()])
+                ax_plot.set_ylim([y.min(), y.max()])
+                ax_plot.set_xlabel(' $\it{Coordinata\:x}$')
+                ax_plot.set_ylabel(' $\it{Coordinata\:y}$')
                 # tit = plt.title('Componente x del tensore di Reynolds')
                 divider = make_axes_locatable(plt.gca())
                 cax = divider.append_axes('right', "4%", pad="2%")
                 colorbar_format = '% 1.1f'
                 cbar = plt.colorbar(mpl.cm.ScalarMappable(norm=norm, cmap=cmap), cax=cax, format=colorbar_format)
+
+                fig_plot.savefig("Stats/" + self.set_name + "plot_results.jpg")
+                fig_plot.savefig("Stats/" + self.set_name + "/plot_results" + str(n_epoch) + ".jpg")
+                plt.close(fig_plot)
 
 
         elif isinstance(obj, Mesh):
@@ -123,8 +131,5 @@ class Plot:
             u.vector()[(index) + 1] = F_gnn[(i*2) + 1]
 
         # ####### plot ########
-        fig = plt.figure(figsize=(10, 5))
-        self.plot(u.sub(0), fig)
-        plt.savefig("Stats/" + self.set_name + "plot_results.jpg")
-        plt.savefig("Stats/" + self.set_name + "/plot_results" + str(n_epoch) + ".jpg")
-        plt.close(fig)
+        self.plot(u.sub(0), n_epoch)
+
