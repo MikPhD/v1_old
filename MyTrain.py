@@ -63,156 +63,156 @@ class Train_DSS:
         return optimizer, scheduler, epoch, min_val_loss
 
 
-    def trainDSS(self, loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch_in, k, n_output):
-        for epoch in range(epoch_in, self.n_epochs):
-            time_counter = time.time()
+    def trainDSS(self, loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output):
 
-            total_train_loss, running_loss = 0, 0
-            final_loss, running_final_loss = 0, 0
-            # rmse, running_rmse = 0, 0
+        time_counter = time.time()
 
-            #set net in train mode
-            self.net.train()
+        total_train_loss, running_loss = 0, 0
+        final_loss, running_final_loss = 0, 0
+        # rmse, running_rmse = 0, 0
 
-            for i, train_data in enumerate(loader_train):
+        #set net in train mode
+        self.net.train()
 
-                #training operation
-                optimizer.zero_grad()
-                F, train_loss, loss_dict = self.net(train_data)
-                # sol_lu = train_data.x.to(U[str(k)].device)
-                # sol_lu = torch.cat([data.x for data in train_data]).to(U[str(k)].device)
-                # sol_lu = torch.cat([(next(iter(train_data))).x]).to(U[str(k)].device)
+        for i, train_data in enumerate(loader_train):
 
-                train_loss.sum().backward()
-                torch.nn.utils.clip_grad_norm_(self.net.parameters(), 1.e-3)  # da riattivare
-                optimizer.step()
-                total_train_loss += train_loss.sum().item()
-                final_loss += loss_dict[str(k)].sum().item()
+            #training operation
+            optimizer.zero_grad()
+            F, train_loss, loss_dict = self.net(train_data)
+            # sol_lu = train_data.x.to(U[str(k)].device)
+            # sol_lu = torch.cat([data.x for data in train_data]).to(U[str(k)].device)
+            # sol_lu = torch.cat([(next(iter(train_data))).x]).to(U[str(k)].device)
 
-                running_loss += train_loss.sum().item()
-                running_final_loss += loss_dict[str(k)].sum().item()
+            train_loss.sum().backward()
+            torch.nn.utils.clip_grad_norm_(self.net.parameters(), 1.e-3)  # da riattivare
+            optimizer.step()
+            total_train_loss += train_loss.sum().item()
+            final_loss += loss_dict[str(k)].sum().item()
 
-                ##print during training set cycle loop
-                if (i + 1) % (len(loader_train) // 5 + 1) == 0:
-                    print(
-                        "Epoch {}, {:d}% \t train_loss: {:.5e}".format(
-                            epoch + 1,
-                            int(100 * (i + 1) / len(loader_train)),
-                            running_loss / (len(loader_train) // 1)))
+            running_loss += train_loss.sum().item()
+            running_final_loss += loss_dict[str(k)].sum().item()
 
-                    running_loss = 0.0
-                    running_final_loss = 0
+            ##print during training set cycle loop
+            if (i + 1) % (len(loader_train) // 5 + 1) == 0:
+                print(
+                    "Epoch {}, {:d}% \t train_loss: {:.5e}".format(
+                        epoch + 1,
+                        int(100 * (i + 1) / len(loader_train)),
+                        running_loss / (len(loader_train) // 1)))
 
-                del F, train_loss, loss_dict
-                torch.cuda.empty_cache()
+                running_loss = 0.0
+                running_final_loss = 0
 
-                sys.stdout.flush()
-
-            self.hist["loss_train"].append(final_loss / len(loader_train))
-            print("Training loss = {:.5e}".format(total_train_loss / len(loader_train)))
-
-            total_val_loss = 0
-            final_loss_val = 0
-
-            # set net in validation mode
-            self.net.eval()
-
-            # validation operation
-            with torch.no_grad():
-                for val_data in loader_val:
-                    F, val_loss, loss_dict = self.net(val_data)
-                    # sol_lu = val_data.x.to(U[str(k)].device) #da riattivare
-                    total_val_loss += val_loss.sum().item()
-                    final_loss_val += loss_dict[str(k)].sum().item()
-                    # corr_val += corrcoef(U[str(k)], sol_lu)
-                    # rmse_val += torch.sqrt(torch.mean(U[str(k)] - sol_lu) ** 2)
-
-            scheduler.step(total_val_loss)
-
-            self.hist["loss_val"].append(final_loss_val / len(loader_val))
-            self.training_time = self.training_time + (time.time() - time_counter)
-            print("Validation loss = {:.5e}".format(total_val_loss / len(loader_val)))
-
-
+            del F, train_loss, loss_dict
             torch.cuda.empty_cache()
 
             sys.stdout.flush()
 
-            if final_loss_val / len(loader_val) <= min_val_loss:
+        self.hist["loss_train"].append(final_loss / len(loader_train))
+        print("Training loss = {:.5e}".format(total_train_loss / len(loader_train)))
 
-                checkpoint = {
-                    'epoch': epoch + 1,
-                    'min_val_loss': final_loss_val / len(loader_val),
-                    'state_dict': self.net.state_dict(),
-                    'optimizer': optimizer.state_dict(),
-                    'scheduler': scheduler.state_dict(),
-                    'loss_train': self.hist["loss_train"],
-                    'loss_val': self.hist["loss_val"],
-                    'training_time': self.training_time
-                }
-                # save model
-                self.save_model(checkpoint, dirName="Model", model_name="best_model")
-                min_val_loss = final_loss_val / len(loader_val)
-                print("Training finished, took {:.2f}s, MODEL SAVED".format(self.training_time))
+        total_val_loss = 0
+        final_loss_val = 0
 
-            else:
-                print("Training finished, took {:.2f}s".format(self.training_time))
+        # set net in validation mode
+        self.net.eval()
 
-            if (int(epoch + 1) % n_output == 0) and (int(epoch + 1 != self.n_epochs)):
-                F_fin = F[str(k)].cpu().numpy()
-                np.save("./Results/" + self.set_name + "/results" + str(epoch + 1) + ".npy", F_fin)
+        # validation operation
+        with torch.no_grad():
+            for val_data in loader_val:
+                F, val_loss, loss_dict = self.net(val_data)
+                # sol_lu = val_data.x.to(U[str(k)].device) #da riattivare
+                total_val_loss += val_loss.sum().item()
+                final_loss_val += loss_dict[str(k)].sum().item()
+                # corr_val += corrcoef(U[str(k)], sol_lu)
+                # rmse_val += torch.sqrt(torch.mean(U[str(k)] - sol_lu) ** 2)
 
-                ### Save new log files ###
-                with open('Stats/' + self.set_name + '/loss_train_log.txt', 'w') as f_loss_train:
-                    f_loss_train.write(str(self.hist["loss_train"]))
+        scheduler.step(total_val_loss)
 
-                with open('Stats/' + self.set_name + '/loss_val_log.txt', 'w') as f_loss_val:
-                    f_loss_val.write(str(self.hist["loss_val"]))
+        self.hist["loss_val"].append(final_loss_val / len(loader_val))
+        self.training_time = self.training_time + (time.time() - time_counter)
+        print("Validation loss = {:.5e}".format(total_val_loss / len(loader_val)))
 
-                ### Close log files ###
-                f_loss_train.close()
-                f_loss_val.close()
 
-                ## Save plot training ##
+        torch.cuda.empty_cache()
+
+        sys.stdout.flush()
+
+        if final_loss_val / len(loader_val) <= min_val_loss:
+
+            checkpoint = {
+                'epoch': epoch + 1,
+                'min_val_loss': final_loss_val / len(loader_val),
+                'state_dict': self.net.state_dict(),
+                'optimizer': optimizer.state_dict(),
+                'scheduler': scheduler.state_dict(),
+                'loss_train': self.hist["loss_train"],
+                'loss_val': self.hist["loss_val"],
+                'training_time': self.training_time
+            }
+            # save model
+            self.save_model(checkpoint, dirName="Model", model_name="best_model")
+            min_val_loss = final_loss_val / len(loader_val)
+            print("Training finished, took {:.2f}s, MODEL SAVED".format(self.training_time))
+
+        else:
+            print("Training finished, took {:.2f}s".format(self.training_time))
+
+        if (int(epoch + 1) % n_output == 0) and (int(epoch + 1 != self.n_epochs)):
+            F_fin = F[str(k)].cpu().numpy()
+            np.save("./Results/" + self.set_name + "/results" + str(epoch + 1) + ".npy", F_fin)
+
+            ### Save new log files ###
+            with open('Stats/' + self.set_name + '/loss_train_log.txt', 'w') as f_loss_train:
+                f_loss_train.write(str(self.hist["loss_train"]))
+
+            with open('Stats/' + self.set_name + '/loss_val_log.txt', 'w') as f_loss_val:
+                f_loss_val.write(str(self.hist["loss_val"]))
+
+            ### Close log files ###
+            f_loss_train.close()
+            f_loss_val.close()
+
+            ## Save plot training ##
+            MyPlot = Plot(self.set_name)
+            MyPlot.plot_loss()
+            MyPlot.plot_results(epoch + 1)
+            # try:
+            #     MyPlot = Plot(self.set_name)
+            #     MyPlot.plot_loss()
+            #     MyPlot.plot_results(epoch + 1)
+            # except:
+            #     print("errore di plot")
+
+            print("Intermediate Plot Saved!")
+            del F, val_loss, loss_dict
+
+        if int(epoch + 1) == self.n_epochs:
+            F_fin = F[str(k)].cpu().numpy()
+            np.save("./Results/" + self.set_name + "/results.npy", F_fin)
+
+            ### Save new log files ###
+            with open('Stats/' + self.set_name + '/loss_train_log.txt', 'w') as f_loss_train:
+                f_loss_train.write(str(self.hist["loss_train"]))
+
+            with open('Stats/' + self.set_name + '/loss_val_log.txt', 'w') as f_loss_val:
+                f_loss_val.write(str(self.hist["loss_val"]))
+
+            ### Close log files ###
+            f_loss_train.close()
+            f_loss_val.close()
+
+            ## Save plot training ##
+            try:
                 MyPlot = Plot(self.set_name)
                 MyPlot.plot_loss()
-                MyPlot.plot_results(epoch + 1)
-                # try:
-                #     MyPlot = Plot(self.set_name)
-                #     MyPlot.plot_loss()
-                #     MyPlot.plot_results(epoch + 1)
-                # except:
-                #     print("errore di plot")
-
-                print("Intermediate Plot Saved!")
-                del F, val_loss, loss_dict
-
-            if int(epoch + 1) == self.n_epochs:
-                F_fin = F[str(k)].cpu().numpy()
-                np.save("./Results/" + self.set_name + "/results.npy", F_fin)
-
-                ### Save new log files ###
-                with open('Stats/' + self.set_name + '/loss_train_log.txt', 'w') as f_loss_train:
-                    f_loss_train.write(str(self.hist["loss_train"]))
-
-                with open('Stats/' + self.set_name + '/loss_val_log.txt', 'w') as f_loss_val:
-                    f_loss_val.write(str(self.hist["loss_val"]))
-
-                ### Close log files ###
-                f_loss_train.close()
-                f_loss_val.close()
-
-                ## Save plot training ##
-                try:
-                    MyPlot = Plot(self.set_name)
-                    MyPlot.plot_loss()
-                    MyPlot.plot_results("")
-                except:
-                    print("errore di plot")
+                MyPlot.plot_results("")
+            except:
+                print("errore di plot")
 
 
-                print("Final Results Saved")
-                del F, val_loss, loss_dict
+            print("Final Results Saved")
+            del F, val_loss, loss_dict
 
 
         ## Save last model ##
@@ -228,7 +228,7 @@ class Train_DSS:
         }
         self.save_model(checkpoint, dirName="Model", model_name="best_model_normal_final")
 
-        return self.net
+        return self.net, (total_val_loss / len(loader_val))
 
 
 # def loss_function(U, edge_index, edge_attr, y): ##non utilizzata --> utilizzo mse_loss

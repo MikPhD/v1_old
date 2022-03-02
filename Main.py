@@ -9,16 +9,15 @@ import os
 import shutil
 from torch_geometric.data import DataListLoader
 from torch_geometric.data import DataLoader
-from torch_geometric.nn import DataParallel
-from pdb import set_trace
-import json
+import optuna
+from optuna.trial import TrialState
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=6)
+parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=1)
 parser.add_argument('-r', '--restart', type=eval, default=False, choices=[True, False], help='Restart training option')
 parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['40'])
 parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['40'])
-parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=1)
+parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=6)
 
 args = parser.parse_args()
 
@@ -59,69 +58,90 @@ print("#################### DATA ADAPTING FOR GNN #######################")
 # createdata.transform(train_cases, 'train')
 # createdata.transform(val_cases, 'val')
 
-k_list=[70]
-latent_dimension_list=[20]
-gamma_list=[0.5]
-alpha_list=[1e-2]
-lr_list=[0.01]
-
-
 #check if gpu is available
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Running on : ', device)
 
-for k in k_list:
-    for latent_dimension in latent_dimension_list:
-        for gamma in gamma_list:
-            for alpha in alpha_list:
-                for lr in lr_list:
+def objective(trial):
 
-                    set_name = str(k) +'-'+ str(latent_dimension).replace(".","") +'-'+ str(alpha).replace(".","") +'-'+ str(lr).replace(".","")
-                    print("PARAMETER SET: k:{}, laten_dim:{}, alpha:{}, lr:{}".format(str(k), str(latent_dimension), str(alpha), str(lr)))
-                    os.makedirs("./Results/" + set_name, exist_ok=True)
-                    os.makedirs("./Stats/" + set_name, exist_ok=True)
+    print("#################### CREATING Inner DATASET #######################")
+    loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases, device=device)
+    loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases, device=device)
 
-                    print("#################### CREATING Inner DATASET #######################")
-                    loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases, device=device)
-                    loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases, device=device)
-
-                    #initialize the created dataset
-                    loader_train = DataLoader(loader_train) #opt args: shuffle, batchsize
-                    loader_val = DataLoader(loader_val)
-
-                    print("#################### DSS NET parameter #######################")
-
-                    #create hyperparameter
-                    latent_dimension = latent_dimension
-                    print("Latent space dim : ", latent_dimension)
-                    k = k
-                    print("Number of updates : ", k)
-                    gamma = gamma
-                    print("Gamma (loss function) : ", gamma)
-                    alpha = alpha
-                    print("Alpha (reduction correction) :", alpha)
-                    lr = lr
-                    print("LR (Learning rate):", lr)
+    #initialize the created dataset
+    loader_train = DataLoader(loader_train) #opt args: shuffle, batchsize
+    loader_val = DataLoader(loader_val)
 
 
-                    print("#################### CREATING NETWORKS #######################")
-                    DSS = MyOwnDSSNet(latent_dimension = latent_dimension, k = k, gamma = gamma, alpha = alpha, device=device)
-                    # # # DSS = DataParallel(DSS)
-                    DSS = DSS.to(device)
-                    # # #DSS = DSS.double()
+    print("#################### DSS NET parameter #######################")
+    #create hyperparameter
+    latent_dimension = trial.suggest_int("latent_dimension", 10,30)
+    print("Latent space dim : ", latent_dimension)
+    k = trial.suggest_int("k", 30,100)
+    print("Number of updates : ", k)
+    gamma = (trial.suggest_int("gamma", 1, 9))/10 #gamma between 0.1 and 0.9
+    print("Gamma (loss function) : ", gamma)
+    alpha = (trial.suggest_int("alpha", 1, 5))/100 #alpha between 0.01 and 0.03
+    print("Alpha (reduction correction) :", alpha)
+    lr = (trial.suggest_int("lr", 1, 9))/1000 #lr between 0.001 and 0.009
+    print("LR (Learning rate):", lr)
 
-                    print("#################### TRAINING #######################")
-                    train_dss = Train_DSS(net=DSS, learning_rate=lr, n_epochs=n_epoch, device=device, set_name=set_name)
 
-                    optimizer, scheduler, epoch, min_val_loss = train_dss.createOptimizerAndScheduler()
+    print("#################### CREATING NETWORKS #######################")
+    DSS = MyOwnDSSNet(latent_dimension = latent_dimension, k = k, gamma = gamma, alpha = alpha, device=device)
+    # # # DSS = DataParallel(DSS)
+    DSS = DSS.to(device)
+    # # #DSS = DSS.double()
 
-                    if restart:
-                        optimizer, scheduler, epoch, min_val_loss = train_dss.restart(optimizer, scheduler, path='Model/best_model.pt')
+    print("#################### TRAINING #######################")
+    train_dss = Train_DSS(net=DSS, learning_rate=lr, n_epochs=n_epoch, device=device)
 
-                    GNN = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
-                    #
-                    # # set_trace()
-                    #
-                    sys.stdout.flush()
+    optimizer, scheduler, epoch, min_val_loss = train_dss.createOptimizerAndScheduler()
 
-                    del DSS, GNN, loader_val, loader_train, optimizer, scheduler
+    if restart:
+        optimizer, scheduler, epoch, min_val_loss = train_dss.restart(optimizer, scheduler, path='Model/best_model.pt')
+
+    for epoch in range(epoch, n_epoch):
+        GNN, validation_loss = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
+
+        trial.report(validation_loss, epoch)
+
+        # Handle pruning based on the intermediate value.
+        if trial.should_prune():
+            raise optuna.TrialPruned()
+
+
+    sys.stdout.flush()
+
+    del DSS, GNN, loader_val, loader_train, optimizer, scheduler
+
+    return validation_loss
+
+study = optuna.create_study(direction="minimize")
+study.optimize(objective, n_trials=3)
+
+pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
+complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
+
+print("Study statistics: ")
+print("  Number of finished trials: ", len(study.trials))
+print("  Number of pruned trials: ", len(pruned_trials))
+print("  Number of complete trials: ", len(complete_trials))
+
+print("Best trial:")
+trial = study.best_trial
+
+print("  Value: ", trial.value)
+
+print("  Params: ")
+for key, value in trial.params.items():
+    print("    {}: {}".format(key, value))
+
+fig_optuna = optuna.visualization.plot_contour(study)
+fig_optuna.show()
+fig_optuna.write_image("./fig_optuna.jpeg")
+
+fig_importance = optuna.visualization.plot_param_importances(study)
+fig_importance.show()
+fig_importance.write_image("./fig_importance.jpeg")
+
