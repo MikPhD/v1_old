@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="set blank for slurm execution">
-      <change afterPath="$PROJECT_DIR$/Results/results.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/loss_train_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/loss_val_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/plot_loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fig_importance.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fig_optuna.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model_normal_final.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig_importance.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig_optuna.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/case.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/case.out" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,12 +226,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.MyPostProcess" />
       <item itemvalue="Python.Main" />
-      <item itemvalue="Python.prova" />
-      <item itemvalue="Python.MyPlot_stand_alone" />
       <item itemvalue="Python.MyPlot" />
+      <item itemvalue="Python.MyPlot_stand_alone" />
       <item itemvalue="Python.MyPostProcess (1)" />
+      <item itemvalue="Python.MyPostProcess" />
+      <item itemvalue="Python.prova" />
     </list>
     <recent_temporary>
       <list>
