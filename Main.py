@@ -11,6 +11,9 @@ from torch_geometric.data import DataListLoader
 from torch_geometric.data import DataLoader
 import optuna
 from optuna.trial import TrialState
+from optuna.pruners import ThresholdPruner
+from optuna import TrialPruned
+import math
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=1)
@@ -106,6 +109,9 @@ def objective(trial):
 
         trial.report(validation_loss, epoch)
 
+        if math.isnan(validation_loss) or math.isinf(validation_loss):
+            break
+
         # Handle pruning based on the intermediate value.
         if trial.should_prune():
             raise optuna.TrialPruned()
@@ -117,8 +123,8 @@ def objective(trial):
 
     return validation_loss
 
-study = optuna.create_study(direction="minimize")
-study.optimize(objective, n_trials=3)
+study = optuna.create_study(direction="minimize", pruner=ThresholdPruner(lower=0, upper=0.05, n_warmup_steps=100))
+study.optimize(objective)
 
 pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
 complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
