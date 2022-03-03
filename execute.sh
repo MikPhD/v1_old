@@ -1,5 +1,5 @@
 #!/bin/sh
-#SBATCH -J v1_interpolazione
+#SBATCH -J v1_optuna
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=64G
