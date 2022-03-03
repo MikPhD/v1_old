@@ -14,13 +14,14 @@ from optuna.trial import TrialState
 from optuna.pruners import ThresholdPruner
 from optuna import TrialPruned
 import math
+import logging
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=1)
+parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=5)
 parser.add_argument('-r', '--restart', type=eval, default=False, choices=[True, False], help='Restart training option')
 parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['40'])
 parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['40'])
-parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=6)
+parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=5)
 
 args = parser.parse_args()
 
@@ -89,6 +90,13 @@ def objective(trial):
     lr = (trial.suggest_int("lr", 1, 9))/1000 #lr between 0.001 and 0.009
     print("LR (Learning rate):", lr)
 
+    ##create folder for different results ##
+    set_name = str(k) + '-' + str(latent_dimension).replace(".", "") + '-' + str(alpha).replace(".", "") + '-' + str(
+        lr).replace(".", "")
+    print("PARAMETER SET: k:{}, laten_dim:{}, alpha:{}, lr:{}".format(str(k), str(latent_dimension), str(alpha), str(lr)))
+    os.makedirs("./Results/" + set_name, exist_ok=True)
+    os.makedirs("./Stats/" + set_name, exist_ok=True)
+
 
     print("#################### CREATING NETWORKS #######################")
     DSS = MyOwnDSSNet(latent_dimension = latent_dimension, k = k, gamma = gamma, alpha = alpha, device=device)
@@ -97,7 +105,7 @@ def objective(trial):
     # # #DSS = DSS.double()
 
     print("#################### TRAINING #######################")
-    train_dss = Train_DSS(net=DSS, learning_rate=lr, n_epochs=n_epoch, device=device)
+    train_dss = Train_DSS(net=DSS, learning_rate=lr, n_epochs=n_epoch, device=device, set_name=set_name)
 
     optimizer, scheduler, epoch, min_val_loss = train_dss.createOptimizerAndScheduler()
 
@@ -123,8 +131,15 @@ def objective(trial):
 
     return validation_loss
 
-study = optuna.create_study(direction="minimize", pruner=ThresholdPruner(lower=0, upper=0.05, n_warmup_steps=100))
-study.optimize(objective)
+################## to be uncommented only when want to log #######################
+optuna.logging.get_logger("optuna").addHandler(logging.StreamHandler(sys.stdout))
+study_name = "first-search"  # Unique identifier of the study.
+storage_name = "sqlite:///{}.db".format(study_name)
+##################################################################################
+
+pruner = ThresholdPruner(lower=0, upper=0.05, n_warmup_steps=100)
+study = optuna.create_study(study_name=study_name, storage=storage_name, direction="minimize", pruner=pruner)
+study.optimize(objective, n_trials=5)
 
 pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
 complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
@@ -151,3 +166,6 @@ fig_importance = optuna.visualization.plot_param_importances(study)
 fig_importance.show()
 fig_importance.write_image("./fig_importance.jpeg")
 
+fig_intermediate = optuna.visualization.plot_intermediate_values(study)
+fig_intermediate.show()
+fig_intermediate.write_image("./fig_intermediate.jpeg")
