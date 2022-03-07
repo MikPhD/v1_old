@@ -124,17 +124,18 @@ def objective(trial):
         if trial.should_prune():
             raise optuna.TrialPruned()
 
-        with open('./Memory_allocated.txt', 'a') as mem_alloc_file:
-            mem_alloc_file.write(f'memory allocated:{str(torch.cuda.memory_allocated(device))}\n')
-            mem_alloc_file.write(f'memory reserved:{str(torch.cuda.memory_reserved(device))}\n')
-            mem_alloc_file.write(f'memory cached:{str(torch.cuda.memory_cached(device))}\n')
-            mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_allocated(device))}\n')
-            mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_reserved(device))}\n')
-            mem_alloc_file.write(f'max_memory cached: {str(torch.cuda.max_memory_cached(device))}\n')
-
-        with open('./Memory_stat.txt', 'a') as mem_stats:
-            for item in torch.cuda.memory_stats(device).items():
-                mem_stats.write(f'Memory stats: {item}\n')
+        # use of cuda.memory -> nothing relevant
+        # with open('./Memory_allocated.txt', 'a') as mem_alloc_file:
+        #     mem_alloc_file.write(f'memory allocated:{str(torch.cuda.memory_allocated(device))}\n')
+        #     mem_alloc_file.write(f'memory reserved:{str(torch.cuda.memory_reserved(device))}\n')
+        #     mem_alloc_file.write(f'memory cached:{str(torch.cuda.memory_cached(device))}\n')
+        #     mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_allocated(device))}\n')
+        #     mem_alloc_file.write(f'max_memory reserved: {str(torch.cuda.max_memory_reserved(device))}\n')
+        #     mem_alloc_file.write(f'max_memory cached: {str(torch.cuda.max_memory_cached(device))}\n')
+        #
+        # with open('./Memory_stat.txt', 'a') as mem_stats:
+        #     for item in torch.cuda.memory_stats(device).items():
+        #         mem_stats.write(f'Memory stats: {item}\n')
 
         #torch.cuda.memory_snapshot() #probabily wirking just on cuda
 
