@@ -133,10 +133,8 @@ def objective(trial):
         with open('./Memory_allocated.txt', 'a') as mem_alloc_file:
             mem_alloc_file.write(f'memory allocated:{str(torch.cuda.memory_allocated(device))}\n')
             mem_alloc_file.write(f'memory reserved:{str(torch.cuda.memory_reserved(device))}\n')
-            mem_alloc_file.write(f'memory cached:{str(torch.cuda.memory_cached(device))}\n')
             mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_allocated(device))}\n')
             mem_alloc_file.write(f'max_memory reserved: {str(torch.cuda.max_memory_reserved(device))}\n')
-            mem_alloc_file.write(f'max_memory cached: {str(torch.cuda.max_memory_cached(device))}\n')
 
         with open('./Memory_summary.txt', 'a') as mem_summ_file:
             mem_summ_file.write(f'memory allocated:{str(torch.cuda.memory_summary(device))}\n')
@@ -156,7 +154,7 @@ storage_name = "sqlite:///{}.db".format(study_name)
 
 pruner = ThresholdPruner(lower=0, upper=0.010, n_warmup_steps=100)
 study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner)
-study.optimize(objective, n_trials=10)
+study.optimize(objective)
 
 pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
 complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])

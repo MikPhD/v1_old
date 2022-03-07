@@ -7,11 +7,7 @@
     <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="trying execute on cuda slurm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model_normal_final.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Mesh.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_train.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_train.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_val.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_val.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="gru" />
         <entry key="$PROJECT_DIR$/../v2" value="bcs" />
       </map>
     </option>
@@ -157,27 +153,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MyPostProcess" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="v2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../v2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../v2/MyPostProcess.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="plotter_generale" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -200,20 +175,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.MyPostProcess" />
       <item itemvalue="Python.Main" />
-      <item itemvalue="Python.MyPlot_stand_alone" />
       <item itemvalue="Python.MyPlot" />
+      <item itemvalue="Python.MyPlot_stand_alone" />
       <item itemvalue="Python.MyPostProcess (1)" />
       <item itemvalue="Python.plotter_generale" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Main" />
         <item itemvalue="Python.plotter_generale" />
         <item itemvalue="Python.MyPostProcess (1)" />
-        <item itemvalue="Python.MyPlot_stand_alone" />
         <item itemvalue="Python.MyPlot" />
+        <item itemvalue="Python.MyPlot_stand_alone" />
+        <item itemvalue="Python.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -225,20 +199,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00069" summary="set dropout p= 0.2&#10;StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
-      <created>1644250684745</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1644250684745</updated>
-    </task>
-    <task id="LOCAL-00070" summary="set dropout p= 0.2&#10;StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
-      <created>1644424832977</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1644424832977</updated>
     </task>
     <task id="LOCAL-00071" summary="iniziata nuova versione mikversion...">
       <created>1644427631027</created>
@@ -569,7 +529,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646652091268</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="trying execute on cuda slurm">
+      <created>1646661335172</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1646661335178</updated>
+    </task>
+    <task id="LOCAL-00119" summary="trying execute on cuda slurm">
+      <created>1646661430296</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1646661430296</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
