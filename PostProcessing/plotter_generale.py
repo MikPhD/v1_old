@@ -40,13 +40,19 @@ for i in range(0, len(general_list), 6):
 
 x = np.array(range(len(list_allocated)))
 
+curve = list_max_allocated
+
 fig1 = plt.figure(figsize=(15,8))
-plt.plot(x, list_allocated, label='allocated')
-plt.plot(x, list_reserved, label='reserved')
-plt.plot(x, list_cached, label='cached')
-plt.plot(x, list_max_allocated, label='max_alloc')
-plt.plot(x, list_max_reserved, label='max_reserved')
-plt.plot(x, list_max_cached, label='max_cached')
+plt.plot(x, curve, label=str(curve))
+mean = []
+for i in range(len(curve)):
+    mean.append(np.mean(curve[:i]))
+plt.plot(x, mean)
+# plt.plot(x, list_reserved, label='reserved')
+# plt.plot(x, list_cached, label='cached')
+# plt.plot(x, list_max_allocated, label='max_alloc')
+# plt.plot(x, list_max_reserved, label='max_reserved')
+# plt.plot(x, list_max_cached, label='max_cached')
 
 # list_allocated = list_allocated.sort()
 # list_allocated = list_allocated.sort()
