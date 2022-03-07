@@ -124,6 +124,19 @@ def objective(trial):
         if trial.should_prune():
             raise optuna.TrialPruned()
 
+        with open('./Memory_allocated.txt', 'a') as mem_alloc_file:
+            mem_alloc_file.write(f'memory allocated:{str(torch.cuda.memory_allocated(device))}')
+            mem_alloc_file.write(f'memory reserved:{str(torch.cuda.memory_reserved(device))}')
+            mem_alloc_file.write(f'memory cached:{str(torch.cuda.memory_cached(device))}')
+            mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_allocated(device))}')
+            mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_reserved(device))}')
+            mem_alloc_file.write(f'max_memory cached: {str(torch.cuda.max_memory_cached(device))}')
+
+        with open('./Memory_stat.txt', 'a') as mem_stats:
+            mem_stats.write(f'Memory stats: {str(torch.cuda.memory_stats())}')
+
+        torch.cuda.memory_snapshot()
+
 
     sys.stdout.flush()
 
@@ -133,13 +146,13 @@ def objective(trial):
 
 ################## to be uncommented only when want to log #######################
 optuna.logging.get_logger("optuna").addHandler(logging.StreamHandler(sys.stdout))
-study_name = "first-search"  # Unique identifier of the study.
+study_name = "check_memory"  # Unique identifier of the study.
 storage_name = "sqlite:///{}.db".format(study_name)
 ##################################################################################
 
 pruner = ThresholdPruner(lower=0, upper=0.010, n_warmup_steps=100)
 study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner)
-study.optimize(objective, n_trials=0)
+study.optimize(objective, n_trials=10)
 
 pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
 complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])

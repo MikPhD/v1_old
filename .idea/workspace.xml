@@ -4,23 +4,9 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="set blank for slurm execution">
-      <change afterPath="$PROJECT_DIR$/PostProcessing/Figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fig_importance.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fig_intermediate.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fig_optuna.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/v1.iml" afterDir="false" />
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="update useless">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/results.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/results.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_train.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_val.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/pre_filter.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/pre_transform.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-search.db" beforeDir="false" afterPath="$PROJECT_DIR$/first-search.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,13 +241,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00065" summary="StepLR -&gt; ReduceLrOnPlateau">
-      <created>1644246996386</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1644246996386</updated>
     </task>
     <task id="LOCAL-00066" summary="StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
       <created>1644248166153</created>
@@ -599,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646228031107</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="update useless">
+      <created>1646642091380</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1646642091381</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -638,7 +624,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="removed set_trace()" />
     <MESSAGE value="updated with respect to v2(bcs)" />
     <MESSAGE value="start modifing" />
     <MESSAGE value="added entire dataset" />
@@ -663,6 +648,7 @@
     <MESSAGE value="interpolation first" />
     <MESSAGE value="working on postprocess" />
     <MESSAGE value="set blank for slurm execution" />
-    <option name="LAST_COMMIT_MESSAGE" value="set blank for slurm execution" />
+    <MESSAGE value="update useless" />
+    <option name="LAST_COMMIT_MESSAGE" value="update useless" />
   </component>
 </project>
