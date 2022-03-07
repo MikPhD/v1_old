@@ -139,7 +139,7 @@ storage_name = "sqlite:///{}.db".format(study_name)
 
 pruner = ThresholdPruner(lower=0, upper=0.010, n_warmup_steps=100)
 study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner)
-study.optimize(objective)
+study.optimize(objective, n_trials=0)
 
 pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
 complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
