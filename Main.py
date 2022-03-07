@@ -17,7 +17,7 @@ import math
 import logging
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=5)
+parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=1)
 parser.add_argument('-r', '--restart', type=eval, default=False, choices=[True, False], help='Restart training option')
 parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['40'])
 parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['40'])
@@ -125,17 +125,18 @@ def objective(trial):
             raise optuna.TrialPruned()
 
         with open('./Memory_allocated.txt', 'a') as mem_alloc_file:
-            mem_alloc_file.write(f'memory allocated:{str(torch.cuda.memory_allocated(device))}')
-            mem_alloc_file.write(f'memory reserved:{str(torch.cuda.memory_reserved(device))}')
-            mem_alloc_file.write(f'memory cached:{str(torch.cuda.memory_cached(device))}')
-            mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_allocated(device))}')
-            mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_reserved(device))}')
-            mem_alloc_file.write(f'max_memory cached: {str(torch.cuda.max_memory_cached(device))}')
+            mem_alloc_file.write(f'memory allocated:{str(torch.cuda.memory_allocated(device))}\n')
+            mem_alloc_file.write(f'memory reserved:{str(torch.cuda.memory_reserved(device))}\n')
+            mem_alloc_file.write(f'memory cached:{str(torch.cuda.memory_cached(device))}\n')
+            mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_allocated(device))}\n')
+            mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_reserved(device))}\n')
+            mem_alloc_file.write(f'max_memory cached: {str(torch.cuda.max_memory_cached(device))}\n')
 
         with open('./Memory_stat.txt', 'a') as mem_stats:
-            mem_stats.write(f'Memory stats: {str(torch.cuda.memory_stats())}')
+            for item in torch.cuda.memory_stats(device).items():
+                mem_stats.write(f'Memory stats: {item}')
 
-        torch.cuda.memory_snapshot()
+        # torch.cuda.memory_snapshot() #probabily wirking just on cuda
 
 
     sys.stdout.flush()
@@ -171,14 +172,14 @@ print("  Params: ")
 for key, value in trial.params.items():
     print("    {}: {}".format(key, value))
 
-fig_optuna = optuna.visualization.plot_contour(study)
-fig_optuna.show()
-fig_optuna.write_image("./fig_optuna.jpeg")
-
-fig_importance = optuna.visualization.plot_param_importances(study)
-fig_importance.show()
-fig_importance.write_image("./fig_importance.jpeg")
-
-fig_intermediate = optuna.visualization.plot_intermediate_values(study)
-fig_intermediate.show()
-fig_intermediate.write_image("./fig_intermediate.jpeg")
+# fig_optuna = optuna.visualization.plot_contour(study)
+# fig_optuna.show()
+# fig_optuna.write_image("./fig_optuna.jpeg")
+#
+# fig_importance = optuna.visualization.plot_param_importances(study)
+# fig_importance.show()
+# fig_importance.write_image("./fig_importance.jpeg")
+#
+# fig_intermediate = optuna.visualization.plot_intermediate_values(study)
+# fig_intermediate.show()
+# fig_intermediate.write_image("./fig_intermediate.jpeg")

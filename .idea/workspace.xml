@@ -4,9 +4,65 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="update useless">
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="commit before backup">
+      <change afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/best_model_normal_final.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_memory.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/processed/data_train.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/processed/data_val.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/processed/pre_filter.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/processed/pre_transform.pt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/31-12-004-0002/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/37-17-003-0009/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/37-21-004-0002/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/40-19-003-0005/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/44-21-002-0006/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/58-18-004-0003/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/61-20-002-0006/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Mesh.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/31-12-004-0002/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/31-12-004-0002/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/31-12-004-0002/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/31-12-004-0002/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/31-12-004-0002plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/31-12-004-0002plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/37-17-003-0009/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/37-17-003-0009/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/37-17-003-0009/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/37-17-003-0009plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/37-21-004-0002/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/37-21-004-0002/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/37-21-004-0002/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/37-21-004-0002/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/37-21-004-0002plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/37-21-004-0002plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/40-19-003-0005/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/40-19-003-0005/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/40-19-003-0005/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/40-19-003-0005/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/40-19-003-0005plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/40-19-003-0005plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/44-21-002-0006/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/44-21-002-0006/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/44-21-002-0006/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/44-21-002-0006/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/44-21-002-0006plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/44-21-002-0006plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/58-18-004-0003/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/58-18-004-0003/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/58-18-004-0003/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/58-18-004-0003/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/58-18-004-0003plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/58-18-004-0003plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/61-20-002-0006/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/61-20-002-0006/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/61-20-002-0006/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/61-20-002-0006/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/61-20-002-0006plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/61-20-002-0006plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +114,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/PostProcessing" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
     <property name="two.files.diff.last.used.file" value="$USER_HOME$/Scaricati/v1-095e098919acfe2f3d4b49c0d3d691175a39300c/MyPlot.py" />
   </component>
   <component name="RecentsManager">
@@ -67,19 +123,19 @@
       <recent name="$PROJECT_DIR$/../v2/dataset/processed" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MyPostProcess (1)">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/cpu/bin/python" />
+      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/gnn_cpu/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -225,8 +281,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MyPostProcess (1)" />
         <item itemvalue="Python.Main" />
+        <item itemvalue="Python.MyPostProcess (1)" />
         <item itemvalue="Python.MyPlot_stand_alone" />
         <item itemvalue="Python.MyPlot" />
         <item itemvalue="Python.prova" />
@@ -241,13 +297,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00066" summary="StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
-      <created>1644248166153</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1644248166153</updated>
     </task>
     <task id="LOCAL-00067" summary="StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
       <created>1644248341145</created>
@@ -585,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646642091381</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="commit before backup">
+      <created>1646643988987</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1646643988987</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -624,7 +680,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="updated with respect to v2(bcs)" />
     <MESSAGE value="start modifing" />
     <MESSAGE value="added entire dataset" />
     <MESSAGE value="adjusted connection creation" />
@@ -649,6 +704,18 @@
     <MESSAGE value="working on postprocess" />
     <MESSAGE value="set blank for slurm execution" />
     <MESSAGE value="update useless" />
-    <option name="LAST_COMMIT_MESSAGE" value="update useless" />
+    <MESSAGE value="commit before backup" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit before backup" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Main.py</url>
+          <line>134</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
