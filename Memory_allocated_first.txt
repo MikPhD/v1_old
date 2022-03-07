@@ -1,0 +1,300 @@
+memory allocated:36933632
+memory reserved:289406976
+memory cached:289406976
+max_memory allocated: 9634934272
+max_memory allocated: 10362028032
+max_memory cached: 10362028032
+memory allocated:36933632
+memory reserved:289406976
+memory cached:289406976
+max_memory allocated: 9642504704
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:36933632
+memory reserved:289406976
+memory cached:289406976
+max_memory allocated: 9642504704
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:36933632
+memory reserved:289406976
+memory cached:289406976
+max_memory allocated: 9642504704
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:36933632
+memory reserved:289406976
+memory cached:289406976
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:33785856
+memory reserved:325058560
+memory cached:325058560
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:33785856
+memory reserved:304087040
+memory cached:304087040
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:33785856
+memory reserved:304087040
+memory cached:304087040
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:33785856
+memory reserved:304087040
+memory cached:304087040
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:43494400
+memory reserved:304087040
+memory cached:304087040
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:33790976
+memory reserved:291504128
+memory cached:291504128
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:33790976
+memory reserved:291504128
+memory cached:291504128
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:33790976
+memory reserved:291504128
+memory cached:291504128
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:33790976
+memory reserved:291504128
+memory cached:291504128
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:33790976
+memory reserved:291504128
+memory cached:291504128
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:34140160
+memory reserved:341835776
+memory cached:341835776
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:34140160
+memory reserved:327155712
+memory cached:327155712
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:34140160
+memory reserved:327155712
+memory cached:327155712
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:34140160
+memory reserved:327155712
+memory cached:327155712
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:34140160
+memory reserved:327155712
+memory cached:327155712
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:33714176
+memory reserved:333447168
+memory cached:333447168
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:33714176
+memory reserved:301989888
+memory cached:301989888
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:33714176
+memory reserved:301989888
+memory cached:301989888
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:33714176
+memory reserved:301989888
+memory cached:301989888
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:44424192
+memory reserved:301989888
+memory cached:301989888
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:35993600
+memory reserved:352321536
+memory cached:352321536
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:35993600
+memory reserved:352321536
+memory cached:352321536
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:35993600
+memory reserved:352321536
+memory cached:352321536
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:35993600
+memory reserved:352321536
+memory cached:352321536
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:35993600
+memory reserved:352321536
+memory cached:352321536
+max_memory allocated: 9643087872
+max_memory allocated: 10364125184
+max_memory cached: 10364125184
+memory allocated:38758400
+memory reserved:354418688
+memory cached:354418688
+max_memory allocated: 10339783680
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:38758400
+memory reserved:312475648
+memory cached:312475648
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:38758400
+memory reserved:312475648
+memory cached:312475648
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:38758400
+memory reserved:312475648
+memory cached:312475648
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:48466944
+memory reserved:312475648
+memory cached:312475648
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:32695296
+memory reserved:356515840
+memory cached:356515840
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:32695296
+memory reserved:276824064
+memory cached:276824064
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:32695296
+memory reserved:276824064
+memory cached:276824064
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:32695296
+memory reserved:276824064
+memory cached:276824064
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:42403840
+memory reserved:276824064
+memory cached:276824064
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:31963136
+memory reserved:251658240
+memory cached:251658240
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:31963136
+memory reserved:251658240
+memory cached:251658240
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:31963136
+memory reserved:251658240
+memory cached:251658240
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:31963136
+memory reserved:251658240
+memory cached:251658240
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:42406400
+memory reserved:251658240
+memory cached:251658240
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:34436608
+memory reserved:222298112
+memory cached:222298112
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:34436608
+memory reserved:222298112
+memory cached:222298112
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:34436608
+memory reserved:222298112
+memory cached:222298112
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:34436608
+memory reserved:222298112
+memory cached:222298112
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408
+memory allocated:44145152
+memory reserved:222298112
+memory cached:222298112
+max_memory allocated: 10340583936
+max_memory allocated: 11070865408
+max_memory cached: 11070865408

@@ -1,73 +1,91 @@
-[32m[I 2022-03-05 20:21:48,979][0m Using an existing study with name 'first-search' instead of creating a new one.[0m
-[33m[W 2022-03-05 20:22:15,652][0m Trial 16 failed because of the following error: RuntimeError('CUDA out of memory. Tried to allocate 14.00 MiB (GPU 0; 11.17 GiB total capacity; 9.90 GiB already allocated; 9.81 MiB free; 10.66 GiB reserved in total by PyTorch)')[0m
-Traceback (most recent call last):
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 213, in _run_trial
-    value_or_values = func(trial)
-  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/Main.py", line 116, in objective
-    GNN, validation_loss = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
-  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/MyTrain.py", line 81, in trainDSS
-    F, train_loss, loss_dict = self.net(train_data)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
-    result = self.forward(*input, **kwargs)
-  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/MyDSS.py", line 58, in forward
-    mess_from = self.phi_from_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
-    result = self.forward(*input, **kwargs)
-  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/MyDSS.py", line 127, in forward
-    return self.propagate(edge_index, x=x, edge_attr=edge_attr)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch_geometric/nn/conv/message_passing.py", line 237, in propagate
-    out = self.message(**msg_kwargs)
-  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/MyDSS.py", line 133, in message
-    return self.MLP(tmp)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
-    result = self.forward(*input, **kwargs)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/container.py", line 119, in forward
-    input = module(input)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
-    result = self.forward(*input, **kwargs)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 94, in forward
-    return F.linear(input, self.weight, self.bias)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/functional.py", line 1753, in linear
-    return torch._C._nn.linear(input, weight, bias)
-RuntimeError: CUDA out of memory. Tried to allocate 14.00 MiB (GPU 0; 11.17 GiB total capacity; 9.90 GiB already allocated; 9.81 MiB free; 10.66 GiB reserved in total by PyTorch)
-Traceback (most recent call last):
-  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/Main.py", line 142, in <module>
-    study.optimize(objective)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/study.py", line 400, in optimize
-    _optimize(
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 66, in _optimize
-    _optimize_sequential(
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 163, in _optimize_sequential
-    trial = _run_trial(study, func, catch)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 264, in _run_trial
-    raise func_err
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 213, in _run_trial
-    value_or_values = func(trial)
-  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/Main.py", line 116, in objective
-    GNN, validation_loss = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
-  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/MyTrain.py", line 81, in trainDSS
-    F, train_loss, loss_dict = self.net(train_data)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
-    result = self.forward(*input, **kwargs)
-  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/MyDSS.py", line 58, in forward
-    mess_from = self.phi_from_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
-    result = self.forward(*input, **kwargs)
-  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/MyDSS.py", line 127, in forward
-    return self.propagate(edge_index, x=x, edge_attr=edge_attr)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch_geometric/nn/conv/message_passing.py", line 237, in propagate
-    out = self.message(**msg_kwargs)
-  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/MyDSS.py", line 133, in message
-    return self.MLP(tmp)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
-    result = self.forward(*input, **kwargs)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/container.py", line 119, in forward
-    input = module(input)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
-    result = self.forward(*input, **kwargs)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 94, in forward
-    return F.linear(input, self.weight, self.bias)
-  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/functional.py", line 1753, in linear
-    return torch._C._nn.linear(input, weight, bias)
-RuntimeError: CUDA out of memory. Tried to allocate 14.00 MiB (GPU 0; 11.17 GiB total capacity; 9.90 GiB already allocated; 9.81 MiB free; 10.66 GiB reserved in total by PyTorch)
-srun: error: n2: task 0: Exited with exit code 1
+[32m[I 2022-03-07 11:03:36,936][0m Using an existing study with name 'check_memory' instead of creating a new one.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+[32m[I 2022-03-07 11:05:37,335][0m Trial 25 finished with value: 0.006218993570655584 and parameters: {'latent_dimension': 13, 'k': 84, 'gamma': 2, 'alpha': 2, 'lr': 6}. Best is trial 24 with value: 0.005571634508669376.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+[32m[I 2022-03-07 11:07:31,653][0m Trial 26 finished with value: 0.005224674474447966 and parameters: {'latent_dimension': 13, 'k': 84, 'gamma': 2, 'alpha': 2, 'lr': 6}. Best is trial 26 with value: 0.005224674474447966.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+[32m[I 2022-03-07 11:09:10,943][0m Trial 27 finished with value: 0.004544687457382679 and parameters: {'latent_dimension': 12, 'k': 77, 'gamma': 1, 'alpha': 2, 'lr': 7}. Best is trial 27 with value: 0.004544687457382679.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+[32m[I 2022-03-07 11:11:09,705][0m Trial 28 finished with value: 0.004662378691136837 and parameters: {'latent_dimension': 18, 'k': 75, 'gamma': 1, 'alpha': 2, 'lr': 7}. Best is trial 27 with value: 0.004544687457382679.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+[32m[I 2022-03-07 11:13:08,823][0m Trial 29 finished with value: 0.00784092303365469 and parameters: {'latent_dimension': 18, 'k': 75, 'gamma': 1, 'alpha': 2, 'lr': 8}. Best is trial 27 with value: 0.004544687457382679.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+[32m[I 2022-03-07 11:15:02,613][0m Trial 30 finished with value: 0.006618600804358721 and parameters: {'latent_dimension': 17, 'k': 73, 'gamma': 1, 'alpha': 2, 'lr': 7}. Best is trial 27 with value: 0.004544687457382679.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+[32m[I 2022-03-07 11:17:11,448][0m Trial 31 finished with value: 0.005453514400869608 and parameters: {'latent_dimension': 20, 'k': 79, 'gamma': 1, 'alpha': 3, 'lr': 9}. Best is trial 27 with value: 0.004544687457382679.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+[32m[I 2022-03-07 11:18:42,891][0m Trial 32 finished with value: 0.00639981497079134 and parameters: {'latent_dimension': 15, 'k': 60, 'gamma': 2, 'alpha': 2, 'lr': 7}. Best is trial 27 with value: 0.004544687457382679.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+[32m[I 2022-03-07 11:20:09,679][0m Trial 33 finished with value: 0.007064671255648136 and parameters: {'latent_dimension': 12, 'k': 65, 'gamma': 4, 'alpha': 3, 'lr': 8}. Best is trial 27 with value: 0.004544687457382679.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:373: FutureWarning: torch.cuda.memory_cached has been renamed to torch.cuda.memory_reserved
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/cuda/memory.py:381: FutureWarning: torch.cuda.max_memory_cached has been renamed to torch.cuda.max_memory_reserved
+  warnings.warn(
+[32m[I 2022-03-07 11:21:59,240][0m Trial 34 finished with value: 0.005266135558485985 and parameters: {'latent_dimension': 26, 'k': 57, 'gamma': 1, 'alpha': 5, 'lr': 7}. Best is trial 27 with value: 0.004544687457382679.[0m

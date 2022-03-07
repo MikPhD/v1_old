@@ -134,9 +134,9 @@ def objective(trial):
 
         with open('./Memory_stat.txt', 'a') as mem_stats:
             for item in torch.cuda.memory_stats(device).items():
-                mem_stats.write(f'Memory stats: {item}')
+                mem_stats.write(f'Memory stats: {item}\n')
 
-        # torch.cuda.memory_snapshot() #probabily wirking just on cuda
+        #torch.cuda.memory_snapshot() #probabily wirking just on cuda
 
 
     sys.stdout.flush()
