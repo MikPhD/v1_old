@@ -27,8 +27,9 @@ class MyOwnDSSNet(nn.Module):
         self.phi_to_list = nn.ModuleList([Phi_to(2*self.latent_dimension + 2, self.latent_dimension) for i in range(self.k)])
         self.phi_from_list = nn.ModuleList([Phi_from(2*self.latent_dimension + 2, self.latent_dimension) for i in range(self.k)])
         self.phi_loop_list = nn.ModuleList([Loop(2*self.latent_dimension+1, self.latent_dimension) for i in range(self.k)])
-        self.psy_list = nn.ModuleList([Psy(4*self.latent_dimension + 3, self.latent_dimension) for i in range(self.k)])
+        self.recurrant = Recurrent(4*self.latent_dimension+3, self.latent_dimension)
         self.decoder_list = nn.ModuleList([Decoder(self.latent_dimension, 2) for i in range(self.k)])
+
 
     def loss_function(self, F, y):
         loss = nn.functional.mse_loss(F, y)
@@ -65,7 +66,9 @@ class MyOwnDSSNet(nn.Module):
             #concat = torch.cat([H[str(update)], mess_to, mess_from, loop, y], dim = 1)
             #print("Size concat : ", concat.size())
 
-            correction = self.psy_list[update](concat)
+            correction, _ = self.recurrant(concat)
+            correction = torch.squeeze(correction, 0)
+
             #print("Correction size : ", correction.size())
             #print(self.psy_list[update])
 
@@ -152,15 +155,16 @@ class Loop(nn.Module): #never used
 
         return self.MLP(tmp)
 
-class Psy(nn.Module):
-    def __init__(self, in_size, out_size):
-        super(Psy, self).__init__()
+class Recurrent(nn.Module):
+    def __init__(self, in_size, hidden_size):
+        super(Recurrent, self).__init__()
 
-        self.MLP = nn.Sequential(   nn.Linear(in_size, out_size),
-                                    nn.ReLU(),
-                                    nn.Linear(out_size, out_size))
+        self.GRU = nn.GRU(input_size=in_size, hidden_size=hidden_size, num_layers=1, batch_first=True)
+
     def forward(self, x): #dimensione H + fi + fi + loop +B
-        return self.MLP(x)
+        x = torch.reshape(x, (1, x.shape[0], x.shape[1]))
+        return self.GRU(x)
+
 
 class Decoder(nn.Module):
     def __init__(self, in_size, out_size):

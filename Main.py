@@ -18,11 +18,11 @@ import logging
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=1)
+parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=100)
 parser.add_argument('-r', '--restart', type=eval, default=False, choices=[True, False], help='Restart training option')
 parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['40'])
 parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['40'])
-parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=5)
+parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=50)
 
 args = parser.parse_args()
 
@@ -84,9 +84,9 @@ def objective(trial):
 
     print("#################### DSS NET parameter #######################")
     #create hyperparameter
-    latent_dimension = trial.suggest_int("latent_dimension", 18,50)
+    latent_dimension = trial.suggest_int("latent_dimension", 18,19)
     print("Latent space dim : ", latent_dimension)
-    k = trial.suggest_int("k", 50, 100)
+    k = trial.suggest_int("k", 50, 51)
     print("Number of updates : ", k)
     gamma = (trial.suggest_int("gamma", 1, 4))/10 #gamma between 0.1 and 0.4
     print("Gamma (loss function) : ", gamma)
@@ -129,15 +129,15 @@ def objective(trial):
         if trial.should_prune():
             raise optuna.TrialPruned()
 
-        # use of cuda.memory
-        with open('./Memory_allocated.txt', 'a') as mem_alloc_file:
-            mem_alloc_file.write(f'memory allocated:{str(torch.cuda.memory_allocated(device))}\n')
-            mem_alloc_file.write(f'memory reserved:{str(torch.cuda.memory_reserved(device))}\n')
-            mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_allocated(device))}\n')
-            mem_alloc_file.write(f'max_memory reserved: {str(torch.cuda.max_memory_reserved(device))}\n')
-
-        with open('./Memory_summary.txt', 'a') as mem_summ_file:
-            mem_summ_file.write(f'memory allocated:{str(torch.cuda.memory_summary(device))}\n')
+        # # use of cuda.memory
+        # with open('./Memory_allocated.txt', 'a') as mem_alloc_file:
+        #     mem_alloc_file.write(f'memory allocated:{str(torch.cuda.memory_allocated(device))}\n')
+        #     mem_alloc_file.write(f'memory reserved:{str(torch.cuda.memory_reserved(device))}\n')
+        #     mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_allocated(device))}\n')
+        #     mem_alloc_file.write(f'max_memory reserved: {str(torch.cuda.max_memory_reserved(device))}\n')
+        #
+        # with open('./Memory_summary.txt', 'a') as mem_summ_file:
+        #     mem_summ_file.write(f'memory allocated:{str(torch.cuda.memory_summary(device))}\n')
 
 
     sys.stdout.flush()
@@ -154,7 +154,7 @@ storage_name = "sqlite:///{}.db".format(study_name)
 
 pruner = ThresholdPruner(lower=0, upper=0.010, n_warmup_steps=100)
 study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner)
-study.optimize(objective)
+study.optimize(objective, n_trials=1)
 
 pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
 complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])

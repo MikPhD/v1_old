@@ -238,3 +238,7 @@ memory cached:314572800
 max_memory allocated: 17976888832
 max_memory reserved: 18941476864
 max_memory cached: 18941476864
+memory allocated:0
+memory reserved:0
+max_memory allocated: 0
+max_memory reserved: 0
