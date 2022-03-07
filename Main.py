@@ -16,6 +16,7 @@ from optuna import TrialPruned
 import math
 import logging
 
+
 parser = argparse.ArgumentParser()
 parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=1)
 parser.add_argument('-r', '--restart', type=eval, default=False, choices=[True, False], help='Restart training option')
@@ -66,7 +67,11 @@ print("#################### DATA ADAPTING FOR GNN #######################")
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Running on : ', device)
 
+torch.cuda.empty_cache()
+
 def objective(trial):
+
+    torch.cuda.empty_cache()
 
     print("#################### CREATING Inner DATASET #######################")
     loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases, device=device)
@@ -133,7 +138,8 @@ def objective(trial):
             mem_alloc_file.write(f'max_memory reserved: {str(torch.cuda.max_memory_reserved(device))}\n')
             mem_alloc_file.write(f'max_memory cached: {str(torch.cuda.max_memory_cached(device))}\n')
 
-        torch.cuda.memory_snapshot() #probabily wirking just on cuda
+        with open('./Memory_summary.txt', 'a') as mem_summ_file:
+            mem_summ_file.write(f'memory allocated:{str(torch.cuda.memory_summary(device))}\n')
 
 
     sys.stdout.flush()
@@ -150,7 +156,7 @@ storage_name = "sqlite:///{}.db".format(study_name)
 
 pruner = ThresholdPruner(lower=0, upper=0.010, n_warmup_steps=100)
 study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner)
-study.optimize(objective)
+study.optimize(objective, n_trials=10)
 
 pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
 complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
