@@ -138,7 +138,7 @@ storage_name = "sqlite:///{}.db".format(study_name)
 ##################################################################################
 
 pruner = ThresholdPruner(lower=0, upper=0.010, n_warmup_steps=100)
-study = optuna.create_study(study_name=study_name, storage=storage_name, direction="minimize", pruner=pruner)
+study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner)
 study.optimize(objective)
 
 pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
