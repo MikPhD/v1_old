@@ -5,37 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="trying execute on cuda slurm">
-      <change afterPath="$PROJECT_DIR$/Results/50-19-006-0001/results.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Results/50-19-006-0001/results50.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Results/88-26-007-0005/results.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Results/88-26-007-0005/results5.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/50-19-006-0001/loss_train_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/50-19-006-0001/loss_val_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/50-19-006-0001/plot_loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/50-19-006-0001/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/50-19-006-0001/plot_results50.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/50-19-006-0001plot_loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/50-19-006-0001plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/88-26-007-0005/loss_train_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/88-26-007-0005/loss_val_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/88-26-007-0005/plot_loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/88-26-007-0005/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/88-26-007-0005/plot_results5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/88-26-007-0005plot_loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/88-26-007-0005plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fig_importance.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fig_intermediate.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fig_optuna.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_optuna.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/70-20-001-001plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/Mesh.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22__17_05__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Memory_allocated.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Memory_allocated.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model_normal_final.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Mesh.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_train.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_train.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_val.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_val.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,8 +180,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.Main" />
-      <item itemvalue="Python.MyPlot_stand_alone" />
       <item itemvalue="Python.MyPlot" />
+      <item itemvalue="Python.MyPlot_stand_alone" />
       <item itemvalue="Python.MyPostProcess (1)" />
       <item itemvalue="Python.plotter_generale" />
     </list>
