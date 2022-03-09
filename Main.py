@@ -11,10 +11,11 @@ from torch_geometric.data import DataListLoader
 from torch_geometric.data import DataLoader
 import optuna
 from optuna.trial import TrialState
-from optuna.pruners import ThresholdPruner
+from optuna.pruners import ThresholdPruner, HyperbandPruner
 from optuna import TrialPruned
 import math
 import logging
+from optuna.samplers import TPESampler
 
 
 parser = argparse.ArgumentParser()
@@ -88,11 +89,13 @@ def objective(trial):
     print("Latent space dim : ", latent_dimension)
     k = trial.suggest_int("k", 50, 100)
     print("Number of updates : ", k)
-    gamma = (trial.suggest_int("gamma", 1, 4))/10 #gamma between 0.1 and 0.4
+    gamma = (trial.suggest_discrete_uniform("gamma", 0.001, 1, 0.1))
     print("Gamma (loss function) : ", gamma)
-    alpha = (trial.suggest_int("alpha", 1, 7))/100 #alpha between 0.01 and 0.07
+    alpha = (trial.suggest_discrete_uniform("alpha", 0.001, 20, 0.1))
     print("Alpha (reduction correction) :", alpha)
-    lr = (trial.suggest_int("lr", 1, 6))/1000 #lr between 0.001 and 0.009
+    # lr = (trial.suggest_discrete_uniform("lr", 0.0001, 10, 0.1)) #lr between 0.001 and 0.009
+    # print("LR (Learning rate):", lr)
+    lr = 3e-3 #fisso
     print("LR (Learning rate):", lr)
 
     ##create folder for different results ##
@@ -129,15 +132,15 @@ def objective(trial):
         if trial.should_prune():
             raise optuna.TrialPruned()
 
-        # use of cuda.memory
-        with open('./Memory_allocated.txt', 'a') as mem_alloc_file:
-            mem_alloc_file.write(f'memory allocated:{str(torch.cuda.memory_allocated(device))}\n')
-            mem_alloc_file.write(f'memory reserved:{str(torch.cuda.memory_reserved(device))}\n')
-            mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_allocated(device))}\n')
-            mem_alloc_file.write(f'max_memory reserved: {str(torch.cuda.max_memory_reserved(device))}\n')
-
-        with open('./Memory_summary.txt', 'a') as mem_summ_file:
-            mem_summ_file.write(f'memory allocated:{str(torch.cuda.memory_summary(device))}\n')
+        # # use of cuda.memory
+        # with open('./Memory_allocated.txt', 'a') as mem_alloc_file:
+        #     mem_alloc_file.write(f'memory allocated:{str(torch.cuda.memory_allocated(device))}\n')
+        #     mem_alloc_file.write(f'memory reserved:{str(torch.cuda.memory_reserved(device))}\n')
+        #     mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_allocated(device))}\n')
+        #     mem_alloc_file.write(f'max_memory reserved: {str(torch.cuda.max_memory_reserved(device))}\n')
+        #
+        # with open('./Memory_summary.txt', 'a') as mem_summ_file:
+        #     mem_summ_file.write(f'memory allocated:{str(torch.cuda.memory_summary(device))}\n')
 
 
     sys.stdout.flush()
@@ -148,13 +151,14 @@ def objective(trial):
 
 ################## to be uncommented only when want to log #######################
 optuna.logging.get_logger("optuna").addHandler(logging.StreamHandler(sys.stdout))
-study_name = "second_optuna"  # Unique identifier of the study.
+study_name = "third_optuna"  # Unique identifier of the study.
 storage_name = "sqlite:///{}.db".format(study_name)
 ##################################################################################
 
-pruner = ThresholdPruner(lower=0, upper=0.010, n_warmup_steps=100)
-study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner)
-study.optimize(objective, n_trials=1)
+pruner = HyperbandPruner(min_resource=1, max_resource=n_epoch)
+study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner,
+                            sampler=TPESampler(n_startup_trials=10, multivariate=True, group=True, constant_liar=True))
+study.optimize(objective)
 
 pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
 complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
