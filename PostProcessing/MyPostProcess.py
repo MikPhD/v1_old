@@ -145,13 +145,13 @@ class PostProcess():
         v_diff.vector()[:] = v_cfd.vector()[:] - v_gnn.vector()[:]
 
         ######### plot results ##############
-        plt.figure()
-        plot(v_gnn.sub(0))
-        plt.show()
-        #
         # plt.figure()
-        # plot(v_cfd.sub(0))
+        # plot(v_gnn.sub(0))
         # plt.show()
+        #
+        plt.figure()
+        plot(v_cfd.sub(0))
+        plt.show()
 
         # plt.figure()
         # plot(v_diff.sub(0))

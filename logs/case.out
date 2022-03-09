@@ -1,0 +1,496 @@
+#################### DATA ADAPTING FOR GNN #######################
+Running on :  cuda
+Using an existing study with name 'second_optuna' instead of creating a new one.
+#################### CREATING Inner DATASET #######################
+Processing...
+Taking Data at Re n.:  40 in  train  mode.
+Taking Data at Re n.:  50 in  train  mode.
+Taking Data at Re n.:  60 in  train  mode.
+Taking Data at Re n.:  70 in  train  mode.
+Taking Data at Re n.:  80 in  train  mode.
+Taking Data at Re n.:  90 in  train  mode.
+Taking Data at Re n.:  100 in  train  mode.
+Taking Data at Re n.:  120 in  train  mode.
+Taking Data at Re n.:  130 in  train  mode.
+Taking Data at Re n.:  140 in  train  mode.
+Taking Data at Re n.:  150 in  train  mode.
+Done!
+Processing...
+Taking Data at Re n.:  110 in  val  mode.
+Done!
+#################### DSS NET parameter #######################
+Latent space dim :  28
+Number of updates :  64
+Gamma (loss function) :  0.1
+Alpha (reduction correction) : 0.03
+LR (Learning rate): 0.003
+PARAMETER SET: k:64, laten_dim:28, alpha:0.03, lr:0.003
+#################### CREATING NETWORKS #######################
+#################### TRAINING #######################
+Epoch 1, 27% 	 train_loss: 1.07590e-02
+Epoch 1, 54% 	 train_loss: 1.15818e-02
+Epoch 1, 81% 	 train_loss: 7.40630e-03
+Training loss = 3.32291e-02
+Validation loss = 1.12196e-02
+Training finished, took 10.31s, MODEL SAVED
+Epoch 2, 27% 	 train_loss: 4.79314e-03
+Epoch 2, 54% 	 train_loss: 2.45257e-03
+Epoch 2, 81% 	 train_loss: 1.77666e-03
+Training loss = 1.11045e-02
+Validation loss = 7.12378e-03
+Training finished, took 19.51s, MODEL SAVED
+Epoch 3, 27% 	 train_loss: 4.82241e-03
+Epoch 3, 54% 	 train_loss: 2.50026e-03
+Epoch 3, 81% 	 train_loss: 1.91933e-03
+Training loss = 1.05300e-02
+Validation loss = 4.56208e-03
+Training finished, took 28.37s, MODEL SAVED
+Epoch 4, 27% 	 train_loss: 4.57798e-03
+Epoch 4, 54% 	 train_loss: 2.17986e-03
+Epoch 4, 81% 	 train_loss: 1.41054e-03
+Training loss = 9.32129e-03
+Validation loss = 5.40900e-03
+Training finished, took 38.04s, MODEL SAVED
+Epoch 5, 27% 	 train_loss: 4.69957e-03
+Epoch 5, 54% 	 train_loss: 2.27404e-03
+Epoch 5, 81% 	 train_loss: 1.42713e-03
+Training loss = 9.56086e-03
+Validation loss = 4.43857e-03
+Training finished, took 47.15s, MODEL SAVED
+Final Results Saved
+Trial 2 finished with value: 0.004438566509634256 and parameters: {'latent_dimension': 28, 'k': 64, 'gamma': 1, 'alpha': 3, 'lr': 3}. Best is trial 2 with value: 0.004438566509634256.
+#################### CREATING Inner DATASET #######################
+Processing...
+Taking Data at Re n.:  40 in  train  mode.
+Taking Data at Re n.:  50 in  train  mode.
+Taking Data at Re n.:  60 in  train  mode.
+Taking Data at Re n.:  70 in  train  mode.
+Taking Data at Re n.:  80 in  train  mode.
+Taking Data at Re n.:  90 in  train  mode.
+Taking Data at Re n.:  100 in  train  mode.
+Taking Data at Re n.:  120 in  train  mode.
+Taking Data at Re n.:  130 in  train  mode.
+Taking Data at Re n.:  140 in  train  mode.
+Taking Data at Re n.:  150 in  train  mode.
+Done!
+Processing...
+Taking Data at Re n.:  110 in  val  mode.
+Done!
+#################### DSS NET parameter #######################
+Latent space dim :  24
+Number of updates :  99
+Gamma (loss function) :  0.3
+Alpha (reduction correction) : 0.03
+LR (Learning rate): 0.006
+PARAMETER SET: k:99, laten_dim:24, alpha:0.03, lr:0.006
+#################### CREATING NETWORKS #######################
+#################### TRAINING #######################
+Epoch 1, 27% 	 train_loss: 2.77285e-02
+Epoch 1, 54% 	 train_loss: 1.86389e-02
+Epoch 1, 81% 	 train_loss: 6.84675e-03
+Training loss = 5.95844e-02
+Validation loss = 3.10910e-02
+Training finished, took 12.87s, MODEL SAVED
+Epoch 2, 27% 	 train_loss: 9.38677e-03
+Epoch 2, 54% 	 train_loss: 3.99018e-03
+Epoch 2, 81% 	 train_loss: 3.82724e-03
+Training loss = 2.21195e-02
+Validation loss = 8.81568e-03
+Training finished, took 24.45s, MODEL SAVED
+Epoch 3, 27% 	 train_loss: 7.12381e-03
+Epoch 3, 54% 	 train_loss: 5.44483e-03
+Epoch 3, 81% 	 train_loss: 4.02730e-03
+Training loss = 1.91790e-02
+Validation loss = 1.20452e-02
+Training finished, took 36.02s, MODEL SAVED
+Epoch 4, 27% 	 train_loss: 7.41379e-03
+Epoch 4, 54% 	 train_loss: 5.32931e-03
+Epoch 4, 81% 	 train_loss: 4.39819e-03
+Training loss = 2.08128e-02
+Validation loss = 1.39576e-02
+Training finished, took 47.99s, MODEL SAVED
+Epoch 5, 27% 	 train_loss: 6.86377e-03
+Epoch 5, 54% 	 train_loss: 4.18259e-03
+Epoch 5, 81% 	 train_loss: 2.65188e-03
+Training loss = 1.59564e-02
+Validation loss = 9.46066e-03
+Training finished, took 59.68s, MODEL SAVED
+Final Results Saved
+Trial 3 finished with value: 0.009460657835006714 and parameters: {'latent_dimension': 24, 'k': 99, 'gamma': 3, 'alpha': 3, 'lr': 6}. Best is trial 2 with value: 0.004438566509634256.
+#################### CREATING Inner DATASET #######################
+Processing...
+Taking Data at Re n.:  40 in  train  mode.
+Taking Data at Re n.:  50 in  train  mode.
+Taking Data at Re n.:  60 in  train  mode.
+Taking Data at Re n.:  70 in  train  mode.
+Taking Data at Re n.:  80 in  train  mode.
+Taking Data at Re n.:  90 in  train  mode.
+Taking Data at Re n.:  100 in  train  mode.
+Taking Data at Re n.:  120 in  train  mode.
+Taking Data at Re n.:  130 in  train  mode.
+Taking Data at Re n.:  140 in  train  mode.
+Taking Data at Re n.:  150 in  train  mode.
+Done!
+Processing...
+Taking Data at Re n.:  110 in  val  mode.
+Done!
+#################### DSS NET parameter #######################
+Latent space dim :  23
+Number of updates :  90
+Gamma (loss function) :  0.2
+Alpha (reduction correction) : 0.02
+LR (Learning rate): 0.006
+PARAMETER SET: k:90, laten_dim:23, alpha:0.02, lr:0.006
+#################### CREATING NETWORKS #######################
+#################### TRAINING #######################
+Epoch 1, 27% 	 train_loss: 2.11280e-02
+Epoch 1, 54% 	 train_loss: 7.95787e-03
+Epoch 1, 81% 	 train_loss: 3.90326e-03
+Training loss = 3.54282e-02
+Validation loss = 6.85386e-03
+Training finished, took 11.11s, MODEL SAVED
+Epoch 2, 27% 	 train_loss: 5.46336e-03
+Epoch 2, 54% 	 train_loss: 2.87382e-03
+Epoch 2, 81% 	 train_loss: 1.89706e-03
+Training loss = 1.17295e-02
+Validation loss = 5.65918e-03
+Training finished, took 22.15s, MODEL SAVED
+Epoch 3, 27% 	 train_loss: 5.35814e-03
+Epoch 3, 54% 	 train_loss: 2.55015e-03
+Epoch 3, 81% 	 train_loss: 2.54454e-03
+Training loss = 1.21465e-02
+Validation loss = 6.40717e-03
+Training finished, took 33.23s, MODEL SAVED
+Epoch 4, 27% 	 train_loss: 5.54446e-03
+Epoch 4, 54% 	 train_loss: 3.10233e-03
+Epoch 4, 81% 	 train_loss: 2.03680e-03
+Training loss = 1.20398e-02
+Validation loss = 7.22323e-03
+Training finished, took 44.56s, MODEL SAVED
+Epoch 5, 27% 	 train_loss: 5.93573e-03
+Epoch 5, 54% 	 train_loss: 2.65418e-03
+Epoch 5, 81% 	 train_loss: 2.13830e-03
+Training loss = 1.21069e-02
+Validation loss = 6.04550e-03
+Training finished, took 55.96s, MODEL SAVED
+Final Results Saved
+Trial 4 finished with value: 0.006045497488230467 and parameters: {'latent_dimension': 23, 'k': 90, 'gamma': 2, 'alpha': 2, 'lr': 6}. Best is trial 2 with value: 0.004438566509634256.
+#################### CREATING Inner DATASET #######################
+Processing...
+Taking Data at Re n.:  40 in  train  mode.
+Taking Data at Re n.:  50 in  train  mode.
+Taking Data at Re n.:  60 in  train  mode.
+Taking Data at Re n.:  70 in  train  mode.
+Taking Data at Re n.:  80 in  train  mode.
+Taking Data at Re n.:  90 in  train  mode.
+Taking Data at Re n.:  100 in  train  mode.
+Taking Data at Re n.:  120 in  train  mode.
+Taking Data at Re n.:  130 in  train  mode.
+Taking Data at Re n.:  140 in  train  mode.
+Taking Data at Re n.:  150 in  train  mode.
+Done!
+Processing...
+Taking Data at Re n.:  110 in  val  mode.
+Done!
+#################### DSS NET parameter #######################
+Latent space dim :  50
+Number of updates :  50
+Gamma (loss function) :  0.3
+Alpha (reduction correction) : 0.07
+LR (Learning rate): 0.005
+PARAMETER SET: k:50, laten_dim:50, alpha:0.07, lr:0.005
+#################### CREATING NETWORKS #######################
+#################### TRAINING #######################
+Epoch 1, 27% 	 train_loss: 4.20417e-02
+Epoch 1, 54% 	 train_loss: 7.14581e-02
+Epoch 1, 81% 	 train_loss: 5.08344e-02
+Training loss = 1.87041e-01
+Validation loss = 7.20947e-02
+Training finished, took 7.64s, MODEL SAVED
+Epoch 2, 27% 	 train_loss: 7.97162e-03
+Epoch 2, 54% 	 train_loss: 5.23283e-03
+Epoch 2, 81% 	 train_loss: 6.15543e-03
+Training loss = 2.69041e-02
+Validation loss = 1.87821e-02
+Training finished, took 14.96s, MODEL SAVED
+Epoch 3, 27% 	 train_loss: 8.00224e-03
+Epoch 3, 54% 	 train_loss: 4.01123e-03
+Epoch 3, 81% 	 train_loss: 6.46615e-03
+Training loss = 2.39103e-02
+Validation loss = 2.78304e-02
+Training finished, took 22.55s, MODEL SAVED
+Epoch 4, 27% 	 train_loss: 5.90709e-03
+Epoch 4, 54% 	 train_loss: 2.75663e-03
+Epoch 4, 81% 	 train_loss: 2.53724e-03
+Training loss = 1.29489e-02
+Validation loss = 6.55197e-03
+Training finished, took 30.77s, MODEL SAVED
+Epoch 5, 27% 	 train_loss: 5.91234e-03
+Epoch 5, 54% 	 train_loss: 2.84854e-03
+Epoch 5, 81% 	 train_loss: 1.76863e-03
+Training loss = 1.20749e-02
+Validation loss = 6.03481e-03
+Training finished, took 39.15s, MODEL SAVED
+Final Results Saved
+Trial 5 finished with value: 0.00603480963036418 and parameters: {'latent_dimension': 50, 'k': 50, 'gamma': 3, 'alpha': 7, 'lr': 5}. Best is trial 2 with value: 0.004438566509634256.
+#################### CREATING Inner DATASET #######################
+Processing...
+Taking Data at Re n.:  40 in  train  mode.
+Taking Data at Re n.:  50 in  train  mode.
+Taking Data at Re n.:  60 in  train  mode.
+Taking Data at Re n.:  70 in  train  mode.
+Taking Data at Re n.:  80 in  train  mode.
+Taking Data at Re n.:  90 in  train  mode.
+Taking Data at Re n.:  100 in  train  mode.
+Taking Data at Re n.:  120 in  train  mode.
+Taking Data at Re n.:  130 in  train  mode.
+Taking Data at Re n.:  140 in  train  mode.
+Taking Data at Re n.:  150 in  train  mode.
+Done!
+Processing...
+Taking Data at Re n.:  110 in  val  mode.
+Done!
+#################### DSS NET parameter #######################
+Latent space dim :  31
+Number of updates :  50
+Gamma (loss function) :  0.4
+Alpha (reduction correction) : 0.01
+LR (Learning rate): 0.003
+PARAMETER SET: k:50, laten_dim:31, alpha:0.01, lr:0.003
+#################### CREATING NETWORKS #######################
+#################### TRAINING #######################
+Epoch 1, 27% 	 train_loss: 9.96511e-03
+Epoch 1, 54% 	 train_loss: 3.80874e-03
+Epoch 1, 81% 	 train_loss: 2.31763e-03
+Training loss = 1.79060e-02
+Validation loss = 8.24622e-03
+Training finished, took 7.62s, MODEL SAVED
+Epoch 2, 27% 	 train_loss: 8.07588e-03
+Epoch 2, 54% 	 train_loss: 3.47458e-03
+Epoch 2, 81% 	 train_loss: 3.14447e-03
+Training loss = 1.65260e-02
+Validation loss = 1.00943e-02
+Training finished, took 14.89s, MODEL SAVED
+Epoch 3, 27% 	 train_loss: 8.24853e-03
+Epoch 3, 54% 	 train_loss: 3.92219e-03
+Epoch 3, 81% 	 train_loss: 2.43160e-03
+Training loss = 1.64211e-02
+Validation loss = 7.31220e-03
+Training finished, took 21.69s, MODEL SAVED
+Epoch 4, 27% 	 train_loss: 7.12044e-03
+Epoch 4, 54% 	 train_loss: 3.53958e-03
+Epoch 4, 81% 	 train_loss: 2.14313e-03
+Training loss = 1.45969e-02
+Validation loss = 6.74573e-03
+Training finished, took 28.65s, MODEL SAVED
+Epoch 5, 27% 	 train_loss: 6.68302e-03
+Epoch 5, 54% 	 train_loss: 3.13625e-03
+Epoch 5, 81% 	 train_loss: 1.97320e-03
+Training loss = 1.34352e-02
+Validation loss = 6.62303e-03
+Training finished, took 35.31s, MODEL SAVED
+Final Results Saved
+Trial 6 finished with value: 0.00662302877753973 and parameters: {'latent_dimension': 31, 'k': 50, 'gamma': 4, 'alpha': 1, 'lr': 3}. Best is trial 2 with value: 0.004438566509634256.
+#################### CREATING Inner DATASET #######################
+Processing...
+Taking Data at Re n.:  40 in  train  mode.
+Taking Data at Re n.:  50 in  train  mode.
+Taking Data at Re n.:  60 in  train  mode.
+Taking Data at Re n.:  70 in  train  mode.
+Taking Data at Re n.:  80 in  train  mode.
+Taking Data at Re n.:  90 in  train  mode.
+Taking Data at Re n.:  100 in  train  mode.
+Taking Data at Re n.:  120 in  train  mode.
+Taking Data at Re n.:  130 in  train  mode.
+Taking Data at Re n.:  140 in  train  mode.
+Taking Data at Re n.:  150 in  train  mode.
+Done!
+Processing...
+Taking Data at Re n.:  110 in  val  mode.
+Done!
+#################### DSS NET parameter #######################
+Latent space dim :  19
+Number of updates :  64
+Gamma (loss function) :  0.3
+Alpha (reduction correction) : 0.06
+LR (Learning rate): 0.004
+PARAMETER SET: k:64, laten_dim:19, alpha:0.06, lr:0.004
+#################### CREATING NETWORKS #######################
+#################### TRAINING #######################
+Epoch 1, 27% 	 train_loss: 2.97391e-02
+Epoch 1, 54% 	 train_loss: 6.63584e-03
+Epoch 1, 81% 	 train_loss: 1.34367e-02
+Training loss = 5.53839e-02
+Validation loss = 8.82354e-03
+Training finished, took 7.35s, MODEL SAVED
+Epoch 2, 27% 	 train_loss: 8.17085e-03
+Epoch 2, 54% 	 train_loss: 4.28585e-03
+Epoch 2, 81% 	 train_loss: 4.52875e-03
+Training loss = 2.01079e-02
+Validation loss = 1.24705e-02
+Training finished, took 14.89s, MODEL SAVED
+Epoch 3, 27% 	 train_loss: 7.68164e-03
+Epoch 3, 54% 	 train_loss: 4.59643e-03
+Epoch 3, 81% 	 train_loss: 5.84555e-03
+Training loss = 2.07228e-02
+Validation loss = 9.90086e-03
+Training finished, took 22.52s, MODEL SAVED
+Epoch 4, 27% 	 train_loss: 7.04884e-03
+Epoch 4, 54% 	 train_loss: 3.57160e-03
+Epoch 4, 81% 	 train_loss: 2.54325e-03
+Training loss = 1.53641e-02
+Validation loss = 8.19746e-03
+Training finished, took 30.31s, MODEL SAVED
+Epoch 5, 27% 	 train_loss: 6.09840e-03
+Epoch 5, 54% 	 train_loss: 2.88122e-03
+Epoch 5, 81% 	 train_loss: 2.47075e-03
+Training loss = 1.31890e-02
+Validation loss = 6.43848e-03
+Training finished, took 37.79s, MODEL SAVED
+Final Results Saved
+Trial 7 finished with value: 0.006438476499170065 and parameters: {'latent_dimension': 19, 'k': 64, 'gamma': 3, 'alpha': 6, 'lr': 4}. Best is trial 2 with value: 0.004438566509634256.
+#################### CREATING Inner DATASET #######################
+Processing...
+Taking Data at Re n.:  40 in  train  mode.
+Taking Data at Re n.:  50 in  train  mode.
+Taking Data at Re n.:  60 in  train  mode.
+Taking Data at Re n.:  70 in  train  mode.
+Taking Data at Re n.:  80 in  train  mode.
+Taking Data at Re n.:  90 in  train  mode.
+Taking Data at Re n.:  100 in  train  mode.
+Taking Data at Re n.:  120 in  train  mode.
+Taking Data at Re n.:  130 in  train  mode.
+Taking Data at Re n.:  140 in  train  mode.
+Taking Data at Re n.:  150 in  train  mode.
+Done!
+Processing...
+Taking Data at Re n.:  110 in  val  mode.
+Done!
+#################### DSS NET parameter #######################
+Latent space dim :  31
+Number of updates :  67
+Gamma (loss function) :  0.4
+Alpha (reduction correction) : 0.02
+LR (Learning rate): 0.006
+PARAMETER SET: k:67, laten_dim:31, alpha:0.02, lr:0.006
+#################### CREATING NETWORKS #######################
+#################### TRAINING #######################
+Epoch 1, 27% 	 train_loss: 1.40638e-02
+Epoch 1, 54% 	 train_loss: 1.00998e-02
+Epoch 1, 81% 	 train_loss: 5.30912e-03
+Training loss = 3.35263e-02
+Validation loss = 1.16703e-02
+Training finished, took 8.87s, MODEL SAVED
+Epoch 2, 27% 	 train_loss: 7.23355e-03
+Epoch 2, 54% 	 train_loss: 4.44664e-03
+Epoch 2, 81% 	 train_loss: 3.36084e-03
+Training loss = 1.86675e-02
+Validation loss = 1.08357e-02
+Training finished, took 18.05s, MODEL SAVED
+Epoch 3, 27% 	 train_loss: 7.18948e-03
+Epoch 3, 54% 	 train_loss: 3.73572e-03
+Epoch 3, 81% 	 train_loss: 3.17945e-03
+Training loss = 1.62889e-02
+Validation loss = 1.13655e-02
+Training finished, took 27.23s, MODEL SAVED
+Epoch 4, 27% 	 train_loss: 7.43099e-03
+Epoch 4, 54% 	 train_loss: 3.91307e-03
+Epoch 4, 81% 	 train_loss: 2.52586e-03
+Training loss = 1.64677e-02
+Validation loss = 1.01572e-02
+Training finished, took 36.16s, MODEL SAVED
+Epoch 5, 27% 	 train_loss: 6.75394e-03
+Epoch 5, 54% 	 train_loss: 3.31979e-03
+Epoch 5, 81% 	 train_loss: 2.27297e-03
+Training loss = 1.41125e-02
+Validation loss = 7.57783e-03
+Training finished, took 45.30s, MODEL SAVED
+Final Results Saved
+Trial 8 finished with value: 0.007577834650874138 and parameters: {'latent_dimension': 31, 'k': 67, 'gamma': 4, 'alpha': 2, 'lr': 6}. Best is trial 2 with value: 0.004438566509634256.
+#################### CREATING Inner DATASET #######################
+Processing...
+Taking Data at Re n.:  40 in  train  mode.
+Taking Data at Re n.:  50 in  train  mode.
+Taking Data at Re n.:  60 in  train  mode.
+Taking Data at Re n.:  70 in  train  mode.
+Taking Data at Re n.:  80 in  train  mode.
+Taking Data at Re n.:  90 in  train  mode.
+Taking Data at Re n.:  100 in  train  mode.
+Taking Data at Re n.:  120 in  train  mode.
+Taking Data at Re n.:  130 in  train  mode.
+Taking Data at Re n.:  140 in  train  mode.
+Taking Data at Re n.:  150 in  train  mode.
+Done!
+Processing...
+Taking Data at Re n.:  110 in  val  mode.
+Done!
+#################### DSS NET parameter #######################
+Latent space dim :  33
+Number of updates :  88
+Gamma (loss function) :  0.1
+Alpha (reduction correction) : 0.03
+LR (Learning rate): 0.005
+PARAMETER SET: k:88, laten_dim:33, alpha:0.03, lr:0.005
+#################### CREATING NETWORKS #######################
+#################### TRAINING #######################
+Epoch 1, 27% 	 train_loss: 1.99754e-02
+Epoch 1, 54% 	 train_loss: 5.22487e-03
+Epoch 1, 81% 	 train_loss: 3.66157e-03
+Training loss = 3.21542e-02
+Validation loss = 1.09569e-02
+Training finished, took 13.06s, MODEL SAVED
+Epoch 2, 27% 	 train_loss: 5.51287e-03
+Epoch 2, 54% 	 train_loss: 2.69110e-03
+Epoch 2, 81% 	 train_loss: 2.58113e-03
+Training loss = 1.35251e-02
+Validation loss = 8.09035e-03
+Training finished, took 26.62s, MODEL SAVED
+Epoch 3, 27% 	 train_loss: 5.77474e-03
+Epoch 3, 54% 	 train_loss: 7.01712e-03
+Epoch 3, 81% 	 train_loss: 8.68088e-03
+Training loss = 2.38683e-02
+Validation loss = 1.04111e-02
+Training finished, took 40.16s, MODEL SAVED
+Epoch 4, 27% 	 train_loss: 5.19001e-03
+Epoch 4, 54% 	 train_loss: 3.22546e-03
+Epoch 4, 81% 	 train_loss: 3.11178e-03
+Training loss = 1.31596e-02
+Validation loss = 7.98481e-03
+Training finished, took 53.80s, MODEL SAVED
+Epoch 5, 27% 	 train_loss: 5.03467e-03
+Epoch 5, 54% 	 train_loss: 2.94751e-03
+Epoch 5, 81% 	 train_loss: 1.87854e-03
+Training loss = 1.14281e-02
+Validation loss = 4.49750e-03
+Training finished, took 65.85s, MODEL SAVED
+Final Results Saved
+Trial 9 finished with value: 0.004497501067817211 and parameters: {'latent_dimension': 33, 'k': 88, 'gamma': 1, 'alpha': 3, 'lr': 5}. Best is trial 2 with value: 0.004438566509634256.
+#################### CREATING Inner DATASET #######################
+Processing...
+Taking Data at Re n.:  40 in  train  mode.
+Taking Data at Re n.:  50 in  train  mode.
+Taking Data at Re n.:  60 in  train  mode.
+Taking Data at Re n.:  70 in  train  mode.
+Taking Data at Re n.:  80 in  train  mode.
+Taking Data at Re n.:  90 in  train  mode.
+Taking Data at Re n.:  100 in  train  mode.
+Taking Data at Re n.:  120 in  train  mode.
+Taking Data at Re n.:  130 in  train  mode.
+Taking Data at Re n.:  140 in  train  mode.
+Taking Data at Re n.:  150 in  train  mode.
+Done!
+Processing...
+Taking Data at Re n.:  110 in  val  mode.
+Done!
+#################### DSS NET parameter #######################
+Latent space dim :  19
+Number of updates :  67
+Gamma (loss function) :  0.2
+Alpha (reduction correction) : 0.07
+LR (Learning rate): 0.004
+PARAMETER SET: k:67, laten_dim:19, alpha:0.07, lr:0.004
+#################### CREATING NETWORKS #######################
+#################### TRAINING #######################
+Epoch 1, 27% 	 train_loss: 1.80918e-02
+Epoch 1, 54% 	 train_loss: 3.05640e-02
+Epoch 1, 81% 	 train_loss: 5.35451e-02
