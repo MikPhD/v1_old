@@ -1,2 +1,0 @@
-[32m[I 2022-03-09 09:58:08,831][0m Using an existing study with name 'second_optuna' instead of creating a new one.[0m
-[32m[I 2022-03-09 09:58:59,590][0m Trial 15 finished with value: 0.005957102403044701 and parameters: {'latent_dimension': 24, 'k': 76, 'gamma': 1, 'alpha': 2, 'lr': 3}. Best is trial 11 with value: 0.0002912902273237705.[0m

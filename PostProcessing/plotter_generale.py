@@ -10,20 +10,18 @@ list_max_reserved = []
 list_cached = []
 list_max_cached = []
 
-with open('../Memory_allocated_first.txt') as mem_file:
+with open('../Memory_allocated.txt') as mem_file:
     general_list.append(mem_file.readlines())
 
 general_list = [int(i) for i in general_list[0]]
 
-for i in range(0, len(general_list), 6):
+for i in range(0, len(general_list), 4):
     list_allocated.append(general_list[i])
     list_reserved.append(general_list[i+1])
-    list_cached.append(general_list[i+2])
 
-    list_max_allocated.append(general_list[i+3])
+    list_max_allocated.append(general_list[i+2])
 
-    list_max_reserved.append(general_list[i+4])
-    list_max_cached.append(general_list[i+5])
+    list_max_reserved.append(general_list[i+3])
 
 
     # while True:
@@ -40,7 +38,7 @@ for i in range(0, len(general_list), 6):
 
 x = np.array(range(len(list_allocated)))
 
-curve = list_max_allocated
+curve = list_allocated
 
 fig1 = plt.figure(figsize=(15,8))
 plt.plot(x, curve, label=str(curve))

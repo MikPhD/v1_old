@@ -5,9 +5,216 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="trying execute on cuda slurm">
+      <change afterPath="$PROJECT_DIR$/Optuna/first_optuna/case.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Optuna/first_optuna/fig_importance.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Optuna/first_optuna/fig_intermediate.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Optuna/first_optuna/fig_optuna.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Optuna/first_optuna/first-search.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Optuna/second_optuna/Memory_allocated.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Optuna/second_optuna/best_results/results.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Optuna/second_optuna/fig_importance.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Optuna/second_optuna/fig_intermediate.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Optuna/second_optuna/fig_optuna.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Optuna/second_optuna/second_optuna.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Memory_allocated.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Memory_summary.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/Figure_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/Figure_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/plotter_generale.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/plotter_generale.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/results.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/results.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig_importance.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig_intermediate.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig_optuna.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/first_optuna/case.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/first_optuna/fig_importance.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/first_optuna/fig_intermediate.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/first_optuna/fig_optuna.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/first_optuna/first-search.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/case.err" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/case.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-0001-001/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-0001-001/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-0001-001/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-0001-01/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-0001-01/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-0001-01/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-0001-07/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-0001-07/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-0001-07/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-001-001/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-001-001/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-001-001/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-001-01/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-001-01/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-001-01/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-001-07/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-001-07/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-001-07/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-01-001/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-01-001/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-01-001/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-05-01-01/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-0001-001/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-0001-001/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-0001-001/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-0001-01/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-0001-01/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-0001-01/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-0001-07/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-0001-07/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-0001-07/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-001-001/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-001-001/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-001-001/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-001-01/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-001-01/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-001-01/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-001-07/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-001-07/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-001-07/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-01-001/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-01-001/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-01-001/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-01-01/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-01-01/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-01-01/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-01-07/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-01-07/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/30-09-01-07/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-0001-001/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-0001-001/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-0001-001/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-0001-01/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-0001-01/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-0001-01/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-0001-03/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-0001-03/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-0001-03/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-001-001/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-001-001/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-001-001/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-001-01/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-001-01/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-001-01/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-001-03/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-001-03/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-001-03/results5000.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/60-09-01-001/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/Mesh.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/U.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Results/results0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-0001-001/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-0001-001/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-0001-001/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-0001-001/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-0001-001plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-0001-001plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-0001-01/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-0001-01/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-0001-01/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-0001-01plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-0001-07/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-0001-07/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-001-001/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-001-001/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-001-001/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-001-001/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-001-001plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-001-001plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-001-01/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-001-01/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-001-01/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-001-01plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-001-07/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-001-07/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-01-001/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-01-001/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-01-001/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-01-001/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-01-001plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-05-01-001plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-0001-001/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-0001-001/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-0001-001/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-0001-001/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-0001-001plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-0001-001plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-0001-01/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-0001-01/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-0001-01/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-0001-01/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-0001-01plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-0001-01plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-0001-07/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-0001-07/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-001-001/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-001-001/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-001-001/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-001-001/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-001-001plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-001-001plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-001-01/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-001-01/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-001-01/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-001-01plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-001-07/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-001-07/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-01-001/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-01-001/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-01-001/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-01-001/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-01-001plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-01-001plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-01-01/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-01-01/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-01-01/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-01-01plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-01-07/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/30-09-01-07/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-001/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-001/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-001/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-001/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-001plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-001plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-01/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-01/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-01/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-01/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-01plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-01plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-03/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-03/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-03/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-0001-03plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-001-001/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-001-001/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-001-001/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-001-001/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-001-001plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-001-001plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-001-01/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-001-01/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-001-01/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-001-01/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-001-01plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-001-01plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-001-03/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/60-09-001-03/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/Stats/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/log/case_first.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_manual_multicase/log/case_last.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_optuna.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +275,7 @@
       <recent name="$PROJECT_DIR$/../v2/dataset/processed" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.MyPostProcess (1)">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,9 +346,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/cpu/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PostProcessing" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" />
@@ -160,9 +367,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/cpu/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PostProcessing" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PostProcessing/plotter_generale.py" />
@@ -183,10 +390,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.plotter_generale" />
         <item itemvalue="Python.MyPostProcess (1)" />
-        <item itemvalue="Python.MyPlot" />
+        <item itemvalue="Python.plotter_generale" />
         <item itemvalue="Python.MyPlot_stand_alone" />
+        <item itemvalue="Python.MyPlot" />
         <item itemvalue="Python.Main" />
       </list>
     </recent_temporary>
