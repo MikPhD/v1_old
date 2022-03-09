@@ -176,8 +176,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.Main" />
-      <item itemvalue="Python.MyPlot_stand_alone" />
       <item itemvalue="Python.MyPlot" />
+      <item itemvalue="Python.MyPlot_stand_alone" />
       <item itemvalue="Python.MyPostProcess (1)" />
       <item itemvalue="Python.plotter_generale" />
     </list>
