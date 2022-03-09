@@ -4,103 +4,10 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="trying execute on cuda slurm">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/v1.iml" afterDir="false" />
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="set blank for third optuna">
+      <change afterPath="$PROJECT_DIR$/PostProcessing/F.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/51-49-006-0001/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/54-45-006-0006/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/59-36-006-0005/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/62-26-004-0002/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/63-31-003-0001/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/65-32-005-0001/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/76-24-002-0003/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/85-19-001-0003/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/86-19-001-0003/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/94-29-006-0004/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/97-38-002-0001/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/99-45-004-0001/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/51-49-006-0001/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/51-49-006-0001/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/51-49-006-0001/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/51-49-006-0001/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/51-49-006-0001plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/51-49-006-0001plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/54-45-006-0006/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/54-45-006-0006/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/54-45-006-0006/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/54-45-006-0006/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/54-45-006-0006plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/54-45-006-0006plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/59-36-006-0005/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/59-36-006-0005/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/59-36-006-0005/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/59-36-006-0005/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/59-36-006-0005plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/59-36-006-0005plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/62-26-004-0002/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/62-26-004-0002/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/62-26-004-0002/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/62-26-004-0002/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/62-26-004-0002plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/62-26-004-0002plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/63-31-003-0001/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/63-31-003-0001/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/63-31-003-0001/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/63-31-003-0001/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/63-31-003-0001plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/63-31-003-0001plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/65-32-005-0001/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/65-32-005-0001/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/65-32-005-0001/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/65-32-005-0001/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/65-32-005-0001plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/65-32-005-0001plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/76-24-002-0003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/76-24-002-0003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/76-24-002-0003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/76-24-002-0003/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/76-24-002-0003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/76-24-002-0003plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/85-19-001-0003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/85-19-001-0003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/85-19-001-0003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/85-19-001-0003/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/85-19-001-0003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/85-19-001-0003plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/86-19-001-0003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/86-19-001-0003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/86-19-001-0003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/86-19-001-0003/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/86-19-001-0003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/86-19-001-0003plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/94-29-006-0004/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/94-29-006-0004/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/94-29-006-0004/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/94-29-006-0004/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/94-29-006-0004plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/94-29-006-0004plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/97-38-002-0001/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/97-38-002-0001/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/97-38-002-0001/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/97-38-002-0001/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/97-38-002-0001plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/97-38-002-0001plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/99-45-004-0001/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/99-45-004-0001/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/99-45-004-0001/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/99-45-004-0001/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/99-45-004-0001plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/99-45-004-0001plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +66,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/PostProcessing" />
       <recent name="$PROJECT_DIR$/../v2/dataset/processed" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PostProcessing" />
     </key>
   </component>
   <component name="RunManager" selected="Python.MyPostProcess (1)">
@@ -292,13 +202,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00071" summary="iniziata nuova versione mikversion...">
-      <created>1644427631027</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1644427631027</updated>
     </task>
     <task id="LOCAL-00072" summary="stucked... recheck all...">
       <created>1644597222874</created>
@@ -636,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646661430296</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="set blank for third optuna">
+      <created>1646825908727</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1646825908727</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -675,7 +585,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added entire dataset" />
     <MESSAGE value="adjusted connection creation" />
     <MESSAGE value="adjusted and setted for slurm execution" />
     <MESSAGE value="completely setted new transformation" />
@@ -700,7 +609,8 @@
     <MESSAGE value="update useless" />
     <MESSAGE value="commit before backup" />
     <MESSAGE value="trying execute on cuda slurm" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying execute on cuda slurm" />
+    <MESSAGE value="set blank for third optuna" />
+    <option name="LAST_COMMIT_MESSAGE" value="set blank for third optuna" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

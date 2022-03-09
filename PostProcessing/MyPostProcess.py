@@ -122,10 +122,10 @@ class PostProcess():
 
 
         ######## loading forcing from GNN ################
-        F_gnn = np.load("./results.npy").flatten()
+        F_gnn = np.load("./110/F.npy").flatten()
 
         ######## loading forcing from CFD ################
-        F_cfd = np.load("./110/F.npy").flatten()
+        F_cfd = np.load("./F.npy").flatten()
 
         ######## mesh coordinates ##############
         mesh_points = mesh.coordinates().tolist()
@@ -145,17 +145,17 @@ class PostProcess():
         v_diff.vector()[:] = v_cfd.vector()[:] - v_gnn.vector()[:]
 
         ######### plot results ##############
-        # plt.figure()
-        # plot(v_gnn.sub(0))
-        # plt.show()
+        plt.figure()
+        plot(v_gnn.sub(0))
+        plt.show()
         #
         plt.figure()
         plot(v_cfd.sub(0))
         plt.show()
 
-        # plt.figure()
-        # plot(v_diff.sub(0))
-        # plt.show()
+        plt.figure()
+        plot(v_diff.sub(0))
+        plt.show()
 
         print(f"Norma della differenza delle funzioni: {norm(v_diff, 'L2')}")
         print(f"Norma della differenza delle funzioni normalizzata: {norm(v_diff, 'L2')/norm(v_cfd, 'L2')}")
