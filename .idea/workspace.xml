@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="trying execute on cuda slurm">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/8-84-19301000000000002-0003/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/8-84-19301000000000002-0003/loss_train_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/8-84-19301000000000002-0003/loss_val_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/8-84-19301000000000002-0003/plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/8-84-19301000000000002-0003plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third_optuna.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,13 +210,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00075" summary="rebuild from scratch">
-      <created>1645033634972</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1645033634972</updated>
     </task>
     <task id="LOCAL-00076" summary="rebuild from scratch">
       <created>1645035321187</created>
@@ -547,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646900482483</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="trying execute on cuda slurm">
+      <created>1646928260283</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1646928260283</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

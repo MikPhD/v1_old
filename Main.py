@@ -148,6 +148,8 @@ def objective(trial):
     del DSS, GNN, loader_val, loader_train, optimizer, scheduler
     if not math.isnan(validation_loss) and math.isinf(validation_loss):
         return validation_loss
+    else:
+        return 1e+10 #trick to pure the invalid cases
 
 ################## to be uncommented only when want to log #######################
 optuna.logging.get_logger("optuna").addHandler(logging.StreamHandler(sys.stdout))
