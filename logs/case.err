@@ -1,0 +1,168 @@
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/samplers/_tpe/sampler.py:263: ExperimentalWarning: ``multivariate`` option is an experimental feature. The interface can change in the future.
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/samplers/_tpe/sampler.py:274: ExperimentalWarning: ``group`` option is an experimental feature. The interface can change in the future.
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/samplers/_tpe/sampler.py:282: ExperimentalWarning: ``constant_liar`` option is an experimental feature. The interface can change in the future.
+  warnings.warn(
+[32m[I 2022-03-10 09:28:24,292][0m A new study created in RDB with name: third_optuna[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[33m[W 2022-03-10 09:42:30,226][0m Trial 0 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[33m[W 2022-03-10 09:42:41,951][0m Trial 1 failed because of the following error: IntegrityError('(sqlite3.IntegrityError) NOT NULL constraint failed: trial_intermediate_values.intermediate_value')[0m
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
+    self.dialect.do_execute(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: trial_intermediate_values.intermediate_value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 213, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/Main.py", line 126, in objective
+    trial.report(validation_loss, epoch)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/trial/_trial.py", line 597, in report
+    self.storage.set_trial_intermediate_value(self._trial_id, step, value)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/storages/_cached_storage.py", line 318, in set_trial_intermediate_value
+    self._flush_trial(trial_id)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/storages/_cached_storage.py", line 428, in _flush_trial
+    return self._backend._update_trial(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/storages/_rdb/storage.py", line 768, in _update_trial
+    session.add(trial_model)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/contextlib.py", line 124, in __exit__
+    next(self.gen)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/storages/_rdb/storage.py", line 54, in _create_scoped_session
+    session.commit()
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 829, in commit
+    self._prepare_impl()
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3363, in flush
+    self._flush(objects)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3463, in _flush
+    flush_context.execute()
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 244, in save_obj
+    _emit_insert_statements(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1221, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1614, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1481, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1845, in _execute_context
+    self._handle_dbapi_exception(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2026, in _handle_dbapi_exception
+    util.raise_(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
+    self.dialect.do_execute(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: trial_intermediate_values.intermediate_value
+[SQL: INSERT INTO trial_intermediate_values (trial_id, step, intermediate_value) VALUES (?, ?, ?)]
+[parameters: (2, 0, nan)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
+    self.dialect.do_execute(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: trial_intermediate_values.intermediate_value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/Main.py", line 161, in <module>
+    study.optimize(objective)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/study.py", line 400, in optimize
+    _optimize(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 66, in _optimize
+    _optimize_sequential(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 163, in _optimize_sequential
+    trial = _run_trial(study, func, catch)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 264, in _run_trial
+    raise func_err
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 213, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/Main.py", line 126, in objective
+    trial.report(validation_loss, epoch)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/trial/_trial.py", line 597, in report
+    self.storage.set_trial_intermediate_value(self._trial_id, step, value)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/storages/_cached_storage.py", line 318, in set_trial_intermediate_value
+    self._flush_trial(trial_id)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/storages/_cached_storage.py", line 428, in _flush_trial
+    return self._backend._update_trial(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/storages/_rdb/storage.py", line 768, in _update_trial
+    session.add(trial_model)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/contextlib.py", line 124, in __exit__
+    next(self.gen)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/storages/_rdb/storage.py", line 54, in _create_scoped_session
+    session.commit()
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 829, in commit
+    self._prepare_impl()
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3363, in flush
+    self._flush(objects)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3463, in _flush
+    flush_context.execute()
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 244, in save_obj
+    _emit_insert_statements(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1221, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1614, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1481, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1845, in _execute_context
+    self._handle_dbapi_exception(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2026, in _handle_dbapi_exception
+    util.raise_(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
+    self.dialect.do_execute(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: trial_intermediate_values.intermediate_value
+[SQL: INSERT INTO trial_intermediate_values (trial_id, step, intermediate_value) VALUES (?, ?, ?)]
+[parameters: (2, 0, nan)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+srun: error: n101: task 0: Exited with exit code 1

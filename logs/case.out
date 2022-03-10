@@ -1,0 +1,3140 @@
+#################### DATA ADAPTING FOR GNN #######################
+Running on :  cuda
+A new study created in RDB with name: third_optuna
+#################### CREATING Inner DATASET #######################
+Processing...
+Taking Data at Re n.:  40 in  train  mode.
+Taking Data at Re n.:  50 in  train  mode.
+Taking Data at Re n.:  60 in  train  mode.
+Taking Data at Re n.:  70 in  train  mode.
+Taking Data at Re n.:  80 in  train  mode.
+Taking Data at Re n.:  90 in  train  mode.
+Taking Data at Re n.:  100 in  train  mode.
+Taking Data at Re n.:  120 in  train  mode.
+Taking Data at Re n.:  130 in  train  mode.
+Taking Data at Re n.:  140 in  train  mode.
+Taking Data at Re n.:  150 in  train  mode.
+Done!
+Processing...
+Taking Data at Re n.:  110 in  val  mode.
+Done!
+#################### DSS NET parameter #######################
+Latent space dim :  84
+Number of updates :  8
+Gamma (loss function) :  0.101
+Alpha (reduction correction) : 19.301000000000002
+LR (Learning rate): 0.003
+PARAMETER SET: k:8, laten_dim:84, alpha:19.301000000000002, lr:0.003
+#################### CREATING NETWORKS #######################
+#################### TRAINING #######################
+Epoch 1, 27% 	 train_loss: 1.92759e+12
+Epoch 1, 54% 	 train_loss: 1.09712e+12
+Epoch 1, 81% 	 train_loss: 8.24940e+09
+Training loss = 3.03303e+12
+Validation loss = 1.29555e+08
+Training finished, took 2.14s
+Epoch 2, 27% 	 train_loss: 2.83157e+07
+Epoch 2, 54% 	 train_loss: 1.09467e+09
+Epoch 2, 81% 	 train_loss: 3.60442e+06
+Training loss = 1.12708e+09
+Validation loss = 5.95482e+04
+Training finished, took 3.85s
+Epoch 3, 27% 	 train_loss: 1.53429e+05
+Epoch 3, 54% 	 train_loss: 2.18371e+05
+Epoch 3, 81% 	 train_loss: 3.76364e+03
+Training loss = 4.21943e+05
+Validation loss = 4.26878e+04
+Training finished, took 5.32s
+Epoch 4, 27% 	 train_loss: 1.15177e+05
+Epoch 4, 54% 	 train_loss: 2.99998e+02
+Epoch 4, 81% 	 train_loss: 8.48142e+02
+Training loss = 1.16407e+05
+Validation loss = 1.23858e+04
+Training finished, took 6.80s
+Epoch 5, 27% 	 train_loss: 1.69741e+03
+Epoch 5, 54% 	 train_loss: 2.45384e+02
+Epoch 5, 81% 	 train_loss: 2.23927e+00
+Training loss = 1.94916e+03
+Validation loss = 1.39658e+00
+Training finished, took 8.44s
+Epoch 6, 27% 	 train_loss: 7.80000e-01
+Epoch 6, 54% 	 train_loss: 3.10801e+00
+Epoch 6, 81% 	 train_loss: 3.67283e-01
+Training loss = 5.35870e+00
+Validation loss = 1.06218e+00
+Training finished, took 9.93s
+Epoch 7, 27% 	 train_loss: 5.44397e+00
+Epoch 7, 54% 	 train_loss: 1.09487e+01
+Epoch 7, 81% 	 train_loss: 7.70939e+00
+Training loss = 2.42840e+01
+Validation loss = 6.40526e-01
+Training finished, took 11.38s
+Epoch 8, 27% 	 train_loss: 1.27367e-01
+Epoch 8, 54% 	 train_loss: 3.02016e-01
+Epoch 8, 81% 	 train_loss: 1.15496e-01
+Training loss = 5.92272e-01
+Validation loss = 2.93750e-01
+Training finished, took 12.82s
+Epoch 9, 27% 	 train_loss: 1.10992e-02
+Epoch 9, 54% 	 train_loss: 5.46690e-02
+Epoch 9, 81% 	 train_loss: 8.01595e-02
+Training loss = 1.85211e-01
+Validation loss = 8.98945e-02
+Training finished, took 14.24s, MODEL SAVED
+Epoch 10, 27% 	 train_loss: 2.68945e-02
+Epoch 10, 54% 	 train_loss: 2.10800e-02
+Epoch 10, 81% 	 train_loss: 5.64802e-03
+Training loss = 6.37655e-02
+Validation loss = 1.56592e-02
+Training finished, took 15.70s, MODEL SAVED
+Epoch 11, 27% 	 train_loss: 5.77643e-03
+Epoch 11, 54% 	 train_loss: 3.38497e-03
+Epoch 11, 81% 	 train_loss: 4.03845e-03
+Training loss = 1.48651e-02
+Validation loss = 5.80784e-03
+Training finished, took 17.19s, MODEL SAVED
+Epoch 12, 27% 	 train_loss: 4.49763e-03
+Epoch 12, 54% 	 train_loss: 2.13568e-03
+Epoch 12, 81% 	 train_loss: 1.32707e-03
+Training loss = 9.03208e-03
+Validation loss = 6.11441e-03
+Training finished, took 18.72s, MODEL SAVED
+Epoch 13, 27% 	 train_loss: 4.81513e-03
+Epoch 13, 54% 	 train_loss: 2.07216e-03
+Epoch 13, 81% 	 train_loss: 1.31670e-03
+Training loss = 9.27068e-03
+Validation loss = 4.35039e-03
+Training finished, took 20.31s, MODEL SAVED
+Epoch 14, 27% 	 train_loss: 4.35592e-03
+Epoch 14, 54% 	 train_loss: 2.03932e-03
+Epoch 14, 81% 	 train_loss: 1.27775e-03
+Training loss = 8.72427e-03
+Validation loss = 4.45173e-03
+Training finished, took 21.85s, MODEL SAVED
+Epoch 15, 27% 	 train_loss: 4.37186e-03
+Epoch 15, 54% 	 train_loss: 2.04582e-03
+Epoch 15, 81% 	 train_loss: 1.27841e-03
+Training loss = 8.75196e-03
+Validation loss = 4.35121e-03
+Training finished, took 23.42s, MODEL SAVED
+Epoch 16, 27% 	 train_loss: 4.34143e-03
+Epoch 16, 54% 	 train_loss: 2.04184e-03
+Epoch 16, 81% 	 train_loss: 1.29805e-03
+Training loss = 8.79520e-03
+Validation loss = 4.39835e-03
+Training finished, took 24.83s, MODEL SAVED
+Epoch 17, 27% 	 train_loss: 4.37274e-03
+Epoch 17, 54% 	 train_loss: 2.05112e-03
+Epoch 17, 81% 	 train_loss: 1.27260e-03
+Training loss = 8.74566e-03
+Validation loss = 4.30462e-03
+Training finished, took 26.34s, MODEL SAVED
+Epoch 18, 27% 	 train_loss: 4.33458e-03
+Epoch 18, 54% 	 train_loss: 2.03073e-03
+Epoch 18, 81% 	 train_loss: 1.26723e-03
+Training loss = 8.68013e-03
+Validation loss = 4.31095e-03
+Training finished, took 27.80s, MODEL SAVED
+Epoch 19, 27% 	 train_loss: 4.34478e-03
+Epoch 19, 54% 	 train_loss: 2.03154e-03
+Epoch 19, 81% 	 train_loss: 1.26936e-03
+Training loss = 8.69430e-03
+Validation loss = 4.29881e-03
+Training finished, took 29.28s, MODEL SAVED
+Epoch 20, 27% 	 train_loss: 4.33949e-03
+Epoch 20, 54% 	 train_loss: 2.03267e-03
+Epoch 20, 81% 	 train_loss: 1.26742e-03
+Training loss = 8.68796e-03
+Validation loss = 4.29854e-03
+Training finished, took 30.74s, MODEL SAVED
+Epoch 21, 27% 	 train_loss: 4.33314e-03
+Epoch 21, 54% 	 train_loss: 2.02944e-03
+Epoch 21, 81% 	 train_loss: 1.26643e-03
+Training loss = 8.67566e-03
+Validation loss = 4.30360e-03
+Training finished, took 32.29s, MODEL SAVED
+Epoch 22, 27% 	 train_loss: 4.34097e-03
+Epoch 22, 54% 	 train_loss: 2.03015e-03
+Epoch 22, 81% 	 train_loss: 1.26628e-03
+Training loss = 8.68560e-03
+Validation loss = 4.29893e-03
+Training finished, took 33.83s, MODEL SAVED
+Epoch 23, 27% 	 train_loss: 4.33354e-03
+Epoch 23, 54% 	 train_loss: 2.02889e-03
+Epoch 23, 81% 	 train_loss: 1.26536e-03
+Training loss = 8.67441e-03
+Validation loss = 4.30078e-03
+Training finished, took 35.38s, MODEL SAVED
+Epoch 24, 27% 	 train_loss: 4.34036e-03
+Epoch 24, 54% 	 train_loss: 2.03166e-03
+Epoch 24, 81% 	 train_loss: 1.26608e-03
+Training loss = 8.68651e-03
+Validation loss = 4.30321e-03
+Training finished, took 36.97s, MODEL SAVED
+Epoch 25, 27% 	 train_loss: 4.33437e-03
+Epoch 25, 54% 	 train_loss: 2.02911e-03
+Epoch 25, 81% 	 train_loss: 1.26526e-03
+Training loss = 8.67544e-03
+Validation loss = 4.30124e-03
+Training finished, took 38.60s, MODEL SAVED
+Epoch 26, 27% 	 train_loss: 4.34041e-03
+Epoch 26, 54% 	 train_loss: 2.03041e-03
+Epoch 26, 81% 	 train_loss: 1.26584e-03
+Training loss = 8.68493e-03
+Validation loss = 4.29908e-03
+Training finished, took 40.04s, MODEL SAVED
+Epoch 27, 27% 	 train_loss: 4.33098e-03
+Epoch 27, 54% 	 train_loss: 2.02882e-03
+Epoch 27, 81% 	 train_loss: 1.26552e-03
+Training loss = 8.67181e-03
+Validation loss = 4.30105e-03
+Training finished, took 41.57s, MODEL SAVED
+Epoch 28, 27% 	 train_loss: 4.34165e-03
+Epoch 28, 54% 	 train_loss: 2.03181e-03
+Epoch 28, 81% 	 train_loss: 1.26494e-03
+Training loss = 8.68623e-03
+Validation loss = 4.29936e-03
+Training finished, took 43.11s, MODEL SAVED
+Epoch 29, 27% 	 train_loss: 4.32997e-03
+Epoch 29, 54% 	 train_loss: 2.02917e-03
+Epoch 29, 81% 	 train_loss: 1.26570e-03
+Training loss = 8.67128e-03
+Validation loss = 4.30228e-03
+Training finished, took 44.68s, MODEL SAVED
+Epoch 30, 27% 	 train_loss: 4.34259e-03
+Epoch 30, 54% 	 train_loss: 2.03214e-03
+Epoch 30, 81% 	 train_loss: 1.26503e-03
+Training loss = 8.68763e-03
+Validation loss = 4.29952e-03
+Training finished, took 46.18s, MODEL SAVED
+Epoch 31, 27% 	 train_loss: 4.32974e-03
+Epoch 31, 54% 	 train_loss: 2.02913e-03
+Epoch 31, 81% 	 train_loss: 1.26554e-03
+Training loss = 8.67084e-03
+Validation loss = 4.30162e-03
+Training finished, took 47.66s, MODEL SAVED
+Epoch 32, 27% 	 train_loss: 4.34224e-03
+Epoch 32, 54% 	 train_loss: 2.03224e-03
+Epoch 32, 81% 	 train_loss: 1.26490e-03
+Training loss = 8.68690e-03
+Validation loss = 4.29867e-03
+Training finished, took 49.13s, MODEL SAVED
+Epoch 33, 27% 	 train_loss: 4.33014e-03
+Epoch 33, 54% 	 train_loss: 2.02918e-03
+Epoch 33, 81% 	 train_loss: 1.26600e-03
+Training loss = 8.67186e-03
+Validation loss = 4.30014e-03
+Training finished, took 50.58s, MODEL SAVED
+Epoch 34, 27% 	 train_loss: 4.34125e-03
+Epoch 34, 54% 	 train_loss: 2.03265e-03
+Epoch 34, 81% 	 train_loss: 1.26478e-03
+Training loss = 8.68590e-03
+Validation loss = 4.29780e-03
+Training finished, took 52.09s, MODEL SAVED
+Epoch 35, 27% 	 train_loss: 4.33035e-03
+Epoch 35, 54% 	 train_loss: 2.02918e-03
+Epoch 35, 81% 	 train_loss: 1.26629e-03
+Training loss = 8.67253e-03
+Validation loss = 4.29909e-03
+Training finished, took 53.68s, MODEL SAVED
+Epoch 36, 27% 	 train_loss: 4.34027e-03
+Epoch 36, 54% 	 train_loss: 2.03268e-03
+Epoch 36, 81% 	 train_loss: 1.26477e-03
+Training loss = 8.68481e-03
+Validation loss = 4.29778e-03
+Training finished, took 55.17s, MODEL SAVED
+Epoch 37, 27% 	 train_loss: 4.33040e-03
+Epoch 37, 54% 	 train_loss: 2.02924e-03
+Epoch 37, 81% 	 train_loss: 1.26638e-03
+Training loss = 8.67280e-03
+Validation loss = 4.29926e-03
+Training finished, took 56.64s, MODEL SAVED
+Epoch 38, 27% 	 train_loss: 4.34022e-03
+Epoch 38, 54% 	 train_loss: 2.03271e-03
+Epoch 38, 81% 	 train_loss: 1.26478e-03
+Training loss = 8.68479e-03
+Validation loss = 4.29779e-03
+Training finished, took 58.21s, MODEL SAVED
+Epoch 39, 27% 	 train_loss: 4.33043e-03
+Epoch 39, 54% 	 train_loss: 2.02923e-03
+Epoch 39, 81% 	 train_loss: 1.26643e-03
+Training loss = 8.67293e-03
+Validation loss = 4.29908e-03
+Training finished, took 59.65s, MODEL SAVED
+Epoch 40, 27% 	 train_loss: 4.33989e-03
+Epoch 40, 54% 	 train_loss: 2.03263e-03
+Epoch 40, 81% 	 train_loss: 1.26477e-03
+Training loss = 8.68431e-03
+Validation loss = 4.29764e-03
+Training finished, took 61.11s, MODEL SAVED
+Epoch 41, 27% 	 train_loss: 4.33051e-03
+Epoch 41, 54% 	 train_loss: 2.02923e-03
+Epoch 41, 81% 	 train_loss: 1.26654e-03
+Training loss = 8.67319e-03
+Validation loss = 4.29874e-03
+Training finished, took 62.55s, MODEL SAVED
+Epoch 42, 27% 	 train_loss: 4.33933e-03
+Epoch 42, 54% 	 train_loss: 2.03240e-03
+Epoch 42, 81% 	 train_loss: 1.26469e-03
+Training loss = 8.68339e-03
+Validation loss = 4.29747e-03
+Training finished, took 64.17s, MODEL SAVED
+Epoch 43, 27% 	 train_loss: 4.33066e-03
+Epoch 43, 54% 	 train_loss: 2.02919e-03
+Epoch 43, 81% 	 train_loss: 1.26667e-03
+Training loss = 8.67356e-03
+Validation loss = 4.29818e-03
+Training finished, took 65.74s, MODEL SAVED
+Epoch 44, 27% 	 train_loss: 4.33816e-03
+Epoch 44, 54% 	 train_loss: 2.03165e-03
+Epoch 44, 81% 	 train_loss: 1.26451e-03
+Training loss = 8.68128e-03
+Validation loss = 4.29717e-03
+Training finished, took 67.28s, MODEL SAVED
+Epoch 45, 27% 	 train_loss: 4.33107e-03
+Epoch 45, 54% 	 train_loss: 2.02892e-03
+Epoch 45, 81% 	 train_loss: 1.26643e-03
+Training loss = 8.67347e-03
+Validation loss = 4.29775e-03
+Training finished, took 68.70s, MODEL SAVED
+Epoch 46, 27% 	 train_loss: 4.33736e-03
+Epoch 46, 54% 	 train_loss: 2.03105e-03
+Epoch 46, 81% 	 train_loss: 1.26445e-03
+Training loss = 8.67984e-03
+Validation loss = 4.29702e-03
+Training finished, took 70.18s, MODEL SAVED
+Epoch 47, 27% 	 train_loss: 4.33138e-03
+Epoch 47, 54% 	 train_loss: 2.02876e-03
+Epoch 47, 81% 	 train_loss: 1.26620e-03
+Training loss = 8.67335e-03
+Validation loss = 4.29753e-03
+Training finished, took 71.83s, MODEL SAVED
+Epoch 48, 27% 	 train_loss: 4.33697e-03
+Epoch 48, 54% 	 train_loss: 2.03072e-03
+Epoch 48, 81% 	 train_loss: 1.26445e-03
+Training loss = 8.67914e-03
+Validation loss = 4.29694e-03
+Training finished, took 73.30s, MODEL SAVED
+Epoch 49, 27% 	 train_loss: 4.33156e-03
+Epoch 49, 54% 	 train_loss: 2.02869e-03
+Epoch 49, 81% 	 train_loss: 1.26607e-03
+Training loss = 8.67332e-03
+Validation loss = 4.29741e-03
+Training finished, took 74.83s, MODEL SAVED
+Epoch 50, 27% 	 train_loss: 4.33671e-03
+Epoch 50, 54% 	 train_loss: 2.03053e-03
+Epoch 50, 81% 	 train_loss: 1.26446e-03
+Training loss = 8.67872e-03
+Validation loss = 4.29690e-03
+Training finished, took 76.26s, MODEL SAVED
+Epoch 51, 27% 	 train_loss: 4.33168e-03
+Epoch 51, 54% 	 train_loss: 2.02866e-03
+Epoch 51, 81% 	 train_loss: 1.26601e-03
+Training loss = 8.67335e-03
+Validation loss = 4.29732e-03
+Training finished, took 77.74s, MODEL SAVED
+Epoch 52, 27% 	 train_loss: 4.33650e-03
+Epoch 52, 54% 	 train_loss: 2.03038e-03
+Epoch 52, 81% 	 train_loss: 1.26447e-03
+Training loss = 8.67836e-03
+Validation loss = 4.29687e-03
+Training finished, took 79.32s, MODEL SAVED
+Epoch 53, 27% 	 train_loss: 4.33178e-03
+Epoch 53, 54% 	 train_loss: 2.02861e-03
+Epoch 53, 81% 	 train_loss: 1.26583e-03
+Training loss = 8.67315e-03
+Validation loss = 4.29740e-03
+Training finished, took 80.74s, MODEL SAVED
+Epoch 54, 27% 	 train_loss: 4.33678e-03
+Epoch 54, 54% 	 train_loss: 2.03049e-03
+Epoch 54, 81% 	 train_loss: 1.26445e-03
+Training loss = 8.67874e-03
+Validation loss = 4.29690e-03
+Training finished, took 82.24s, MODEL SAVED
+Epoch 55, 27% 	 train_loss: 4.33166e-03
+Epoch 55, 54% 	 train_loss: 2.02865e-03
+Epoch 55, 81% 	 train_loss: 1.26599e-03
+Training loss = 8.67330e-03
+Validation loss = 4.29721e-03
+Training finished, took 83.87s, MODEL SAVED
+Epoch 56, 27% 	 train_loss: 4.33630e-03
+Epoch 56, 54% 	 train_loss: 2.03027e-03
+Epoch 56, 81% 	 train_loss: 1.26447e-03
+Training loss = 8.67804e-03
+Validation loss = 4.29682e-03
+Training finished, took 85.48s, MODEL SAVED
+Epoch 57, 27% 	 train_loss: 4.33183e-03
+Epoch 57, 54% 	 train_loss: 2.02858e-03
+Epoch 57, 81% 	 train_loss: 1.26573e-03
+Training loss = 8.67304e-03
+Validation loss = 4.29736e-03
+Training finished, took 86.99s, MODEL SAVED
+Epoch 58, 27% 	 train_loss: 4.33680e-03
+Epoch 58, 54% 	 train_loss: 2.03047e-03
+Epoch 58, 81% 	 train_loss: 1.26445e-03
+Training loss = 8.67872e-03
+Validation loss = 4.29688e-03
+Training finished, took 88.46s, MODEL SAVED
+Epoch 59, 27% 	 train_loss: 4.33163e-03
+Epoch 59, 54% 	 train_loss: 2.02864e-03
+Epoch 59, 81% 	 train_loss: 1.26600e-03
+Training loss = 8.67329e-03
+Validation loss = 4.29708e-03
+Training finished, took 90.00s, MODEL SAVED
+Epoch 60, 27% 	 train_loss: 4.33606e-03
+Epoch 60, 54% 	 train_loss: 2.03014e-03
+Epoch 60, 81% 	 train_loss: 1.26446e-03
+Training loss = 8.67763e-03
+Validation loss = 4.29669e-03
+Training finished, took 91.40s, MODEL SAVED
+Epoch 61, 27% 	 train_loss: 4.33202e-03
+Epoch 61, 54% 	 train_loss: 2.02852e-03
+Epoch 61, 81% 	 train_loss: 1.26552e-03
+Training loss = 8.67286e-03
+Validation loss = 4.29745e-03
+Training finished, took 92.95s, MODEL SAVED
+Epoch 62, 27% 	 train_loss: 4.33716e-03
+Epoch 62, 54% 	 train_loss: 2.03060e-03
+Epoch 62, 81% 	 train_loss: 1.26444e-03
+Training loss = 8.67919e-03
+Validation loss = 4.29691e-03
+Training finished, took 94.60s, MODEL SAVED
+Epoch 63, 27% 	 train_loss: 4.33148e-03
+Epoch 63, 54% 	 train_loss: 2.02867e-03
+Epoch 63, 81% 	 train_loss: 1.26610e-03
+Training loss = 8.67331e-03
+Validation loss = 4.29691e-03
+Training finished, took 96.07s, MODEL SAVED
+Epoch 64, 27% 	 train_loss: 4.33576e-03
+Epoch 64, 54% 	 train_loss: 2.03000e-03
+Epoch 64, 81% 	 train_loss: 1.26446e-03
+Training loss = 8.67717e-03
+Validation loss = 4.29659e-03
+Training finished, took 97.54s, MODEL SAVED
+Epoch 65, 27% 	 train_loss: 4.33213e-03
+Epoch 65, 54% 	 train_loss: 2.02847e-03
+Epoch 65, 81% 	 train_loss: 1.26538e-03
+Training loss = 8.67272e-03
+Validation loss = 4.29751e-03
+Training finished, took 99.11s, MODEL SAVED
+Epoch 66, 27% 	 train_loss: 4.33743e-03
+Epoch 66, 54% 	 train_loss: 2.03070e-03
+Epoch 66, 81% 	 train_loss: 1.26444e-03
+Training loss = 8.67957e-03
+Validation loss = 4.29695e-03
+Training finished, took 100.63s, MODEL SAVED
+Epoch 67, 27% 	 train_loss: 4.33137e-03
+Epoch 67, 54% 	 train_loss: 2.02868e-03
+Epoch 67, 81% 	 train_loss: 1.26616e-03
+Training loss = 8.67329e-03
+Validation loss = 4.29677e-03
+Training finished, took 102.09s, MODEL SAVED
+Epoch 68, 27% 	 train_loss: 4.33560e-03
+Epoch 68, 54% 	 train_loss: 2.02992e-03
+Epoch 68, 81% 	 train_loss: 1.26445e-03
+Training loss = 8.67690e-03
+Validation loss = 4.29653e-03
+Training finished, took 103.54s, MODEL SAVED
+Epoch 69, 27% 	 train_loss: 4.33217e-03
+Epoch 69, 54% 	 train_loss: 2.02844e-03
+Epoch 69, 81% 	 train_loss: 1.26531e-03
+Training loss = 8.67262e-03
+Validation loss = 4.29751e-03
+Training finished, took 105.07s, MODEL SAVED
+Epoch 70, 27% 	 train_loss: 4.33756e-03
+Epoch 70, 54% 	 train_loss: 2.03075e-03
+Epoch 70, 81% 	 train_loss: 1.26444e-03
+Training loss = 8.67975e-03
+Validation loss = 4.29696e-03
+Training finished, took 106.54s, MODEL SAVED
+Epoch 71, 27% 	 train_loss: 4.33130e-03
+Epoch 71, 54% 	 train_loss: 2.02869e-03
+Epoch 71, 81% 	 train_loss: 1.26619e-03
+Training loss = 8.67290e-03
+Validation loss = 4.31712e-03
+Training finished, took 108.11s, MODEL SAVED
+Epoch 72, 27% 	 train_loss: 4.33961e-03
+Epoch 72, 54% 	 train_loss: 2.02996e-03
+Epoch 72, 81% 	 train_loss: 1.26435e-03
+Training loss = 8.68597e-03
+Validation loss = 4.31327e-03
+Training finished, took 109.57s, MODEL SAVED
+Epoch 73, 27% 	 train_loss: 4.33895e-03
+Epoch 73, 54% 	 train_loss: 2.02890e-03
+Epoch 73, 81% 	 train_loss: 1.26652e-03
+Training loss = 8.68163e-03
+Validation loss = 4.29681e-03
+Training finished, took 111.02s, MODEL SAVED
+Epoch 74, 27% 	 train_loss: 4.33519e-03
+Epoch 74, 54% 	 train_loss: 2.02981e-03
+Epoch 74, 81% 	 train_loss: 1.26451e-03
+Training loss = 8.67645e-03
+Validation loss = 4.29681e-03
+Training finished, took 112.54s, MODEL SAVED
+Epoch 75, 27% 	 train_loss: 4.33252e-03
+Epoch 75, 54% 	 train_loss: 2.02847e-03
+Epoch 75, 81% 	 train_loss: 1.26523e-03
+Training loss = 8.67291e-03
+Validation loss = 4.29763e-03
+Training finished, took 114.01s, MODEL SAVED
+Epoch 76, 27% 	 train_loss: 4.33760e-03
+Epoch 76, 54% 	 train_loss: 2.03069e-03
+Epoch 76, 81% 	 train_loss: 1.26446e-03
+Training loss = 8.67978e-03
+Validation loss = 4.29712e-03
+Training finished, took 115.49s, MODEL SAVED
+Epoch 77, 27% 	 train_loss: 4.33140e-03
+Epoch 77, 54% 	 train_loss: 2.02868e-03
+Epoch 77, 81% 	 train_loss: 1.26618e-03
+Training loss = 8.67333e-03
+Validation loss = 4.29665e-03
+Training finished, took 117.05s, MODEL SAVED
+Epoch 78, 27% 	 train_loss: 4.33543e-03
+Epoch 78, 54% 	 train_loss: 2.02987e-03
+Epoch 78, 81% 	 train_loss: 1.26445e-03
+Training loss = 8.67667e-03
+Validation loss = 4.29648e-03
+Training finished, took 118.50s, MODEL SAVED
+Epoch 79, 27% 	 train_loss: 4.33221e-03
+Epoch 79, 54% 	 train_loss: 2.02841e-03
+Epoch 79, 81% 	 train_loss: 1.26522e-03
+Training loss = 8.67250e-03
+Validation loss = 4.29747e-03
+Training finished, took 120.10s, MODEL SAVED
+Epoch 80, 27% 	 train_loss: 4.33768e-03
+Epoch 80, 54% 	 train_loss: 2.03082e-03
+Epoch 80, 81% 	 train_loss: 1.26444e-03
+Training loss = 8.67992e-03
+Validation loss = 4.29695e-03
+Training finished, took 121.60s, MODEL SAVED
+Epoch 81, 27% 	 train_loss: 4.33121e-03
+Epoch 81, 54% 	 train_loss: 2.02869e-03
+Epoch 81, 81% 	 train_loss: 1.26619e-03
+Training loss = 8.67317e-03
+Validation loss = 4.29649e-03
+Training finished, took 123.16s, MODEL SAVED
+Epoch 82, 27% 	 train_loss: 4.33536e-03
+Epoch 82, 54% 	 train_loss: 2.02982e-03
+Epoch 82, 81% 	 train_loss: 1.26444e-03
+Training loss = 8.67654e-03
+Validation loss = 4.29641e-03
+Training finished, took 124.66s, MODEL SAVED
+Epoch 83, 27% 	 train_loss: 4.33217e-03
+Epoch 83, 54% 	 train_loss: 2.02839e-03
+Epoch 83, 81% 	 train_loss: 1.26517e-03
+Training loss = 8.67236e-03
+Validation loss = 4.29748e-03
+Training finished, took 126.22s, MODEL SAVED
+Epoch 84, 27% 	 train_loss: 4.33781e-03
+Epoch 84, 54% 	 train_loss: 2.03084e-03
+Epoch 84, 81% 	 train_loss: 1.26445e-03
+Training loss = 8.68008e-03
+Validation loss = 4.29698e-03
+Training finished, took 127.66s, MODEL SAVED
+Epoch 85, 27% 	 train_loss: 4.33118e-03
+Epoch 85, 54% 	 train_loss: 2.02871e-03
+Epoch 85, 81% 	 train_loss: 1.26621e-03
+Training loss = 8.67317e-03
+Validation loss = 4.29641e-03
+Training finished, took 129.31s, MODEL SAVED
+Epoch 86, 27% 	 train_loss: 4.33525e-03
+Epoch 86, 54% 	 train_loss: 2.02976e-03
+Epoch 86, 81% 	 train_loss: 1.26444e-03
+Training loss = 8.67635e-03
+Validation loss = 4.29638e-03
+Training finished, took 130.81s, MODEL SAVED
+Epoch 87, 27% 	 train_loss: 4.33220e-03
+Epoch 87, 54% 	 train_loss: 2.02838e-03
+Epoch 87, 81% 	 train_loss: 1.26512e-03
+Training loss = 8.67229e-03
+Validation loss = 4.29754e-03
+Training finished, took 132.25s, MODEL SAVED
+Epoch 88, 27% 	 train_loss: 4.33796e-03
+Epoch 88, 54% 	 train_loss: 2.03091e-03
+Epoch 88, 81% 	 train_loss: 1.26445e-03
+Training loss = 8.68031e-03
+Validation loss = 4.29705e-03
+Training finished, took 133.64s, MODEL SAVED
+Epoch 89, 27% 	 train_loss: 4.33114e-03
+Epoch 89, 54% 	 train_loss: 2.02872e-03
+Epoch 89, 81% 	 train_loss: 1.26623e-03
+Training loss = 8.67315e-03
+Validation loss = 4.29636e-03
+Training finished, took 135.20s, MODEL SAVED
+Epoch 90, 27% 	 train_loss: 4.33517e-03
+Epoch 90, 54% 	 train_loss: 2.02972e-03
+Epoch 90, 81% 	 train_loss: 1.26444e-03
+Training loss = 8.67623e-03
+Validation loss = 4.29637e-03
+Training finished, took 136.79s, MODEL SAVED
+Epoch 91, 27% 	 train_loss: 4.33223e-03
+Epoch 91, 54% 	 train_loss: 2.02837e-03
+Epoch 91, 81% 	 train_loss: 1.26510e-03
+Training loss = 8.67228e-03
+Validation loss = 4.29749e-03
+Training finished, took 138.24s, MODEL SAVED
+Epoch 92, 27% 	 train_loss: 4.33790e-03
+Epoch 92, 54% 	 train_loss: 2.03088e-03
+Epoch 92, 81% 	 train_loss: 1.26445e-03
+Training loss = 8.68022e-03
+Validation loss = 4.29703e-03
+Training finished, took 139.75s, MODEL SAVED
+Epoch 93, 27% 	 train_loss: 4.33114e-03
+Epoch 93, 54% 	 train_loss: 2.02870e-03
+Epoch 93, 81% 	 train_loss: 1.26619e-03
+Training loss = 8.67308e-03
+Validation loss = 4.29632e-03
+Training finished, took 141.19s, MODEL SAVED
+Epoch 94, 27% 	 train_loss: 4.33517e-03
+Epoch 94, 54% 	 train_loss: 2.02971e-03
+Epoch 94, 81% 	 train_loss: 1.26444e-03
+Training loss = 8.67622e-03
+Validation loss = 4.29637e-03
+Training finished, took 142.75s, MODEL SAVED
+Epoch 95, 27% 	 train_loss: 4.33222e-03
+Epoch 95, 54% 	 train_loss: 2.02837e-03
+Epoch 95, 81% 	 train_loss: 1.26509e-03
+Training loss = 8.67226e-03
+Validation loss = 4.29745e-03
+Training finished, took 144.26s, MODEL SAVED
+Epoch 96, 27% 	 train_loss: 4.33786e-03
+Epoch 96, 54% 	 train_loss: 2.03084e-03
+Epoch 96, 81% 	 train_loss: 1.26444e-03
+Training loss = 8.68014e-03
+Validation loss = 4.29701e-03
+Training finished, took 145.70s, MODEL SAVED
+Epoch 97, 27% 	 train_loss: 4.33114e-03
+Epoch 97, 54% 	 train_loss: 2.02869e-03
+Epoch 97, 81% 	 train_loss: 1.26617e-03
+Training loss = 8.67305e-03
+Validation loss = 4.29630e-03
+Training finished, took 147.19s, MODEL SAVED
+Epoch 98, 27% 	 train_loss: 4.33514e-03
+Epoch 98, 54% 	 train_loss: 2.02969e-03
+Epoch 98, 81% 	 train_loss: 1.26445e-03
+Training loss = 8.67617e-03
+Validation loss = 4.29637e-03
+Training finished, took 148.73s, MODEL SAVED
+Epoch 99, 27% 	 train_loss: 4.33222e-03
+Epoch 99, 54% 	 train_loss: 2.02837e-03
+Epoch 99, 81% 	 train_loss: 1.26508e-03
+Training loss = 8.67225e-03
+Validation loss = 4.29742e-03
+Training finished, took 150.23s, MODEL SAVED
+Epoch 100, 27% 	 train_loss: 4.33781e-03
+Epoch 100, 54% 	 train_loss: 2.03081e-03
+Epoch 100, 81% 	 train_loss: 1.26444e-03
+Training loss = 8.68005e-03
+Validation loss = 4.29700e-03
+Training finished, took 151.77s, MODEL SAVED
+Epoch 101, 27% 	 train_loss: 4.33115e-03
+Epoch 101, 54% 	 train_loss: 2.02868e-03
+Epoch 101, 81% 	 train_loss: 1.26615e-03
+Training loss = 8.67302e-03
+Validation loss = 4.29628e-03
+Training finished, took 153.23s, MODEL SAVED
+Epoch 102, 27% 	 train_loss: 4.33513e-03
+Epoch 102, 54% 	 train_loss: 2.02968e-03
+Epoch 102, 81% 	 train_loss: 1.26445e-03
+Training loss = 8.67615e-03
+Validation loss = 4.29636e-03
+Training finished, took 154.72s, MODEL SAVED
+Epoch 103, 27% 	 train_loss: 4.33222e-03
+Epoch 103, 54% 	 train_loss: 2.02837e-03
+Epoch 103, 81% 	 train_loss: 1.26507e-03
+Training loss = 8.67224e-03
+Validation loss = 4.29740e-03
+Training finished, took 156.28s, MODEL SAVED
+Epoch 104, 27% 	 train_loss: 4.33777e-03
+Epoch 104, 54% 	 train_loss: 2.03077e-03
+Epoch 104, 81% 	 train_loss: 1.26444e-03
+Training loss = 8.67998e-03
+Validation loss = 4.29698e-03
+Training finished, took 157.80s, MODEL SAVED
+Epoch 105, 27% 	 train_loss: 4.33116e-03
+Epoch 105, 54% 	 train_loss: 2.02867e-03
+Epoch 105, 81% 	 train_loss: 1.26613e-03
+Training loss = 8.67300e-03
+Validation loss = 4.29627e-03
+Training finished, took 159.28s, MODEL SAVED
+Epoch 106, 27% 	 train_loss: 4.33512e-03
+Epoch 106, 54% 	 train_loss: 2.02966e-03
+Epoch 106, 81% 	 train_loss: 1.26445e-03
+Training loss = 8.67613e-03
+Validation loss = 4.29636e-03
+Training finished, took 160.86s, MODEL SAVED
+Epoch 107, 27% 	 train_loss: 4.33223e-03
+Epoch 107, 54% 	 train_loss: 2.02837e-03
+Epoch 107, 81% 	 train_loss: 1.26506e-03
+Training loss = 8.67223e-03
+Validation loss = 4.29737e-03
+Training finished, took 162.26s, MODEL SAVED
+Epoch 108, 27% 	 train_loss: 4.33774e-03
+Epoch 108, 54% 	 train_loss: 2.03075e-03
+Epoch 108, 81% 	 train_loss: 1.26444e-03
+Training loss = 8.67992e-03
+Validation loss = 4.29698e-03
+Training finished, took 163.81s, MODEL SAVED
+Epoch 109, 27% 	 train_loss: 4.33116e-03
+Epoch 109, 54% 	 train_loss: 2.02867e-03
+Epoch 109, 81% 	 train_loss: 1.26611e-03
+Training loss = 8.67298e-03
+Validation loss = 4.29626e-03
+Training finished, took 165.30s, MODEL SAVED
+Epoch 110, 27% 	 train_loss: 4.33511e-03
+Epoch 110, 54% 	 train_loss: 2.02965e-03
+Epoch 110, 81% 	 train_loss: 1.26445e-03
+Training loss = 8.67611e-03
+Validation loss = 4.29636e-03
+Training finished, took 166.82s, MODEL SAVED
+Epoch 111, 27% 	 train_loss: 4.33223e-03
+Epoch 111, 54% 	 train_loss: 2.02837e-03
+Epoch 111, 81% 	 train_loss: 1.26505e-03
+Training loss = 8.67223e-03
+Epoch   111: reducing learning rate of group 0 to 2.4000e-03.
+Validation loss = 4.29736e-03
+Training finished, took 168.29s, MODEL SAVED
+Epoch 112, 27% 	 train_loss: 4.33742e-03
+Epoch 112, 54% 	 train_loss: 2.03048e-03
+Epoch 112, 81% 	 train_loss: 1.26438e-03
+Training loss = 8.67909e-03
+Validation loss = 4.29687e-03
+Training finished, took 169.77s, MODEL SAVED
+Epoch 113, 27% 	 train_loss: 4.33160e-03
+Epoch 113, 54% 	 train_loss: 2.02852e-03
+Epoch 113, 81% 	 train_loss: 1.26597e-03
+Training loss = 8.67338e-03
+Validation loss = 4.29644e-03
+Training finished, took 171.34s, MODEL SAVED
+Epoch 114, 27% 	 train_loss: 4.33295e-03
+Epoch 114, 54% 	 train_loss: 2.02876e-03
+Epoch 114, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67300e-03
+Validation loss = 4.29615e-03
+Training finished, took 172.78s, MODEL SAVED
+Epoch 115, 27% 	 train_loss: 4.33342e-03
+Epoch 115, 54% 	 train_loss: 2.02853e-03
+Epoch 115, 81% 	 train_loss: 1.26481e-03
+Training loss = 8.67362e-03
+Validation loss = 4.29617e-03
+Training finished, took 174.38s, MODEL SAVED
+Epoch 116, 27% 	 train_loss: 4.33352e-03
+Epoch 116, 54% 	 train_loss: 2.02866e-03
+Epoch 116, 81% 	 train_loss: 1.26466e-03
+Training loss = 8.67365e-03
+Validation loss = 4.29617e-03
+Training finished, took 176.03s, MODEL SAVED
+Epoch 117, 27% 	 train_loss: 4.33345e-03
+Epoch 117, 54% 	 train_loss: 2.02858e-03
+Epoch 117, 81% 	 train_loss: 1.26476e-03
+Training loss = 8.67364e-03
+Validation loss = 4.29617e-03
+Training finished, took 177.47s, MODEL SAVED
+Epoch 118, 27% 	 train_loss: 4.33344e-03
+Epoch 118, 54% 	 train_loss: 2.02862e-03
+Epoch 118, 81% 	 train_loss: 1.26469e-03
+Training loss = 8.67355e-03
+Validation loss = 4.29616e-03
+Training finished, took 179.00s, MODEL SAVED
+Epoch 119, 27% 	 train_loss: 4.33357e-03
+Epoch 119, 54% 	 train_loss: 2.02862e-03
+Epoch 119, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67375e-03
+Validation loss = 4.29618e-03
+Training finished, took 180.51s, MODEL SAVED
+Epoch 120, 27% 	 train_loss: 4.33340e-03
+Epoch 120, 54% 	 train_loss: 2.02860e-03
+Epoch 120, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67353e-03
+Validation loss = 4.29616e-03
+Training finished, took 182.17s, MODEL SAVED
+Epoch 121, 27% 	 train_loss: 4.33355e-03
+Epoch 121, 54% 	 train_loss: 2.02863e-03
+Epoch 121, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67373e-03
+Validation loss = 4.29618e-03
+Training finished, took 183.73s, MODEL SAVED
+Epoch 122, 27% 	 train_loss: 4.33343e-03
+Epoch 122, 54% 	 train_loss: 2.02860e-03
+Epoch 122, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67356e-03
+Validation loss = 4.29616e-03
+Training finished, took 185.14s, MODEL SAVED
+Epoch 123, 27% 	 train_loss: 4.33354e-03
+Epoch 123, 54% 	 train_loss: 2.02862e-03
+Epoch 123, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67371e-03
+Validation loss = 4.29618e-03
+Training finished, took 186.66s, MODEL SAVED
+Epoch 124, 27% 	 train_loss: 4.33344e-03
+Epoch 124, 54% 	 train_loss: 2.02860e-03
+Epoch 124, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67357e-03
+Validation loss = 4.29616e-03
+Training finished, took 188.14s, MODEL SAVED
+Epoch 125, 27% 	 train_loss: 4.33353e-03
+Epoch 125, 54% 	 train_loss: 2.02862e-03
+Epoch 125, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67370e-03
+Validation loss = 4.29618e-03
+Training finished, took 189.57s, MODEL SAVED
+Epoch 126, 27% 	 train_loss: 4.33344e-03
+Epoch 126, 54% 	 train_loss: 2.02860e-03
+Epoch 126, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67358e-03
+Validation loss = 4.29616e-03
+Training finished, took 191.09s, MODEL SAVED
+Epoch 127, 27% 	 train_loss: 4.33353e-03
+Epoch 127, 54% 	 train_loss: 2.02862e-03
+Epoch 127, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67370e-03
+Validation loss = 4.29618e-03
+Training finished, took 192.62s, MODEL SAVED
+Epoch 128, 27% 	 train_loss: 4.33345e-03
+Epoch 128, 54% 	 train_loss: 2.02861e-03
+Epoch 128, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67358e-03
+Validation loss = 4.29616e-03
+Training finished, took 194.06s, MODEL SAVED
+Epoch 129, 27% 	 train_loss: 4.33352e-03
+Epoch 129, 54% 	 train_loss: 2.02862e-03
+Epoch 129, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67369e-03
+Validation loss = 4.29617e-03
+Training finished, took 195.67s, MODEL SAVED
+Epoch 130, 27% 	 train_loss: 4.33345e-03
+Epoch 130, 54% 	 train_loss: 2.02861e-03
+Epoch 130, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67359e-03
+Validation loss = 4.29616e-03
+Training finished, took 197.13s, MODEL SAVED
+Epoch 131, 27% 	 train_loss: 4.33352e-03
+Epoch 131, 54% 	 train_loss: 2.02862e-03
+Epoch 131, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67368e-03
+Validation loss = 4.29617e-03
+Training finished, took 198.75s, MODEL SAVED
+Epoch 132, 27% 	 train_loss: 4.33346e-03
+Epoch 132, 54% 	 train_loss: 2.02861e-03
+Epoch 132, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67360e-03
+Validation loss = 4.29616e-03
+Training finished, took 200.18s, MODEL SAVED
+Epoch 133, 27% 	 train_loss: 4.33351e-03
+Epoch 133, 54% 	 train_loss: 2.02862e-03
+Epoch 133, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67367e-03
+Validation loss = 4.29617e-03
+Training finished, took 201.59s, MODEL SAVED
+Epoch 134, 27% 	 train_loss: 4.33346e-03
+Epoch 134, 54% 	 train_loss: 2.02861e-03
+Epoch 134, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67360e-03
+Validation loss = 4.29616e-03
+Training finished, took 203.09s, MODEL SAVED
+Epoch 135, 27% 	 train_loss: 4.33351e-03
+Epoch 135, 54% 	 train_loss: 2.02862e-03
+Epoch 135, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67367e-03
+Validation loss = 4.29617e-03
+Training finished, took 204.51s, MODEL SAVED
+Epoch 136, 27% 	 train_loss: 4.33346e-03
+Epoch 136, 54% 	 train_loss: 2.02861e-03
+Epoch 136, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67361e-03
+Validation loss = 4.29616e-03
+Training finished, took 206.08s, MODEL SAVED
+Epoch 137, 27% 	 train_loss: 4.33350e-03
+Epoch 137, 54% 	 train_loss: 2.02861e-03
+Epoch 137, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67366e-03
+Validation loss = 4.29617e-03
+Training finished, took 207.55s, MODEL SAVED
+Epoch 138, 27% 	 train_loss: 4.33347e-03
+Epoch 138, 54% 	 train_loss: 2.02861e-03
+Epoch 138, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67361e-03
+Validation loss = 4.29616e-03
+Training finished, took 209.00s, MODEL SAVED
+Epoch 139, 27% 	 train_loss: 4.33350e-03
+Epoch 139, 54% 	 train_loss: 2.02861e-03
+Epoch 139, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67366e-03
+Validation loss = 4.29617e-03
+Training finished, took 210.45s, MODEL SAVED
+Epoch 140, 27% 	 train_loss: 4.33347e-03
+Epoch 140, 54% 	 train_loss: 2.02861e-03
+Epoch 140, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67362e-03
+Validation loss = 4.29616e-03
+Training finished, took 211.88s, MODEL SAVED
+Epoch 141, 27% 	 train_loss: 4.33349e-03
+Epoch 141, 54% 	 train_loss: 2.02861e-03
+Epoch 141, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67365e-03
+Validation loss = 4.29617e-03
+Training finished, took 213.36s, MODEL SAVED
+Epoch 142, 27% 	 train_loss: 4.33347e-03
+Epoch 142, 54% 	 train_loss: 2.02861e-03
+Epoch 142, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67362e-03
+Validation loss = 4.29616e-03
+Training finished, took 214.81s, MODEL SAVED
+Epoch 143, 27% 	 train_loss: 4.33349e-03
+Epoch 143, 54% 	 train_loss: 2.02861e-03
+Epoch 143, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67365e-03
+Validation loss = 4.29616e-03
+Training finished, took 216.41s, MODEL SAVED
+Epoch 144, 27% 	 train_loss: 4.33347e-03
+Epoch 144, 54% 	 train_loss: 2.02861e-03
+Epoch 144, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67363e-03
+Validation loss = 4.29616e-03
+Training finished, took 217.89s, MODEL SAVED
+Epoch 145, 27% 	 train_loss: 4.33349e-03
+Epoch 145, 54% 	 train_loss: 2.02861e-03
+Epoch 145, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67365e-03
+Validation loss = 4.29616e-03
+Training finished, took 219.43s, MODEL SAVED
+Epoch 146, 27% 	 train_loss: 4.33348e-03
+Epoch 146, 54% 	 train_loss: 2.02861e-03
+Epoch 146, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67363e-03
+Validation loss = 4.29616e-03
+Training finished, took 221.04s, MODEL SAVED
+Epoch 147, 27% 	 train_loss: 4.33349e-03
+Epoch 147, 54% 	 train_loss: 2.02861e-03
+Epoch 147, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67364e-03
+Validation loss = 4.29616e-03
+Training finished, took 222.48s, MODEL SAVED
+Epoch 148, 27% 	 train_loss: 4.33348e-03
+Epoch 148, 54% 	 train_loss: 2.02861e-03
+Epoch 148, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67363e-03
+Validation loss = 4.29616e-03
+Training finished, took 223.90s, MODEL SAVED
+Epoch 149, 27% 	 train_loss: 4.33349e-03
+Epoch 149, 54% 	 train_loss: 2.02861e-03
+Epoch 149, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67364e-03
+Validation loss = 4.29616e-03
+Training finished, took 225.38s, MODEL SAVED
+Epoch 150, 27% 	 train_loss: 4.33348e-03
+Epoch 150, 54% 	 train_loss: 2.02861e-03
+Epoch 150, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67363e-03
+Validation loss = 4.29616e-03
+Training finished, took 226.99s, MODEL SAVED
+Epoch 151, 27% 	 train_loss: 4.33348e-03
+Epoch 151, 54% 	 train_loss: 2.02861e-03
+Epoch 151, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67364e-03
+Validation loss = 4.29616e-03
+Training finished, took 228.59s, MODEL SAVED
+Epoch 152, 27% 	 train_loss: 4.33348e-03
+Epoch 152, 54% 	 train_loss: 2.02861e-03
+Epoch 152, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67364e-03
+Validation loss = 4.29616e-03
+Training finished, took 230.10s, MODEL SAVED
+Epoch 153, 27% 	 train_loss: 4.33348e-03
+Epoch 153, 54% 	 train_loss: 2.02861e-03
+Epoch 153, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67364e-03
+Validation loss = 4.29616e-03
+Training finished, took 231.58s, MODEL SAVED
+Epoch 154, 27% 	 train_loss: 4.33348e-03
+Epoch 154, 54% 	 train_loss: 2.02861e-03
+Epoch 154, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67364e-03
+Validation loss = 4.29616e-03
+Training finished, took 233.27s, MODEL SAVED
+Epoch 155, 27% 	 train_loss: 4.33348e-03
+Epoch 155, 54% 	 train_loss: 2.02861e-03
+Epoch 155, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67364e-03
+Validation loss = 4.29616e-03
+Training finished, took 234.88s, MODEL SAVED
+Epoch 156, 27% 	 train_loss: 4.33348e-03
+Epoch 156, 54% 	 train_loss: 2.02861e-03
+Epoch 156, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67364e-03
+Validation loss = 4.29616e-03
+Training finished, took 236.55s, MODEL SAVED
+Epoch 157, 27% 	 train_loss: 4.33348e-03
+Epoch 157, 54% 	 train_loss: 2.02861e-03
+Epoch 157, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67364e-03
+Validation loss = 4.29616e-03
+Training finished, took 238.15s, MODEL SAVED
+Epoch 158, 27% 	 train_loss: 4.33348e-03
+Epoch 158, 54% 	 train_loss: 2.02861e-03
+Epoch 158, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67364e-03
+Validation loss = 4.29616e-03
+Training finished, took 239.63s, MODEL SAVED
+Epoch 159, 27% 	 train_loss: 4.33348e-03
+Epoch 159, 54% 	 train_loss: 2.02861e-03
+Epoch 159, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67364e-03
+Validation loss = 4.29616e-03
+Training finished, took 241.10s, MODEL SAVED
+Epoch 160, 27% 	 train_loss: 4.33348e-03
+Epoch 160, 54% 	 train_loss: 2.02861e-03
+Epoch 160, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67364e-03
+Validation loss = 4.29616e-03
+Training finished, took 242.56s, MODEL SAVED
+Epoch 161, 27% 	 train_loss: 4.33348e-03
+Epoch 161, 54% 	 train_loss: 2.02862e-03
+Epoch 161, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67365e-03
+Validation loss = 4.29616e-03
+Training finished, took 244.20s, MODEL SAVED
+Epoch 162, 27% 	 train_loss: 4.33348e-03
+Epoch 162, 54% 	 train_loss: 2.02862e-03
+Epoch 162, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67365e-03
+Validation loss = 4.29616e-03
+Training finished, took 245.81s, MODEL SAVED
+Epoch 163, 27% 	 train_loss: 4.33348e-03
+Epoch 163, 54% 	 train_loss: 2.02862e-03
+Epoch 163, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67366e-03
+Validation loss = 4.29616e-03
+Training finished, took 247.35s, MODEL SAVED
+Epoch 164, 27% 	 train_loss: 4.33348e-03
+Epoch 164, 54% 	 train_loss: 2.02862e-03
+Epoch 164, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67366e-03
+Validation loss = 4.29617e-03
+Training finished, took 248.83s, MODEL SAVED
+Epoch 165, 27% 	 train_loss: 4.33349e-03
+Epoch 165, 54% 	 train_loss: 2.02862e-03
+Epoch 165, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67366e-03
+Epoch   165: reducing learning rate of group 0 to 1.9200e-03.
+Validation loss = 4.29618e-03
+Training finished, took 250.39s, MODEL SAVED
+Epoch 166, 27% 	 train_loss: 4.33341e-03
+Epoch 166, 54% 	 train_loss: 2.02859e-03
+Epoch 166, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67346e-03
+Validation loss = 4.29629e-03
+Training finished, took 251.82s, MODEL SAVED
+Epoch 167, 27% 	 train_loss: 4.33285e-03
+Epoch 167, 54% 	 train_loss: 2.02846e-03
+Epoch 167, 81% 	 train_loss: 1.26467e-03
+Training loss = 8.67274e-03
+Validation loss = 4.29615e-03
+Training finished, took 253.27s, MODEL SAVED
+Epoch 168, 27% 	 train_loss: 4.33345e-03
+Epoch 168, 54% 	 train_loss: 2.02865e-03
+Epoch 168, 81% 	 train_loss: 1.26456e-03
+Training loss = 8.67348e-03
+Validation loss = 4.29623e-03
+Training finished, took 254.80s, MODEL SAVED
+Epoch 169, 27% 	 train_loss: 4.33276e-03
+Epoch 169, 54% 	 train_loss: 2.02843e-03
+Epoch 169, 81% 	 train_loss: 1.26469e-03
+Training loss = 8.67265e-03
+Validation loss = 4.29615e-03
+Training finished, took 256.33s, MODEL SAVED
+Epoch 170, 27% 	 train_loss: 4.33349e-03
+Epoch 170, 54% 	 train_loss: 2.02868e-03
+Epoch 170, 81% 	 train_loss: 1.26455e-03
+Training loss = 8.67354e-03
+Validation loss = 4.29624e-03
+Training finished, took 257.82s, MODEL SAVED
+Epoch 171, 27% 	 train_loss: 4.33271e-03
+Epoch 171, 54% 	 train_loss: 2.02841e-03
+Epoch 171, 81% 	 train_loss: 1.26471e-03
+Training loss = 8.67260e-03
+Validation loss = 4.29615e-03
+Training finished, took 259.21s, MODEL SAVED
+Epoch 172, 27% 	 train_loss: 4.33354e-03
+Epoch 172, 54% 	 train_loss: 2.02870e-03
+Epoch 172, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67360e-03
+Validation loss = 4.29625e-03
+Training finished, took 260.68s, MODEL SAVED
+Epoch 173, 27% 	 train_loss: 4.33266e-03
+Epoch 173, 54% 	 train_loss: 2.02840e-03
+Epoch 173, 81% 	 train_loss: 1.26472e-03
+Training loss = 8.67255e-03
+Validation loss = 4.29615e-03
+Training finished, took 262.29s, MODEL SAVED
+Epoch 174, 27% 	 train_loss: 4.33359e-03
+Epoch 174, 54% 	 train_loss: 2.02873e-03
+Epoch 174, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67366e-03
+Validation loss = 4.29626e-03
+Training finished, took 263.69s, MODEL SAVED
+Epoch 175, 27% 	 train_loss: 4.33262e-03
+Epoch 175, 54% 	 train_loss: 2.02839e-03
+Epoch 175, 81% 	 train_loss: 1.26473e-03
+Training loss = 8.67251e-03
+Validation loss = 4.29614e-03
+Training finished, took 265.24s, MODEL SAVED
+Epoch 176, 27% 	 train_loss: 4.33363e-03
+Epoch 176, 54% 	 train_loss: 2.02875e-03
+Epoch 176, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67371e-03
+Validation loss = 4.29626e-03
+Training finished, took 266.77s, MODEL SAVED
+Epoch 177, 27% 	 train_loss: 4.33258e-03
+Epoch 177, 54% 	 train_loss: 2.02838e-03
+Epoch 177, 81% 	 train_loss: 1.26474e-03
+Training loss = 8.67247e-03
+Validation loss = 4.29615e-03
+Training finished, took 268.06s, MODEL SAVED
+Epoch 178, 27% 	 train_loss: 4.33367e-03
+Epoch 178, 54% 	 train_loss: 2.02877e-03
+Epoch 178, 81% 	 train_loss: 1.26451e-03
+Training loss = 8.67376e-03
+Validation loss = 4.29627e-03
+Training finished, took 269.35s, MODEL SAVED
+Epoch 179, 27% 	 train_loss: 4.33255e-03
+Epoch 179, 54% 	 train_loss: 2.02837e-03
+Epoch 179, 81% 	 train_loss: 1.26475e-03
+Training loss = 8.67244e-03
+Validation loss = 4.29615e-03
+Training finished, took 270.73s, MODEL SAVED
+Epoch 180, 27% 	 train_loss: 4.33370e-03
+Epoch 180, 54% 	 train_loss: 2.02878e-03
+Epoch 180, 81% 	 train_loss: 1.26450e-03
+Training loss = 8.67381e-03
+Validation loss = 4.29627e-03
+Training finished, took 272.12s, MODEL SAVED
+Epoch 181, 27% 	 train_loss: 4.33252e-03
+Epoch 181, 54% 	 train_loss: 2.02837e-03
+Epoch 181, 81% 	 train_loss: 1.26476e-03
+Training loss = 8.67241e-03
+Validation loss = 4.29615e-03
+Training finished, took 273.49s, MODEL SAVED
+Epoch 182, 27% 	 train_loss: 4.33373e-03
+Epoch 182, 54% 	 train_loss: 2.02880e-03
+Epoch 182, 81% 	 train_loss: 1.26450e-03
+Training loss = 8.67385e-03
+Validation loss = 4.29628e-03
+Training finished, took 274.98s, MODEL SAVED
+Epoch 183, 27% 	 train_loss: 4.33249e-03
+Epoch 183, 54% 	 train_loss: 2.02836e-03
+Epoch 183, 81% 	 train_loss: 1.26477e-03
+Training loss = 8.67238e-03
+Validation loss = 4.29615e-03
+Training finished, took 276.45s, MODEL SAVED
+Epoch 184, 27% 	 train_loss: 4.33376e-03
+Epoch 184, 54% 	 train_loss: 2.02882e-03
+Epoch 184, 81% 	 train_loss: 1.26449e-03
+Training loss = 8.67390e-03
+Validation loss = 4.29629e-03
+Training finished, took 277.97s, MODEL SAVED
+Epoch 185, 27% 	 train_loss: 4.33246e-03
+Epoch 185, 54% 	 train_loss: 2.02836e-03
+Epoch 185, 81% 	 train_loss: 1.26478e-03
+Training loss = 8.67236e-03
+Validation loss = 4.29615e-03
+Training finished, took 279.41s, MODEL SAVED
+Epoch 186, 27% 	 train_loss: 4.33379e-03
+Epoch 186, 54% 	 train_loss: 2.02883e-03
+Epoch 186, 81% 	 train_loss: 1.26449e-03
+Training loss = 8.67394e-03
+Validation loss = 4.29629e-03
+Training finished, took 281.00s, MODEL SAVED
+Epoch 187, 27% 	 train_loss: 4.33244e-03
+Epoch 187, 54% 	 train_loss: 2.02835e-03
+Epoch 187, 81% 	 train_loss: 1.26479e-03
+Training loss = 8.67234e-03
+Validation loss = 4.29615e-03
+Training finished, took 282.56s, MODEL SAVED
+Epoch 188, 27% 	 train_loss: 4.33382e-03
+Epoch 188, 54% 	 train_loss: 2.02885e-03
+Epoch 188, 81% 	 train_loss: 1.26448e-03
+Training loss = 8.67398e-03
+Validation loss = 4.29630e-03
+Training finished, took 284.02s, MODEL SAVED
+Epoch 189, 27% 	 train_loss: 4.33241e-03
+Epoch 189, 54% 	 train_loss: 2.02835e-03
+Epoch 189, 81% 	 train_loss: 1.26479e-03
+Training loss = 8.67232e-03
+Validation loss = 4.29615e-03
+Training finished, took 285.45s, MODEL SAVED
+Epoch 190, 27% 	 train_loss: 4.33385e-03
+Epoch 190, 54% 	 train_loss: 2.02886e-03
+Epoch 190, 81% 	 train_loss: 1.26448e-03
+Training loss = 8.67401e-03
+Validation loss = 4.29630e-03
+Training finished, took 286.91s, MODEL SAVED
+Epoch 191, 27% 	 train_loss: 4.33239e-03
+Epoch 191, 54% 	 train_loss: 2.02834e-03
+Epoch 191, 81% 	 train_loss: 1.26480e-03
+Training loss = 8.67230e-03
+Validation loss = 4.29615e-03
+Training finished, took 288.35s, MODEL SAVED
+Epoch 192, 27% 	 train_loss: 4.33387e-03
+Epoch 192, 54% 	 train_loss: 2.02888e-03
+Epoch 192, 81% 	 train_loss: 1.26447e-03
+Training loss = 8.67405e-03
+Validation loss = 4.29631e-03
+Training finished, took 290.03s, MODEL SAVED
+Epoch 193, 27% 	 train_loss: 4.33237e-03
+Epoch 193, 54% 	 train_loss: 2.02834e-03
+Epoch 193, 81% 	 train_loss: 1.26481e-03
+Training loss = 8.67228e-03
+Validation loss = 4.29615e-03
+Training finished, took 291.64s, MODEL SAVED
+Epoch 194, 27% 	 train_loss: 4.33389e-03
+Epoch 194, 54% 	 train_loss: 2.02889e-03
+Epoch 194, 81% 	 train_loss: 1.26447e-03
+Training loss = 8.67408e-03
+Validation loss = 4.29631e-03
+Training finished, took 293.21s, MODEL SAVED
+Epoch 195, 27% 	 train_loss: 4.33235e-03
+Epoch 195, 54% 	 train_loss: 2.02834e-03
+Epoch 195, 81% 	 train_loss: 1.26481e-03
+Training loss = 8.67226e-03
+Validation loss = 4.29615e-03
+Training finished, took 294.66s, MODEL SAVED
+Epoch 196, 27% 	 train_loss: 4.33392e-03
+Epoch 196, 54% 	 train_loss: 2.02890e-03
+Epoch 196, 81% 	 train_loss: 1.26446e-03
+Training loss = 8.67411e-03
+Validation loss = 4.29631e-03
+Training finished, took 296.22s, MODEL SAVED
+Epoch 197, 27% 	 train_loss: 4.33234e-03
+Epoch 197, 54% 	 train_loss: 2.02834e-03
+Epoch 197, 81% 	 train_loss: 1.26482e-03
+Training loss = 8.67225e-03
+Validation loss = 4.29615e-03
+Training finished, took 297.50s, MODEL SAVED
+Epoch 198, 27% 	 train_loss: 4.33392e-03
+Epoch 198, 54% 	 train_loss: 2.02891e-03
+Epoch 198, 81% 	 train_loss: 1.26446e-03
+Training loss = 8.67412e-03
+Validation loss = 4.29631e-03
+Training finished, took 298.78s, MODEL SAVED
+Epoch 199, 27% 	 train_loss: 4.33235e-03
+Epoch 199, 54% 	 train_loss: 2.02834e-03
+Epoch 199, 81% 	 train_loss: 1.26482e-03
+Training loss = 8.67227e-03
+Validation loss = 4.29615e-03
+Training finished, took 300.08s, MODEL SAVED
+Epoch 200, 27% 	 train_loss: 4.33391e-03
+Epoch 200, 54% 	 train_loss: 2.02891e-03
+Epoch 200, 81% 	 train_loss: 1.26446e-03
+Training loss = 8.67411e-03
+Validation loss = 4.29631e-03
+Training finished, took 301.38s, MODEL SAVED
+Epoch 201, 27% 	 train_loss: 4.33235e-03
+Epoch 201, 54% 	 train_loss: 2.02834e-03
+Epoch 201, 81% 	 train_loss: 1.26482e-03
+Training loss = 8.67226e-03
+Validation loss = 4.29615e-03
+Training finished, took 302.67s, MODEL SAVED
+Epoch 202, 27% 	 train_loss: 4.33392e-03
+Epoch 202, 54% 	 train_loss: 2.02891e-03
+Epoch 202, 81% 	 train_loss: 1.26446e-03
+Training loss = 8.67411e-03
+Validation loss = 4.29631e-03
+Training finished, took 303.95s, MODEL SAVED
+Epoch 203, 27% 	 train_loss: 4.33235e-03
+Epoch 203, 54% 	 train_loss: 2.02834e-03
+Epoch 203, 81% 	 train_loss: 1.26482e-03
+Training loss = 8.67226e-03
+Validation loss = 4.29615e-03
+Training finished, took 305.26s, MODEL SAVED
+Epoch 204, 27% 	 train_loss: 4.33392e-03
+Epoch 204, 54% 	 train_loss: 2.02891e-03
+Epoch 204, 81% 	 train_loss: 1.26446e-03
+Training loss = 8.67411e-03
+Validation loss = 4.29631e-03
+Training finished, took 306.55s, MODEL SAVED
+Epoch 205, 27% 	 train_loss: 4.33235e-03
+Epoch 205, 54% 	 train_loss: 2.02834e-03
+Epoch 205, 81% 	 train_loss: 1.26482e-03
+Training loss = 8.67226e-03
+Validation loss = 4.29615e-03
+Training finished, took 307.84s, MODEL SAVED
+Epoch 206, 27% 	 train_loss: 4.33392e-03
+Epoch 206, 54% 	 train_loss: 2.02891e-03
+Epoch 206, 81% 	 train_loss: 1.26446e-03
+Training loss = 8.67411e-03
+Validation loss = 4.29631e-03
+Training finished, took 309.13s, MODEL SAVED
+Epoch 207, 27% 	 train_loss: 4.33234e-03
+Epoch 207, 54% 	 train_loss: 2.02834e-03
+Epoch 207, 81% 	 train_loss: 1.26482e-03
+Training loss = 8.67226e-03
+Validation loss = 4.29615e-03
+Training finished, took 310.42s, MODEL SAVED
+Epoch 208, 27% 	 train_loss: 4.33392e-03
+Epoch 208, 54% 	 train_loss: 2.02891e-03
+Epoch 208, 81% 	 train_loss: 1.26446e-03
+Training loss = 8.67412e-03
+Validation loss = 4.29631e-03
+Training finished, took 311.70s, MODEL SAVED
+Epoch 209, 27% 	 train_loss: 4.33234e-03
+Epoch 209, 54% 	 train_loss: 2.02834e-03
+Epoch 209, 81% 	 train_loss: 1.26482e-03
+Training loss = 8.67226e-03
+Validation loss = 4.29615e-03
+Training finished, took 313.01s, MODEL SAVED
+Epoch 210, 27% 	 train_loss: 4.33392e-03
+Epoch 210, 54% 	 train_loss: 2.02891e-03
+Epoch 210, 81% 	 train_loss: 1.26446e-03
+Training loss = 8.67412e-03
+Validation loss = 4.29631e-03
+Training finished, took 314.32s, MODEL SAVED
+Epoch 211, 27% 	 train_loss: 4.33234e-03
+Epoch 211, 54% 	 train_loss: 2.02834e-03
+Epoch 211, 81% 	 train_loss: 1.26482e-03
+Training loss = 8.67226e-03
+Validation loss = 4.29615e-03
+Training finished, took 315.60s, MODEL SAVED
+Epoch 212, 27% 	 train_loss: 4.33392e-03
+Epoch 212, 54% 	 train_loss: 2.02891e-03
+Epoch 212, 81% 	 train_loss: 1.26447e-03
+Training loss = 8.67412e-03
+Validation loss = 4.29631e-03
+Training finished, took 316.89s, MODEL SAVED
+Epoch 213, 27% 	 train_loss: 4.33234e-03
+Epoch 213, 54% 	 train_loss: 2.02834e-03
+Epoch 213, 81% 	 train_loss: 1.26482e-03
+Training loss = 8.67226e-03
+Validation loss = 4.29615e-03
+Training finished, took 318.18s, MODEL SAVED
+Epoch 214, 27% 	 train_loss: 4.33392e-03
+Epoch 214, 54% 	 train_loss: 2.02891e-03
+Epoch 214, 81% 	 train_loss: 1.26447e-03
+Training loss = 8.67412e-03
+Validation loss = 4.29631e-03
+Training finished, took 319.49s, MODEL SAVED
+Epoch 215, 27% 	 train_loss: 4.33234e-03
+Epoch 215, 54% 	 train_loss: 2.02834e-03
+Epoch 215, 81% 	 train_loss: 1.26482e-03
+Training loss = 8.67226e-03
+Validation loss = 4.29615e-03
+Training finished, took 320.78s, MODEL SAVED
+Epoch 216, 27% 	 train_loss: 4.33393e-03
+Epoch 216, 54% 	 train_loss: 2.02891e-03
+Epoch 216, 81% 	 train_loss: 1.26447e-03
+Training loss = 8.67413e-03
+Epoch   216: reducing learning rate of group 0 to 1.5360e-03.
+Validation loss = 4.29631e-03
+Training finished, took 322.07s, MODEL SAVED
+Epoch 217, 27% 	 train_loss: 4.33232e-03
+Epoch 217, 54% 	 train_loss: 2.02833e-03
+Epoch 217, 81% 	 train_loss: 1.26474e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29625e-03
+Training finished, took 323.34s, MODEL SAVED
+Epoch 218, 27% 	 train_loss: 4.33308e-03
+Epoch 218, 54% 	 train_loss: 2.02861e-03
+Epoch 218, 81% 	 train_loss: 1.26447e-03
+Training loss = 8.67293e-03
+Validation loss = 4.29629e-03
+Training finished, took 324.64s, MODEL SAVED
+Epoch 219, 27% 	 train_loss: 4.33273e-03
+Epoch 219, 54% 	 train_loss: 2.02842e-03
+Epoch 219, 81% 	 train_loss: 1.26464e-03
+Training loss = 8.67259e-03
+Validation loss = 4.29625e-03
+Training finished, took 325.94s, MODEL SAVED
+Epoch 220, 27% 	 train_loss: 4.33295e-03
+Epoch 220, 54% 	 train_loss: 2.02854e-03
+Epoch 220, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67281e-03
+Validation loss = 4.29627e-03
+Training finished, took 327.23s, MODEL SAVED
+Epoch 221, 27% 	 train_loss: 4.33276e-03
+Epoch 221, 54% 	 train_loss: 2.02845e-03
+Epoch 221, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67261e-03
+Validation loss = 4.29624e-03
+Training finished, took 328.51s, MODEL SAVED
+Epoch 222, 27% 	 train_loss: 4.33294e-03
+Epoch 222, 54% 	 train_loss: 2.02853e-03
+Epoch 222, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67280e-03
+Validation loss = 4.29627e-03
+Training finished, took 329.81s, MODEL SAVED
+Epoch 223, 27% 	 train_loss: 4.33276e-03
+Epoch 223, 54% 	 train_loss: 2.02845e-03
+Epoch 223, 81% 	 train_loss: 1.26460e-03
+Training loss = 8.67261e-03
+Validation loss = 4.29625e-03
+Training finished, took 331.09s, MODEL SAVED
+Epoch 224, 27% 	 train_loss: 4.33294e-03
+Epoch 224, 54% 	 train_loss: 2.02853e-03
+Epoch 224, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67280e-03
+Validation loss = 4.29629e-03
+Training finished, took 332.38s, MODEL SAVED
+Epoch 225, 27% 	 train_loss: 4.33277e-03
+Epoch 225, 54% 	 train_loss: 2.02845e-03
+Epoch 225, 81% 	 train_loss: 1.26460e-03
+Training loss = 8.67261e-03
+Validation loss = 4.29626e-03
+Training finished, took 333.66s, MODEL SAVED
+Epoch 226, 27% 	 train_loss: 4.33295e-03
+Epoch 226, 54% 	 train_loss: 2.02853e-03
+Epoch 226, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67281e-03
+Validation loss = 4.29629e-03
+Training finished, took 334.94s, MODEL SAVED
+Epoch 227, 27% 	 train_loss: 4.33277e-03
+Epoch 227, 54% 	 train_loss: 2.02845e-03
+Epoch 227, 81% 	 train_loss: 1.26460e-03
+Training loss = 8.67262e-03
+Validation loss = 4.29626e-03
+Training finished, took 336.22s, MODEL SAVED
+Epoch 228, 27% 	 train_loss: 4.33295e-03
+Epoch 228, 54% 	 train_loss: 2.02853e-03
+Epoch 228, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67281e-03
+Validation loss = 4.29630e-03
+Training finished, took 337.51s, MODEL SAVED
+Epoch 229, 27% 	 train_loss: 4.33277e-03
+Epoch 229, 54% 	 train_loss: 2.02845e-03
+Epoch 229, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67262e-03
+Validation loss = 4.29627e-03
+Training finished, took 338.80s, MODEL SAVED
+Epoch 230, 27% 	 train_loss: 4.33295e-03
+Epoch 230, 54% 	 train_loss: 2.02853e-03
+Epoch 230, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67282e-03
+Validation loss = 4.29630e-03
+Training finished, took 340.11s, MODEL SAVED
+Epoch 231, 27% 	 train_loss: 4.33278e-03
+Epoch 231, 54% 	 train_loss: 2.02845e-03
+Epoch 231, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67263e-03
+Validation loss = 4.29628e-03
+Training finished, took 341.41s, MODEL SAVED
+Epoch 232, 27% 	 train_loss: 4.33296e-03
+Epoch 232, 54% 	 train_loss: 2.02853e-03
+Epoch 232, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67282e-03
+Validation loss = 4.29631e-03
+Training finished, took 342.70s, MODEL SAVED
+Epoch 233, 27% 	 train_loss: 4.33278e-03
+Epoch 233, 54% 	 train_loss: 2.02845e-03
+Epoch 233, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67264e-03
+Validation loss = 4.29629e-03
+Training finished, took 343.98s, MODEL SAVED
+Epoch 234, 27% 	 train_loss: 4.33296e-03
+Epoch 234, 54% 	 train_loss: 2.02853e-03
+Epoch 234, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67282e-03
+Validation loss = 4.29632e-03
+Training finished, took 345.26s, MODEL SAVED
+Epoch 235, 27% 	 train_loss: 4.33279e-03
+Epoch 235, 54% 	 train_loss: 2.02845e-03
+Epoch 235, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67265e-03
+Validation loss = 4.29630e-03
+Training finished, took 346.55s, MODEL SAVED
+Epoch 236, 27% 	 train_loss: 4.33296e-03
+Epoch 236, 54% 	 train_loss: 2.02853e-03
+Epoch 236, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67283e-03
+Validation loss = 4.29633e-03
+Training finished, took 347.85s, MODEL SAVED
+Epoch 237, 27% 	 train_loss: 4.33280e-03
+Epoch 237, 54% 	 train_loss: 2.02845e-03
+Epoch 237, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67266e-03
+Validation loss = 4.29631e-03
+Training finished, took 349.17s, MODEL SAVED
+Epoch 238, 27% 	 train_loss: 4.33297e-03
+Epoch 238, 54% 	 train_loss: 2.02853e-03
+Epoch 238, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67283e-03
+Validation loss = 4.29635e-03
+Training finished, took 350.47s, MODEL SAVED
+Epoch 239, 27% 	 train_loss: 4.33280e-03
+Epoch 239, 54% 	 train_loss: 2.02845e-03
+Epoch 239, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67267e-03
+Validation loss = 4.29633e-03
+Training finished, took 351.75s, MODEL SAVED
+Epoch 240, 27% 	 train_loss: 4.33298e-03
+Epoch 240, 54% 	 train_loss: 2.02853e-03
+Epoch 240, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67284e-03
+Validation loss = 4.29636e-03
+Training finished, took 353.04s, MODEL SAVED
+Epoch 241, 27% 	 train_loss: 4.33281e-03
+Epoch 241, 54% 	 train_loss: 2.02845e-03
+Epoch 241, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67268e-03
+Validation loss = 4.29634e-03
+Training finished, took 354.33s, MODEL SAVED
+Epoch 242, 27% 	 train_loss: 4.33299e-03
+Epoch 242, 54% 	 train_loss: 2.02853e-03
+Epoch 242, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67285e-03
+Validation loss = 4.29637e-03
+Training finished, took 355.61s, MODEL SAVED
+Epoch 243, 27% 	 train_loss: 4.33282e-03
+Epoch 243, 54% 	 train_loss: 2.02845e-03
+Epoch 243, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67268e-03
+Validation loss = 4.29636e-03
+Training finished, took 356.90s, MODEL SAVED
+Epoch 244, 27% 	 train_loss: 4.33300e-03
+Epoch 244, 54% 	 train_loss: 2.02854e-03
+Epoch 244, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67287e-03
+Validation loss = 4.29639e-03
+Training finished, took 358.19s, MODEL SAVED
+Epoch 245, 27% 	 train_loss: 4.33282e-03
+Epoch 245, 54% 	 train_loss: 2.02845e-03
+Epoch 245, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67269e-03
+Validation loss = 4.29637e-03
+Training finished, took 359.48s, MODEL SAVED
+Epoch 246, 27% 	 train_loss: 4.33301e-03
+Epoch 246, 54% 	 train_loss: 2.02854e-03
+Epoch 246, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67288e-03
+Validation loss = 4.29641e-03
+Training finished, took 360.79s, MODEL SAVED
+Epoch 247, 27% 	 train_loss: 4.33283e-03
+Epoch 247, 54% 	 train_loss: 2.02845e-03
+Epoch 247, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67270e-03
+Validation loss = 4.29639e-03
+Training finished, took 362.06s, MODEL SAVED
+Epoch 248, 27% 	 train_loss: 4.33302e-03
+Epoch 248, 54% 	 train_loss: 2.02854e-03
+Epoch 248, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67289e-03
+Validation loss = 4.29643e-03
+Training finished, took 363.35s, MODEL SAVED
+Epoch 249, 27% 	 train_loss: 4.33284e-03
+Epoch 249, 54% 	 train_loss: 2.02845e-03
+Epoch 249, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67271e-03
+Validation loss = 4.29642e-03
+Training finished, took 364.63s, MODEL SAVED
+Epoch 250, 27% 	 train_loss: 4.33302e-03
+Epoch 250, 54% 	 train_loss: 2.02854e-03
+Epoch 250, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67289e-03
+Validation loss = 4.29645e-03
+Training finished, took 365.91s, MODEL SAVED
+Epoch 251, 27% 	 train_loss: 4.33285e-03
+Epoch 251, 54% 	 train_loss: 2.02845e-03
+Epoch 251, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67273e-03
+Validation loss = 4.29644e-03
+Training finished, took 367.20s, MODEL SAVED
+Epoch 252, 27% 	 train_loss: 4.33302e-03
+Epoch 252, 54% 	 train_loss: 2.02854e-03
+Epoch 252, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67289e-03
+Validation loss = 4.29648e-03
+Training finished, took 368.49s, MODEL SAVED
+Epoch 253, 27% 	 train_loss: 4.33287e-03
+Epoch 253, 54% 	 train_loss: 2.02846e-03
+Epoch 253, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67275e-03
+Validation loss = 4.29647e-03
+Training finished, took 369.78s, MODEL SAVED
+Epoch 254, 27% 	 train_loss: 4.33302e-03
+Epoch 254, 54% 	 train_loss: 2.02854e-03
+Epoch 254, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67289e-03
+Validation loss = 4.29650e-03
+Training finished, took 371.07s, MODEL SAVED
+Epoch 255, 27% 	 train_loss: 4.33288e-03
+Epoch 255, 54% 	 train_loss: 2.02846e-03
+Epoch 255, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67277e-03
+Validation loss = 4.29650e-03
+Training finished, took 372.35s, MODEL SAVED
+Epoch 256, 27% 	 train_loss: 4.33303e-03
+Epoch 256, 54% 	 train_loss: 2.02853e-03
+Epoch 256, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67290e-03
+Validation loss = 4.29653e-03
+Training finished, took 373.64s, MODEL SAVED
+Epoch 257, 27% 	 train_loss: 4.33290e-03
+Epoch 257, 54% 	 train_loss: 2.02846e-03
+Epoch 257, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67279e-03
+Validation loss = 4.29653e-03
+Training finished, took 374.93s, MODEL SAVED
+Epoch 258, 27% 	 train_loss: 4.33303e-03
+Epoch 258, 54% 	 train_loss: 2.02853e-03
+Epoch 258, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67290e-03
+Validation loss = 4.29656e-03
+Training finished, took 376.20s, MODEL SAVED
+Epoch 259, 27% 	 train_loss: 4.33292e-03
+Epoch 259, 54% 	 train_loss: 2.02846e-03
+Epoch 259, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67282e-03
+Validation loss = 4.29657e-03
+Training finished, took 377.49s, MODEL SAVED
+Epoch 260, 27% 	 train_loss: 4.33303e-03
+Epoch 260, 54% 	 train_loss: 2.02853e-03
+Epoch 260, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67291e-03
+Validation loss = 4.29660e-03
+Training finished, took 378.77s, MODEL SAVED
+Epoch 261, 27% 	 train_loss: 4.33294e-03
+Epoch 261, 54% 	 train_loss: 2.02847e-03
+Epoch 261, 81% 	 train_loss: 1.26462e-03
+Training loss = 8.67285e-03
+Validation loss = 4.29661e-03
+Training finished, took 380.06s, MODEL SAVED
+Epoch 262, 27% 	 train_loss: 4.33304e-03
+Epoch 262, 54% 	 train_loss: 2.02853e-03
+Epoch 262, 81% 	 train_loss: 1.26455e-03
+Training loss = 8.67291e-03
+Validation loss = 4.29664e-03
+Training finished, took 381.33s, MODEL SAVED
+Epoch 263, 27% 	 train_loss: 4.33298e-03
+Epoch 263, 54% 	 train_loss: 2.02848e-03
+Epoch 263, 81% 	 train_loss: 1.26462e-03
+Training loss = 8.67290e-03
+Validation loss = 4.29666e-03
+Training finished, took 382.61s, MODEL SAVED
+Epoch 264, 27% 	 train_loss: 4.33303e-03
+Epoch 264, 54% 	 train_loss: 2.02853e-03
+Epoch 264, 81% 	 train_loss: 1.26455e-03
+Training loss = 8.67290e-03
+Validation loss = 4.29669e-03
+Training finished, took 383.91s, MODEL SAVED
+Epoch 265, 27% 	 train_loss: 4.33305e-03
+Epoch 265, 54% 	 train_loss: 2.02849e-03
+Epoch 265, 81% 	 train_loss: 1.26462e-03
+Training loss = 8.67299e-03
+Validation loss = 4.29673e-03
+Training finished, took 385.20s, MODEL SAVED
+Epoch 266, 27% 	 train_loss: 4.33301e-03
+Epoch 266, 54% 	 train_loss: 2.02852e-03
+Epoch 266, 81% 	 train_loss: 1.26457e-03
+Training loss = 8.67288e-03
+Validation loss = 4.29674e-03
+Training finished, took 386.49s, MODEL SAVED
+Epoch 267, 27% 	 train_loss: 4.33314e-03
+Epoch 267, 54% 	 train_loss: 2.02852e-03
+Epoch 267, 81% 	 train_loss: 1.26462e-03
+Training loss = 8.67312e-03
+Epoch   267: reducing learning rate of group 0 to 1.2288e-03.
+Validation loss = 4.29680e-03
+Training finished, took 387.77s, MODEL SAVED
+Epoch 268, 27% 	 train_loss: 4.33292e-03
+Epoch 268, 54% 	 train_loss: 2.02850e-03
+Epoch 268, 81% 	 train_loss: 1.26457e-03
+Training loss = 8.67275e-03
+Validation loss = 4.29664e-03
+Training finished, took 389.06s, MODEL SAVED
+Epoch 269, 27% 	 train_loss: 4.33288e-03
+Epoch 269, 54% 	 train_loss: 2.02854e-03
+Epoch 269, 81% 	 train_loss: 1.26470e-03
+Training loss = 8.67297e-03
+Validation loss = 4.29644e-03
+Training finished, took 390.35s, MODEL SAVED
+Epoch 270, 27% 	 train_loss: 4.33249e-03
+Epoch 270, 54% 	 train_loss: 2.02854e-03
+Epoch 270, 81% 	 train_loss: 1.26469e-03
+Training loss = 8.67257e-03
+Validation loss = 4.29623e-03
+Training finished, took 391.64s, MODEL SAVED
+Epoch 271, 27% 	 train_loss: 4.33277e-03
+Epoch 271, 54% 	 train_loss: 2.02858e-03
+Epoch 271, 81% 	 train_loss: 1.26462e-03
+Training loss = 8.67285e-03
+Validation loss = 4.29630e-03
+Training finished, took 392.94s, MODEL SAVED
+Epoch 272, 27% 	 train_loss: 4.33245e-03
+Epoch 272, 54% 	 train_loss: 2.02846e-03
+Epoch 272, 81% 	 train_loss: 1.26466e-03
+Training loss = 8.67242e-03
+Validation loss = 4.29625e-03
+Training finished, took 394.24s, MODEL SAVED
+Epoch 273, 27% 	 train_loss: 4.33267e-03
+Epoch 273, 54% 	 train_loss: 2.02852e-03
+Epoch 273, 81% 	 train_loss: 1.26460e-03
+Training loss = 8.67263e-03
+Validation loss = 4.29628e-03
+Training finished, took 395.52s, MODEL SAVED
+Epoch 274, 27% 	 train_loss: 4.33255e-03
+Epoch 274, 54% 	 train_loss: 2.02848e-03
+Epoch 274, 81% 	 train_loss: 1.26464e-03
+Training loss = 8.67251e-03
+Validation loss = 4.29626e-03
+Training finished, took 396.81s, MODEL SAVED
+Epoch 275, 27% 	 train_loss: 4.33264e-03
+Epoch 275, 54% 	 train_loss: 2.02851e-03
+Epoch 275, 81% 	 train_loss: 1.26462e-03
+Training loss = 8.67261e-03
+Validation loss = 4.29628e-03
+Training finished, took 398.10s, MODEL SAVED
+Epoch 276, 27% 	 train_loss: 4.33254e-03
+Epoch 276, 54% 	 train_loss: 2.02848e-03
+Epoch 276, 81% 	 train_loss: 1.26463e-03
+Training loss = 8.67248e-03
+Validation loss = 4.29626e-03
+Training finished, took 399.39s, MODEL SAVED
+Epoch 277, 27% 	 train_loss: 4.33262e-03
+Epoch 277, 54% 	 train_loss: 2.02849e-03
+Epoch 277, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67257e-03
+Validation loss = 4.29628e-03
+Training finished, took 400.68s, MODEL SAVED
+Epoch 278, 27% 	 train_loss: 4.33253e-03
+Epoch 278, 54% 	 train_loss: 2.02847e-03
+Epoch 278, 81% 	 train_loss: 1.26462e-03
+Training loss = 8.67247e-03
+Validation loss = 4.29626e-03
+Training finished, took 402.33s, MODEL SAVED
+Epoch 279, 27% 	 train_loss: 4.33261e-03
+Epoch 279, 54% 	 train_loss: 2.02849e-03
+Epoch 279, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67255e-03
+Validation loss = 4.29627e-03
+Training finished, took 403.71s, MODEL SAVED
+Epoch 280, 27% 	 train_loss: 4.33253e-03
+Epoch 280, 54% 	 train_loss: 2.02847e-03
+Epoch 280, 81% 	 train_loss: 1.26462e-03
+Training loss = 8.67246e-03
+Validation loss = 4.29626e-03
+Training finished, took 405.15s, MODEL SAVED
+Epoch 281, 27% 	 train_loss: 4.33260e-03
+Epoch 281, 54% 	 train_loss: 2.02848e-03
+Epoch 281, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67253e-03
+Validation loss = 4.29627e-03
+Training finished, took 406.54s, MODEL SAVED
+Epoch 282, 27% 	 train_loss: 4.33254e-03
+Epoch 282, 54% 	 train_loss: 2.02846e-03
+Epoch 282, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29626e-03
+Training finished, took 408.12s, MODEL SAVED
+Epoch 283, 27% 	 train_loss: 4.33260e-03
+Epoch 283, 54% 	 train_loss: 2.02848e-03
+Epoch 283, 81% 	 train_loss: 1.26460e-03
+Training loss = 8.67252e-03
+Validation loss = 4.29627e-03
+Training finished, took 409.64s, MODEL SAVED
+Epoch 284, 27% 	 train_loss: 4.33255e-03
+Epoch 284, 54% 	 train_loss: 2.02846e-03
+Epoch 284, 81% 	 train_loss: 1.26461e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 411.15s, MODEL SAVED
+Epoch 285, 27% 	 train_loss: 4.33260e-03
+Epoch 285, 54% 	 train_loss: 2.02847e-03
+Epoch 285, 81% 	 train_loss: 1.26460e-03
+Training loss = 8.67250e-03
+Validation loss = 4.29627e-03
+Training finished, took 412.66s, MODEL SAVED
+Epoch 286, 27% 	 train_loss: 4.33256e-03
+Epoch 286, 54% 	 train_loss: 2.02846e-03
+Epoch 286, 81% 	 train_loss: 1.26460e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 414.16s, MODEL SAVED
+Epoch 287, 27% 	 train_loss: 4.33260e-03
+Epoch 287, 54% 	 train_loss: 2.02847e-03
+Epoch 287, 81% 	 train_loss: 1.26460e-03
+Training loss = 8.67250e-03
+Validation loss = 4.29626e-03
+Training finished, took 415.70s, MODEL SAVED
+Epoch 288, 27% 	 train_loss: 4.33256e-03
+Epoch 288, 54% 	 train_loss: 2.02846e-03
+Epoch 288, 81% 	 train_loss: 1.26460e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 417.16s, MODEL SAVED
+Epoch 289, 27% 	 train_loss: 4.33260e-03
+Epoch 289, 54% 	 train_loss: 2.02847e-03
+Epoch 289, 81% 	 train_loss: 1.26459e-03
+Training loss = 8.67249e-03
+Validation loss = 4.29626e-03
+Training finished, took 418.81s, MODEL SAVED
+Epoch 290, 27% 	 train_loss: 4.33257e-03
+Epoch 290, 54% 	 train_loss: 2.02846e-03
+Epoch 290, 81% 	 train_loss: 1.26460e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 420.39s, MODEL SAVED
+Epoch 291, 27% 	 train_loss: 4.33260e-03
+Epoch 291, 54% 	 train_loss: 2.02846e-03
+Epoch 291, 81% 	 train_loss: 1.26459e-03
+Training loss = 8.67248e-03
+Validation loss = 4.29626e-03
+Training finished, took 421.77s, MODEL SAVED
+Epoch 292, 27% 	 train_loss: 4.33257e-03
+Epoch 292, 54% 	 train_loss: 2.02846e-03
+Epoch 292, 81% 	 train_loss: 1.26459e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 423.32s, MODEL SAVED
+Epoch 293, 27% 	 train_loss: 4.33260e-03
+Epoch 293, 54% 	 train_loss: 2.02846e-03
+Epoch 293, 81% 	 train_loss: 1.26459e-03
+Training loss = 8.67248e-03
+Validation loss = 4.29626e-03
+Training finished, took 424.76s, MODEL SAVED
+Epoch 294, 27% 	 train_loss: 4.33257e-03
+Epoch 294, 54% 	 train_loss: 2.02846e-03
+Epoch 294, 81% 	 train_loss: 1.26459e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 426.17s, MODEL SAVED
+Epoch 295, 27% 	 train_loss: 4.33260e-03
+Epoch 295, 54% 	 train_loss: 2.02846e-03
+Epoch 295, 81% 	 train_loss: 1.26459e-03
+Training loss = 8.67248e-03
+Validation loss = 4.29626e-03
+Training finished, took 427.55s, MODEL SAVED
+Epoch 296, 27% 	 train_loss: 4.33258e-03
+Epoch 296, 54% 	 train_loss: 2.02846e-03
+Epoch 296, 81% 	 train_loss: 1.26459e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 428.96s, MODEL SAVED
+Epoch 297, 27% 	 train_loss: 4.33260e-03
+Epoch 297, 54% 	 train_loss: 2.02846e-03
+Epoch 297, 81% 	 train_loss: 1.26459e-03
+Training loss = 8.67247e-03
+Validation loss = 4.29626e-03
+Training finished, took 430.44s, MODEL SAVED
+Epoch 298, 27% 	 train_loss: 4.33258e-03
+Epoch 298, 54% 	 train_loss: 2.02846e-03
+Epoch 298, 81% 	 train_loss: 1.26459e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 431.86s, MODEL SAVED
+Epoch 299, 27% 	 train_loss: 4.33260e-03
+Epoch 299, 54% 	 train_loss: 2.02846e-03
+Epoch 299, 81% 	 train_loss: 1.26459e-03
+Training loss = 8.67247e-03
+Validation loss = 4.29626e-03
+Training finished, took 433.44s, MODEL SAVED
+Epoch 300, 27% 	 train_loss: 4.33258e-03
+Epoch 300, 54% 	 train_loss: 2.02846e-03
+Epoch 300, 81% 	 train_loss: 1.26459e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 434.83s, MODEL SAVED
+Epoch 301, 27% 	 train_loss: 4.33260e-03
+Epoch 301, 54% 	 train_loss: 2.02846e-03
+Epoch 301, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67247e-03
+Validation loss = 4.29625e-03
+Training finished, took 436.29s, MODEL SAVED
+Epoch 302, 27% 	 train_loss: 4.33258e-03
+Epoch 302, 54% 	 train_loss: 2.02846e-03
+Epoch 302, 81% 	 train_loss: 1.26459e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 437.74s, MODEL SAVED
+Epoch 303, 27% 	 train_loss: 4.33260e-03
+Epoch 303, 54% 	 train_loss: 2.02846e-03
+Epoch 303, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67247e-03
+Validation loss = 4.29625e-03
+Training finished, took 439.13s, MODEL SAVED
+Epoch 304, 27% 	 train_loss: 4.33259e-03
+Epoch 304, 54% 	 train_loss: 2.02846e-03
+Epoch 304, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 440.59s, MODEL SAVED
+Epoch 305, 27% 	 train_loss: 4.33260e-03
+Epoch 305, 54% 	 train_loss: 2.02846e-03
+Epoch 305, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67246e-03
+Validation loss = 4.29625e-03
+Training finished, took 442.12s, MODEL SAVED
+Epoch 306, 27% 	 train_loss: 4.33259e-03
+Epoch 306, 54% 	 train_loss: 2.02845e-03
+Epoch 306, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 443.51s, MODEL SAVED
+Epoch 307, 27% 	 train_loss: 4.33260e-03
+Epoch 307, 54% 	 train_loss: 2.02846e-03
+Epoch 307, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67246e-03
+Validation loss = 4.29625e-03
+Training finished, took 445.12s, MODEL SAVED
+Epoch 308, 27% 	 train_loss: 4.33259e-03
+Epoch 308, 54% 	 train_loss: 2.02845e-03
+Epoch 308, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 446.52s, MODEL SAVED
+Epoch 309, 27% 	 train_loss: 4.33260e-03
+Epoch 309, 54% 	 train_loss: 2.02846e-03
+Epoch 309, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67246e-03
+Validation loss = 4.29625e-03
+Training finished, took 447.94s, MODEL SAVED
+Epoch 310, 27% 	 train_loss: 4.33259e-03
+Epoch 310, 54% 	 train_loss: 2.02845e-03
+Epoch 310, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 449.32s, MODEL SAVED
+Epoch 311, 27% 	 train_loss: 4.33260e-03
+Epoch 311, 54% 	 train_loss: 2.02846e-03
+Epoch 311, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67246e-03
+Validation loss = 4.29625e-03
+Training finished, took 450.80s, MODEL SAVED
+Epoch 312, 27% 	 train_loss: 4.33259e-03
+Epoch 312, 54% 	 train_loss: 2.02845e-03
+Epoch 312, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 452.37s, MODEL SAVED
+Epoch 313, 27% 	 train_loss: 4.33260e-03
+Epoch 313, 54% 	 train_loss: 2.02846e-03
+Epoch 313, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67246e-03
+Validation loss = 4.29625e-03
+Training finished, took 453.75s, MODEL SAVED
+Epoch 314, 27% 	 train_loss: 4.33259e-03
+Epoch 314, 54% 	 train_loss: 2.02845e-03
+Epoch 314, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 455.27s, MODEL SAVED
+Epoch 315, 27% 	 train_loss: 4.33260e-03
+Epoch 315, 54% 	 train_loss: 2.02846e-03
+Epoch 315, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67246e-03
+Validation loss = 4.29625e-03
+Training finished, took 456.66s, MODEL SAVED
+Epoch 316, 27% 	 train_loss: 4.33259e-03
+Epoch 316, 54% 	 train_loss: 2.02845e-03
+Epoch 316, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67245e-03
+Validation loss = 4.29625e-03
+Training finished, took 458.05s, MODEL SAVED
+Epoch 317, 27% 	 train_loss: 4.33260e-03
+Epoch 317, 54% 	 train_loss: 2.02846e-03
+Epoch 317, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67246e-03
+Validation loss = 4.29625e-03
+Training finished, took 459.51s, MODEL SAVED
+Epoch 318, 27% 	 train_loss: 4.33260e-03
+Epoch 318, 54% 	 train_loss: 2.02845e-03
+Epoch 318, 81% 	 train_loss: 1.26458e-03
+Training loss = 8.67245e-03
+Epoch   318: reducing learning rate of group 0 to 1.0000e-03.
+Validation loss = 4.29625e-03
+Training finished, took 461.03s, MODEL SAVED
+Epoch 319, 27% 	 train_loss: 4.33256e-03
+Epoch 319, 54% 	 train_loss: 2.02844e-03
+Epoch 319, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67234e-03
+Validation loss = 4.29632e-03
+Training finished, took 462.42s, MODEL SAVED
+Epoch 320, 27% 	 train_loss: 4.33235e-03
+Epoch 320, 54% 	 train_loss: 2.02838e-03
+Epoch 320, 81% 	 train_loss: 1.26454e-03
+Training loss = 8.67206e-03
+Validation loss = 4.29628e-03
+Training finished, took 463.97s, MODEL SAVED
+Epoch 321, 27% 	 train_loss: 4.33247e-03
+Epoch 321, 54% 	 train_loss: 2.02842e-03
+Epoch 321, 81% 	 train_loss: 1.26451e-03
+Training loss = 8.67217e-03
+Validation loss = 4.29627e-03
+Training finished, took 465.49s, MODEL SAVED
+Epoch 322, 27% 	 train_loss: 4.33247e-03
+Epoch 322, 54% 	 train_loss: 2.02842e-03
+Epoch 322, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67222e-03
+Validation loss = 4.29629e-03
+Training finished, took 466.88s, MODEL SAVED
+Epoch 323, 27% 	 train_loss: 4.33241e-03
+Epoch 323, 54% 	 train_loss: 2.02840e-03
+Epoch 323, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67214e-03
+Validation loss = 4.29628e-03
+Training finished, took 468.49s, MODEL SAVED
+Epoch 324, 27% 	 train_loss: 4.33245e-03
+Epoch 324, 54% 	 train_loss: 2.02841e-03
+Epoch 324, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67217e-03
+Validation loss = 4.29628e-03
+Training finished, took 470.03s, MODEL SAVED
+Epoch 325, 27% 	 train_loss: 4.33245e-03
+Epoch 325, 54% 	 train_loss: 2.02841e-03
+Epoch 325, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 471.59s, MODEL SAVED
+Epoch 326, 27% 	 train_loss: 4.33244e-03
+Epoch 326, 54% 	 train_loss: 2.02841e-03
+Epoch 326, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67216e-03
+Validation loss = 4.29628e-03
+Training finished, took 473.07s, MODEL SAVED
+Epoch 327, 27% 	 train_loss: 4.33245e-03
+Epoch 327, 54% 	 train_loss: 2.02841e-03
+Epoch 327, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67217e-03
+Validation loss = 4.29628e-03
+Training finished, took 474.64s, MODEL SAVED
+Epoch 328, 27% 	 train_loss: 4.33245e-03
+Epoch 328, 54% 	 train_loss: 2.02841e-03
+Epoch 328, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67217e-03
+Validation loss = 4.29628e-03
+Training finished, took 476.03s, MODEL SAVED
+Epoch 329, 27% 	 train_loss: 4.33244e-03
+Epoch 329, 54% 	 train_loss: 2.02841e-03
+Epoch 329, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67217e-03
+Validation loss = 4.29628e-03
+Training finished, took 477.41s, MODEL SAVED
+Epoch 330, 27% 	 train_loss: 4.33244e-03
+Epoch 330, 54% 	 train_loss: 2.02841e-03
+Epoch 330, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67217e-03
+Validation loss = 4.29628e-03
+Training finished, took 478.80s, MODEL SAVED
+Epoch 331, 27% 	 train_loss: 4.33245e-03
+Epoch 331, 54% 	 train_loss: 2.02841e-03
+Epoch 331, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67217e-03
+Validation loss = 4.29628e-03
+Training finished, took 480.17s, MODEL SAVED
+Epoch 332, 27% 	 train_loss: 4.33244e-03
+Epoch 332, 54% 	 train_loss: 2.02841e-03
+Epoch 332, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67217e-03
+Validation loss = 4.29628e-03
+Training finished, took 481.61s, MODEL SAVED
+Epoch 333, 27% 	 train_loss: 4.33245e-03
+Epoch 333, 54% 	 train_loss: 2.02841e-03
+Epoch 333, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67217e-03
+Validation loss = 4.29628e-03
+Training finished, took 483.00s, MODEL SAVED
+Epoch 334, 27% 	 train_loss: 4.33245e-03
+Epoch 334, 54% 	 train_loss: 2.02841e-03
+Epoch 334, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67217e-03
+Validation loss = 4.29628e-03
+Training finished, took 484.61s, MODEL SAVED
+Epoch 335, 27% 	 train_loss: 4.33245e-03
+Epoch 335, 54% 	 train_loss: 2.02841e-03
+Epoch 335, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 486.00s, MODEL SAVED
+Epoch 336, 27% 	 train_loss: 4.33245e-03
+Epoch 336, 54% 	 train_loss: 2.02841e-03
+Epoch 336, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 487.45s, MODEL SAVED
+Epoch 337, 27% 	 train_loss: 4.33245e-03
+Epoch 337, 54% 	 train_loss: 2.02841e-03
+Epoch 337, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 488.85s, MODEL SAVED
+Epoch 338, 27% 	 train_loss: 4.33245e-03
+Epoch 338, 54% 	 train_loss: 2.02841e-03
+Epoch 338, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 490.25s, MODEL SAVED
+Epoch 339, 27% 	 train_loss: 4.33245e-03
+Epoch 339, 54% 	 train_loss: 2.02841e-03
+Epoch 339, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 491.63s, MODEL SAVED
+Epoch 340, 27% 	 train_loss: 4.33245e-03
+Epoch 340, 54% 	 train_loss: 2.02841e-03
+Epoch 340, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 493.02s, MODEL SAVED
+Epoch 341, 27% 	 train_loss: 4.33245e-03
+Epoch 341, 54% 	 train_loss: 2.02841e-03
+Epoch 341, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 494.53s, MODEL SAVED
+Epoch 342, 27% 	 train_loss: 4.33245e-03
+Epoch 342, 54% 	 train_loss: 2.02841e-03
+Epoch 342, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 496.05s, MODEL SAVED
+Epoch 343, 27% 	 train_loss: 4.33245e-03
+Epoch 343, 54% 	 train_loss: 2.02841e-03
+Epoch 343, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 497.74s, MODEL SAVED
+Epoch 344, 27% 	 train_loss: 4.33245e-03
+Epoch 344, 54% 	 train_loss: 2.02841e-03
+Epoch 344, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 499.13s, MODEL SAVED
+Epoch 345, 27% 	 train_loss: 4.33245e-03
+Epoch 345, 54% 	 train_loss: 2.02841e-03
+Epoch 345, 81% 	 train_loss: 1.26452e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 500.68s, MODEL SAVED
+Epoch 346, 27% 	 train_loss: 4.33245e-03
+Epoch 346, 54% 	 train_loss: 2.02841e-03
+Epoch 346, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 502.08s, MODEL SAVED
+Epoch 347, 27% 	 train_loss: 4.33245e-03
+Epoch 347, 54% 	 train_loss: 2.02841e-03
+Epoch 347, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 503.52s, MODEL SAVED
+Epoch 348, 27% 	 train_loss: 4.33245e-03
+Epoch 348, 54% 	 train_loss: 2.02841e-03
+Epoch 348, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 505.06s, MODEL SAVED
+Epoch 349, 27% 	 train_loss: 4.33245e-03
+Epoch 349, 54% 	 train_loss: 2.02841e-03
+Epoch 349, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 506.57s, MODEL SAVED
+Epoch 350, 27% 	 train_loss: 4.33245e-03
+Epoch 350, 54% 	 train_loss: 2.02841e-03
+Epoch 350, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 508.15s, MODEL SAVED
+Epoch 351, 27% 	 train_loss: 4.33245e-03
+Epoch 351, 54% 	 train_loss: 2.02841e-03
+Epoch 351, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 509.71s, MODEL SAVED
+Epoch 352, 27% 	 train_loss: 4.33245e-03
+Epoch 352, 54% 	 train_loss: 2.02841e-03
+Epoch 352, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 511.19s, MODEL SAVED
+Epoch 353, 27% 	 train_loss: 4.33245e-03
+Epoch 353, 54% 	 train_loss: 2.02841e-03
+Epoch 353, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 512.82s, MODEL SAVED
+Epoch 354, 27% 	 train_loss: 4.33245e-03
+Epoch 354, 54% 	 train_loss: 2.02841e-03
+Epoch 354, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 514.19s, MODEL SAVED
+Epoch 355, 27% 	 train_loss: 4.33245e-03
+Epoch 355, 54% 	 train_loss: 2.02841e-03
+Epoch 355, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 515.56s, MODEL SAVED
+Epoch 356, 27% 	 train_loss: 4.33245e-03
+Epoch 356, 54% 	 train_loss: 2.02841e-03
+Epoch 356, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67218e-03
+Validation loss = 4.29628e-03
+Training finished, took 516.97s, MODEL SAVED
+Epoch 357, 27% 	 train_loss: 4.33245e-03
+Epoch 357, 54% 	 train_loss: 2.02841e-03
+Epoch 357, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 518.41s, MODEL SAVED
+Epoch 358, 27% 	 train_loss: 4.33245e-03
+Epoch 358, 54% 	 train_loss: 2.02841e-03
+Epoch 358, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 519.88s, MODEL SAVED
+Epoch 359, 27% 	 train_loss: 4.33245e-03
+Epoch 359, 54% 	 train_loss: 2.02841e-03
+Epoch 359, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 521.53s, MODEL SAVED
+Epoch 360, 27% 	 train_loss: 4.33245e-03
+Epoch 360, 54% 	 train_loss: 2.02841e-03
+Epoch 360, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 523.01s, MODEL SAVED
+Epoch 361, 27% 	 train_loss: 4.33245e-03
+Epoch 361, 54% 	 train_loss: 2.02841e-03
+Epoch 361, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 524.46s, MODEL SAVED
+Epoch 362, 27% 	 train_loss: 4.33245e-03
+Epoch 362, 54% 	 train_loss: 2.02841e-03
+Epoch 362, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 525.96s, MODEL SAVED
+Epoch 363, 27% 	 train_loss: 4.33245e-03
+Epoch 363, 54% 	 train_loss: 2.02841e-03
+Epoch 363, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 527.53s, MODEL SAVED
+Epoch 364, 27% 	 train_loss: 4.33245e-03
+Epoch 364, 54% 	 train_loss: 2.02841e-03
+Epoch 364, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 529.04s, MODEL SAVED
+Epoch 365, 27% 	 train_loss: 4.33245e-03
+Epoch 365, 54% 	 train_loss: 2.02841e-03
+Epoch 365, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 530.49s, MODEL SAVED
+Epoch 366, 27% 	 train_loss: 4.33245e-03
+Epoch 366, 54% 	 train_loss: 2.02841e-03
+Epoch 366, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 531.91s, MODEL SAVED
+Epoch 367, 27% 	 train_loss: 4.33245e-03
+Epoch 367, 54% 	 train_loss: 2.02841e-03
+Epoch 367, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 533.35s, MODEL SAVED
+Epoch 368, 27% 	 train_loss: 4.33245e-03
+Epoch 368, 54% 	 train_loss: 2.02841e-03
+Epoch 368, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 534.97s, MODEL SAVED
+Epoch 369, 27% 	 train_loss: 4.33245e-03
+Epoch 369, 54% 	 train_loss: 2.02841e-03
+Epoch 369, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 536.47s, MODEL SAVED
+Epoch 370, 27% 	 train_loss: 4.33245e-03
+Epoch 370, 54% 	 train_loss: 2.02841e-03
+Epoch 370, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 538.03s, MODEL SAVED
+Epoch 371, 27% 	 train_loss: 4.33245e-03
+Epoch 371, 54% 	 train_loss: 2.02841e-03
+Epoch 371, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 539.51s, MODEL SAVED
+Epoch 372, 27% 	 train_loss: 4.33245e-03
+Epoch 372, 54% 	 train_loss: 2.02841e-03
+Epoch 372, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 540.91s, MODEL SAVED
+Epoch 373, 27% 	 train_loss: 4.33245e-03
+Epoch 373, 54% 	 train_loss: 2.02841e-03
+Epoch 373, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 542.48s, MODEL SAVED
+Epoch 374, 27% 	 train_loss: 4.33245e-03
+Epoch 374, 54% 	 train_loss: 2.02841e-03
+Epoch 374, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 543.89s, MODEL SAVED
+Epoch 375, 27% 	 train_loss: 4.33245e-03
+Epoch 375, 54% 	 train_loss: 2.02841e-03
+Epoch 375, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 545.38s, MODEL SAVED
+Epoch 376, 27% 	 train_loss: 4.33245e-03
+Epoch 376, 54% 	 train_loss: 2.02841e-03
+Epoch 376, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 546.75s, MODEL SAVED
+Epoch 377, 27% 	 train_loss: 4.33245e-03
+Epoch 377, 54% 	 train_loss: 2.02841e-03
+Epoch 377, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 548.20s, MODEL SAVED
+Epoch 378, 27% 	 train_loss: 4.33245e-03
+Epoch 378, 54% 	 train_loss: 2.02842e-03
+Epoch 378, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 549.86s, MODEL SAVED
+Epoch 379, 27% 	 train_loss: 4.33245e-03
+Epoch 379, 54% 	 train_loss: 2.02842e-03
+Epoch 379, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 551.44s, MODEL SAVED
+Epoch 380, 27% 	 train_loss: 4.33245e-03
+Epoch 380, 54% 	 train_loss: 2.02842e-03
+Epoch 380, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 552.92s, MODEL SAVED
+Epoch 381, 27% 	 train_loss: 4.33245e-03
+Epoch 381, 54% 	 train_loss: 2.02842e-03
+Epoch 381, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 554.30s, MODEL SAVED
+Epoch 382, 27% 	 train_loss: 4.33245e-03
+Epoch 382, 54% 	 train_loss: 2.02842e-03
+Epoch 382, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 555.75s, MODEL SAVED
+Epoch 383, 27% 	 train_loss: 4.33245e-03
+Epoch 383, 54% 	 train_loss: 2.02842e-03
+Epoch 383, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 557.26s, MODEL SAVED
+Epoch 384, 27% 	 train_loss: 4.33245e-03
+Epoch 384, 54% 	 train_loss: 2.02842e-03
+Epoch 384, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 558.64s, MODEL SAVED
+Epoch 385, 27% 	 train_loss: 4.33245e-03
+Epoch 385, 54% 	 train_loss: 2.02842e-03
+Epoch 385, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 560.06s, MODEL SAVED
+Epoch 386, 27% 	 train_loss: 4.33245e-03
+Epoch 386, 54% 	 train_loss: 2.02842e-03
+Epoch 386, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 561.52s, MODEL SAVED
+Epoch 387, 27% 	 train_loss: 4.33245e-03
+Epoch 387, 54% 	 train_loss: 2.02842e-03
+Epoch 387, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67219e-03
+Validation loss = 4.29628e-03
+Training finished, took 563.04s, MODEL SAVED
+Epoch 388, 27% 	 train_loss: 4.33245e-03
+Epoch 388, 54% 	 train_loss: 2.02842e-03
+Epoch 388, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 564.50s, MODEL SAVED
+Epoch 389, 27% 	 train_loss: 4.33245e-03
+Epoch 389, 54% 	 train_loss: 2.02842e-03
+Epoch 389, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 565.87s, MODEL SAVED
+Epoch 390, 27% 	 train_loss: 4.33245e-03
+Epoch 390, 54% 	 train_loss: 2.02842e-03
+Epoch 390, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 567.30s, MODEL SAVED
+Epoch 391, 27% 	 train_loss: 4.33245e-03
+Epoch 391, 54% 	 train_loss: 2.02842e-03
+Epoch 391, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 568.83s, MODEL SAVED
+Epoch 392, 27% 	 train_loss: 4.33245e-03
+Epoch 392, 54% 	 train_loss: 2.02842e-03
+Epoch 392, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 570.38s, MODEL SAVED
+Epoch 393, 27% 	 train_loss: 4.33245e-03
+Epoch 393, 54% 	 train_loss: 2.02842e-03
+Epoch 393, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 571.78s, MODEL SAVED
+Epoch 394, 27% 	 train_loss: 4.33245e-03
+Epoch 394, 54% 	 train_loss: 2.02842e-03
+Epoch 394, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 573.37s, MODEL SAVED
+Epoch 395, 27% 	 train_loss: 4.33245e-03
+Epoch 395, 54% 	 train_loss: 2.02842e-03
+Epoch 395, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 574.93s, MODEL SAVED
+Epoch 396, 27% 	 train_loss: 4.33245e-03
+Epoch 396, 54% 	 train_loss: 2.02842e-03
+Epoch 396, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 576.31s, MODEL SAVED
+Epoch 397, 27% 	 train_loss: 4.33245e-03
+Epoch 397, 54% 	 train_loss: 2.02842e-03
+Epoch 397, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 577.92s, MODEL SAVED
+Epoch 398, 27% 	 train_loss: 4.33245e-03
+Epoch 398, 54% 	 train_loss: 2.02842e-03
+Epoch 398, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 579.41s, MODEL SAVED
+Epoch 399, 27% 	 train_loss: 4.33245e-03
+Epoch 399, 54% 	 train_loss: 2.02842e-03
+Epoch 399, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 580.93s, MODEL SAVED
+Epoch 400, 27% 	 train_loss: 4.33245e-03
+Epoch 400, 54% 	 train_loss: 2.02842e-03
+Epoch 400, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 582.52s, MODEL SAVED
+Epoch 401, 27% 	 train_loss: 4.33245e-03
+Epoch 401, 54% 	 train_loss: 2.02842e-03
+Epoch 401, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 583.99s, MODEL SAVED
+Epoch 402, 27% 	 train_loss: 4.33245e-03
+Epoch 402, 54% 	 train_loss: 2.02842e-03
+Epoch 402, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 585.36s, MODEL SAVED
+Epoch 403, 27% 	 train_loss: 4.33245e-03
+Epoch 403, 54% 	 train_loss: 2.02842e-03
+Epoch 403, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 586.89s, MODEL SAVED
+Epoch 404, 27% 	 train_loss: 4.33245e-03
+Epoch 404, 54% 	 train_loss: 2.02842e-03
+Epoch 404, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 588.49s, MODEL SAVED
+Epoch 405, 27% 	 train_loss: 4.33245e-03
+Epoch 405, 54% 	 train_loss: 2.02842e-03
+Epoch 405, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 590.05s, MODEL SAVED
+Epoch 406, 27% 	 train_loss: 4.33245e-03
+Epoch 406, 54% 	 train_loss: 2.02842e-03
+Epoch 406, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 591.56s, MODEL SAVED
+Epoch 407, 27% 	 train_loss: 4.33245e-03
+Epoch 407, 54% 	 train_loss: 2.02842e-03
+Epoch 407, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 593.17s, MODEL SAVED
+Epoch 408, 27% 	 train_loss: 4.33245e-03
+Epoch 408, 54% 	 train_loss: 2.02842e-03
+Epoch 408, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 594.54s, MODEL SAVED
+Epoch 409, 27% 	 train_loss: 4.33245e-03
+Epoch 409, 54% 	 train_loss: 2.02842e-03
+Epoch 409, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 596.05s, MODEL SAVED
+Epoch 410, 27% 	 train_loss: 4.33245e-03
+Epoch 410, 54% 	 train_loss: 2.02842e-03
+Epoch 410, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 597.55s, MODEL SAVED
+Epoch 411, 27% 	 train_loss: 4.33245e-03
+Epoch 411, 54% 	 train_loss: 2.02842e-03
+Epoch 411, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 598.98s, MODEL SAVED
+Epoch 412, 27% 	 train_loss: 4.33245e-03
+Epoch 412, 54% 	 train_loss: 2.02842e-03
+Epoch 412, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 600.41s, MODEL SAVED
+Epoch 413, 27% 	 train_loss: 4.33245e-03
+Epoch 413, 54% 	 train_loss: 2.02842e-03
+Epoch 413, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 601.90s, MODEL SAVED
+Epoch 414, 27% 	 train_loss: 4.33245e-03
+Epoch 414, 54% 	 train_loss: 2.02842e-03
+Epoch 414, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 603.30s, MODEL SAVED
+Epoch 415, 27% 	 train_loss: 4.33245e-03
+Epoch 415, 54% 	 train_loss: 2.02842e-03
+Epoch 415, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 604.73s, MODEL SAVED
+Epoch 416, 27% 	 train_loss: 4.33245e-03
+Epoch 416, 54% 	 train_loss: 2.02842e-03
+Epoch 416, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 606.24s, MODEL SAVED
+Epoch 417, 27% 	 train_loss: 4.33245e-03
+Epoch 417, 54% 	 train_loss: 2.02842e-03
+Epoch 417, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 607.76s, MODEL SAVED
+Epoch 418, 27% 	 train_loss: 4.33245e-03
+Epoch 418, 54% 	 train_loss: 2.02842e-03
+Epoch 418, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 609.46s, MODEL SAVED
+Epoch 419, 27% 	 train_loss: 4.33245e-03
+Epoch 419, 54% 	 train_loss: 2.02842e-03
+Epoch 419, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 611.00s, MODEL SAVED
+Epoch 420, 27% 	 train_loss: 4.33245e-03
+Epoch 420, 54% 	 train_loss: 2.02842e-03
+Epoch 420, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 612.56s, MODEL SAVED
+Epoch 421, 27% 	 train_loss: 4.33245e-03
+Epoch 421, 54% 	 train_loss: 2.02842e-03
+Epoch 421, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 613.97s, MODEL SAVED
+Epoch 422, 27% 	 train_loss: 4.33245e-03
+Epoch 422, 54% 	 train_loss: 2.02842e-03
+Epoch 422, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 615.41s, MODEL SAVED
+Epoch 423, 27% 	 train_loss: 4.33245e-03
+Epoch 423, 54% 	 train_loss: 2.02842e-03
+Epoch 423, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 616.87s, MODEL SAVED
+Epoch 424, 27% 	 train_loss: 4.33245e-03
+Epoch 424, 54% 	 train_loss: 2.02842e-03
+Epoch 424, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 618.29s, MODEL SAVED
+Epoch 425, 27% 	 train_loss: 4.33245e-03
+Epoch 425, 54% 	 train_loss: 2.02842e-03
+Epoch 425, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 619.70s, MODEL SAVED
+Epoch 426, 27% 	 train_loss: 4.33245e-03
+Epoch 426, 54% 	 train_loss: 2.02842e-03
+Epoch 426, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 621.26s, MODEL SAVED
+Epoch 427, 27% 	 train_loss: 4.33245e-03
+Epoch 427, 54% 	 train_loss: 2.02842e-03
+Epoch 427, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 622.67s, MODEL SAVED
+Epoch 428, 27% 	 train_loss: 4.33245e-03
+Epoch 428, 54% 	 train_loss: 2.02842e-03
+Epoch 428, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 624.06s, MODEL SAVED
+Epoch 429, 27% 	 train_loss: 4.33245e-03
+Epoch 429, 54% 	 train_loss: 2.02842e-03
+Epoch 429, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 625.62s, MODEL SAVED
+Epoch 430, 27% 	 train_loss: 4.33245e-03
+Epoch 430, 54% 	 train_loss: 2.02842e-03
+Epoch 430, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 627.24s, MODEL SAVED
+Epoch 431, 27% 	 train_loss: 4.33245e-03
+Epoch 431, 54% 	 train_loss: 2.02842e-03
+Epoch 431, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 628.78s, MODEL SAVED
+Epoch 432, 27% 	 train_loss: 4.33246e-03
+Epoch 432, 54% 	 train_loss: 2.02842e-03
+Epoch 432, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 630.17s, MODEL SAVED
+Epoch 433, 27% 	 train_loss: 4.33246e-03
+Epoch 433, 54% 	 train_loss: 2.02842e-03
+Epoch 433, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 631.55s, MODEL SAVED
+Epoch 434, 27% 	 train_loss: 4.33246e-03
+Epoch 434, 54% 	 train_loss: 2.02842e-03
+Epoch 434, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 633.05s, MODEL SAVED
+Epoch 435, 27% 	 train_loss: 4.33246e-03
+Epoch 435, 54% 	 train_loss: 2.02842e-03
+Epoch 435, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 634.49s, MODEL SAVED
+Epoch 436, 27% 	 train_loss: 4.33246e-03
+Epoch 436, 54% 	 train_loss: 2.02842e-03
+Epoch 436, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 635.87s, MODEL SAVED
+Epoch 437, 27% 	 train_loss: 4.33246e-03
+Epoch 437, 54% 	 train_loss: 2.02842e-03
+Epoch 437, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 637.23s, MODEL SAVED
+Epoch 438, 27% 	 train_loss: 4.33246e-03
+Epoch 438, 54% 	 train_loss: 2.02842e-03
+Epoch 438, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 638.62s, MODEL SAVED
+Epoch 439, 27% 	 train_loss: 4.33246e-03
+Epoch 439, 54% 	 train_loss: 2.02842e-03
+Epoch 439, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67220e-03
+Validation loss = 4.29628e-03
+Training finished, took 640.02s, MODEL SAVED
+Epoch 440, 27% 	 train_loss: 4.33246e-03
+Epoch 440, 54% 	 train_loss: 2.02842e-03
+Epoch 440, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 641.42s, MODEL SAVED
+Epoch 441, 27% 	 train_loss: 4.33246e-03
+Epoch 441, 54% 	 train_loss: 2.02842e-03
+Epoch 441, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 642.80s, MODEL SAVED
+Epoch 442, 27% 	 train_loss: 4.33246e-03
+Epoch 442, 54% 	 train_loss: 2.02842e-03
+Epoch 442, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 644.26s, MODEL SAVED
+Epoch 443, 27% 	 train_loss: 4.33246e-03
+Epoch 443, 54% 	 train_loss: 2.02842e-03
+Epoch 443, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 645.71s, MODEL SAVED
+Epoch 444, 27% 	 train_loss: 4.33246e-03
+Epoch 444, 54% 	 train_loss: 2.02842e-03
+Epoch 444, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 647.33s, MODEL SAVED
+Epoch 445, 27% 	 train_loss: 4.33246e-03
+Epoch 445, 54% 	 train_loss: 2.02842e-03
+Epoch 445, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 648.89s, MODEL SAVED
+Epoch 446, 27% 	 train_loss: 4.33246e-03
+Epoch 446, 54% 	 train_loss: 2.02842e-03
+Epoch 446, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 650.29s, MODEL SAVED
+Epoch 447, 27% 	 train_loss: 4.33246e-03
+Epoch 447, 54% 	 train_loss: 2.02842e-03
+Epoch 447, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 651.71s, MODEL SAVED
+Epoch 448, 27% 	 train_loss: 4.33246e-03
+Epoch 448, 54% 	 train_loss: 2.02842e-03
+Epoch 448, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 653.36s, MODEL SAVED
+Epoch 449, 27% 	 train_loss: 4.33246e-03
+Epoch 449, 54% 	 train_loss: 2.02842e-03
+Epoch 449, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 654.93s, MODEL SAVED
+Epoch 450, 27% 	 train_loss: 4.33246e-03
+Epoch 450, 54% 	 train_loss: 2.02842e-03
+Epoch 450, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 656.40s, MODEL SAVED
+Epoch 451, 27% 	 train_loss: 4.33246e-03
+Epoch 451, 54% 	 train_loss: 2.02842e-03
+Epoch 451, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 657.78s, MODEL SAVED
+Epoch 452, 27% 	 train_loss: 4.33246e-03
+Epoch 452, 54% 	 train_loss: 2.02842e-03
+Epoch 452, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 659.18s, MODEL SAVED
+Epoch 453, 27% 	 train_loss: 4.33246e-03
+Epoch 453, 54% 	 train_loss: 2.02842e-03
+Epoch 453, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 660.73s, MODEL SAVED
+Epoch 454, 27% 	 train_loss: 4.33246e-03
+Epoch 454, 54% 	 train_loss: 2.02842e-03
+Epoch 454, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 662.28s, MODEL SAVED
+Epoch 455, 27% 	 train_loss: 4.33246e-03
+Epoch 455, 54% 	 train_loss: 2.02842e-03
+Epoch 455, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 663.68s, MODEL SAVED
+Epoch 456, 27% 	 train_loss: 4.33246e-03
+Epoch 456, 54% 	 train_loss: 2.02842e-03
+Epoch 456, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 665.19s, MODEL SAVED
+Epoch 457, 27% 	 train_loss: 4.33246e-03
+Epoch 457, 54% 	 train_loss: 2.02842e-03
+Epoch 457, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 666.75s, MODEL SAVED
+Epoch 458, 27% 	 train_loss: 4.33246e-03
+Epoch 458, 54% 	 train_loss: 2.02842e-03
+Epoch 458, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 668.17s, MODEL SAVED
+Epoch 459, 27% 	 train_loss: 4.33246e-03
+Epoch 459, 54% 	 train_loss: 2.02842e-03
+Epoch 459, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 669.69s, MODEL SAVED
+Epoch 460, 27% 	 train_loss: 4.33246e-03
+Epoch 460, 54% 	 train_loss: 2.02842e-03
+Epoch 460, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 671.08s, MODEL SAVED
+Epoch 461, 27% 	 train_loss: 4.33246e-03
+Epoch 461, 54% 	 train_loss: 2.02842e-03
+Epoch 461, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 672.45s, MODEL SAVED
+Epoch 462, 27% 	 train_loss: 4.33246e-03
+Epoch 462, 54% 	 train_loss: 2.02842e-03
+Epoch 462, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 673.84s, MODEL SAVED
+Epoch 463, 27% 	 train_loss: 4.33246e-03
+Epoch 463, 54% 	 train_loss: 2.02842e-03
+Epoch 463, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 675.22s, MODEL SAVED
+Epoch 464, 27% 	 train_loss: 4.33246e-03
+Epoch 464, 54% 	 train_loss: 2.02842e-03
+Epoch 464, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 676.78s, MODEL SAVED
+Epoch 465, 27% 	 train_loss: 4.33246e-03
+Epoch 465, 54% 	 train_loss: 2.02842e-03
+Epoch 465, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 678.07s, MODEL SAVED
+Epoch 466, 27% 	 train_loss: 4.33246e-03
+Epoch 466, 54% 	 train_loss: 2.02842e-03
+Epoch 466, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 679.36s, MODEL SAVED
+Epoch 467, 27% 	 train_loss: 4.33246e-03
+Epoch 467, 54% 	 train_loss: 2.02842e-03
+Epoch 467, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 680.64s, MODEL SAVED
+Epoch 468, 27% 	 train_loss: 4.33246e-03
+Epoch 468, 54% 	 train_loss: 2.02842e-03
+Epoch 468, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 681.93s, MODEL SAVED
+Epoch 469, 27% 	 train_loss: 4.33246e-03
+Epoch 469, 54% 	 train_loss: 2.02842e-03
+Epoch 469, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 683.21s, MODEL SAVED
+Epoch 470, 27% 	 train_loss: 4.33246e-03
+Epoch 470, 54% 	 train_loss: 2.02842e-03
+Epoch 470, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 684.49s, MODEL SAVED
+Epoch 471, 27% 	 train_loss: 4.33246e-03
+Epoch 471, 54% 	 train_loss: 2.02842e-03
+Epoch 471, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 685.80s, MODEL SAVED
+Epoch 472, 27% 	 train_loss: 4.33246e-03
+Epoch 472, 54% 	 train_loss: 2.02842e-03
+Epoch 472, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 687.08s, MODEL SAVED
+Epoch 473, 27% 	 train_loss: 4.33246e-03
+Epoch 473, 54% 	 train_loss: 2.02842e-03
+Epoch 473, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 688.36s, MODEL SAVED
+Epoch 474, 27% 	 train_loss: 4.33246e-03
+Epoch 474, 54% 	 train_loss: 2.02842e-03
+Epoch 474, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 689.63s, MODEL SAVED
+Epoch 475, 27% 	 train_loss: 4.33246e-03
+Epoch 475, 54% 	 train_loss: 2.02842e-03
+Epoch 475, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 690.91s, MODEL SAVED
+Epoch 476, 27% 	 train_loss: 4.33246e-03
+Epoch 476, 54% 	 train_loss: 2.02842e-03
+Epoch 476, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 692.18s, MODEL SAVED
+Epoch 477, 27% 	 train_loss: 4.33246e-03
+Epoch 477, 54% 	 train_loss: 2.02842e-03
+Epoch 477, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 693.46s, MODEL SAVED
+Epoch 478, 27% 	 train_loss: 4.33246e-03
+Epoch 478, 54% 	 train_loss: 2.02842e-03
+Epoch 478, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 694.79s, MODEL SAVED
+Epoch 479, 27% 	 train_loss: 4.33246e-03
+Epoch 479, 54% 	 train_loss: 2.02842e-03
+Epoch 479, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 696.21s, MODEL SAVED
+Epoch 480, 27% 	 train_loss: 4.33246e-03
+Epoch 480, 54% 	 train_loss: 2.02842e-03
+Epoch 480, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 697.72s, MODEL SAVED
+Epoch 481, 27% 	 train_loss: 4.33246e-03
+Epoch 481, 54% 	 train_loss: 2.02842e-03
+Epoch 481, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 699.35s, MODEL SAVED
+Epoch 482, 27% 	 train_loss: 4.33246e-03
+Epoch 482, 54% 	 train_loss: 2.02842e-03
+Epoch 482, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 700.84s, MODEL SAVED
+Epoch 483, 27% 	 train_loss: 4.33246e-03
+Epoch 483, 54% 	 train_loss: 2.02842e-03
+Epoch 483, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 702.38s, MODEL SAVED
+Epoch 484, 27% 	 train_loss: 4.33246e-03
+Epoch 484, 54% 	 train_loss: 2.02842e-03
+Epoch 484, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 703.79s, MODEL SAVED
+Epoch 485, 27% 	 train_loss: 4.33246e-03
+Epoch 485, 54% 	 train_loss: 2.02842e-03
+Epoch 485, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 705.15s, MODEL SAVED
+Epoch 486, 27% 	 train_loss: 4.33246e-03
+Epoch 486, 54% 	 train_loss: 2.02842e-03
+Epoch 486, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 706.53s, MODEL SAVED
+Epoch 487, 27% 	 train_loss: 4.33246e-03
+Epoch 487, 54% 	 train_loss: 2.02842e-03
+Epoch 487, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 707.89s, MODEL SAVED
+Epoch 488, 27% 	 train_loss: 4.33246e-03
+Epoch 488, 54% 	 train_loss: 2.02842e-03
+Epoch 488, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 709.39s, MODEL SAVED
+Epoch 489, 27% 	 train_loss: 4.33246e-03
+Epoch 489, 54% 	 train_loss: 2.02842e-03
+Epoch 489, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 711.01s, MODEL SAVED
+Epoch 490, 27% 	 train_loss: 4.33246e-03
+Epoch 490, 54% 	 train_loss: 2.02842e-03
+Epoch 490, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 712.41s, MODEL SAVED
+Epoch 491, 27% 	 train_loss: 4.33246e-03
+Epoch 491, 54% 	 train_loss: 2.02842e-03
+Epoch 491, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 714.05s, MODEL SAVED
+Epoch 492, 27% 	 train_loss: 4.33246e-03
+Epoch 492, 54% 	 train_loss: 2.02842e-03
+Epoch 492, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 715.51s, MODEL SAVED
+Epoch 493, 27% 	 train_loss: 4.33246e-03
+Epoch 493, 54% 	 train_loss: 2.02842e-03
+Epoch 493, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 716.90s, MODEL SAVED
+Epoch 494, 27% 	 train_loss: 4.33246e-03
+Epoch 494, 54% 	 train_loss: 2.02842e-03
+Epoch 494, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 718.42s, MODEL SAVED
+Epoch 495, 27% 	 train_loss: 4.33246e-03
+Epoch 495, 54% 	 train_loss: 2.02842e-03
+Epoch 495, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 719.83s, MODEL SAVED
+Epoch 496, 27% 	 train_loss: 4.33246e-03
+Epoch 496, 54% 	 train_loss: 2.02842e-03
+Epoch 496, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 721.31s, MODEL SAVED
+Epoch 497, 27% 	 train_loss: 4.33246e-03
+Epoch 497, 54% 	 train_loss: 2.02842e-03
+Epoch 497, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 722.69s, MODEL SAVED
+Epoch 498, 27% 	 train_loss: 4.33246e-03
+Epoch 498, 54% 	 train_loss: 2.02842e-03
+Epoch 498, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 724.08s, MODEL SAVED
+Epoch 499, 27% 	 train_loss: 4.33246e-03
+Epoch 499, 54% 	 train_loss: 2.02842e-03
+Epoch 499, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 725.45s, MODEL SAVED
+Epoch 500, 27% 	 train_loss: 4.33246e-03
+Epoch 500, 54% 	 train_loss: 2.02842e-03
+Epoch 500, 81% 	 train_loss: 1.26453e-03
+Training loss = 8.67221e-03
+Validation loss = 4.29628e-03
+Training finished, took 726.97s, MODEL SAVED
+errore di plot
+Final Results Saved
+Trial 0 failed, because the value None could not be cast to float.
+#################### CREATING Inner DATASET #######################
+Processing...
+Taking Data at Re n.:  40 in  train  mode.
+Taking Data at Re n.:  50 in  train  mode.
+Taking Data at Re n.:  60 in  train  mode.
+Taking Data at Re n.:  70 in  train  mode.
+Taking Data at Re n.:  80 in  train  mode.
+Taking Data at Re n.:  90 in  train  mode.
+Taking Data at Re n.:  100 in  train  mode.
+Taking Data at Re n.:  120 in  train  mode.
+Taking Data at Re n.:  130 in  train  mode.
+Taking Data at Re n.:  140 in  train  mode.
+Taking Data at Re n.:  150 in  train  mode.
+Done!
+Processing...
+Taking Data at Re n.:  110 in  val  mode.
+Done!
+#################### DSS NET parameter #######################
+Latent space dim :  88
+Number of updates :  58
+Gamma (loss function) :  0.801
+Alpha (reduction correction) : 10.401
+LR (Learning rate): 0.003
+PARAMETER SET: k:58, laten_dim:88, alpha:10.401, lr:0.003
+#################### CREATING NETWORKS #######################
+#################### TRAINING #######################
+Epoch 1, 27% 	 train_loss: nan
+Epoch 1, 54% 	 train_loss: nan
+Epoch 1, 81% 	 train_loss: nan
+Training loss = nan
+Validation loss = nan
+Training finished, took 9.99s
+Trial 1 failed because of the following error: IntegrityError('(sqlite3.IntegrityError) NOT NULL constraint failed: trial_intermediate_values.intermediate_value')
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
+    self.dialect.do_execute(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: trial_intermediate_values.intermediate_value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 213, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/Main.py", line 126, in objective
+    trial.report(validation_loss, epoch)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/trial/_trial.py", line 597, in report
+    self.storage.set_trial_intermediate_value(self._trial_id, step, value)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/storages/_cached_storage.py", line 318, in set_trial_intermediate_value
+    self._flush_trial(trial_id)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/storages/_cached_storage.py", line 428, in _flush_trial
+    return self._backend._update_trial(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/storages/_rdb/storage.py", line 768, in _update_trial
+    session.add(trial_model)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/contextlib.py", line 124, in __exit__
+    next(self.gen)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/storages/_rdb/storage.py", line 54, in _create_scoped_session
+    session.commit()
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 829, in commit
+    self._prepare_impl()
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3363, in flush
+    self._flush(objects)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3463, in _flush
+    flush_context.execute()
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 244, in save_obj
+    _emit_insert_statements(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1221, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1614, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1481, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1845, in _execute_context
+    self._handle_dbapi_exception(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2026, in _handle_dbapi_exception
+    util.raise_(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
+    self.dialect.do_execute(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: trial_intermediate_values.intermediate_value
+[SQL: INSERT INTO trial_intermediate_values (trial_id, step, intermediate_value) VALUES (?, ?, ?)]
+[parameters: (2, 0, nan)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
