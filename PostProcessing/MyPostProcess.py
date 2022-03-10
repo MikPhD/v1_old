@@ -94,7 +94,7 @@ class PostProcess():
 
         ######### plot results ##############
         plt.figure()
-        plot(v.sub(0))
+        self.plot(v.sub(0))
         plt.show()
 
     def differences(self):
@@ -122,10 +122,10 @@ class PostProcess():
 
 
         ######## loading forcing from GNN ################
-        F_gnn = np.load("./110/F.npy").flatten()
+        F_gnn = np.load("./F.npy").flatten()
 
         ######## loading forcing from CFD ################
-        F_cfd = np.load("./F.npy").flatten()
+        F_cfd = np.load("./110/F.npy").flatten()
 
         ######## mesh coordinates ##############
         mesh_points = mesh.coordinates().tolist()
@@ -144,17 +144,30 @@ class PostProcess():
 
         v_diff.vector()[:] = v_cfd.vector()[:] - v_gnn.vector()[:]
 
+        # #line value plotting for y=0.5 and 0<x<30
+        # x = np.arange(12,26,0.01)
+        #
+        # f_punti = []
+        #
+        # for i in x:
+        #     f_punti.append(v_cfd([i, 5]))
+        #
+        # y = []
+        # for i in f_punti:
+        #     y.append(i[0])
+
+
         ######### plot results ##############
-        plt.figure()
-        plot(v_gnn.sub(0))
-        plt.show()
+        # plt.figure()
+        # self.plot(v_gnn.sub(0))
+        # plt.show()
         #
         plt.figure()
-        plot(v_cfd.sub(0))
+        self.plot(v_cfd.sub(0))
         plt.show()
 
         plt.figure()
-        plot(v_diff.sub(0))
+        self.plot(v_diff.sub(0))
         plt.show()
 
         print(f"Norma della differenza delle funzioni: {norm(v_diff, 'L2')}")
