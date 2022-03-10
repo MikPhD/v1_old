@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="set blank for third optuna">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/70-20-001-001plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/Mesh.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22__17_05__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/v1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Mesh.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/processed/data_train.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_train.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/processed/data_val.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_val.pt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +80,7 @@
       <recent name="$PROJECT_DIR$/PostProcessing" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MyPostProcess (1)">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,11 +195,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Main" />
         <item itemvalue="Python.MyPostProcess (1)" />
         <item itemvalue="Python.plotter_generale" />
         <item itemvalue="Python.MyPlot_stand_alone" />
         <item itemvalue="Python.MyPlot" />
-        <item itemvalue="Python.Main" />
       </list>
     </recent_temporary>
   </component>

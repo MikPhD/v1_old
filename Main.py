@@ -85,9 +85,9 @@ def objective(trial):
 
     print("#################### DSS NET parameter #######################")
     #create hyperparameter
-    latent_dimension = trial.suggest_int("latent_dimension", 18,50)
+    latent_dimension = trial.suggest_int("latent_dimension", 1,100)
     print("Latent space dim : ", latent_dimension)
-    k = trial.suggest_int("k", 50, 100)
+    k = trial.suggest_int("k", 1, 200)
     print("Number of updates : ", k)
     gamma = (trial.suggest_discrete_uniform("gamma", 0.001, 1, 0.1))
     print("Gamma (loss function) : ", gamma)
