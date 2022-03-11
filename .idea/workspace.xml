@@ -4,10 +4,17 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="set blank for third optuna">
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setblank for slurm execution">
+      <change afterPath="$PROJECT_DIR$/Results/87-18-001-0003/results.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_train_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_val_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003plot_results.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,13 +249,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00066" summary="StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
-      <created>1644248166153</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1644248166153</updated>
     </task>
     <task id="LOCAL-00067" summary="StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
       <created>1644248341145</created>
@@ -586,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646993623066</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="setblank for slurm execution">
+      <created>1646996310064</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1646996310065</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -625,7 +632,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="updated with respect to v2(bcs)" />
     <MESSAGE value="start modifing" />
     <MESSAGE value="added entire dataset" />
     <MESSAGE value="adjusted connection creation" />
@@ -650,7 +656,8 @@
     <MESSAGE value="working on postprocess" />
     <MESSAGE value="set blank for slurm execution" />
     <MESSAGE value="set blank for third optuna" />
-    <option name="LAST_COMMIT_MESSAGE" value="set blank for third optuna" />
+    <MESSAGE value="setblank for slurm execution" />
+    <option name="LAST_COMMIT_MESSAGE" value="setblank for slurm execution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

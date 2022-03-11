@@ -31,8 +31,12 @@ class MyOwnDSSNet(nn.Module):
         self.decoder_list = nn.ModuleList([Decoder(self.latent_dimension, 2) for i in range(self.k)])
 
     def loss_function(self, F, y):
-        loss_fn = nn.MSELoss()
-        loss = loss_fn(torch.div(F, y), y)
+        # loss_fn = nn.MSELoss()
+        # loss = loss_fn(torch.div(F, y), y)
+        sub = torch.sub(F, y)
+        div = torch.div(sub, y)
+        loss = div.norm(dim=1, p=2)
+
         # loss = torch.norm(F - y)/torch.norm(y)
         # loss = (F - y)
         return loss
