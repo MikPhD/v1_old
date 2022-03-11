@@ -146,10 +146,10 @@ def objective(trial):
     sys.stdout.flush()
 
     del DSS, GNN, loader_val, loader_train, optimizer, scheduler
-    if not math.isnan(validation_loss) and math.isinf(validation_loss):
-        return validation_loss
+    if math.isnan(validation_loss) or math.isinf(validation_loss):
+        return 1e+10 #trick to prune the invalid cases
     else:
-        return 1e+10 #trick to pure the invalid cases
+        return validation_loss
 
 ################## to be uncommented only when want to log #######################
 optuna.logging.get_logger("optuna").addHandler(logging.StreamHandler(sys.stdout))

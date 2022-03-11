@@ -4,17 +4,37 @@
   warnings.warn(
 /mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/samplers/_tpe/sampler.py:282: ExperimentalWarning: ``constant_liar`` option is an experimental feature. The interface can change in the future.
   warnings.warn(
-[32m[I 2022-03-10 09:28:24,292][0m A new study created in RDB with name: third_optuna[0m
+[32m[I 2022-03-10 17:53:30,732][0m A new study created in RDB with name: third_optuna[0m
 /mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
   warnings.warn(
 /mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
   warnings.warn(
-[33m[W 2022-03-10 09:42:30,226][0m Trial 0 failed, because the value None could not be cast to float.[0m
+[32m[I 2022-03-10 17:53:47,724][0m Trial 0 finished with value: 10000000000.0 and parameters: {'latent_dimension': 23, 'k': 31, 'gamma': 0.201, 'alpha': 16.801000000000002}. Best is trial 0 with value: 10000000000.0.[0m
 /mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
   warnings.warn(
 /mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
   warnings.warn(
-[33m[W 2022-03-10 09:42:41,951][0m Trial 1 failed because of the following error: IntegrityError('(sqlite3.IntegrityError) NOT NULL constraint failed: trial_intermediate_values.intermediate_value')[0m
+[32m[I 2022-03-10 18:13:22,712][0m Trial 1 finished with value: 1.574177255232182e+27 and parameters: {'latent_dimension': 88, 'k': 23, 'gamma': 0.401, 'alpha': 16.001}. Best is trial 0 with value: 10000000000.0.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-10 18:13:32,289][0m Trial 2 finished with value: 10000000000.0 and parameters: {'latent_dimension': 59, 'k': 27, 'gamma': 0.901, 'alpha': 8.501}. Best is trial 0 with value: 10000000000.0.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-10 18:37:15,265][0m Trial 3 finished with value: 1.8397974593344757e+22 and parameters: {'latent_dimension': 11, 'k': 51, 'gamma': 0.001, 'alpha': 6.7010000000000005}. Best is trial 0 with value: 10000000000.0.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-10 19:01:14,921][0m Trial 4 finished with value: 0.0038664827588945627 and parameters: {'latent_dimension': 23, 'k': 46, 'gamma': 0.001, 'alpha': 4.901000000000001}. Best is trial 4 with value: 0.0038664827588945627.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[33m[W 2022-03-10 19:01:21,401][0m Trial 5 failed because of the following error: IntegrityError('(sqlite3.IntegrityError) NOT NULL constraint failed: trial_intermediate_values.intermediate_value')[0m
 Traceback (most recent call last):
   File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
     self.dialect.do_execute(
@@ -83,7 +103,7 @@ Traceback (most recent call last):
     cursor.execute(statement, parameters)
 sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: trial_intermediate_values.intermediate_value
 [SQL: INSERT INTO trial_intermediate_values (trial_id, step, intermediate_value) VALUES (?, ?, ?)]
-[parameters: (2, 0, nan)]
+[parameters: (6, 0, nan)]
 (Background on this error at: https://sqlalche.me/e/14/gkpj)
 Traceback (most recent call last):
   File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
@@ -95,7 +115,7 @@ sqlite3.IntegrityError: NOT NULL constraint failed: trial_intermediate_values.in
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/Main.py", line 161, in <module>
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/Main.py", line 163, in <module>
     study.optimize(objective)
   File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/study.py", line 400, in optimize
     _optimize(
@@ -163,6 +183,6 @@ Traceback (most recent call last):
     cursor.execute(statement, parameters)
 sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: trial_intermediate_values.intermediate_value
 [SQL: INSERT INTO trial_intermediate_values (trial_id, step, intermediate_value) VALUES (?, ?, ?)]
-[parameters: (2, 0, nan)]
+[parameters: (6, 0, nan)]
 (Background on this error at: https://sqlalche.me/e/14/gkpj)
-srun: error: n101: task 0: Exited with exit code 1
+srun: error: n102: task 0: Exited with exit code 1
