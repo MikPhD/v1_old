@@ -57,12 +57,12 @@ print("#################### DATA ADAPTING FOR GNN #######################")
 # createdata.transform(train_cases, 'train')
 # createdata.transform(val_cases, 'val')
 
-k_list=[70]
-latent_dimension_list=[20]
-gamma_list=[0.5]
+#set of parameter from second cycle optimization optuna
+k_list=[87]
+latent_dimension_list=[18]
+gamma_list=[0.1]
 alpha_list=[1e-2]
-lr_list=[0.01]
-
+lr_list=[3e-3]
 
 #check if gpu is available
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
