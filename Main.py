@@ -159,7 +159,7 @@ storage_name = "sqlite:///{}.db".format(study_name)
 
 pruner = HyperbandPruner(min_resource=1, max_resource=n_epoch)
 study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner,
-                            sampler=TPESampler(n_startup_trials=10, multivariate=True, group=True, constant_liar=True))
+                            sampler=TPESampler(n_startup_trials=10))
 study.optimize(objective)
 
 pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
