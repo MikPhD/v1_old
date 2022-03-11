@@ -38,7 +38,7 @@ class MyOwnDSSNet(nn.Module):
 
         norm_cfd = y.norm(dim=1, p=2)
 
-        loss = torch.div(norm_diff, norm_cfd)
+        loss = torch.div(norm_diff, torch.max(y))
         loss = torch.mean(loss)
 
         # loss = torch.norm(F - y)/torch.norm(y)
@@ -175,9 +175,16 @@ class Decoder(nn.Module):
     def __init__(self, in_size, out_size):
         super(Decoder, self).__init__()
 
+        def init_weights(m):
+            if isinstance(m, nn.Linear):
+                torch.nn.init.zeros_(m.weight)
+
         self.MLP = nn.Sequential(   nn.Linear(in_size, in_size),
                                     nn.ReLU(),
                                     nn.Linear(in_size, out_size))
+
+        self.MLP.apply(init_weights)
+
     def forward(self, x):
 
         return self.MLP(x)

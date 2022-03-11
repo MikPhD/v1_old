@@ -220,13 +220,6 @@
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
     </task>
-    <task id="LOCAL-00067" summary="StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
-      <created>1644248341145</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1644248341145</updated>
-    </task>
     <task id="LOCAL-00068" summary="StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
       <created>1644248777255</created>
       <option name="number" value="00068" />
@@ -563,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646996310065</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="setblank for slurm execution">
+      <created>1647017232502</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1647017232502</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -628,5 +628,16 @@
     <MESSAGE value="set blank for third optuna" />
     <MESSAGE value="setblank for slurm execution" />
     <option name="LAST_COMMIT_MESSAGE" value="setblank for slurm execution" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MyDSS.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
