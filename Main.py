@@ -9,16 +9,14 @@ import os
 import shutil
 from torch_geometric.data import DataListLoader
 from torch_geometric.data import DataLoader
-from torch_geometric.nn import DataParallel
-from pdb import set_trace
-import json
+import math
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=6)
+parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=1)
 parser.add_argument('-r', '--restart', type=eval, default=False, choices=[True, False], help='Restart training option')
 parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['40'])
 parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['40'])
-parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=1)
+parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=5)
 
 args = parser.parse_args()
 
@@ -103,6 +101,13 @@ for k in k_list:
                     lr = lr
                     print("LR (Learning rate):", lr)
 
+                    ##create folder for different results ##
+                    set_name = str(k) + '-' + str(latent_dimension).replace(".", "") + '-' + str(alpha).replace(".", "") + '-' + str(
+                        lr).replace(".", "")
+                    print("PARAMETER SET: k:{}, laten_dim:{}, alpha:{}, lr:{}".format(str(k), str(latent_dimension), str(alpha), str(lr)))
+                    os.makedirs("./Results/" + set_name, exist_ok=True)
+                    os.makedirs("./Stats/" + set_name, exist_ok=True)
+
 
                     print("#################### CREATING NETWORKS #######################")
                     DSS = MyOwnDSSNet(latent_dimension = latent_dimension, k = k, gamma = gamma, alpha = alpha, device=device)
@@ -119,8 +124,6 @@ for k in k_list:
                         optimizer, scheduler, epoch, min_val_loss = train_dss.restart(optimizer, scheduler, path='Model/best_model.pt')
 
                     GNN = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
-                    #
-                    # # set_trace()
                     #
                     sys.stdout.flush()
 
