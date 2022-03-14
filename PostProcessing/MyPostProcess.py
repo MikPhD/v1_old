@@ -150,7 +150,7 @@ class PostProcess():
         # plt.show()
         #
         plt.figure()
-        plot(v_cfd.sub(0))
+        self.plot(v_cfd.sub(0))
         plt.show()
 
         # plt.figure()

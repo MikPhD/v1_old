@@ -18,11 +18,11 @@ import logging
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=100)
+parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=20)
 parser.add_argument('-r', '--restart', type=eval, default=False, choices=[True, False], help='Restart training option')
 parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['40'])
 parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['40'])
-parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=50)
+parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=20)
 
 args = parser.parse_args()
 
@@ -67,120 +67,54 @@ print("#################### DATA ADAPTING FOR GNN #######################")
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Running on : ', device)
 
-torch.cuda.empty_cache()
 
-def objective(trial):
+print("#################### CREATING Inner DATASET #######################")
+loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases, device=device)
+loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases, device=device)
 
-    torch.cuda.empty_cache()
+#initialize the created dataset
+loader_train = DataLoader(loader_train) #opt args: shuffle, batchsize
+loader_val = DataLoader(loader_val)
 
-    print("#################### CREATING Inner DATASET #######################")
-    loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases, device=device)
-    loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases, device=device)
+print("#################### DSS NET parameter #######################")
+#create hyperparameter
+latent_dimension = 18
+print("Latent space dim : ", latent_dimension)
+k = 87
+print("Number of updates : ", k)
+gamma = 0.1
+print("Gamma (loss function) : ", gamma)
+alpha = 1e-2
+print("Alpha (reduction correction) :", alpha)
+lr = 3e-3
+print("LR (Learning rate):", lr)
 
-    #initialize the created dataset
-    loader_train = DataLoader(loader_train) #opt args: shuffle, batchsize
-    loader_val = DataLoader(loader_val)
-
-
-    print("#################### DSS NET parameter #######################")
-    #create hyperparameter
-    latent_dimension = trial.suggest_int("latent_dimension", 18,19)
-    print("Latent space dim : ", latent_dimension)
-    k = trial.suggest_int("k", 50, 51)
-    print("Number of updates : ", k)
-    gamma = (trial.suggest_int("gamma", 1, 4))/10 #gamma between 0.1 and 0.4
-    print("Gamma (loss function) : ", gamma)
-    alpha = (trial.suggest_int("alpha", 1, 7))/100 #alpha between 0.01 and 0.07
-    print("Alpha (reduction correction) :", alpha)
-    lr = (trial.suggest_int("lr", 1, 6))/1000 #lr between 0.001 and 0.009
-    print("LR (Learning rate):", lr)
-
-    ##create folder for different results ##
-    set_name = str(k) + '-' + str(latent_dimension).replace(".", "") + '-' + str(alpha).replace(".", "") + '-' + str(
-        lr).replace(".", "")
-    print("PARAMETER SET: k:{}, laten_dim:{}, alpha:{}, lr:{}".format(str(k), str(latent_dimension), str(alpha), str(lr)))
-    os.makedirs("./Results/" + set_name, exist_ok=True)
-    os.makedirs("./Stats/" + set_name, exist_ok=True)
+##create folder for different results ##
+set_name = str(k) + '-' + str(latent_dimension).replace(".", "") + '-' + str(alpha).replace(".", "") + '-' + str(
+    lr).replace(".", "")
+print("PARAMETER SET: k:{}, laten_dim:{}, alpha:{}, lr:{}".format(str(k), str(latent_dimension), str(alpha), str(lr)))
+os.makedirs("./Results/" + set_name, exist_ok=True)
+os.makedirs("./Stats/" + set_name, exist_ok=True)
 
 
-    print("#################### CREATING NETWORKS #######################")
-    DSS = MyOwnDSSNet(latent_dimension = latent_dimension, k = k, gamma = gamma, alpha = alpha, device=device)
-    # # # DSS = DataParallel(DSS)
-    DSS = DSS.to(device)
-    # # #DSS = DSS.double()
+print("#################### CREATING NETWORKS #######################")
+DSS = MyOwnDSSNet(latent_dimension = latent_dimension, k = k, gamma = gamma, alpha = alpha, device=device)
+# # # DSS = DataParallel(DSS)
+DSS = DSS.to(device)
+# # #DSS = DSS.double()
 
-    print("#################### TRAINING #######################")
-    train_dss = Train_DSS(net=DSS, learning_rate=lr, n_epochs=n_epoch, device=device, set_name=set_name)
+print("#################### TRAINING #######################")
+train_dss = Train_DSS(net=DSS, learning_rate=lr, n_epochs=n_epoch, device=device, set_name=set_name)
 
-    optimizer, scheduler, epoch, min_val_loss = train_dss.createOptimizerAndScheduler()
+optimizer, scheduler, epoch, min_val_loss = train_dss.createOptimizerAndScheduler()
 
-    if restart:
-        optimizer, scheduler, epoch, min_val_loss = train_dss.restart(optimizer, scheduler, path='Model/best_model.pt')
+if restart:
+    optimizer, scheduler, epoch, min_val_loss = train_dss.restart(optimizer, scheduler, path='Model/best_model.pt')
 
-    for epoch in range(epoch, n_epoch):
-        GNN, validation_loss = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
+for epoch in range(epoch, n_epoch):
+    GNN, validation_loss = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
 
-        trial.report(validation_loss, epoch)
+sys.stdout.flush()
 
-        if math.isnan(validation_loss) or math.isinf(validation_loss):
-            break
+del DSS, GNN, loader_val, loader_train, optimizer, scheduler
 
-        # Handle pruning based on the intermediate value.
-        if trial.should_prune():
-            raise optuna.TrialPruned()
-
-        # # use of cuda.memory
-        # with open('./Memory_allocated.txt', 'a') as mem_alloc_file:
-        #     mem_alloc_file.write(f'memory allocated:{str(torch.cuda.memory_allocated(device))}\n')
-        #     mem_alloc_file.write(f'memory reserved:{str(torch.cuda.memory_reserved(device))}\n')
-        #     mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_allocated(device))}\n')
-        #     mem_alloc_file.write(f'max_memory reserved: {str(torch.cuda.max_memory_reserved(device))}\n')
-        #
-        # with open('./Memory_summary.txt', 'a') as mem_summ_file:
-        #     mem_summ_file.write(f'memory allocated:{str(torch.cuda.memory_summary(device))}\n')
-
-
-    sys.stdout.flush()
-
-    del DSS, GNN, loader_val, loader_train, optimizer, scheduler
-
-    return validation_loss
-
-################## to be uncommented only when want to log #######################
-optuna.logging.get_logger("optuna").addHandler(logging.StreamHandler(sys.stdout))
-study_name = "second_optuna"  # Unique identifier of the study.
-storage_name = "sqlite:///{}.db".format(study_name)
-##################################################################################
-
-pruner = ThresholdPruner(lower=0, upper=0.010, n_warmup_steps=100)
-study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner)
-study.optimize(objective, n_trials=1)
-
-pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
-complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
-
-print("Study statistics: ")
-print("  Number of finished trials: ", len(study.trials))
-print("  Number of pruned trials: ", len(pruned_trials))
-print("  Number of complete trials: ", len(complete_trials))
-
-print("Best trial:")
-trial = study.best_trial
-
-print("  Value: ", trial.value)
-
-print("  Params: ")
-for key, value in trial.params.items():
-    print("    {}: {}".format(key, value))
-
-fig_optuna = optuna.visualization.plot_contour(study)
-fig_optuna.show()
-fig_optuna.write_image("./fig_optuna.jpeg")
-
-fig_importance = optuna.visualization.plot_param_importances(study)
-fig_importance.show()
-fig_importance.write_image("./fig_importance.jpeg")
-
-fig_intermediate = optuna.visualization.plot_intermediate_values(study)
-fig_intermediate.show()
-fig_intermediate.write_image("./fig_intermediate.jpeg")

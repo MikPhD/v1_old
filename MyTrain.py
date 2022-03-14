@@ -188,7 +188,7 @@ class Train_DSS:
             del F, val_loss, loss_dict
 
         if int(epoch + 1) == self.n_epochs:
-            F_fin = F[str(k)].cpu().numpy()
+            F_fin = F.cpu().numpy()
             np.save("./Results/" + self.set_name + "/results.npy", F_fin)
 
             ### Save new log files ###
