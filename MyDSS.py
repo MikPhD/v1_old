@@ -30,16 +30,24 @@ class MyOwnDSSNet(nn.Module):
         self.psy_list = nn.ModuleList([Psy(4*self.latent_dimension + 3, self.latent_dimension) for i in range(self.k)])
         self.decoder_list = nn.ModuleList([Decoder(self.latent_dimension, 2) for i in range(self.k)])
 
+        self.counter = 0
+
     def loss_function(self, F, y):
-        # loss_fn = nn.MSELoss()
-        # loss = loss_fn(torch.div(F, y), y)
-        sub = torch.sub(F, y)
-        norm_diff = sub.norm(p=2)
+        # if self.counter % 40 == 0:
+        #     np.save("./intermediate" + str(self.counter) + ".npy", F.detach().numpy())
+        #
+        # self.counter += 1
 
-        norm_cfd = y.norm(p=2)
+        loss_fn = nn.MSELoss()
+        loss = loss_fn(F, y)
 
-        loss = torch.div(norm_diff, norm_cfd)
-        loss = torch.mean(loss)
+        # sub = torch.sub(F, y)
+        # norm_diff = sub.norm(p=2)
+        #
+        # norm_cfd = y.norm(p=2)
+        #
+        # loss = torch.div(norm_diff, norm_cfd)
+        # loss = torch.mean(loss)
 
         # loss = torch.norm(F - y)/torch.norm(y)
         # loss = (F - y)
@@ -175,15 +183,15 @@ class Decoder(nn.Module):
     def __init__(self, in_size, out_size):
         super(Decoder, self).__init__()
 
-        def init_weights(m):
-            if isinstance(m, nn.Linear):
-                torch.nn.init.zeros_(m.weight)
+        # def init_weights(m):
+        #     if isinstance(m, nn.Linear):
+        #         torch.nn.init.zeros_(m.weight)
 
         self.MLP = nn.Sequential(   nn.Linear(in_size, in_size),
                                     nn.ReLU(),
                                     nn.Linear(in_size, out_size))
 
-        self.MLP.apply(init_weights)
+        # self.MLP.apply(init_weights)
 
     def forward(self, x):
 

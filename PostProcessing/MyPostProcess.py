@@ -100,7 +100,7 @@ class PostProcess():
     def differences(self):
         ####### loading mesh ########
         mesh = Mesh()
-        mesh_file = "./Mesh.h5"
+        mesh_file = "../../Dataset/40/Mesh.h5"
         with HDF5File(MPI.comm_world, mesh_file, "r") as h5file:
             h5file.read(mesh, "mesh", False)
             facet = MeshFunction("size_t", mesh, mesh.topology().dim() - 1)
@@ -122,10 +122,10 @@ class PostProcess():
 
 
         ######## loading forcing from GNN ################
-        F_gnn = np.load("./F.npy").flatten()
+        F_gnn = np.load("../intermediate160.npy").flatten()
 
         ######## loading forcing from CFD ################
-        F_cfd = np.load("./110/F.npy").flatten()
+        F_cfd = np.load("../intermediate200.npy").flatten()
 
         ######## mesh coordinates ##############
         mesh_points = mesh.coordinates().tolist()
@@ -158,17 +158,17 @@ class PostProcess():
 
 
         ######### plot results ##############
-        # plt.figure()
-        # self.plot(v_gnn.sub(0))
-        # plt.show()
-        #
         plt.figure()
-        self.plot(v_cfd.sub(0))
+        self.plot(v_gnn.sub(0))
         plt.show()
 
         plt.figure()
-        self.plot(v_diff.sub(0))
+        self.plot(v_cfd.sub(0))
         plt.show()
+        #
+        # plt.figure()
+        # self.plot(v_diff.sub(0))
+        # plt.show()
 
         print(f"Norma della differenza delle funzioni: {norm(v_diff, 'L2')}")
         print(f"Norma della differenza delle funzioni normalizzata: {norm(v_diff, 'L2')/norm(v_cfd, 'L2')}")
