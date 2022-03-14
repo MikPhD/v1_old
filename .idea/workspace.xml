@@ -195,6 +195,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.MyPostProcess" />
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.MyPlot_stand_alone" />
       <item itemvalue="Python.MyPlot" />
@@ -628,16 +629,5 @@
     <MESSAGE value="set blank for third optuna" />
     <MESSAGE value="setblank for slurm execution" />
     <option name="LAST_COMMIT_MESSAGE" value="setblank for slurm execution" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MyDSS.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

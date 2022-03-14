@@ -34,11 +34,11 @@ class MyOwnDSSNet(nn.Module):
         # loss_fn = nn.MSELoss()
         # loss = loss_fn(torch.div(F, y), y)
         sub = torch.sub(F, y)
-        norm_diff = sub.norm(dim=1, p=2)
+        norm_diff = sub.norm(p=2)
 
-        norm_cfd = y.norm(dim=1, p=2)
+        norm_cfd = y.norm(p=2)
 
-        loss = torch.div(norm_diff, torch.max(y))
+        loss = torch.div(norm_diff, norm_cfd)
         loss = torch.mean(loss)
 
         # loss = torch.norm(F - y)/torch.norm(y)
