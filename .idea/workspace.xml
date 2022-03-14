@@ -4,13 +4,7 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setblank for slurm execution">
-      <change afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intermediate240.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
-    </list>
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setblank for slurm execution" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,12 +192,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.MyPostProcess" />
       <item itemvalue="Python.Main" />
-      <item itemvalue="Python.MyPlot_stand_alone" />
-      <item itemvalue="Python.MyPlot" />
-      <item itemvalue="Python.MyPostProcess (1)" />
       <item itemvalue="Python.MyDSS" />
+      <item itemvalue="Python.MyPlot" />
+      <item itemvalue="Python.MyPlot_stand_alone" />
+      <item itemvalue="Python.MyPostProcess (1)" />
+      <item itemvalue="Python.MyPostProcess" />
     </list>
     <recent_temporary>
       <list>
