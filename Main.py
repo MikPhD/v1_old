@@ -87,7 +87,7 @@ def objective(trial):
     #create hyperparameter
     latent_dimension = trial.suggest_int("latent_dimension", 1,50)
     print("Latent space dim : ", latent_dimension)
-    #k = trial.suggest_int("k", 1, 100)
+    k = trial.suggest_int("k", 1, 100)
     print("Number of updates : ", k)
     #gamma = (trial.suggest_discrete_uniform("gamma", 0.001, 1, 0.1))
     gamma = 0.1
@@ -96,7 +96,6 @@ def objective(trial):
     alpha = 1e-2
     print("Alpha (reduction correction) :", alpha)
     # lr = (trial.suggest_discrete_uniform("lr", 0.0001, 10, 0.1)) #lr between 0.001 and 0.009
-    # print("LR (Learning rate):", lr)
     lr = 3e-3 #fisso
     print("LR (Learning rate):", lr)
 
@@ -144,14 +143,11 @@ def objective(trial):
         # with open('./Memory_summary.txt', 'a') as mem_summ_file:
         #     mem_summ_file.write(f'memory allocated:{str(torch.cuda.memory_summary(device))}\n')
 
+        return validation_loss
 
     sys.stdout.flush()
 
     del DSS, GNN, loader_val, loader_train, optimizer, scheduler
-    if math.isnan(validation_loss) or math.isinf(validation_loss):
-        return 1e+10 #trick to prune the invalid cases
-    else:
-        return validation_loss
 
 ################## to be uncommented only when want to log #######################
 optuna.logging.get_logger("optuna").addHandler(logging.StreamHandler(sys.stdout))
