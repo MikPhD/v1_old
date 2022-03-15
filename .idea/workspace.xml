@@ -4,7 +4,7 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setblank for slurm execution">
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="set blank for slurm execution">
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,13 +202,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00077" summary="optuna setting blank for slurm">
-      <created>1645438721535</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1645438721535</updated>
     </task>
     <task id="LOCAL-00078" summary="optuna setting blank for slurm">
       <created>1645439011774</created>
@@ -546,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646989180287</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="set blank for slurm execution">
+      <created>1647344467341</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1647344467341</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -605,12 +605,12 @@
     <MESSAGE value="set slurm multiexecution" />
     <MESSAGE value="interpolation first" />
     <MESSAGE value="working on postprocess" />
-    <MESSAGE value="set blank for slurm execution" />
     <MESSAGE value="update useless" />
     <MESSAGE value="commit before backup" />
     <MESSAGE value="trying execute on cuda slurm" />
     <MESSAGE value="set blank for third optuna" />
-    <option name="LAST_COMMIT_MESSAGE" value="set blank for third optuna" />
+    <MESSAGE value="set blank for slurm execution" />
+    <option name="LAST_COMMIT_MESSAGE" value="set blank for slurm execution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
