@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="set blank for slurm execution">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig_importance.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/fig_importance.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig_intermediate.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/fig_intermediate.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig_optuna.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/fig_optuna.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third_optuna.db" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/third_optuna.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +72,7 @@
       <recent name="$PROJECT_DIR$/../v2/dataset/processed" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Optuna/third_optuna" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/PostProcessing" />
     </key>
@@ -202,13 +208,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00081" summary="set blank for slurm">
-      <created>1645607969153</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1645607969153</updated>
     </task>
     <task id="LOCAL-00082" summary="set blank for slurm">
       <created>1645609939675</created>
@@ -546,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647345097115</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="set blank for slurm execution">
+      <created>1647345501023</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1647345501023</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

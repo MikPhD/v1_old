@@ -100,9 +100,9 @@ def objective(trial):
 
     print("#################### DSS NET parameter #######################")
     #create hyperparameter
-    latent_dimension = trial.suggest_int("latent_dimension", 1,60)
+    latent_dimension = trial.suggest_int("latent_dimension", 1,50)
     print("Latent space dim : ", latent_dimension)
-    k = trial.suggest_int("k", 1, 100)
+    k = trial.suggest_int("k", 1, 70)
     print("Number of updates : ", k)
     #gamma = (trial.suggest_discrete_uniform("gamma", 0.001, 1, 0.1))
     gamma = 0.1
@@ -170,12 +170,12 @@ study_name = "third_optuna"  # Unique identifier of the study.
 storage_name = "sqlite:///{}.db".format(study_name)
 ##################################################################################
 
-pruner = HyperbandPruner(min_resource=3, max_resource=n_epoch)
+pruner = HyperbandPruner(min_resource=10, max_resource=n_epoch, reduction_factor=3)
 study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner,
-                            sampler=TPESampler(n_startup_trials=10))
+                            sampler=TPESampler(n_startup_trials=20, constant_liar=True))
 
 counter_trial = 0
-study.optimize(objective, n_trials=10000)
+study.optimize(objective, n_trials=100)
 
 pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
 complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
