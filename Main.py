@@ -73,6 +73,7 @@ torch.cuda.empty_cache()
 def objective(trial):
 
     global counter_trial
+    counter_trial += 1
     if counter_trial % 4 == 0:
         fig_optuna = optuna.visualization.plot_contour(study)
         fig_optuna.show()

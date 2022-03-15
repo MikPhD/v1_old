@@ -203,20 +203,6 @@
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
     </task>
-    <task id="LOCAL-00078" summary="optuna setting blank for slurm">
-      <created>1645439011774</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1645439011774</updated>
-    </task>
-    <task id="LOCAL-00079" summary="optuna setting blank for slurm">
-      <created>1645464405603</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1645464405603</updated>
-    </task>
     <task id="LOCAL-00080" summary="set blank for slurm">
       <created>1645607920911</created>
       <option name="number" value="00080" />
@@ -546,7 +532,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647344467341</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="set blank for slurm execution">
+      <created>1647344628369</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1647344628369</updated>
+    </task>
+    <task id="LOCAL-00128" summary="set blank for slurm execution">
+      <created>1647344861166</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1647344861166</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
