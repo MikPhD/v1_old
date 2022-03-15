@@ -5,50 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setblank for slurm execution">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/2-77-17801000000000002-0003/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/22-37-10501-0003/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/23-88-16001-0003/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/46-23-4901000000000001-0003/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/51-11-67010000000000005-0003/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/64-54-030100000000000005-0003/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/7-61-12001-0003/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/2-77-17801000000000002-0003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/2-77-17801000000000002-0003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/2-77-17801000000000002-0003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/2-77-17801000000000002-0003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/22-37-10501-0003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/22-37-10501-0003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/22-37-10501-0003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/22-37-10501-0003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/23-88-16001-0003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/23-88-16001-0003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/23-88-16001-0003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/23-88-16001-0003/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/23-88-16001-0003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/23-88-16001-0003plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/46-23-4901000000000001-0003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/46-23-4901000000000001-0003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/46-23-4901000000000001-0003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/46-23-4901000000000001-0003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/51-11-67010000000000005-0003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/51-11-67010000000000005-0003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/51-11-67010000000000005-0003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/51-11-67010000000000005-0003/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/51-11-67010000000000005-0003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/51-11-67010000000000005-0003plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/64-54-030100000000000005-0003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/64-54-030100000000000005-0003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/64-54-030100000000000005-0003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/64-54-030100000000000005-0003/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/64-54-030100000000000005-0003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/64-54-030100000000000005-0003plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/7-61-12001-0003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/7-61-12001-0003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/7-61-12001-0003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/7-61-12001-0003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

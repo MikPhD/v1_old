@@ -72,6 +72,20 @@ torch.cuda.empty_cache()
 
 def objective(trial):
 
+    counter += 1
+    if counter % 50 == 0:
+        fig_optuna = optuna.visualization.plot_contour(study)
+        fig_optuna.show()
+        fig_optuna.write_image("./fig_optuna.jpeg")
+
+        fig_importance = optuna.visualization.plot_param_importances(study)
+        fig_importance.show()
+        fig_importance.write_image("./fig_importance.jpeg")
+
+        fig_intermediate = optuna.visualization.plot_intermediate_values(study)
+        fig_intermediate.show()
+        fig_intermediate.write_image("./fig_intermediate.jpeg")
+
     torch.cuda.empty_cache()
 
     print("#################### CREATING Inner DATASET #######################")
@@ -158,7 +172,9 @@ study_name = "third_optuna"  # Unique identifier of the study.
 pruner = HyperbandPruner(min_resource=1, max_resource=n_epoch)
 study = optuna.create_study(study_name=study_name, direction="minimize", pruner=pruner,
                             sampler=TPESampler(n_startup_trials=10))
-study.optimize(objective)
+global counter
+
+study.optimize(objective, n_trials=10000)
 
 pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
 complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
