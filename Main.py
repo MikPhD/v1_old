@@ -74,7 +74,7 @@ def objective(trial):
 
     global counter_trial
     counter_trial += 1
-    if counter_trial % 4 == 0:
+    if counter_trial % 20 == 0:
         fig_optuna = optuna.visualization.plot_contour(study)
         fig_optuna.show()
         fig_optuna.write_image("./fig_optuna.jpeg")
@@ -100,7 +100,7 @@ def objective(trial):
 
     print("#################### DSS NET parameter #######################")
     #create hyperparameter
-    latent_dimension = trial.suggest_int("latent_dimension", 1,50)
+    latent_dimension = trial.suggest_int("latent_dimension", 1,60)
     print("Latent space dim : ", latent_dimension)
     k = trial.suggest_int("k", 1, 100)
     print("Number of updates : ", k)
@@ -167,11 +167,11 @@ def objective(trial):
 ################## to be uncommented only when want to log #######################
 optuna.logging.get_logger("optuna").addHandler(logging.StreamHandler(sys.stdout))
 study_name = "third_optuna"  # Unique identifier of the study.
-# storage_name = "sqlite:///{}.db".format(study_name)
+storage_name = "sqlite:///{}.db".format(study_name)
 ##################################################################################
 
-pruner = HyperbandPruner(min_resource=1, max_resource=n_epoch)
-study = optuna.create_study(study_name=study_name, direction="minimize", pruner=pruner,
+pruner = HyperbandPruner(min_resource=3, max_resource=n_epoch)
+study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner,
                             sampler=TPESampler(n_startup_trials=10))
 
 counter_trial = 0

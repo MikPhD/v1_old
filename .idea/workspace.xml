@@ -203,13 +203,6 @@
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
     </task>
-    <task id="LOCAL-00080" summary="set blank for slurm">
-      <created>1645607920911</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1645607920911</updated>
-    </task>
     <task id="LOCAL-00081" summary="set blank for slurm">
       <created>1645607969153</created>
       <option name="number" value="00081" />
@@ -546,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647344861166</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="set blank for slurm execution">
+      <created>1647345097115</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1647345097115</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
