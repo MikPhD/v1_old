@@ -4,13 +4,9 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="set blank for slurm execution">
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="update gru branch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig_importance.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/second/fig_importance.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig_intermediate.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/second/fig_intermediate.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig_optuna.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/second/fig_optuna.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/third_optuna.db" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/second/third_optuna.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +68,7 @@
       <recent name="$PROJECT_DIR$/../v2/dataset/processed" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Optuna/third_optuna/second" />
       <recent name="$PROJECT_DIR$/Optuna/third_optuna" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/PostProcessing" />
@@ -290,13 +287,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00082" summary="set blank for slurm">
-      <created>1645609939675</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1645609939676</updated>
     </task>
     <task id="LOCAL-00083" summary="set blank for slurm">
       <created>1645635463539</created>
@@ -634,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647345501023</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="update gru branch">
+      <created>1647356861701</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1647356861701</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -673,7 +670,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adjusted connection creation" />
     <MESSAGE value="adjusted and setted for slurm execution" />
     <MESSAGE value="completely setted new transformation" />
     <MESSAGE value="modified postprocess" />
@@ -698,7 +694,8 @@
     <MESSAGE value="trying execute on cuda slurm" />
     <MESSAGE value="set blank for third optuna" />
     <MESSAGE value="set blank for slurm execution" />
-    <option name="LAST_COMMIT_MESSAGE" value="set blank for slurm execution" />
+    <MESSAGE value="update gru branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="update gru branch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
