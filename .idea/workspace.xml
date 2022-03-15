@@ -7,10 +7,10 @@
     <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="set blank for slurm execution">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig_importance.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/fig_importance.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig_intermediate.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/fig_intermediate.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig_optuna.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/fig_optuna.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/third_optuna.db" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/third_optuna.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig_importance.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/second/fig_importance.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig_intermediate.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/second/fig_intermediate.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig_optuna.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/second/fig_optuna.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third_optuna.db" beforeDir="false" afterPath="$PROJECT_DIR$/Optuna/third_optuna/second/third_optuna.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +162,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="v1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="plotter_generale" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,6 +204,67 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="v1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="v1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="v1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="v1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.MyPlot" />
@@ -192,11 +274,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MyPostProcess" />
-        <item itemvalue="Python.Main" />
         <item itemvalue="Python.plotter_generale" />
+        <item itemvalue="Python.MyPostProcess" />
         <item itemvalue="Python.MyPlot_stand_alone" />
         <item itemvalue="Python.MyPlot" />
+        <item itemvalue="Python.Main" />
       </list>
     </recent_temporary>
   </component>
