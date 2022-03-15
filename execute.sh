@@ -1,5 +1,5 @@
 #!/bin/sh
-#SBATCH -J v1_SL1
+#SBATCH -J v1_ML
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=64G
