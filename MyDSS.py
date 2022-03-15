@@ -30,14 +30,37 @@ class MyOwnDSSNet(nn.Module):
         self.psy_list = nn.ModuleList([Psy(4*self.latent_dimension + 3, self.latent_dimension) for i in range(self.k)])
         self.decoder_list = nn.ModuleList([Decoder(self.latent_dimension, 2) for i in range(self.k)])
 
-    def loss_function(self, F, y):
-        loss_fn = nn.SmoothL1Loss(beta=0.1)
-        loss = loss_fn(F, y)
-        # loss = torch.norm(F - y)/torch.norm(y)
-        # loss = (F - y)
+    def loss_function(self, F, y, epoch, n_epoch):
+
+        ## ALTERNATING LOSS FUNCTION
+        if epoch <= n_epoch/2:
+            loss_fn = nn.MSELoss()
+            loss = loss_fn(F, y)
+        else:
+            loss_fn = nn.L1Loss()
+            loss = loss_fn(F, y)
         return loss
 
-    def forward(self, batch):
+
+        ## MY OWN NEW VERSION
+        # if k <= self.k // 2:
+        #     loss_fn = nn.MSELoss()
+        #     loss = loss_fn(F, y)
+        #     return loss
+        # else:
+        #     diff = torch.sub(F, y)
+        #     loss_tensor = torch.where(torch.abs(diff) >= 0.1, -torch.abs(diff)+torch.max(diff), 1/((torch.abs(diff)+torch.sqrt(0.5*torch.max(diff)))**2))
+        #
+        #     loss = torch.mean(loss_tensor)
+
+        ##OLD VERSIONE
+        # loss_fn = nn.SmoothL1Loss(beta=0.1)
+        # loss = loss_fn(F, y)
+        # # loss = torch.norm(F - y)/torch.norm(y)
+        # # loss = (F - y)
+        #return loss
+
+    def forward(self, batch, epoch, n_epoch):
 
         #Initialisation
         H = {}
@@ -77,7 +100,7 @@ class MyOwnDSSNet(nn.Module):
             #print("Size of U : ", U[str(update+1)].size())
             #print(self.decoder_list[update])
 
-            loss[str(update+1)] = self.loss_function(F[str(update+1)], batch.y)
+            loss[str(update+1)] = self.loss_function(F[str(update+1)], batch.y, epoch, n_epoch)
 
             if total_loss is None :
                 total_loss = loss[str(update+1)] * self.gamma**(self.k - update - 1)
