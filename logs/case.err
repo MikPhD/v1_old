@@ -1,18 +1,144 @@
-[32m[I 2022-03-15 12:53:17,820][0m A new study created in memory with name: third_optuna[0m
-[32m[I 2022-03-15 12:53:28,214][0m Trial 0 finished with value: 0.006137970369309187 and parameters: {'latent_dimension': 38, 'k': 16}. Best is trial 0 with value: 0.006137970369309187.[0m
-[32m[I 2022-03-15 12:53:41,357][0m Trial 1 finished with value: 0.004944545216858387 and parameters: {'latent_dimension': 38, 'k': 92}. Best is trial 1 with value: 0.004944545216858387.[0m
-[32m[I 2022-03-15 12:53:51,804][0m Trial 2 finished with value: 0.004554170649498701 and parameters: {'latent_dimension': 28, 'k': 70}. Best is trial 2 with value: 0.004554170649498701.[0m
-[32m[I 2022-03-15 12:54:05,875][0m Trial 3 finished with value: 0.004634648561477661 and parameters: {'latent_dimension': 18, 'k': 76}. Best is trial 2 with value: 0.004554170649498701.[0m
-[32m[I 2022-03-15 12:54:16,375][0m Trial 4 finished with value: 0.005895507987588644 and parameters: {'latent_dimension': 49, 'k': 62}. Best is trial 2 with value: 0.004554170649498701.[0m
-[32m[I 2022-03-15 12:54:20,640][0m Trial 5 finished with value: 0.00568979000672698 and parameters: {'latent_dimension': 35, 'k': 26}. Best is trial 2 with value: 0.004554170649498701.[0m
-[32m[I 2022-03-15 12:54:24,676][0m Trial 6 finished with value: 0.004840837325900793 and parameters: {'latent_dimension': 20, 'k': 28}. Best is trial 2 with value: 0.004554170649498701.[0m
-[32m[I 2022-03-15 12:54:36,282][0m Trial 7 finished with value: 0.004729090258479118 and parameters: {'latent_dimension': 18, 'k': 83}. Best is trial 2 with value: 0.004554170649498701.[0m
-[32m[I 2022-03-15 12:54:42,116][0m Trial 8 finished with value: 0.004353743977844715 and parameters: {'latent_dimension': 36, 'k': 36}. Best is trial 8 with value: 0.004353743977844715.[0m
-[32m[I 2022-03-15 12:54:47,763][0m Trial 9 finished with value: 0.004851129837334156 and parameters: {'latent_dimension': 44, 'k': 34}. Best is trial 8 with value: 0.004353743977844715.[0m
-[32m[I 2022-03-15 12:55:01,293][0m Trial 10 finished with value: 0.007212251424789429 and parameters: {'latent_dimension': 20, 'k': 94}. Best is trial 8 with value: 0.004353743977844715.[0m
-[32m[I 2022-03-15 12:55:03,503][0m Trial 11 finished with value: 0.004842926748096943 and parameters: {'latent_dimension': 50, 'k': 8}. Best is trial 8 with value: 0.004353743977844715.[0m
-[32m[I 2022-03-15 12:55:09,168][0m Trial 12 finished with value: 0.004998601041734219 and parameters: {'latent_dimension': 13, 'k': 48}. Best is trial 8 with value: 0.004353743977844715.[0m
-[32m[I 2022-03-15 12:55:12,161][0m Trial 13 finished with value: 0.004969812463968992 and parameters: {'latent_dimension': 47, 'k': 18}. Best is trial 8 with value: 0.004353743977844715.[0m
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** JOB 168932 ON n54 CANCELLED AT 2022-03-15T12:55:15 ***
-slurmstepd: error: *** STEP 168932.0 ON n54 CANCELLED AT 2022-03-15T12:55:15 ***
+[32m[I 2022-03-15 12:59:18,696][0m A new study created in RDB with name: third_optuna[0m
+[32m[I 2022-03-15 12:59:36,802][0m Trial 0 finished with value: 0.005440982989966869 and parameters: {'latent_dimension': 36, 'k': 65}. Best is trial 0 with value: 0.005440982989966869.[0m
+[32m[I 2022-03-15 12:59:51,350][0m Trial 1 finished with value: 0.0062998500652611256 and parameters: {'latent_dimension': 29, 'k': 100}. Best is trial 0 with value: 0.005440982989966869.[0m
+[32m[I 2022-03-15 13:00:00,648][0m Trial 2 finished with value: 0.006232514977455139 and parameters: {'latent_dimension': 6, 'k': 82}. Best is trial 0 with value: 0.005440982989966869.[0m
+[32m[I 2022-03-15 13:00:03,973][0m Trial 3 finished with value: 0.004391632974147797 and parameters: {'latent_dimension': 48, 'k': 16}. Best is trial 3 with value: 0.004391632974147797.[0m
+[32m[I 2022-03-15 13:00:12,915][0m Trial 4 finished with value: 0.005836579483002424 and parameters: {'latent_dimension': 12, 'k': 67}. Best is trial 3 with value: 0.004391632974147797.[0m
+[32m[I 2022-03-15 13:00:15,318][0m Trial 5 finished with value: 0.03313462436199188 and parameters: {'latent_dimension': 9, 'k': 16}. Best is trial 3 with value: 0.004391632974147797.[0m
+[32m[I 2022-03-15 13:00:18,384][0m Trial 6 finished with value: 0.007054426241666079 and parameters: {'latent_dimension': 11, 'k': 22}. Best is trial 3 with value: 0.004391632974147797.[0m
+[32m[I 2022-03-15 13:00:22,021][0m Trial 7 finished with value: 0.0043152435682713985 and parameters: {'latent_dimension': 41, 'k': 20}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:00:25,553][0m Trial 8 finished with value: 0.0046053058467805386 and parameters: {'latent_dimension': 42, 'k': 20}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:00:38,818][0m Trial 9 finished with value: 0.005898312199860811 and parameters: {'latent_dimension': 44, 'k': 83}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:00:41,328][0m Trial 10 finished with value: 0.005586765240877867 and parameters: {'latent_dimension': 28, 'k': 14}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:00:43,544][0m Trial 11 finished with value: 0.004430169705301523 and parameters: {'latent_dimension': 53, 'k': 10}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:00:50,113][0m Trial 12 finished with value: 0.004409839399158955 and parameters: {'latent_dimension': 17, 'k': 50}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:00:59,803][0m Trial 13 finished with value: 0.005510849878191948 and parameters: {'latent_dimension': 21, 'k': 67}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:01:11,046][0m Trial 14 finished with value: 0.0108729163184762 and parameters: {'latent_dimension': 10, 'k': 97}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:01:12,697][0m Trial 15 finished with value: 0.004611454904079437 and parameters: {'latent_dimension': 17, 'k': 9}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:01:19,316][0m Trial 16 finished with value: 0.004565705545246601 and parameters: {'latent_dimension': 59, 'k': 38}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:01:26,028][0m Trial 17 finished with value: 0.004997359588742256 and parameters: {'latent_dimension': 18, 'k': 54}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:01:31,026][0m Trial 18 finished with value: 0.004811147693544626 and parameters: {'latent_dimension': 25, 'k': 35}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:01:37,400][0m Trial 19 finished with value: 0.006119398400187492 and parameters: {'latent_dimension': 20, 'k': 26}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:01:48,651][0m Trial 20 finished with value: 0.006485972553491592 and parameters: {'latent_dimension': 7, 'k': 87}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:02:01,065][0m Trial 21 finished with value: 0.004589683376252651 and parameters: {'latent_dimension': 57, 'k': 69}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:02:05,902][0m Trial 22 finished with value: 0.004788696765899658 and parameters: {'latent_dimension': 54, 'k': 22}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:02:17,728][0m Trial 23 finished with value: 0.006778846960514784 and parameters: {'latent_dimension': 34, 'k': 78}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:02:18,755][0m Trial 24 finished with value: 0.00476631335914135 and parameters: {'latent_dimension': 45, 'k': 2}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:02:20,331][0m Trial 25 finished with value: 0.005342542659491301 and parameters: {'latent_dimension': 40, 'k': 6}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:02:21,776][0m Trial 26 finished with value: 0.004316825419664383 and parameters: {'latent_dimension': 48, 'k': 5}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:02:27,463][0m Trial 27 finished with value: 0.004471078515052795 and parameters: {'latent_dimension': 32, 'k': 35}. Best is trial 7 with value: 0.0043152435682713985.[0m
+[32m[I 2022-03-15 13:02:28,407][0m Trial 28 finished with value: 0.004260983318090439 and parameters: {'latent_dimension': 43, 'k': 2}. Best is trial 28 with value: 0.004260983318090439.[0m
+[32m[I 2022-03-15 13:02:35,443][0m Trial 29 finished with value: 0.004920655395835638 and parameters: {'latent_dimension': 46, 'k': 42}. Best is trial 28 with value: 0.004260983318090439.[0m
+[32m[I 2022-03-15 13:02:41,510][0m Trial 30 finished with value: 0.005026203580200672 and parameters: {'latent_dimension': 36, 'k': 36}. Best is trial 28 with value: 0.004260983318090439.[0m
+[32m[I 2022-03-15 13:02:57,821][0m Trial 31 finished with value: 0.007829634472727776 and parameters: {'latent_dimension': 50, 'k': 100}. Best is trial 28 with value: 0.004260983318090439.[0m
+[32m[I 2022-03-15 13:03:04,591][0m Trial 32 finished with value: 0.004937263205647469 and parameters: {'latent_dimension': 22, 'k': 49}. Best is trial 28 with value: 0.004260983318090439.[0m
+[32m[I 2022-03-15 13:03:09,495][0m Trial 33 finished with value: 0.004642880987375975 and parameters: {'latent_dimension': 39, 'k': 29}. Best is trial 28 with value: 0.004260983318090439.[0m
+[32m[I 2022-03-15 13:03:10,259][0m Trial 34 finished with value: 0.003878810442984104 and parameters: {'latent_dimension': 26, 'k': 1}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:03:11,277][0m Trial 35 finished with value: 0.00466360617429018 and parameters: {'latent_dimension': 19, 'k': 3}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:03:13,800][0m Trial 36 finished with value: 0.004613909404724836 and parameters: {'latent_dimension': 26, 'k': 9}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:03:18,493][0m Trial 37 finished with value: 0.005348237697035074 and parameters: {'latent_dimension': 40, 'k': 22}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:03:24,051][0m Trial 38 finished with value: 0.0077268341556191444 and parameters: {'latent_dimension': 5, 'k': 48}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:03:25,645][0m Trial 39 finished with value: 0.28026944398880005 and parameters: {'latent_dimension': 2, 'k': 1}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:03:28,176][0m Trial 40 finished with value: 0.004606763366609812 and parameters: {'latent_dimension': 29, 'k': 14}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:03:28,940][0m Trial 41 finished with value: 0.004466434940695763 and parameters: {'latent_dimension': 48, 'k': 1}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:03:33,585][0m Trial 42 finished with value: 0.006277807056903839 and parameters: {'latent_dimension': 39, 'k': 27}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:03:36,788][0m Trial 43 finished with value: 0.004440948832780123 and parameters: {'latent_dimension': 40, 'k': 17}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:03:38,940][0m Trial 44 finished with value: 0.005296989344060421 and parameters: {'latent_dimension': 28, 'k': 11}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:03:46,064][0m Trial 45 finished with value: 0.004472773987799883 and parameters: {'latent_dimension': 43, 'k': 45}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:03:55,585][0m Trial 46 finished with value: 0.006669811904430389 and parameters: {'latent_dimension': 35, 'k': 60}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:04:02,325][0m Trial 47 finished with value: 0.00488768657669425 and parameters: {'latent_dimension': 46, 'k': 40}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:04:07,592][0m Trial 48 finished with value: 0.004518170841038227 and parameters: {'latent_dimension': 49, 'k': 29}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:04:09,440][0m Trial 49 finished with value: 0.0047068544663488865 and parameters: {'latent_dimension': 24, 'k': 9}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:04:11,008][0m Trial 50 finished with value: 0.1389116644859314 and parameters: {'latent_dimension': 2, 'k': 10}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:04:13,486][0m Trial 51 finished with value: 0.004969808738678694 and parameters: {'latent_dimension': 17, 'k': 16}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:04:16,593][0m Trial 52 finished with value: 0.004426463041454554 and parameters: {'latent_dimension': 38, 'k': 17}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:04:18,204][0m Trial 53 finished with value: 0.00482139689847827 and parameters: {'latent_dimension': 48, 'k': 6}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:04:19,821][0m Trial 54 finished with value: 0.005235554184764624 and parameters: {'latent_dimension': 54, 'k': 6}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:04:23,883][0m Trial 55 finished with value: 0.004492610692977905 and parameters: {'latent_dimension': 42, 'k': 24}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:04:36,168][0m Trial 56 finished with value: 0.005738561041653156 and parameters: {'latent_dimension': 19, 'k': 100}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:04:46,086][0m Trial 57 finished with value: 0.004936169367283583 and parameters: {'latent_dimension': 15, 'k': 78}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:04:49,873][0m Trial 58 finished with value: 0.004529055207967758 and parameters: {'latent_dimension': 59, 'k': 18}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:04:54,036][0m Trial 59 finished with value: 0.004401767160743475 and parameters: {'latent_dimension': 45, 'k': 13}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:03,115][0m Trial 60 finished with value: 0.00552766676992178 and parameters: {'latent_dimension': 59, 'k': 49}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:04,450][0m Trial 61 finished with value: 0.0045038559474051 and parameters: {'latent_dimension': 52, 'k': 4}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:05,393][0m Trial 62 finished with value: 0.004422420635819435 and parameters: {'latent_dimension': 59, 'k': 2}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:17,324][0m Trial 63 finished with value: 0.006212999578565359 and parameters: {'latent_dimension': 14, 'k': 96}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:18,224][0m Trial 64 finished with value: 0.005897193681448698 and parameters: {'latent_dimension': 28, 'k': 2}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:19,174][0m Trial 65 finished with value: 0.00464805169031024 and parameters: {'latent_dimension': 49, 'k': 2}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:24,832][0m Trial 66 finished with value: 0.004459567833691835 and parameters: {'latent_dimension': 39, 'k': 34}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:26,679][0m Trial 67 finished with value: 0.004827114753425121 and parameters: {'latent_dimension': 41, 'k': 8}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:30,613][0m Trial 68 finished with value: 0.004985268227756023 and parameters: {'latent_dimension': 45, 'k': 22}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:33,593][0m Trial 69 finished with value: 0.004388702102005482 and parameters: {'latent_dimension': 57, 'k': 14}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:36,436][0m Trial 70 finished with value: 0.004332518670707941 and parameters: {'latent_dimension': 57, 'k': 13}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:38,840][0m Trial 71 finished with value: 0.004442126490175724 and parameters: {'latent_dimension': 54, 'k': 11}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:41,760][0m Trial 72 finished with value: 0.005892380140721798 and parameters: {'latent_dimension': 21, 'k': 18}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:43,182][0m Trial 73 finished with value: 0.004307941067963839 and parameters: {'latent_dimension': 51, 'k': 5}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:44,588][0m Trial 74 finished with value: 0.004664830397814512 and parameters: {'latent_dimension': 51, 'k': 5}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:45,371][0m Trial 75 finished with value: 0.004058087710291147 and parameters: {'latent_dimension': 50, 'k': 1}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:05:46,102][0m Trial 76 finished with value: 0.003963189199566841 and parameters: {'latent_dimension': 31, 'k': 1}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:06:00,683][0m Trial 77 finished with value: 0.012541946955025196 and parameters: {'latent_dimension': 36, 'k': 95}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:06:02,447][0m Trial 78 finished with value: 0.004891884513199329 and parameters: {'latent_dimension': 19, 'k': 9}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:06:09,788][0m Trial 79 finished with value: 0.0044218976981937885 and parameters: {'latent_dimension': 44, 'k': 30}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:06:10,576][0m Trial 80 finished with value: 0.0074715581722557545 and parameters: {'latent_dimension': 30, 'k': 1}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:06:16,203][0m Trial 81 finished with value: 0.008266894146800041 and parameters: {'latent_dimension': 45, 'k': 33}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:06:26,653][0m Trial 82 finished with value: 0.005358453840017319 and parameters: {'latent_dimension': 32, 'k': 68}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:06:35,900][0m Trial 83 finished with value: 0.006774847395718098 and parameters: {'latent_dimension': 53, 'k': 54}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:06:44,342][0m Trial 84 finished with value: 0.005142142064869404 and parameters: {'latent_dimension': 37, 'k': 53}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:06:47,950][0m Trial 85 finished with value: 0.004330147989094257 and parameters: {'latent_dimension': 56, 'k': 20}. Best is trial 34 with value: 0.003878810442984104.[0m
+[32m[I 2022-03-15 13:06:59,817][0m Trial 86 finished with value: 0.005791170056909323 and parameters: {'latent_dimension': 26, 'k': 81}. Best is trial 34 with value: 0.003878810442984104.[0m
+[33m[W 2022-03-15 13:07:08,162][0m Trial 87 failed because of the following error: RuntimeError('CUDA out of memory. Tried to allocate 30.00 MiB (GPU 0; 31.75 GiB total capacity; 29.10 GiB already allocated; 11.50 MiB free; 30.29 GiB reserved in total by PyTorch)')[0m
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 213, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/Main.py", line 140, in objective
+    GNN, validation_loss = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/MyTrain.py", line 81, in trainDSS
+    F, train_loss, loss_dict = self.net(train_data)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/MyDSS.py", line 56, in forward
+    mess_to = self.phi_to_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/MyDSS.py", line 108, in forward
+    return self.propagate(edge_index, x = x, edge_attr = edge_attr)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch_geometric/nn/conv/message_passing.py", line 233, in propagate
+    coll_dict = self.__collect__(self.__user_args__, edge_index, size,
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch_geometric/nn/conv/message_passing.py", line 157, in __collect__
+    data = self.__lift__(data, edge_index,
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch_geometric/nn/conv/message_passing.py", line 127, in __lift__
+    return src.index_select(self.node_dim, index)
+RuntimeError: CUDA out of memory. Tried to allocate 30.00 MiB (GPU 0; 31.75 GiB total capacity; 29.10 GiB already allocated; 11.50 MiB free; 30.29 GiB reserved in total by PyTorch)
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/Main.py", line 178, in <module>
+    study.optimize(objective, n_trials=10000)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/study.py", line 400, in optimize
+    _optimize(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 66, in _optimize
+    _optimize_sequential(
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 163, in _optimize_sequential
+    trial = _run_trial(study, func, catch)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 264, in _run_trial
+    raise func_err
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/study/_optimize.py", line 213, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/Main.py", line 140, in objective
+    GNN, validation_loss = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/MyTrain.py", line 81, in trainDSS
+    F, train_loss, loss_dict = self.net(train_data)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/MyDSS.py", line 56, in forward
+    mess_to = self.phi_to_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/mnt/beegfs/home/quattromini/NeuralNets/v1_optuna/MyDSS.py", line 108, in forward
+    return self.propagate(edge_index, x = x, edge_attr = edge_attr)
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch_geometric/nn/conv/message_passing.py", line 233, in propagate
+    coll_dict = self.__collect__(self.__user_args__, edge_index, size,
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch_geometric/nn/conv/message_passing.py", line 157, in __collect__
+    data = self.__lift__(data, edge_index,
+  File "/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/torch_geometric/nn/conv/message_passing.py", line 127, in __lift__
+    return src.index_select(self.node_dim, index)
+RuntimeError: CUDA out of memory. Tried to allocate 30.00 MiB (GPU 0; 31.75 GiB total capacity; 29.10 GiB already allocated; 11.50 MiB free; 30.29 GiB reserved in total by PyTorch)
+srun: error: n54: task 0: Exited with exit code 1
