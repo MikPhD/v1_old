@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="update gru branch">
-      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model_normal_final.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/second_optuna.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
