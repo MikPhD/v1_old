@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setblank for slurm execution">
-      <change afterPath="$PROJECT_DIR$/Results/87-18-001-0003/results5.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/v1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model_normal_final.pt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Results/87-18-001-0003/results.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Mesh.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_train_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_train_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_val_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_val_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_loss.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_loss.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003plot_loss.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003plot_loss.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003plot_results.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_train.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_train.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_val.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_val.pt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="optuna" />
+        <entry key="$PROJECT_DIR$" value="v1_mixed_loss" />
         <entry key="$PROJECT_DIR$/../v2" value="bcs" />
       </map>
     </option>

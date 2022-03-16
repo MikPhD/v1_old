@@ -30,10 +30,10 @@ class MyOwnDSSNet(nn.Module):
         self.psy_list = nn.ModuleList([Psy(4*self.latent_dimension + 3, self.latent_dimension) for i in range(self.k)])
         self.decoder_list = nn.ModuleList([Decoder(self.latent_dimension, 2) for i in range(self.k)])
 
-    def loss_function(self, F, y, epoch, n_epoch):
+    def loss_function(self, F, y, update, k):
 
         ## ALTERNATING LOSS FUNCTION
-        if epoch <= n_epoch/2:
+        if k % 2 == 0:
             loss_fn = nn.MSELoss()
             loss = loss_fn(F, y)
         else:
@@ -100,7 +100,7 @@ class MyOwnDSSNet(nn.Module):
             #print("Size of U : ", U[str(update+1)].size())
             #print(self.decoder_list[update])
 
-            loss[str(update+1)] = self.loss_function(F[str(update+1)], batch.y, epoch, n_epoch)
+            loss[str(update+1)] = self.loss_function(F[str(update+1)], batch.y, update, k)
 
             if total_loss is None :
                 total_loss = loss[str(update+1)] * self.gamma**(self.k - update - 1)
