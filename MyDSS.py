@@ -31,15 +31,18 @@ class MyOwnDSSNet(nn.Module):
         self.decoder_list = nn.ModuleList([Decoder(self.latent_dimension, 2) for i in range(self.k)])
 
     def loss_function(self, F, y, update):
-
-        ## ALTERNATING LOSS FUNCTION
-        if update % 2 == 0:
-            loss_fn = nn.MSELoss()
-            loss = loss_fn(F, y)
-        else:
-            loss_fn = nn.L1Loss()
-            loss = loss_fn(F, y)
+        loss_fn = nn.L1Loss()
+        loss = loss_fn(F, y)
         return loss
+
+        # ## ALTERNATING LOSS FUNCTION
+        # if update % 2 == 0:
+        #     loss_fn = nn.MSELoss()
+        #     loss = loss_fn(F, y)
+        # else:
+        #     loss_fn = nn.L1Loss()
+        #     loss = loss_fn(F, y)
+        # return loss
 
         ## MY OWN NEW VERSION
         # if k <= self.k // 2:

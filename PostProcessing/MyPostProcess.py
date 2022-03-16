@@ -146,16 +146,16 @@ class PostProcess():
 
         ######### plot results ##############
         plt.figure()
-        plot(v_gnn.sub(0))
+        self.plot(v_gnn.sub(0))
         plt.show()
         #
-        # plt.figure()
-        # plot(v_cfd.sub(0))
-        # plt.show()
+        plt.figure()
+        self.plot(v_cfd.sub(0))
+        plt.show()
 
-        # plt.figure()
-        # plot(v_diff.sub(0))
-        # plt.show()
+        plt.figure()
+        self.plot(v_diff.sub(0))
+        plt.show()
 
         print(f"Norma della differenza delle funzioni: {norm(v_diff, 'L2')}")
         print(f"Norma della differenza delle funzioni normalizzata: {norm(v_diff, 'L2')/norm(v_cfd, 'L2')}")
