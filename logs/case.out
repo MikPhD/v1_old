@@ -26,12 +26,41 @@ LR (Learning rate): 0.003
 PARAMETER SET: k:87, laten_dim:18, alpha:0.01, lr:0.003
 #################### CREATING NETWORKS #######################
 #################### TRAINING #######################
-Epoch 154, 27% 	 train_loss: 2.49310e-03
-Epoch 154, 54% 	 train_loss: 1.40095e-03
-Epoch 154, 81% 	 train_loss: 1.18061e-03
-Training loss = 6.13224e-03
-Validation loss = 4.07327e-03
-Training finished, took 35362.94s, MODEL SAVED
-Epoch 155, 27% 	 train_loss: 2.16228e-03
-Epoch 155, 54% 	 train_loss: 1.33570e-03
-Epoch 155, 81% 	 train_loss: 1.18234e-03
+Epoch 157, 27% 	 train_loss: 3.54197e-03
+Epoch 157, 54% 	 train_loss: 1.63145e-03
+Epoch 157, 81% 	 train_loss: 1.21449e-03
+Training loss = 7.43109e-03
+Validation loss = 4.29936e-03
+Training finished, took 36067.27s
+Epoch 158, 27% 	 train_loss: 2.19969e-03
+Epoch 158, 54% 	 train_loss: 1.39019e-03
+Epoch 158, 81% 	 train_loss: 1.18690e-03
+Training loss = 5.84747e-03
+Validation loss = 4.28486e-03
+Training finished, took 36303.92s
+Epoch 159, 27% 	 train_loss: 2.30075e-03
+Epoch 159, 54% 	 train_loss: 1.36229e-03
+Epoch 159, 81% 	 train_loss: 1.18934e-03
+Training loss = 5.88457e-03
+Validation loss = 4.03219e-03
+Training finished, took 36537.35s, MODEL SAVED
+Epoch 160, 27% 	 train_loss: 2.26009e-03
+Epoch 160, 54% 	 train_loss: 1.39944e-03
+Epoch 160, 81% 	 train_loss: 1.17149e-03
+Training loss = 5.86213e-03
+Validation loss = 4.20235e-03
+Training finished, took 36769.83s
+Epoch 161, 27% 	 train_loss: 2.61289e-03
+Epoch 161, 54% 	 train_loss: 1.39533e-03
+Epoch 161, 81% 	 train_loss: 1.16825e-03
+Training loss = 6.21828e-03
+Validation loss = 4.67333e-03
+Training finished, took 37001.93s
+Epoch 162, 27% 	 train_loss: 2.33444e-03
+Epoch 162, 54% 	 train_loss: 1.57862e-03
+Epoch 162, 81% 	 train_loss: 1.32057e-03
+Training loss = 6.28450e-03
+Validation loss = 4.32610e-03
+Training finished, took 37234.96s
+Intermediate Plot Saved!
+Epoch 163, 27% 	 train_loss: 2.36668e-03
