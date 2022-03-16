@@ -1,103 +1,827 @@
 /mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/samplers/_tpe/sampler.py:282: ExperimentalWarning: ``constant_liar`` option is an experimental feature. The interface can change in the future.
   warnings.warn(
-[32m[I 2022-03-15 15:45:28,777][0m A new study created in RDB with name: third_optuna[0m
-[32m[I 2022-03-15 15:45:46,123][0m Trial 0 finished with value: 0.005478310398757458 and parameters: {'latent_dimension': 49, 'k': 42}. Best is trial 0 with value: 0.005478310398757458.[0m
-[32m[I 2022-03-15 15:45:54,247][0m Trial 1 finished with value: 0.004420261364430189 and parameters: {'latent_dimension': 41, 'k': 41}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:45:57,070][0m Trial 2 finished with value: 0.004548358730971813 and parameters: {'latent_dimension': 30, 'k': 10}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:46:02,806][0m Trial 3 finished with value: 0.006920121144503355 and parameters: {'latent_dimension': 31, 'k': 28}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:46:10,758][0m Trial 4 finished with value: 0.004543045535683632 and parameters: {'latent_dimension': 12, 'k': 52}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:46:15,007][0m Trial 5 finished with value: 0.005225200206041336 and parameters: {'latent_dimension': 17, 'k': 21}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:46:19,033][0m Trial 6 finished with value: 0.008487846702337265 and parameters: {'latent_dimension': 12, 'k': 21}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:46:22,086][0m Trial 7 finished with value: 0.005409380421042442 and parameters: {'latent_dimension': 30, 'k': 12}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:46:30,334][0m Trial 8 finished with value: 0.004754931665956974 and parameters: {'latent_dimension': 48, 'k': 42}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:46:40,305][0m Trial 9 finished with value: 0.00519551569595933 and parameters: {'latent_dimension': 8, 'k': 65}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:46:47,611][0m Trial 10 finished with value: 0.005041775293648243 and parameters: {'latent_dimension': 28, 'k': 39}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:46:59,943][0m Trial 11 finished with value: 0.00577250961214304 and parameters: {'latent_dimension': 39, 'k': 67}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:47:04,386][0m Trial 12 finished with value: 0.0054117063991725445 and parameters: {'latent_dimension': 41, 'k': 19}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:47:12,533][0m Trial 13 finished with value: 0.006109387613832951 and parameters: {'latent_dimension': 19, 'k': 47}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:47:15,553][0m Trial 14 finished with value: 0.004552136175334454 and parameters: {'latent_dimension': 17, 'k': 12}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:47:24,126][0m Trial 15 finished with value: 0.025289364159107208 and parameters: {'latent_dimension': 5, 'k': 62}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:47:29,984][0m Trial 16 finished with value: 0.00815111119300127 and parameters: {'latent_dimension': 10, 'k': 34}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:47:32,846][0m Trial 17 finished with value: 0.015248248353600502 and parameters: {'latent_dimension': 3, 'k': 10}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:47:42,324][0m Trial 18 finished with value: 0.006008339114487171 and parameters: {'latent_dimension': 31, 'k': 47}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:47:57,395][0m Trial 19 finished with value: 0.005211726762354374 and parameters: {'latent_dimension': 37, 'k': 62}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:48:01,927][0m Trial 20 finished with value: 0.007305745035409927 and parameters: {'latent_dimension': 49, 'k': 16}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:48:07,440][0m Trial 21 finished with value: 0.005859980825334787 and parameters: {'latent_dimension': 31, 'k': 24}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:48:09,266][0m Trial 22 finished with value: 0.0045227003283798695 and parameters: {'latent_dimension': 29, 'k': 3}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:48:20,187][0m Trial 23 finished with value: 0.005209938623011112 and parameters: {'latent_dimension': 26, 'k': 57}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:48:26,270][0m Trial 24 finished with value: 0.005723815876990557 and parameters: {'latent_dimension': 15, 'k': 32}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:48:28,948][0m Trial 25 finished with value: 0.004848303738981485 and parameters: {'latent_dimension': 18, 'k': 9}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:48:32,682][0m Trial 26 finished with value: 0.004470983985811472 and parameters: {'latent_dimension': 50, 'k': 13}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:48:36,470][0m Trial 27 finished with value: 0.006519148591905832 and parameters: {'latent_dimension': 10, 'k': 20}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:48:49,587][0m Trial 28 finished with value: 0.005225907079875469 and parameters: {'latent_dimension': 25, 'k': 58}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:49:02,156][0m Trial 29 finished with value: 0.004676308948546648 and parameters: {'latent_dimension': 33, 'k': 58}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:49:07,189][0m Trial 30 finished with value: 0.00479788426309824 and parameters: {'latent_dimension': 43, 'k': 15}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:49:12,696][0m Trial 31 finished with value: 0.004950911272317171 and parameters: {'latent_dimension': 48, 'k': 23}. Best is trial 1 with value: 0.004420261364430189.[0m
-[32m[I 2022-03-15 15:49:16,553][0m Trial 32 finished with value: 0.0043528033420443535 and parameters: {'latent_dimension': 49, 'k': 13}. Best is trial 32 with value: 0.0043528033420443535.[0m
-[32m[I 2022-03-15 15:49:24,749][0m Trial 33 finished with value: 0.005012948997318745 and parameters: {'latent_dimension': 46, 'k': 34}. Best is trial 32 with value: 0.0043528033420443535.[0m
-[32m[I 2022-03-15 15:49:30,655][0m Trial 34 finished with value: 0.00680163037031889 and parameters: {'latent_dimension': 19, 'k': 28}. Best is trial 32 with value: 0.0043528033420443535.[0m
-[32m[I 2022-03-15 15:49:34,345][0m Trial 35 finished with value: 0.004927103407680988 and parameters: {'latent_dimension': 13, 'k': 16}. Best is trial 32 with value: 0.0043528033420443535.[0m
-[32m[I 2022-03-15 15:49:42,055][0m Trial 36 finished with value: 0.0046824198216199875 and parameters: {'latent_dimension': 40, 'k': 35}. Best is trial 32 with value: 0.0043528033420443535.[0m
-[32m[I 2022-03-15 15:49:43,735][0m Trial 37 finished with value: 0.004315671510994434 and parameters: {'latent_dimension': 35, 'k': 2}. Best is trial 37 with value: 0.004315671510994434.[0m
-[32m[I 2022-03-15 15:49:46,323][0m Trial 38 finished with value: 0.004443079698830843 and parameters: {'latent_dimension': 36, 'k': 2}. Best is trial 37 with value: 0.004315671510994434.[0m
-[32m[I 2022-03-15 15:50:00,980][0m Trial 39 finished with value: 0.010338501073420048 and parameters: {'latent_dimension': 44, 'k': 65}. Best is trial 37 with value: 0.004315671510994434.[0m
-[32m[I 2022-03-15 15:50:02,609][0m Trial 40 finished with value: 0.008228933438658714 and parameters: {'latent_dimension': 14, 'k': 3}. Best is trial 37 with value: 0.004315671510994434.[0m
-[32m[I 2022-03-15 15:50:04,027][0m Trial 41 finished with value: 0.0042267488315701485 and parameters: {'latent_dimension': 36, 'k': 1}. Best is trial 41 with value: 0.0042267488315701485.[0m
-[32m[I 2022-03-15 15:50:06,411][0m Trial 42 finished with value: 0.004446393344551325 and parameters: {'latent_dimension': 35, 'k': 7}. Best is trial 41 with value: 0.0042267488315701485.[0m
-[32m[I 2022-03-15 15:50:07,785][0m Trial 43 finished with value: 0.0039785741828382015 and parameters: {'latent_dimension': 43, 'k': 1}. Best is trial 43 with value: 0.0039785741828382015.[0m
-[32m[I 2022-03-15 15:50:11,316][0m Trial 44 finished with value: 0.0040957252494990826 and parameters: {'latent_dimension': 39, 'k': 1}. Best is trial 43 with value: 0.0039785741828382015.[0m
-[32m[I 2022-03-15 15:50:17,002][0m Trial 45 finished with value: 0.005173033103346825 and parameters: {'latent_dimension': 7, 'k': 37}. Best is trial 43 with value: 0.0039785741828382015.[0m
-[32m[I 2022-03-15 15:50:19,421][0m Trial 46 finished with value: 0.004834352992475033 and parameters: {'latent_dimension': 43, 'k': 7}. Best is trial 43 with value: 0.0039785741828382015.[0m
-[32m[I 2022-03-15 15:50:29,621][0m Trial 47 finished with value: 0.0059148091822862625 and parameters: {'latent_dimension': 32, 'k': 53}. Best is trial 43 with value: 0.0039785741828382015.[0m
-[32m[I 2022-03-15 15:50:34,418][0m Trial 48 finished with value: 0.004334485623985529 and parameters: {'latent_dimension': 43, 'k': 20}. Best is trial 43 with value: 0.0039785741828382015.[0m
-[32m[I 2022-03-15 15:50:35,852][0m Trial 49 finished with value: 0.004509755410254002 and parameters: {'latent_dimension': 40, 'k': 1}. Best is trial 43 with value: 0.0039785741828382015.[0m
-[32m[I 2022-03-15 15:50:46,454][0m Trial 50 finished with value: 0.005838997196406126 and parameters: {'latent_dimension': 48, 'k': 53}. Best is trial 43 with value: 0.0039785741828382015.[0m
-[32m[I 2022-03-15 15:50:49,450][0m Trial 51 finished with value: 0.004988580476492643 and parameters: {'latent_dimension': 23, 'k': 9}. Best is trial 43 with value: 0.0039785741828382015.[0m
-[32m[I 2022-03-15 15:50:57,630][0m Trial 52 finished with value: 0.0044105141423642635 and parameters: {'latent_dimension': 33, 'k': 27}. Best is trial 43 with value: 0.0039785741828382015.[0m
-[32m[I 2022-03-15 15:50:59,816][0m Trial 53 finished with value: 0.004899310413748026 and parameters: {'latent_dimension': 38, 'k': 5}. Best is trial 43 with value: 0.0039785741828382015.[0m
-[32m[I 2022-03-15 15:51:01,262][0m Trial 54 finished with value: 0.0038659090641885996 and parameters: {'latent_dimension': 32, 'k': 1}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:51:10,274][0m Trial 55 finished with value: 0.004569999873638153 and parameters: {'latent_dimension': 48, 'k': 43}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:51:13,463][0m Trial 56 finished with value: 0.004323380067944527 and parameters: {'latent_dimension': 33, 'k': 11}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:51:23,990][0m Trial 57 finished with value: 0.005318662617355585 and parameters: {'latent_dimension': 47, 'k': 51}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:51:28,256][0m Trial 58 finished with value: 0.004679592326283455 and parameters: {'latent_dimension': 41, 'k': 17}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:51:31,281][0m Trial 59 finished with value: 0.003901843912899494 and parameters: {'latent_dimension': 46, 'k': 1}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:51:42,152][0m Trial 60 finished with value: 0.0051873913034796715 and parameters: {'latent_dimension': 50, 'k': 50}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:51:43,593][0m Trial 61 finished with value: 0.0039296625182032585 and parameters: {'latent_dimension': 7, 'k': 1}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:51:45,956][0m Trial 62 finished with value: 0.005404174793511629 and parameters: {'latent_dimension': 45, 'k': 6}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:51:55,505][0m Trial 63 finished with value: 0.0047280453145504 and parameters: {'latent_dimension': 45, 'k': 44}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:52:08,140][0m Trial 64 finished with value: 0.005439522676169872 and parameters: {'latent_dimension': 49, 'k': 59}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:52:17,417][0m Trial 65 finished with value: 0.004559054970741272 and parameters: {'latent_dimension': 11, 'k': 54}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:52:20,369][0m Trial 66 finished with value: 0.004714519251137972 and parameters: {'latent_dimension': 31, 'k': 10}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:52:24,891][0m Trial 67 finished with value: 0.004371349699795246 and parameters: {'latent_dimension': 46, 'k': 20}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:52:26,300][0m Trial 68 finished with value: 0.003879313822835684 and parameters: {'latent_dimension': 38, 'k': 1}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:52:28,441][0m Trial 69 finished with value: 0.004424416925758123 and parameters: {'latent_dimension': 39, 'k': 5}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:52:30,013][0m Trial 70 finished with value: 0.004347147885710001 and parameters: {'latent_dimension': 24, 'k': 2}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:52:32,681][0m Trial 71 finished with value: 0.004348081536591053 and parameters: {'latent_dimension': 49, 'k': 8}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:52:41,805][0m Trial 72 finished with value: 0.0071791703812778 and parameters: {'latent_dimension': 50, 'k': 43}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:52:48,229][0m Trial 73 finished with value: 0.791260302066803 and parameters: {'latent_dimension': 1, 'k': 49}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:52:54,029][0m Trial 74 finished with value: 0.004707728046923876 and parameters: {'latent_dimension': 21, 'k': 26}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:52:55,759][0m Trial 75 finished with value: 0.0043556406162679195 and parameters: {'latent_dimension': 18, 'k': 3}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:52:57,844][0m Trial 76 finished with value: 0.004368927795439959 and parameters: {'latent_dimension': 41, 'k': 5}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:53:01,245][0m Trial 77 finished with value: 0.004431657958775759 and parameters: {'latent_dimension': 30, 'k': 13}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:53:04,659][0m Trial 78 finished with value: 0.012946437112987041 and parameters: {'latent_dimension': 19, 'k': 2}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:53:08,490][0m Trial 79 finished with value: 0.004502778872847557 and parameters: {'latent_dimension': 38, 'k': 4}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:53:09,960][0m Trial 80 finished with value: 0.0038733938708901405 and parameters: {'latent_dimension': 46, 'k': 1}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:53:13,148][0m Trial 81 finished with value: 0.005476504098623991 and parameters: {'latent_dimension': 46, 'k': 10}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:53:15,311][0m Trial 82 finished with value: 0.2671375870704651 and parameters: {'latent_dimension': 2, 'k': 8}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:53:19,265][0m Trial 83 finished with value: 0.005476521328091621 and parameters: {'latent_dimension': 48, 'k': 14}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:53:26,997][0m Trial 84 finished with value: 0.004399902652949095 and parameters: {'latent_dimension': 27, 'k': 38}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:53:35,188][0m Trial 85 finished with value: 0.007102331146597862 and parameters: {'latent_dimension': 27, 'k': 40}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:53:37,962][0m Trial 86 finished with value: 0.004639146383851767 and parameters: {'latent_dimension': 23, 'k': 10}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:53:50,119][0m Trial 87 finished with value: 0.004595261998474598 and parameters: {'latent_dimension': 43, 'k': 64}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:53:55,807][0m Trial 88 finished with value: 0.0051849596202373505 and parameters: {'latent_dimension': 35, 'k': 26}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:53:57,282][0m Trial 89 finished with value: 0.004059913568198681 and parameters: {'latent_dimension': 44, 'k': 1}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:54:04,975][0m Trial 90 finished with value: 0.006209937389940023 and parameters: {'latent_dimension': 20, 'k': 44}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:54:06,410][0m Trial 91 finished with value: 0.008405501022934914 and parameters: {'latent_dimension': 29, 'k': 1}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:54:08,492][0m Trial 92 finished with value: 0.004501033574342728 and parameters: {'latent_dimension': 44, 'k': 4}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:54:09,722][0m Trial 93 finished with value: 0.0039457762613892555 and parameters: {'latent_dimension': 41, 'k': 1}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:54:22,205][0m Trial 94 finished with value: 0.005119863897562027 and parameters: {'latent_dimension': 47, 'k': 68}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:54:24,211][0m Trial 95 finished with value: 0.004702932201325893 and parameters: {'latent_dimension': 42, 'k': 7}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:54:25,660][0m Trial 96 finished with value: 0.004870722535997629 and parameters: {'latent_dimension': 50, 'k': 4}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:54:26,884][0m Trial 97 finished with value: 0.005013453774154186 and parameters: {'latent_dimension': 37, 'k': 3}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:54:29,574][0m Trial 98 finished with value: 0.004429332446306944 and parameters: {'latent_dimension': 34, 'k': 12}. Best is trial 54 with value: 0.0038659090641885996.[0m
-[32m[I 2022-03-15 15:54:35,812][0m Trial 99 finished with value: 0.004848635755479336 and parameters: {'latent_dimension': 41, 'k': 18}. Best is trial 54 with value: 0.0038659090641885996.[0m
+[32m[I 2022-03-16 11:43:43,348][0m A new study created in RDB with name: third_optuna[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-16 11:43:57,761][0m Trial 0 finished with value: 1.1347037244720594e+29 and parameters: {'latent_dimension': 29, 'k': 29, 'gamma': 0.101, 'alpha': 14.701}. Best is trial 0 with value: 1.1347037244720594e+29.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[33m[W 2022-03-16 11:44:05,732][0m Trial 1 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-16 11:44:07,579][0m Trial 2 finished with value: 7987.560546875 and parameters: {'latent_dimension': 19, 'k': 8, 'gamma': 0.401, 'alpha': 15.801}. Best is trial 2 with value: 7987.560546875.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-16 11:44:10,288][0m Trial 3 finished with value: 163.45602416992188 and parameters: {'latent_dimension': 8, 'k': 16, 'gamma': 0.001, 'alpha': 6.601000000000001}. Best is trial 3 with value: 163.45602416992188.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[33m[W 2022-03-16 11:44:22,227][0m Trial 4 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[33m[W 2022-03-16 11:44:28,135][0m Trial 5 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[33m[W 2022-03-16 11:44:38,429][0m Trial 6 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-16 11:44:44,736][0m Trial 7 finished with value: 7.175871762370978e+31 and parameters: {'latent_dimension': 18, 'k': 40, 'gamma': 0.001, 'alpha': 11.801}. Best is trial 3 with value: 163.45602416992188.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[33m[W 2022-03-16 11:44:53,813][0m Trial 8 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-16 11:44:55,259][0m Trial 9 finished with value: 38.911617279052734 and parameters: {'latent_dimension': 32, 'k': 6, 'gamma': 0.201, 'alpha': 6.101000000000001}. Best is trial 9 with value: 38.911617279052734.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[33m[W 2022-03-16 11:45:04,395][0m Trial 10 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-16 11:45:14,417][0m Trial 11 finished with value: 0.04118438810110092 and parameters: {'latent_dimension': 40, 'k': 59, 'gamma': 0.901, 'alpha': 0.001}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-16 11:45:15,541][0m Trial 12 finished with value: 6.558724880218506 and parameters: {'latent_dimension': 20, 'k': 5, 'gamma': 0.901, 'alpha': 7.501}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-16 11:45:21,613][0m Trial 13 finished with value: 16002.533203125 and parameters: {'latent_dimension': 13, 'k': 46, 'gamma': 0.001, 'alpha': 4.501}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-16 11:45:24,939][0m Trial 14 finished with value: 4.930141925811768 and parameters: {'latent_dimension': 18, 'k': 21, 'gamma': 0.101, 'alpha': 2.001}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-16 11:45:29,053][0m Trial 15 finished with value: 240.37393188476562 and parameters: {'latent_dimension': 8, 'k': 31, 'gamma': 0.001, 'alpha': 6.601000000000001}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-16 11:45:35,999][0m Trial 16 finished with value: 2.1431159931669162e+30 and parameters: {'latent_dimension': 35, 'k': 41, 'gamma': 0.101, 'alpha': 10.201}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-16 11:45:44,624][0m Trial 17 finished with value: 168113.65625 and parameters: {'latent_dimension': 17, 'k': 64, 'gamma': 0.7010000000000001, 'alpha': 3.601}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+  warnings.warn(
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning: The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+  warnings.warn(
+[32m[I 2022-03-16 11:45:54,813][0m Trial 18 finished with value: 11271.7880859375 and parameters: {'latent_dimension': 39, 'k': 65, 'gamma': 0.001, 'alpha': 1.901}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:46:12,831][0m Trial 19 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:46:19,613][0m Trial 20 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:46:27,866][0m Trial 21 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:46:33,262][0m Trial 22 finished with value: 0.09506072103977203 and parameters: {'latent_dimension': 16, 'k': 35, 'gamma': 0.501, 'alpha': 0.401}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:46:42,370][0m Trial 23 finished with value: 13205752.0 and parameters: {'latent_dimension': 46, 'k': 54, 'gamma': 0.7010000000000001, 'alpha': 3.201}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:46:46,580][0m Trial 24 finished with value: 4.4054665460134556e+26 and parameters: {'latent_dimension': 23, 'k': 23, 'gamma': 0.201, 'alpha': 18.001}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:46:54,067][0m Trial 25 finished with value: 1.1611024511360964e+26 and parameters: {'latent_dimension': 21, 'k': 44, 'gamma': 0.001, 'alpha': 8.501}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:47:02,400][0m Trial 26 finished with value: 17899600.0 and parameters: {'latent_dimension': 46, 'k': 43, 'gamma': 0.201, 'alpha': 3.101}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:47:09,299][0m Trial 27 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:47:20,485][0m Trial 28 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:47:25,404][0m Trial 29 finished with value: 4.4873175621032715 and parameters: {'latent_dimension': 39, 'k': 29, 'gamma': 0.201, 'alpha': 1.101}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:47:31,036][0m Trial 30 finished with value: 551.6348876953125 and parameters: {'latent_dimension': 6, 'k': 47, 'gamma': 0.7010000000000001, 'alpha': 4.501}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:47:32,376][0m Trial 31 finished with value: 166.7807159423828 and parameters: {'latent_dimension': 5, 'k': 11, 'gamma': 0.7010000000000001, 'alpha': 8.501}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:47:38,649][0m Trial 32 finished with value: 303.1489562988281 and parameters: {'latent_dimension': 1, 'k': 51, 'gamma': 0.801, 'alpha': 3.701}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:47:45,783][0m Trial 33 finished with value: 8.47918738280389e+19 and parameters: {'latent_dimension': 33, 'k': 38, 'gamma': 0.501, 'alpha': 7.101000000000001}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:47:50,021][0m Trial 34 finished with value: 5446617.0 and parameters: {'latent_dimension': 35, 'k': 21, 'gamma': 0.101, 'alpha': 7.001}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:47:52,349][0m Trial 35 finished with value: 79394456.0 and parameters: {'latent_dimension': 23, 'k': 11, 'gamma': 0.501, 'alpha': 18.301000000000002}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:48:01,916][0m Trial 36 finished with value: 0.6994338035583496 and parameters: {'latent_dimension': 47, 'k': 51, 'gamma': 0.901, 'alpha': 0.30100000000000005}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:48:08,994][0m Trial 37 finished with value: 24796.064453125 and parameters: {'latent_dimension': 36, 'k': 38, 'gamma': 0.201, 'alpha': 3.001}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:48:21,314][0m Trial 38 finished with value: 2.9459983962269997e+22 and parameters: {'latent_dimension': 33, 'k': 70, 'gamma': 0.101, 'alpha': 4.7010000000000005}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:48:27,384][0m Trial 39 finished with value: 3.730505409787007e+30 and parameters: {'latent_dimension': 45, 'k': 21, 'gamma': 0.30100000000000005, 'alpha': 9.701}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:48:35,990][0m Trial 40 finished with value: 1.0573717237366329e+27 and parameters: {'latent_dimension': 8, 'k': 62, 'gamma': 0.901, 'alpha': 7.101000000000001}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:48:42,308][0m Trial 41 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:48:44,187][0m Trial 42 finished with value: 111.89991760253906 and parameters: {'latent_dimension': 7, 'k': 11, 'gamma': 0.901, 'alpha': 6.101000000000001}. Best is trial 11 with value: 0.04118438810110092.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:48:53,405][0m Trial 43 finished with value: 0.008057679049670696 and parameters: {'latent_dimension': 25, 'k': 51, 'gamma': 0.501, 'alpha': 0.001}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:49:00,946][0m Trial 44 finished with value: 0.02475547231733799 and parameters: {'latent_dimension': 13, 'k': 52, 'gamma': 0.501, 'alpha': 0.101}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:49:09,404][0m Trial 45 finished with value: 0.035198770463466644 and parameters: {'latent_dimension': 13, 'k': 52, 'gamma': 0.501, 'alpha': 0.101}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:49:15,872][0m Trial 46 finished with value: 1.3960073416565635e+33 and parameters: {'latent_dimension': 2, 'k': 53, 'gamma': 0.401, 'alpha': 18.001}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:49:16,402][0m Trial 47 finished with value: 0.0701136663556099 and parameters: {'latent_dimension': 16, 'k': 1, 'gamma': 0.30100000000000005, 'alpha': 4.401000000000001}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:49:25,129][0m Trial 48 finished with value: 2647.28662109375 and parameters: {'latent_dimension': 50, 'k': 45, 'gamma': 0.501, 'alpha': 2.601}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:49:33,332][0m Trial 49 finished with value: 14.727897644042969 and parameters: {'latent_dimension': 11, 'k': 57, 'gamma': 0.7010000000000001, 'alpha': 1.701}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:49:39,523][0m Trial 50 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:49:47,367][0m Trial 51 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:49:55,738][0m Trial 52 finished with value: 12592138240.0 and parameters: {'latent_dimension': 25, 'k': 47, 'gamma': 0.6010000000000001, 'alpha': 5.001}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:49:58,520][0m Trial 53 finished with value: 6.140078544616699 and parameters: {'latent_dimension': 39, 'k': 11, 'gamma': 0.30100000000000005, 'alpha': 3.501}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:50:01,627][0m Trial 54 finished with value: 2501.1171875 and parameters: {'latent_dimension': 1, 'k': 23, 'gamma': 0.201, 'alpha': 8.401}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:50:10,632][0m Trial 55 finished with value: 0.03186856210231781 and parameters: {'latent_dimension': 13, 'k': 59, 'gamma': 0.401, 'alpha': 0.101}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:50:17,586][0m Trial 56 finished with value: 4127480.5 and parameters: {'latent_dimension': 1, 'k': 58, 'gamma': 0.401, 'alpha': 19.201000000000004}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:50:22,027][0m Trial 57 finished with value: 0.05345148220658302 and parameters: {'latent_dimension': 15, 'k': 29, 'gamma': 0.801, 'alpha': 0.001}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:50:30,157][0m Trial 58 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:50:43,058][0m Trial 59 finished with value: 1.3139482370490604e+20 and parameters: {'latent_dimension': 25, 'k': 68, 'gamma': 0.6010000000000001, 'alpha': 4.601000000000001}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:50:51,032][0m Trial 60 finished with value: 4.624735355377197 and parameters: {'latent_dimension': 6, 'k': 59, 'gamma': 0.401, 'alpha': 2.201}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:50:57,634][0m Trial 61 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:51:05,347][0m Trial 62 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:51:12,900][0m Trial 63 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:51:14,714][0m Trial 64 finished with value: 4922.9140625 and parameters: {'latent_dimension': 3, 'k': 11, 'gamma': 0.101, 'alpha': 18.601000000000003}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:51:23,453][0m Trial 65 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:51:34,852][0m Trial 66 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:51:41,718][0m Trial 67 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:51:45,517][0m Trial 68 finished with value: 6555865088.0 and parameters: {'latent_dimension': 40, 'k': 19, 'gamma': 0.801, 'alpha': 10.001}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:51:52,031][0m Trial 69 finished with value: 0.6505290269851685 and parameters: {'latent_dimension': 48, 'k': 35, 'gamma': 0.101, 'alpha': 0.7010000000000001}. Best is trial 43 with value: 0.008057679049670696.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:52:00,523][0m Trial 70 finished with value: 0.00571459112688899 and parameters: {'latent_dimension': 28, 'k': 48, 'gamma': 0.30100000000000005, 'alpha': 0.001}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:52:09,159][0m Trial 71 finished with value: 15.421331405639648 and parameters: {'latent_dimension': 29, 'k': 48, 'gamma': 0.30100000000000005, 'alpha': 1.401}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:52:17,422][0m Trial 72 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:52:25,403][0m Trial 73 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:52:33,096][0m Trial 74 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:52:39,868][0m Trial 75 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:52:46,358][0m Trial 76 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:52:53,759][0m Trial 77 finished with value: 0.04280276969075203 and parameters: {'latent_dimension': 23, 'k': 48, 'gamma': 0.30100000000000005, 'alpha': 0.101}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:52:54,440][0m Trial 78 finished with value: 43.750244140625 and parameters: {'latent_dimension': 32, 'k': 2, 'gamma': 0.001, 'alpha': 18.201}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:53:02,598][0m Trial 79 finished with value: 2.5197619097562963e+31 and parameters: {'latent_dimension': 28, 'k': 33, 'gamma': 0.6010000000000001, 'alpha': 13.801}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:53:10,642][0m Trial 80 finished with value: 70.94622039794922 and parameters: {'latent_dimension': 14, 'k': 55, 'gamma': 0.401, 'alpha': 2.101}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:53:18,476][0m Trial 81 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:53:26,321][0m Trial 82 finished with value: 84.78691101074219 and parameters: {'latent_dimension': 5, 'k': 62, 'gamma': 0.30100000000000005, 'alpha': 3.701}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:53:32,827][0m Trial 83 finished with value: 22709378.0 and parameters: {'latent_dimension': 11, 'k': 46, 'gamma': 0.501, 'alpha': 5.801000000000001}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:53:35,857][0m Trial 84 finished with value: 67455.9375 and parameters: {'latent_dimension': 47, 'k': 13, 'gamma': 0.801, 'alpha': 8.001}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:53:44,057][0m Trial 85 finished with value: 16.919876098632812 and parameters: {'latent_dimension': 20, 'k': 51, 'gamma': 0.6010000000000001, 'alpha': 1.101}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:53:54,239][0m Trial 86 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:53:58,373][0m Trial 87 finished with value: 3.4134936548262686e+22 and parameters: {'latent_dimension': 27, 'k': 21, 'gamma': 0.401, 'alpha': 15.201}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:54:07,935][0m Trial 88 finished with value: 116646.046875 and parameters: {'latent_dimension': 23, 'k': 60, 'gamma': 0.801, 'alpha': 2.601}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:54:08,893][0m Trial 89 finished with value: 132.20510864257812 and parameters: {'latent_dimension': 5, 'k': 5, 'gamma': 0.401, 'alpha': 13.401}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[33m[W 2022-03-16 11:54:18,315][0m Trial 90 failed, because the value None could not be cast to float.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:54:27,764][0m Trial 91 finished with value: 3513984512.0 and parameters: {'latent_dimension': 18, 'k': 66, 'gamma': 0.501, 'alpha': 4.101000000000001}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:54:33,531][0m Trial 92 finished with value: 8.863922334330153e+19 and parameters: {'latent_dimension': 32, 'k': 31, 'gamma': 0.401, 'alpha': 8.801}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:54:42,885][0m Trial 93 finished with value: 8.091742478515735e+30 and parameters: {'latent_dimension': 20, 'k': 58, 'gamma': 0.801, 'alpha': 8.001}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:54:48,456][0m Trial 94 finished with value: 0.16384722292423248 and parameters: {'latent_dimension': 45, 'k': 27, 'gamma': 0.801, 'alpha': 0.30100000000000005}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:54:56,357][0m Trial 95 finished with value: 0.02264486812055111 and parameters: {'latent_dimension': 14, 'k': 52, 'gamma': 0.501, 'alpha': 0.101}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:55:00,456][0m Trial 96 finished with value: 9.828934662922174e+18 and parameters: {'latent_dimension': 43, 'k': 19, 'gamma': 0.101, 'alpha': 14.001}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:55:08,769][0m Trial 97 finished with value: 0.024558212608098984 and parameters: {'latent_dimension': 14, 'k': 55, 'gamma': 0.501, 'alpha': 0.001}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:55:15,263][0m Trial 98 finished with value: 2.498952627182007 and parameters: {'latent_dimension': 16, 'k': 41, 'gamma': 0.6010000000000001, 'alpha': 1.101}. Best is trial 70 with value: 0.00571459112688899.[0m
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 1] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 0.901].
+
+/mnt/beegfs/home/quattromini/miniconda3/envs/neural/lib/python3.9/site-packages/optuna/distributions.py:545: UserWarning:
+
+The distribution is specified by [0.001, 20] and q=0.1, but the range is not divisible by `q`. It will be replaced by [0.001, 19.901].
+
+[32m[I 2022-03-16 11:55:22,330][0m Trial 99 finished with value: 1.2381808605204562e+23 and parameters: {'latent_dimension': 44, 'k': 23, 'gamma': 0.101, 'alpha': 13.801}. Best is trial 70 with value: 0.00571459112688899.[0m
