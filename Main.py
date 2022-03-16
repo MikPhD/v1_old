@@ -167,11 +167,11 @@ def objective(trial):
 ################## to be uncommented only when want to log #######################
 optuna.logging.get_logger("optuna").addHandler(logging.StreamHandler(sys.stdout))
 study_name = "third_optuna"  # Unique identifier of the study.
-storage_name = optuna.storages.RDBStorage(url="sqlite:///:memory:", heartbeat_interval=10)
+storage_name = optuna.storages.RDBStorage(url="sqlite:///:memory:")
 ##################################################################################
 
 pruner = HyperbandPruner(min_resource=10, max_resource=n_epoch, reduction_factor=3)
-study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner,
+study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=False, direction="minimize", pruner=pruner,
                             sampler=TPESampler(n_startup_trials=20, constant_liar=True))
 
 counter_trial = 0
