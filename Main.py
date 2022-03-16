@@ -139,10 +139,11 @@ def objective(trial):
     for epoch in range(epoch, n_epoch):
         GNN, validation_loss = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
 
-        trial.report(validation_loss, epoch)
 
         if math.isnan(validation_loss) or math.isinf(validation_loss):
             break
+
+        trial.report(validation_loss, epoch)
 
         # Handle pruning based on the intermediate value.
         if trial.should_prune():
