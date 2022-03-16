@@ -140,7 +140,7 @@ def objective(trial):
         GNN, validation_loss = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
 
 
-        if math.isnan(validation_loss) or math.isinf(validation_loss):
+        if math.isnan(validation_loss) or math.isinf(validation_loss) or validation_loss>=1e5:
             break
 
         trial.report(validation_loss, epoch)
