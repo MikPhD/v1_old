@@ -4,8 +4,7 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="update gru branch">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setblank for slurm execution">
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,13 +204,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00083" summary="set blank for slurm">
-      <created>1645635463539</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1645635463539</updated>
     </task>
     <task id="LOCAL-00084" summary="set blank for slurm">
       <created>1645635895223</created>
@@ -549,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647356861701</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="setblank for slurm execution">
+      <created>1647426536995</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1647426536995</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -588,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adjusted and setted for slurm execution" />
     <MESSAGE value="completely setted new transformation" />
     <MESSAGE value="modified postprocess" />
     <MESSAGE value="modified postprocess (works!)" />
@@ -613,7 +611,8 @@
     <MESSAGE value="set blank for third optuna" />
     <MESSAGE value="set blank for slurm execution" />
     <MESSAGE value="update gru branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="update gru branch" />
+    <MESSAGE value="setblank for slurm execution" />
+    <option name="LAST_COMMIT_MESSAGE" value="setblank for slurm execution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
