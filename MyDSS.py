@@ -41,7 +41,6 @@ class MyOwnDSSNet(nn.Module):
             loss = loss_fn(F, y)
         return loss
 
-
         ## MY OWN NEW VERSION
         # if k <= self.k // 2:
         #     loss_fn = nn.MSELoss()
