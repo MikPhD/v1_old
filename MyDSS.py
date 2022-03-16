@@ -35,6 +35,7 @@ class MyOwnDSSNet(nn.Module):
         loss = loss_fn(F, y)
         return loss
 
+
         # ## ALTERNATING LOSS FUNCTION
         # if update % 2 == 0:
         #     loss_fn = nn.MSELoss()
