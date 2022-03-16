@@ -4,9 +4,8 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="update gru branch">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/v1.iml" afterDir="false" />
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setblank for slurm execution">
+      <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,13 +197,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00076" summary="rebuild from scratch">
-      <created>1645035321187</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1645035321188</updated>
     </task>
     <task id="LOCAL-00077" summary="optuna setting blank for slurm">
       <created>1645438721535</created>
@@ -542,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647357220842</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="setblank for slurm execution">
+      <created>1647430950085</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1647430950085</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -581,7 +580,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adjusted connection creation" />
     <MESSAGE value="adjusted and setted for slurm execution" />
     <MESSAGE value="completely setted new transformation" />
     <MESSAGE value="modified postprocess" />
@@ -606,7 +604,8 @@
     <MESSAGE value="commit before backup" />
     <MESSAGE value="trying execute on cuda slurm" />
     <MESSAGE value="update gru branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="update gru branch" />
+    <MESSAGE value="setblank for slurm execution" />
+    <option name="LAST_COMMIT_MESSAGE" value="setblank for slurm execution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

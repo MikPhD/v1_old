@@ -90,6 +90,7 @@ class MyOwnDSSNet(nn.Module):
             if update + 1 == self.k:
                 F = self.decoder(H)
                 loss[str(update + 1)] = self.loss_function(F, batch.y)
+                total_loss = loss[str(update + 1)]
 
         #print(torch.mean((U[str(self.k-1)] - data.x)**2))
 
