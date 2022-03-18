@@ -4,10 +4,7 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setting for extrapolation">
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
-    </list>
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setting for extrapolation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -244,20 +241,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00067" summary="StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
-      <created>1644248341145</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1644248341145</updated>
-    </task>
-    <task id="LOCAL-00068" summary="StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
-      <created>1644248777255</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1644248777255</updated>
     </task>
     <task id="LOCAL-00069" summary="set dropout p= 0.2&#10;StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
       <created>1644250684745</created>
@@ -588,7 +571,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647594952097</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="setting for extrapolation">
+      <created>1647595207485</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1647595207485</updated>
+    </task>
+    <task id="LOCAL-00117" summary="setting for extrapolation">
+      <created>1647599411907</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1647599411907</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -653,5 +650,16 @@
     <MESSAGE value="set blank for third optuna" />
     <MESSAGE value="setting for extrapolation" />
     <option name="LAST_COMMIT_MESSAGE" value="setting for extrapolation" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MyDSS.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
