@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setting for extrapolation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Mesh.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/processed/data_train.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_train.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/processed/data_val.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_val.pt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +72,7 @@
       <recent name="$PROJECT_DIR$/../v2/dataset/processed" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MyPostProcess (1)">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,7 +80,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/gnn_cpu/bin/python" />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/cpu/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -224,8 +230,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MyPostProcess (1)" />
         <item itemvalue="Python.Main" />
+        <item itemvalue="Python.MyPostProcess (1)" />
         <item itemvalue="Python.MyPlot_stand_alone" />
         <item itemvalue="Python.MyPlot" />
         <item itemvalue="Python.prova" />
@@ -240,13 +246,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00068" summary="StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
-      <created>1644248777255</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1644248777255</updated>
     </task>
     <task id="LOCAL-00069" summary="set dropout p= 0.2&#10;StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
       <created>1644250684745</created>
@@ -584,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647421707735</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="setting for extrapolation">
+      <created>1647599741521</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1647599741521</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -623,7 +629,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="start modifing" />
     <MESSAGE value="added entire dataset" />
     <MESSAGE value="adjusted connection creation" />
     <MESSAGE value="adjusted and setted for slurm execution" />
@@ -648,6 +653,7 @@
     <MESSAGE value="set blank for slurm execution" />
     <MESSAGE value="set blank for third optuna" />
     <MESSAGE value="setblank for slurm execution" />
-    <option name="LAST_COMMIT_MESSAGE" value="setblank for slurm execution" />
+    <MESSAGE value="setting for extrapolation" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting for extrapolation" />
   </component>
 </project>
