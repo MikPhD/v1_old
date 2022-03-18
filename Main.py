@@ -58,10 +58,10 @@ createdata.transform(train_cases, 'train')
 createdata.transform(val_cases, 'val')
 
 #set of parameter from second cycle optimization optuna
-k_list=[54]
-latent_dimension_list=[50]
-gamma_list=[0.8]
-alpha_list=[1]
+k_list=[3]
+latent_dimension_list=[18]
+gamma_list=[0.6]
+alpha_list=[10]
 lr_list=[3e-3]
 
 #check if gpu is available

@@ -1,0 +1,364 @@
+
+[32m[I 2022-03-16 12:10:25,049][0m A new study created in RDB with name: third_optuna[0m
+
+[33m[W 2022-03-16 12:10:37,561][0m Trial 0 failed, because the value None could not be cast to float.[0m
+
+[33m[W 2022-03-16 12:10:42,121][0m Trial 1 failed, because the value None could not be cast to float.[0m
+
+[33m[W 2022-03-16 12:10:50,956][0m Trial 2 failed, because the value None could not be cast to float.[0m
+
+[33m[W 2022-03-16 12:10:55,926][0m Trial 3 failed, because the value None could not be cast to float.[0m
+
+[33m[W 2022-03-16 12:11:02,266][0m Trial 4 failed, because the value None could not be cast to float.[0m
+
+[33m[W 2022-03-16 12:11:08,105][0m Trial 5 failed, because the value None could not be cast to float.[0m
+
+[32m[I 2022-03-16 12:11:09,835][0m Trial 6 finished with value: 246.23301696777344 and parameters: {'latent_dimension': 33, 'k': 8, 'gamma': 0.801, 'alpha': 8.201}. Best is trial 6 with value: 246.23301696777344.[0m
+
+[33m[W 2022-03-16 12:11:17,998][0m Trial 7 failed, because the value None could not be cast to float.[0m
+
+[32m[I 2022-03-16 12:11:20,886][0m Trial 8 finished with value: 0.02335861138999462 and parameters: {'latent_dimension': 35, 'k': 12, 'gamma': 0.001, 'alpha': 0.501}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+[33m[W 2022-03-16 12:11:27,624][0m Trial 9 failed, because the value None could not be cast to float.[0m
+
+[33m[W 2022-03-16 12:11:35,521][0m Trial 10 failed, because the value None could not be cast to float.[0m
+
+[33m[W 2022-03-16 12:11:40,382][0m Trial 11 failed, because the value None could not be cast to float.[0m
+
+[32m[I 2022-03-16 12:11:41,070][0m Trial 12 finished with value: 0.7403116226196289 and parameters: {'latent_dimension': 21, 'k': 2, 'gamma': 0.6010000000000001, 'alpha': 8.901}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+[32m[I 2022-03-16 12:11:44,525][0m Trial 13 finished with value: 7.469322204589844 and parameters: {'latent_dimension': 48, 'k': 16, 'gamma': 0.201, 'alpha': 1.601}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+[33m[W 2022-03-16 12:11:52,066][0m Trial 14 failed, because the value None could not be cast to float.[0m
+
+[32m[I 2022-03-16 12:11:54,348][0m Trial 15 finished with value: 827.3741455078125 and parameters: {'latent_dimension': 46, 'k': 9, 'gamma': 0.801, 'alpha': 6.901000000000001}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+[33m[W 2022-03-16 12:12:02,826][0m Trial 16 failed, because the value None could not be cast to float.[0m
+
+[33m[W 2022-03-16 12:12:12,388][0m Trial 17 failed, because the value None could not be cast to float.[0m
+
+[33m[W 2022-03-16 12:12:21,352][0m Trial 18 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:12:33,451][0m Trial 19 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:12:37,283][0m Trial 20 finished with value: 9483.966796875 and parameters: {'latent_dimension': 21, 'k': 23, 'gamma': 0.401, 'alpha': 4.601000000000001}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[32m[I 2022-03-16 12:12:45,527][0m Trial 21 finished with value: 1081.4080810546875 and parameters: {'latent_dimension': 17, 'k': 59, 'gamma': 0.6010000000000001, 'alpha': 2.201}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[33m[W 2022-03-16 12:12:52,435][0m Trial 22 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:13:01,335][0m Trial 23 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:13:07,340][0m Trial 24 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:13:11,500][0m Trial 25 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:13:19,987][0m Trial 26 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:13:27,319][0m Trial 27 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:13:30,866][0m Trial 28 finished with value: 1092.184814453125 and parameters: {'latent_dimension': 10, 'k': 22, 'gamma': 0.201, 'alpha': 7.101000000000001}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[33m[W 2022-03-16 12:13:36,278][0m Trial 29 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:13:44,498][0m Trial 30 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:13:51,456][0m Trial 31 finished with value: 3.0890917778015137 and parameters: {'latent_dimension': 25, 'k': 42, 'gamma': 0.501, 'alpha': 1.001}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[33m[W 2022-03-16 12:14:02,460][0m Trial 32 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:14:08,082][0m Trial 33 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:14:10,990][0m Trial 34 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:14:11,991][0m Trial 35 finished with value: 2.322187662124634 and parameters: {'latent_dimension': 25, 'k': 4, 'gamma': 0.801, 'alpha': 6.901000000000001}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[32m[I 2022-03-16 12:14:22,347][0m Trial 36 finished with value: 213.57225036621094 and parameters: {'latent_dimension': 35, 'k': 66, 'gamma': 0.7010000000000001, 'alpha': 1.101}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[33m[W 2022-03-16 12:14:30,862][0m Trial 37 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:14:33,369][0m Trial 38 finished with value: 892.434814453125 and parameters: {'latent_dimension': 20, 'k': 11, 'gamma': 0.201, 'alpha': 8.801}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[33m[W 2022-03-16 12:14:38,575][0m Trial 39 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:14:46,064][0m Trial 40 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:14:58,169][0m Trial 41 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:15:08,597][0m Trial 42 finished with value: 2736.72998046875 and parameters: {'latent_dimension': 38, 'k': 64, 'gamma': 0.801, 'alpha': 1.901}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[32m[I 2022-03-16 12:15:09,987][0m Trial 43 finished with value: 13.031235694885254 and parameters: {'latent_dimension': 42, 'k': 6, 'gamma': 0.501, 'alpha': 6.401000000000001}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[33m[W 2022-03-16 12:15:20,064][0m Trial 44 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:15:24,332][0m Trial 45 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:15:34,159][0m Trial 46 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:15:44,274][0m Trial 47 finished with value: 371.30712890625 and parameters: {'latent_dimension': 25, 'k': 65, 'gamma': 0.401, 'alpha': 1.901}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[33m[W 2022-03-16 12:15:52,278][0m Trial 48 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:16:02,305][0m Trial 49 finished with value: 112.13957214355469 and parameters: {'latent_dimension': 39, 'k': 61, 'gamma': 0.7010000000000001, 'alpha': 1.001}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[33m[W 2022-03-16 12:16:07,877][0m Trial 50 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:16:08,790][0m Trial 51 finished with value: 2.6781108379364014 and parameters: {'latent_dimension': 12, 'k': 3, 'gamma': 0.201, 'alpha': 13.201}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[32m[I 2022-03-16 12:16:10,335][0m Trial 52 finished with value: 0.16027416288852692 and parameters: {'latent_dimension': 35, 'k': 7, 'gamma': 0.6010000000000001, 'alpha': 1.101}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[32m[I 2022-03-16 12:16:11,197][0m Trial 53 finished with value: 0.2642042934894562 and parameters: {'latent_dimension': 33, 'k': 3, 'gamma': 0.201, 'alpha': 2.9010000000000002}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[32m[I 2022-03-16 12:16:21,598][0m Trial 54 finished with value: 74280.53125 and parameters: {'latent_dimension': 25, 'k': 66, 'gamma': 0.7010000000000001, 'alpha': 2.101}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[32m[I 2022-03-16 12:16:25,471][0m Trial 55 finished with value: 18216.30859375 and parameters: {'latent_dimension': 1, 'k': 41, 'gamma': 0.7010000000000001, 'alpha': 14.201}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[32m[I 2022-03-16 12:16:26,128][0m Trial 56 finished with value: 0.47918957471847534 and parameters: {'latent_dimension': 6, 'k': 3, 'gamma': 0.6010000000000001, 'alpha': 3.001}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[33m[W 2022-03-16 12:16:31,667][0m Trial 57 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:16:40,090][0m Trial 58 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:16:43,873][0m Trial 59 finished with value: 38161.17578125 and parameters: {'latent_dimension': 32, 'k': 11, 'gamma': 0.101, 'alpha': 8.600999999999999}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[33m[W 2022-03-16 12:16:50,617][0m Trial 60 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:16:57,109][0m Trial 61 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:17:02,875][0m Trial 62 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:17:12,641][0m Trial 63 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:17:24,254][0m Trial 64 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:17:28,095][0m Trial 65 finished with value: 17.80099105834961 and parameters: {'latent_dimension': 40, 'k': 18, 'gamma': 0.201, 'alpha': 2.9010000000000002}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[32m[I 2022-03-16 12:17:30,031][0m Trial 66 finished with value: 3102.4052734375 and parameters: {'latent_dimension': 1, 'k': 9, 'gamma': 0.7010000000000001, 'alpha': 12.001}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[33m[W 2022-03-16 12:17:40,406][0m Trial 67 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:17:48,243][0m Trial 68 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:17:56,954][0m Trial 69 finished with value: 52.750709533691406 and parameters: {'latent_dimension': 41, 'k': 52, 'gamma': 0.901, 'alpha': 1.301}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[33m[W 2022-03-16 12:18:08,127][0m Trial 70 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:18:19,392][0m Trial 71 finished with value: 46.85309600830078 and parameters: {'latent_dimension': 50, 'k': 64, 'gamma': 0.401, 'alpha': 1.001}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[33m[W 2022-03-16 12:18:22,923][0m Trial 72 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:18:34,208][0m Trial 73 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:18:41,649][0m Trial 74 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:18:48,101][0m Trial 75 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:18:52,213][0m Trial 76 finished with value: 7654.91162109375 and parameters: {'latent_dimension': 35, 'k': 21, 'gamma': 0.7010000000000001, 'alpha': 4.2010000000000005}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[33m[W 2022-03-16 12:19:03,245][0m Trial 77 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:19:10,639][0m Trial 78 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:19:17,511][0m Trial 79 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:19:21,473][0m Trial 80 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:19:26,577][0m Trial 81 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:19:36,567][0m Trial 82 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:19:42,429][0m Trial 83 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:19:50,254][0m Trial 84 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:19:58,072][0m Trial 85 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:20:03,733][0m Trial 86 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:20:07,454][0m Trial 87 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:20:08,213][0m Trial 88 finished with value: 0.2847553491592407 and parameters: {'latent_dimension': 2, 'k': 4, 'gamma': 0.001, 'alpha': 2.001}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[32m[I 2022-03-16 12:20:09,554][0m Trial 89 finished with value: 520.4949340820312 and parameters: {'latent_dimension': 48, 'k': 6, 'gamma': 0.501, 'alpha': 11.001}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[32m[I 2022-03-16 12:20:10,404][0m Trial 90 finished with value: 0.13406960666179657 and parameters: {'latent_dimension': 45, 'k': 3, 'gamma': 0.401, 'alpha': 3.001}. Best is trial 8 with value: 0.02335861138999462.[0m
+
+
+
+[33m[W 2022-03-16 12:20:19,060][0m Trial 91 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:20:24,503][0m Trial 92 failed, because the value None could not be cast to float.[0m
+
+
+
+[33m[W 2022-03-16 12:20:32,783][0m Trial 93 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:20:35,517][0m Trial 94 finished with value: 0.004132412374019623 and parameters: {'latent_dimension': 42, 'k': 12, 'gamma': 0.001, 'alpha': 0.001}. Best is trial 94 with value: 0.004132412374019623.[0m
+
+
+
+[33m[W 2022-03-16 12:20:45,727][0m Trial 95 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:20:54,015][0m Trial 96 finished with value: 3598.5751953125 and parameters: {'latent_dimension': 35, 'k': 51, 'gamma': 0.7010000000000001, 'alpha': 2.101}. Best is trial 94 with value: 0.004132412374019623.[0m
+
+
+
+[33m[W 2022-03-16 12:20:59,131][0m Trial 97 failed, because the value None could not be cast to float.[0m
+
+
+
+[32m[I 2022-03-16 12:21:06,965][0m Trial 98 finished with value: 4089.080078125 and parameters: {'latent_dimension': 49, 'k': 43, 'gamma': 0.6010000000000001, 'alpha': 2.201}. Best is trial 94 with value: 0.004132412374019623.[0m
+
+
+
+[33m[W 2022-03-16 12:21:17,907][0m Trial 99 failed, because the value None could not be cast to float.[0m
