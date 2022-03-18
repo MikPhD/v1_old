@@ -53,15 +53,15 @@ if not restart:
         os.remove("./Model/best_model_normal_final.pt")
 
 print("#################### DATA ADAPTING FOR GNN #######################")
-# createdata = CreateData()
-# createdata.transform(train_cases, 'train')
-# createdata.transform(val_cases, 'val')
+createdata = CreateData()
+createdata.transform(train_cases, 'train')
+createdata.transform(val_cases, 'val')
 
 #set of parameter from second cycle optimization optuna
-k_list=[87]
-latent_dimension_list=[18]
-gamma_list=[0.1]
-alpha_list=[1e-2]
+k_list=[54]
+latent_dimension_list=[50]
+gamma_list=[0.8]
+alpha_list=[1]
 lr_list=[3e-3]
 
 #check if gpu is available
