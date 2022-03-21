@@ -9,12 +9,6 @@ import os
 import shutil
 from torch_geometric.data import DataListLoader
 from torch_geometric.data import DataLoader
-import optuna
-from optuna.trial import TrialState
-from optuna.pruners import ThresholdPruner
-from optuna import TrialPruned
-import math
-import logging
 
 
 parser = argparse.ArgumentParser()
@@ -80,7 +74,7 @@ print("#################### DSS NET parameter #######################")
 #create hyperparameter
 latent_dimension = 18
 print("Latent space dim : ", latent_dimension)
-k = 87
+k = 30
 print("Number of updates : ", k)
 gamma = 0.1
 print("Gamma (loss function) : ", gamma)
