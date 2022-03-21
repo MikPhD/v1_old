@@ -31,11 +31,13 @@ class MyOwnDSSNet(nn.Module):
         self.decoder_list = nn.ModuleList([Decoder(self.latent_dimension, 2) for i in range(self.k)])
 
     def loss_function(self, F, y, update):
-        loss_fn = nn.MSELoss()
+        loss_fn1 = nn.L1Loss()
+        loss_fn2 = nn.MSELoss()
         # loss_fn2 = torch.mean(torch.pow(torch.abs(torch.sub(F, y)), 0.5))
         # loss = (0.5) * (loss_fn1(F, y) + loss_fn2)
-        loss = loss_fn(F,y)
-        return loss
+        loss_first = loss_fn1(F,y)
+        loss_second = loss_fn2(F, y)
+        return loss_first, loss_second
 
 
         # ## ALTERNATING LOSS FUNCTION
@@ -70,8 +72,12 @@ class MyOwnDSSNet(nn.Module):
         #Initialisation
         H = {}
         F = {}
-        loss = {}
-        total_loss = None
+
+        loss_first = {}
+        loss_second = {}
+
+        total_loss_first = None
+        total_loss_second = None
 
         self.F_init = batch.x*0
 
@@ -105,16 +111,22 @@ class MyOwnDSSNet(nn.Module):
             #print("Size of U : ", U[str(update+1)].size())
             #print(self.decoder_list[update])
 
-            loss[str(update+1)] = self.loss_function(F[str(update+1)], batch.y, update)
+            loss_first[str(update+1)], loss_second[str(update+1)] = self.loss_function(F[str(update+1)], batch.y, update)
 
-            if total_loss is None :
-                total_loss = loss[str(update+1)] * self.gamma**(self.k - update - 1)
+            if total_loss_first is None :
+                total_loss_first = loss_first[str(update+1)] * self.gamma**(self.k - update - 1)
             else :
-                total_loss += loss[str(update+1)] * self.gamma**(self.k - update - 1)
+                total_loss_first += loss_first[str(update+1)] * self.gamma**(self.k - update - 1)
+
+            if total_loss_second is None :
+                total_loss_second = loss_second[str(update+1)] * self.gamma**(self.k - update - 1)
+            else :
+                total_loss_second += loss_second[str(update+1)] * self.gamma**(self.k - update - 1)
+
 
         #print(torch.mean((U[str(self.k-1)] - data.x)**2))
 
-        return F, total_loss, loss
+        return F, total_loss_first, total_loss_second, loss_first, loss_second
 
 #######################################################################################################################################################
 ####################################################### NEURAL NETWORKS ###############################################################################

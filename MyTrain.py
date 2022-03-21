@@ -78,12 +78,27 @@ class Train_DSS:
 
                 #training operation
                 optimizer.zero_grad()
-                F, train_loss, loss_dict = self.net(train_data, epoch, self.n_epochs)
+                F, train_loss_first, train_loss_second, loss_dict1, loss_dict2 = self.net(train_data, epoch, self.n_epochs)
                 # sol_lu = train_data.x.to(U[str(k)].device)
                 # sol_lu = torch.cat([data.x for data in train_data]).to(U[str(k)].device)
                 # sol_lu = torch.cat([(next(iter(train_data))).x]).to(U[str(k)].device)
 
-                train_loss.sum().backward()
+                train_loss_first.sum().backward()
+
+
+                # optimizer.zero_grad()
+                # grad1 = self.net.parameters
+                #
+                # train_loss_second.sum().backward()
+                # optimizer.zero_grad()
+                # grad2 = self.net.parameters
+                #
+                # self.net.parameters = torch.add(grad1, grad2)
+                ########## continue by here #########
+                # for param in self.net.parameters():
+                #     prova = param.grad
+
+
                 torch.nn.utils.clip_grad_norm_(self.net.parameters(), 1.e-3)  # da riattivare
                 optimizer.step()
                 total_train_loss += train_loss.sum().item()

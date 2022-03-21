@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setting for extrapolation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Mesh.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_train.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_train.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_val.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_val.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -655,5 +651,16 @@
     <MESSAGE value="setblank for slurm execution" />
     <MESSAGE value="setting for extrapolation" />
     <option name="LAST_COMMIT_MESSAGE" value="setting for extrapolation" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MyTrain.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
