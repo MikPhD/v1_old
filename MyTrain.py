@@ -83,29 +83,36 @@ class Train_DSS:
                 # sol_lu = torch.cat([data.x for data in train_data]).to(U[str(k)].device)
                 # sol_lu = torch.cat([(next(iter(train_data))).x]).to(U[str(k)].device)
 
-                train_loss_first.sum().backward()
+                train_loss_first.sum().backward(retain_graph=True)
+                l1_parameter = {}
+                for name, params in self.net.named_parameters():
+                    l1_parameter[name] = params.grad.clone()
 
+                optimizer.zero_grad()
+                train_loss_second.sum().backward()
+                l2_parameter = {}
+                for name, params in self.net.named_parameters():
+                    l2_parameter[name] = params.grad.clone()
 
-                # optimizer.zero_grad()
-                # grad1 = self.net.parameters
-                #
-                # train_loss_second.sum().backward()
-                # optimizer.zero_grad()
-                # grad2 = self.net.parameters
-                #
-                # self.net.parameters = torch.add(grad1, grad2)
-                ########## continue by here #########
-                # for param in self.net.parameters():
-                #     prova = param.grad
+                l3_parameter = {}
+                alpha = 0.5
+                for key in l1_parameter:
+                    l3_parameter[key] = (1-alpha) * l1_parameter[key] + (alpha) * l2_parameter[key]
 
+                optimizer.zero_grad()
+
+                #reassign paramter
+                for name, params in self.net.named_parameters():
+                    params.grad.data.copy_(l3_parameter[name])
 
                 torch.nn.utils.clip_grad_norm_(self.net.parameters(), 1.e-3)  # da riattivare
                 optimizer.step()
-                total_train_loss += train_loss.sum().item()
-                final_loss += loss_dict[str(k)].sum().item()
 
-                running_loss += train_loss.sum().item()
-                running_final_loss += loss_dict[str(k)].sum().item()
+                total_train_loss += (1-alpha) * train_loss_first.sum().item() + (alpha) * train_loss_second.sum().item()
+                final_loss += (1-alpha) * loss_dict1[str(k)].sum().item() + (alpha) * loss_dict2[str(k)].sum().item()
+
+                running_loss += (1-alpha) * train_loss_first.sum().item() + (alpha) * train_loss_second.sum().item()
+                running_final_loss += (1-alpha) * loss_dict1[str(k)].sum().item() + (alpha) * loss_dict2[str(k)].sum().item()
 
                 ##print during training set cycle loop
                 if (i + 1) % (len(loader_train) // 5 + 1) == 0:
@@ -118,7 +125,7 @@ class Train_DSS:
                     running_loss = 0.0
                     running_final_loss = 0
 
-                del F, train_loss, loss_dict
+                del F, train_loss_first, train_loss_second, loss_dict1, loss_dict2
                 torch.cuda.empty_cache()
 
                 sys.stdout.flush()
@@ -135,10 +142,10 @@ class Train_DSS:
             # validation operation
             with torch.no_grad():
                 for val_data in loader_val:
-                    F, val_loss, loss_dict = self.net(val_data, epoch, self.n_epochs)
+                    F, val_loss_first, val_loss_second, loss_dict1, loss_dict2 = self.net(val_data, epoch, self.n_epochs)
                     # sol_lu = val_data.x.to(U[str(k)].device) #da riattivare
-                    total_val_loss += val_loss.sum().item()
-                    final_loss_val += loss_dict[str(k)].sum().item()
+                    total_val_loss += (1-alpha) * val_loss_first.sum().item() + (alpha) * val_loss_second.sum().item()
+                    final_loss_val += (1-alpha) * loss_dict1[str(k)].sum().item() + (alpha) * loss_dict2[str(k)].sum().item()
                     # corr_val += corrcoef(U[str(k)], sol_lu)
                     # rmse_val += torch.sqrt(torch.mean(U[str(k)] - sol_lu) ** 2)
 
@@ -200,7 +207,7 @@ class Train_DSS:
                 #     print("errore di plot")
 
                 print("Intermediate Plot Saved!")
-                del F, val_loss, loss_dict
+                del F, val_loss_first, val_loss_second, loss_dict1, loss_dict2
 
             if int(epoch + 1) == self.n_epochs:
                 F_fin = F[str(k)].cpu().numpy()
@@ -227,7 +234,7 @@ class Train_DSS:
 
 
                 print("Final Results Saved")
-                del F, val_loss, loss_dict
+                del F, val_loss_first, val_loss_second, loss_dict1, loss_dict2
 
 
         ## Save last model ##
