@@ -4,12 +4,16 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setting for extrapolation">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_03_22__09_38__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/v1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain.py" afterDir="false" />
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="update gru branch">
+      <change afterPath="$PROJECT_DIR$/Model/best_model_normal_final.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Results/87-18-001-0003/results.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_train_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_train_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_val_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_val_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_loss.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_loss.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003plot_loss.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003plot_loss.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003plot_results.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,20 +248,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00069" summary="set dropout p= 0.2&#10;StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
-      <created>1644250684745</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1644250684745</updated>
-    </task>
-    <task id="LOCAL-00070" summary="set dropout p= 0.2&#10;StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
-      <created>1644424832977</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1644424832977</updated>
     </task>
     <task id="LOCAL-00071" summary="iniziata nuova versione mikversion...">
       <created>1644427631027</created>
@@ -588,7 +578,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647599741521</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="update gru branch">
+      <created>1647958006180</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1647958006182</updated>
+    </task>
+    <task id="LOCAL-00119" summary="update gru branch">
+      <created>1647958012255</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1647958012255</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -627,7 +631,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added entire dataset" />
     <MESSAGE value="adjusted connection creation" />
     <MESSAGE value="adjusted and setted for slurm execution" />
     <MESSAGE value="completely setted new transformation" />
@@ -652,7 +655,8 @@
     <MESSAGE value="set blank for third optuna" />
     <MESSAGE value="setblank for slurm execution" />
     <MESSAGE value="setting for extrapolation" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting for extrapolation" />
+    <MESSAGE value="update gru branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="update gru branch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
