@@ -96,8 +96,42 @@ class Train_DSS:
 
                 l3_parameter = {}
                 alpha = 0.5
+                def mod_param(key, tensor1, tensor2):
+                    print(f'key:{key}, index: {index}')
+                    norm_loss1 = torch.norm(tensor1)
+                    sq_norm_loss1 = torch.pow(norm_loss1, 2)
+
+                    norm_loss2 = torch.norm(tensor2)
+                    sq_norm_loss2 = torch.pow(norm_loss2, 2)
+
+                    loss1_loss2 = torch.dot(tensor1, tensor2)
+
+                    norm_sq_loss1loss2 = torch.pow(torch.norm(torch.sub(tensor1, tensor2)),2)
+
+                    # if loss1_loss2 < min(sq_norm_loss1, sq_norm_loss2):
+                    #     alpha = torch.div(torch.dot(tensor1, torch.sub(tensor1, tensor2)), norm_sq_loss1loss2)
+                    #
+                    # elif min(norm_loss1, norm_loss2) == norm_loss1:
+                    #     alpha = 1
+                    # elif min(norm_loss1, norm_loss2) == norm_loss2:
+                    #     alpha = 0
+
+                    # l3_parameter[key] = (alpha) * l1_parameter[key] + (1 - alpha) * tensor2
+
+                    first_term = torch.mul(torch.div(torch.sub(sq_norm_loss1, loss1_loss2), torch.sub(sq_norm_loss2 + sq_norm_loss1, 2*loss1_loss2)), tensor2)
+                    second_term = torch.mul(torch.div(torch.sub(sq_norm_loss2, loss1_loss2), torch.sub(sq_norm_loss2 + sq_norm_loss1, 2*loss1_loss2)), tensor1)
+
+                    l3_parameter[key] = first_term + second_term
+                    # return alpha
+
+
                 for key in l1_parameter:
-                    l3_parameter[key] = (1-alpha) * l1_parameter[key] + (alpha) * l2_parameter[key]
+                    if l1_parameter[key].dim() > 1:
+                        for index, tensor in enumerate(l1_parameter[key]):
+                            mod_param(key, l1_parameter[key][index], l2_parameter[key][index])
+
+                    else:
+                        mod_param(key, l1_parameter[key], l2_parameter[key])
 
                 optimizer.zero_grad()
 

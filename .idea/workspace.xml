@@ -4,15 +4,16 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="update gru branch">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_03_22,_09_38_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/70-20-001-001plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/Mesh.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22__17_05__Changes_.xml" beforeDir="false" />
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="saved little changes">
+      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MyTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Results/87-18-001-0003/results.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Mesh.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_train_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_train_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_val_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_val_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/processed/data_train.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_train.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/processed/data_val.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_val.pt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/gnn_cpu/bin/python" />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/cpu/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -247,13 +248,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00074" summary="rebuild from scratch">
-      <created>1645033284475</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1645033284475</updated>
     </task>
     <task id="LOCAL-00075" summary="rebuild from scratch">
       <created>1645033634972</created>
@@ -591,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647960323442</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="saved little changes">
+      <created>1648024341323</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1648024341323</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -630,7 +631,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adjusted connection creation" />
     <MESSAGE value="adjusted and setted for slurm execution" />
     <MESSAGE value="completely setted new transformation" />
     <MESSAGE value="modified postprocess" />
@@ -655,15 +655,21 @@
     <MESSAGE value="setblank for slurm execution" />
     <MESSAGE value="setting for extrapolation" />
     <MESSAGE value="update gru branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="update gru branch" />
+    <MESSAGE value="saved little changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="saved little changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/MyTrain.py</url>
-          <line>85</line>
-          <option name="timeStamp" value="8" />
+          <line>90</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MyTrain.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
