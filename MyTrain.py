@@ -95,7 +95,7 @@ class Train_DSS:
                     l2_parameter[name] = params.grad.clone()
 
                 l3_parameter = {}
-                alpha = 0.91
+                alpha = 0.5
                 for key in l1_parameter:
                     l3_parameter[key] = (1-alpha) * l1_parameter[key] + (alpha) * l2_parameter[key]
 
