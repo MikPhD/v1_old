@@ -87,6 +87,7 @@ class Train_DSS:
                 l1_parameter = {}
                 for name, params in self.net.named_parameters():
                     l1_parameter[name] = params.grad.clone()
+                    # print(l1_parameter[name])
 
                 optimizer.zero_grad()
                 train_loss_second.sum().backward()
@@ -95,8 +96,8 @@ class Train_DSS:
                     l2_parameter[name] = params.grad.clone()
 
                 l3_parameter = {}
-                alpha = 0.5
-                def mod_param(key, tensor1, tensor2):
+
+                def alpha(key, tensor1, tensor2):
                     print(f'key:{key}, index: {index}')
                     norm_loss1 = torch.norm(tensor1)
                     sq_norm_loss1 = torch.pow(norm_loss1, 2)
@@ -132,6 +133,7 @@ class Train_DSS:
 
                     else:
                         mod_param(key, l1_parameter[key], l2_parameter[key])
+
 
                 optimizer.zero_grad()
 
