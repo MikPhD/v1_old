@@ -90,56 +90,37 @@ class Train_DSS:
                     # print(l1_parameter[name])
 
                 optimizer.zero_grad()
-                train_loss_second.sum().backward()
+                train_loss_second.sum().backward(retain_graph=True)
                 l2_parameter = {}
                 for name, params in self.net.named_parameters():
                     l2_parameter[name] = params.grad.clone()
 
-                l3_parameter = {}
+                v = np.array(0)
+                u = np.array(0)
+                for item in l1_parameter.values():
+                    v = np.append(v, item)
+                for item in l2_parameter.values():
+                    u = np.append(u, item)
 
-                def alpha(key, tensor1, tensor2):
-                    print(f'key:{key}, index: {index}')
-                    norm_loss1 = torch.norm(tensor1)
-                    sq_norm_loss1 = torch.pow(norm_loss1, 2)
+                norm_loss1 = np.linalg.norm(v)
+                norm_loss2 = np.linalg.norm(u)
 
-                    norm_loss2 = torch.norm(tensor2)
-                    sq_norm_loss2 = torch.pow(norm_loss2, 2)
+                diff = np.subtract(u, v)
+                norm_diff = np.linalg.norm(diff)
 
-                    loss1_loss2 = torch.dot(tensor1, tensor2)
+                if np.dot(u, v) < (min(norm_loss1, norm_loss2))**2:
+                    alpha = np.divide(np.dot(v, -1*diff), (norm_diff)**2)
 
-                    norm_sq_loss1loss2 = torch.pow(torch.norm(torch.sub(tensor1, tensor2)),2)
+                elif min(norm_loss2, norm_loss1) == norm_loss1:
+                    alpha = 0
+                elif min(norm_loss2, norm_loss1) == norm_loss2:
+                    alpha = 1
 
-                    # if loss1_loss2 < min(sq_norm_loss1, sq_norm_loss2):
-                    #     alpha = torch.div(torch.dot(tensor1, torch.sub(tensor1, tensor2)), norm_sq_loss1loss2)
-                    #
-                    # elif min(norm_loss1, norm_loss2) == norm_loss1:
-                    #     alpha = 1
-                    # elif min(norm_loss1, norm_loss2) == norm_loss2:
-                    #     alpha = 0
-
-                    # l3_parameter[key] = (alpha) * l1_parameter[key] + (1 - alpha) * tensor2
-
-                    first_term = torch.mul(torch.div(torch.sub(sq_norm_loss1, loss1_loss2), torch.sub(sq_norm_loss2 + sq_norm_loss1, 2*loss1_loss2)), tensor2)
-                    second_term = torch.mul(torch.div(torch.sub(sq_norm_loss2, loss1_loss2), torch.sub(sq_norm_loss2 + sq_norm_loss1, 2*loss1_loss2)), tensor1)
-
-                    l3_parameter[key] = first_term + second_term
-                    # return alpha
-
-
-                for key in l1_parameter:
-                    if l1_parameter[key].dim() > 1:
-                        for index, tensor in enumerate(l1_parameter[key]):
-                            mod_param(key, l1_parameter[key][index], l2_parameter[key][index])
-
-                    else:
-                        mod_param(key, l1_parameter[key], l2_parameter[key])
-
+                loss_tot = alpha *(train_loss_second) + (1-alpha) * (train_loss_first)
 
                 optimizer.zero_grad()
 
-                #reassign paramter
-                for name, params in self.net.named_parameters():
-                    params.grad.data.copy_(l3_parameter[name])
+                loss_tot.sum().backward()
 
                 torch.nn.utils.clip_grad_norm_(self.net.parameters(), 1.e-3)  # da riattivare
                 optimizer.step()
