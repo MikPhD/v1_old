@@ -98,9 +98,9 @@ class Train_DSS:
                 v = np.array(0)
                 u = np.array(0)
                 for item in l1_parameter.values():
-                    v = np.append(v, item)
+                    v = np.append(v, item.cpu())
                 for item in l2_parameter.values():
-                    u = np.append(u, item)
+                    u = np.append(u, item.cpu())
 
                 norm_loss1 = np.linalg.norm(v)
                 norm_loss2 = np.linalg.norm(u)
@@ -115,6 +115,8 @@ class Train_DSS:
                     alpha = 0
                 elif min(norm_loss2, norm_loss1) == norm_loss2:
                     alpha = 1
+
+                print(f'alpha: {alpha}')
 
                 loss_tot = alpha *(train_loss_second) + (1-alpha) * (train_loss_first)
 
