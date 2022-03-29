@@ -31,8 +31,8 @@ class Plot:
         y_val = mydata_val
 
         fig_loss, ax_loss = plt.subplots(figsize=(10, 5))
-        ax_loss.plot(x, y_train, label='train')
-        ax_loss.plot(x, y_val, label='val')
+        ax_loss.semilogy(x, y_train, label='train')
+        ax_loss.semilogy(x, y_val, label='val')
         ax_loss.legend()
         fig_loss.savefig("Stats/" + self.set_name + "plot_loss.jpg")
         fig_loss.savefig("Stats/" + self.set_name + "/plot_loss.jpg")
