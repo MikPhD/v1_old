@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="setblank for slurm execution">
-      <change afterPath="$PROJECT_DIR$/Results/20-10-001-0003/results.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/20-10-001-0003/loss_train_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/20-10-001-0003/loss_val_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/20-10-001-0003/plot_loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/20-10-001-0003/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/20-10-001-0003plot_loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/20-10-001-0003plot_results.jpg" afterDir="false" />
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Results/20-10-01-003/results.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/30-40-01-003/results2.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/50-15-01-003/results.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/30-40-01-003/loss_train_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/30-40-01-003/loss_val_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/30-40-01-003/plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/30-40-01-003plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/50-15-01-003/loss_train_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/50-15-01-003/loss_val_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/50-15-01-003/plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/50-15-01-003plot_loss.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/20-10-001-0003plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/20-10-001-0003plot_results.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +91,17 @@
   <component name="TaskManager">
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
@@ -96,6 +112,11 @@
           <url>file://$PROJECT_DIR$/MyTrain.py</url>
           <line>86</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MyDSS.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

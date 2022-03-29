@@ -174,15 +174,12 @@ class Train_DSS:
             f_loss_val.close()
 
             ## Save plot training ##
-            MyPlot = Plot(self.set_name)
-            MyPlot.plot_loss()
-            MyPlot.plot_results(epoch + 1)
-            # try:
-            #     MyPlot = Plot(self.set_name)
-            #     MyPlot.plot_loss()
-            #     MyPlot.plot_results(epoch + 1)
-            # except:
-            #     print("errore di plot")
+            try:
+                MyPlot = Plot(self.set_name)
+                MyPlot.plot_loss()
+                MyPlot.plot_results("")
+            except:
+                print("errore di plot")
 
             print("Intermediate Plot Saved!")
             del F, val_loss, loss_dict
