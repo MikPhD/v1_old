@@ -1,83 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="4" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setblank for slurm execution">
-      <change afterPath="$PROJECT_DIR$/Results/30-18-001-0003/results.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/30-18-001-0003/loss_train_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/30-18-001-0003/loss_val_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/30-18-001-0003/plot_loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/30-18-001-0003/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/30-18-001-0003plot_loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/30-18-001-0003plot_results.jpg" afterDir="false" />
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="setblank for slurm execution">
+      <change afterPath="$PROJECT_DIR$/Results/20-10-001-0003/results.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/20-10-001-0003/loss_train_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/20-10-001-0003/loss_val_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/20-10-001-0003/plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/20-10-001-0003/plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/20-10-001-0003plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/20-10-001-0003plot_results.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model_normal_final.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Mesh.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_train.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_train.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_val.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_val.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="optuna_new" />
-        <entry key="$PROJECT_DIR$/../v2" value="bcs" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectId" id="23ulI0IRFFMpGjPylFacbP5YJsC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PostProcessing" />
-    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
-    <property name="two.files.diff.last.used.file" value="$USER_HOME$/Scaricati/v1-095e098919acfe2f3d4b49c0d3d691175a39300c/MyPlot.py" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/PostProcessing" />
-      <recent name="$PROJECT_DIR$/../v2/dataset/processed" />
-    </key>
   </component>
   <component name="RunManager" selected="Python.Main">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -87,9 +37,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/cpu/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
@@ -101,49 +51,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MyPlot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyPlot.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="MyPlot_stand_alone" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="old_v1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/cpu/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyPlot_stand_alone.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="MyPostProcess (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="MyDSS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,32 +59,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PostProcessing" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="plotter_generale" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="v1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PostProcessing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PostProcessing/plotter_generale.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyDSS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -187,455 +74,30 @@
     </configuration>
     <list>
       <item itemvalue="Python.Main" />
-      <item itemvalue="Python.MyPlot" />
-      <item itemvalue="Python.MyPlot_stand_alone" />
-      <item itemvalue="Python.MyPostProcess (1)" />
-      <item itemvalue="Python.plotter_generale" />
+      <item itemvalue="Python.MyDSS" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Main" />
-        <item itemvalue="Python.plotter_generale" />
-        <item itemvalue="Python.MyPostProcess (1)" />
-        <item itemvalue="Python.MyPlot_stand_alone" />
-        <item itemvalue="Python.MyPlot" />
+        <item itemvalue="Python.MyDSS" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="" />
-      <created>1642591769657</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00077" summary="optuna setting blank for slurm">
-      <created>1645438721535</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1645438721535</updated>
-    </task>
-    <task id="LOCAL-00078" summary="optuna setting blank for slurm">
-      <created>1645439011774</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1645439011774</updated>
-    </task>
-    <task id="LOCAL-00079" summary="optuna setting blank for slurm">
-      <created>1645464405603</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1645464405603</updated>
-    </task>
-    <task id="LOCAL-00080" summary="set blank for slurm">
-      <created>1645607920911</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1645607920911</updated>
-    </task>
-    <task id="LOCAL-00081" summary="set blank for slurm">
-      <created>1645607969153</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1645607969153</updated>
-    </task>
-    <task id="LOCAL-00082" summary="set blank for slurm">
-      <created>1645609939675</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1645609939676</updated>
-    </task>
-    <task id="LOCAL-00083" summary="set blank for slurm">
-      <created>1645635463539</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1645635463539</updated>
-    </task>
-    <task id="LOCAL-00084" summary="set blank for slurm">
-      <created>1645635895223</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1645635895223</updated>
-    </task>
-    <task id="LOCAL-00085" summary="set blank for slurm">
-      <created>1645637939646</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1645637939647</updated>
-    </task>
-    <task id="LOCAL-00086" summary="set blank for slurm">
-      <created>1645691289254</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1645691289254</updated>
-    </task>
-    <task id="LOCAL-00087" summary="set blank for slurm">
-      <created>1645692971635</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1645692971635</updated>
-    </task>
-    <task id="LOCAL-00088" summary="set blank for slurm">
-      <created>1645693466984</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1645693466984</updated>
-    </task>
-    <task id="LOCAL-00089" summary="set blank for slurm">
-      <created>1645694255658</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1645694255658</updated>
-    </task>
-    <task id="LOCAL-00090" summary="set blank for slurm">
-      <created>1645694281013</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1645694281013</updated>
-    </task>
-    <task id="LOCAL-00091" summary="set blank for slurm">
-      <created>1645695004237</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1645695004237</updated>
-    </task>
-    <task id="LOCAL-00092" summary="set blank for slurm">
-      <created>1645695920701</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1645695920701</updated>
-    </task>
-    <task id="LOCAL-00093" summary="set blank for slurm">
-      <created>1645696259482</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1645696259482</updated>
-    </task>
-    <task id="LOCAL-00094" summary="set blank for slurm">
-      <created>1645696631066</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1645696631066</updated>
-    </task>
-    <task id="LOCAL-00095" summary="set blank for slurm">
-      <created>1645699369593</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1645699369593</updated>
-    </task>
-    <task id="LOCAL-00096" summary="set blank for slurm">
-      <created>1645709180140</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1645709180140</updated>
-    </task>
-    <task id="LOCAL-00097" summary="set blank for slurm">
-      <created>1645709243531</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1645709243531</updated>
-    </task>
-    <task id="LOCAL-00098" summary="set blank for slurm">
-      <created>1645710002775</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1645710002775</updated>
-    </task>
-    <task id="LOCAL-00099" summary="set blank for slurm">
-      <created>1645783708427</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1645783708428</updated>
-    </task>
-    <task id="LOCAL-00100" summary="set blank for slurm">
-      <created>1645784391143</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1645784391143</updated>
-    </task>
-    <task id="LOCAL-00101" summary="set blank for slurm">
-      <created>1645786816001</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1645786816001</updated>
-    </task>
-    <task id="LOCAL-00102" summary="set slurm multiexecution">
-      <created>1645787555188</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1645787555188</updated>
-    </task>
-    <task id="LOCAL-00103" summary="set slurm multiexecution">
-      <created>1645788141132</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1645788141132</updated>
-    </task>
-    <task id="LOCAL-00104" summary="set slurm multiexecution">
-      <created>1645788254264</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1645788254264</updated>
-    </task>
-    <task id="LOCAL-00105" summary="set slurm multiexecution">
-      <created>1645795174627</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1645795174627</updated>
-    </task>
-    <task id="LOCAL-00106" summary="interpolation first">
-      <created>1645797926730</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1645797926730</updated>
-    </task>
-    <task id="LOCAL-00107" summary="interpolation first">
-      <created>1645798050724</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1645798050724</updated>
-    </task>
-    <task id="LOCAL-00108" summary="interpolation first">
-      <created>1645807715219</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1645807715219</updated>
-    </task>
-    <task id="LOCAL-00109" summary="interpolation first">
-      <created>1646037806517</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1646037806517</updated>
-    </task>
-    <task id="LOCAL-00110" summary="working on postprocess">
-      <created>1646064341282</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1646064341283</updated>
-    </task>
-    <task id="LOCAL-00111" summary="working on postprocess">
-      <created>1646064389266</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1646064389266</updated>
-    </task>
-    <task id="LOCAL-00112" summary="set blank for slurm execution">
-      <created>1646217635433</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1646217635434</updated>
-    </task>
-    <task id="LOCAL-00113" summary="set blank for slurm execution">
-      <created>1646228031107</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1646228031107</updated>
-    </task>
-    <task id="LOCAL-00114" summary="update useless">
-      <created>1646642091380</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1646642091381</updated>
-    </task>
-    <task id="LOCAL-00115" summary="commit before backup">
-      <created>1646643988987</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1646643988987</updated>
-    </task>
-    <task id="LOCAL-00116" summary="trying execute on cuda slurm">
-      <created>1646645183298</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1646645183299</updated>
-    </task>
-    <task id="LOCAL-00117" summary="trying execute on cuda slurm">
-      <created>1646652091268</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1646652091268</updated>
-    </task>
-    <task id="LOCAL-00118" summary="trying execute on cuda slurm">
-      <created>1646661335172</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1646661335178</updated>
-    </task>
-    <task id="LOCAL-00119" summary="trying execute on cuda slurm">
-      <created>1646661430296</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1646661430296</updated>
-    </task>
-    <task id="LOCAL-00120" summary="trying execute on cuda slurm">
-      <created>1646666421557</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1646666421557</updated>
-    </task>
-    <task id="LOCAL-00121" summary="trying execute on cuda slurm">
-      <created>1646666442368</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1646666442368</updated>
-    </task>
-    <task id="LOCAL-00122" summary="trying execute on cuda slurm">
-      <created>1646667948156</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1646667948157</updated>
-    </task>
-    <task id="LOCAL-00123" summary="update gru branch">
-      <created>1647356184997</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1647356184997</updated>
-    </task>
-    <task id="LOCAL-00124" summary="update gru branch">
-      <created>1647357220842</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1647357220842</updated>
-    </task>
-    <task id="LOCAL-00125" summary="setblank for slurm execution">
-      <created>1647430950085</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1647430950085</updated>
-    </task>
-    <option name="localTasksCounter" value="126" />
     <servers />
-  </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ID_ORDER">
-      <list>
-        <option value="Default.Root" />
-        <option value="Default.Author" />
-        <option value="Default.Date" />
-        <option value="Default.Subject" />
-        <option value="Space.CommitStatus" />
-      </list>
-    </option>
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/interpolazione" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adjusted and setted for slurm execution" />
-    <MESSAGE value="completely setted new transformation" />
-    <MESSAGE value="modified postprocess" />
-    <MESSAGE value="modified postprocess (works!)" />
-    <MESSAGE value="after call.. set to ground" />
-    <MESSAGE value="setted automatition" />
-    <MESSAGE value="changed StepLR -&gt; ReduceLROnPlateau" />
-    <MESSAGE value="fake" />
-    <MESSAGE value="StepLR -&gt; ReduceLrOnPlateau" />
-    <MESSAGE value="StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4" />
-    <MESSAGE value="set dropout p= 0.2&#10;StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4" />
-    <MESSAGE value="iniziata nuova versione mikversion..." />
-    <MESSAGE value="stucked... recheck all..." />
-    <MESSAGE value="rebuild from scratch" />
-    <MESSAGE value="optuna setting blank for slurm" />
-    <MESSAGE value="set blank for slurm" />
-    <MESSAGE value="set slurm multiexecution" />
-    <MESSAGE value="interpolation first" />
-    <MESSAGE value="working on postprocess" />
-    <MESSAGE value="set blank for slurm execution" />
-    <MESSAGE value="update useless" />
-    <MESSAGE value="commit before backup" />
-    <MESSAGE value="trying execute on cuda slurm" />
-    <MESSAGE value="update gru branch" />
-    <MESSAGE value="setblank for slurm execution" />
-    <option name="LAST_COMMIT_MESSAGE" value="setblank for slurm execution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Main.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/MyTrain.py</url>
+          <line>86</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>

@@ -76,21 +76,21 @@ class MyOwnDSSNet(nn.Module):
             H = H + self.alpha*correction
             #print("H+1 size : ", H[str(update+1)].size())
 
-            # F = self.decoder(H)
+            F = self.decoder(H)
             # #print("Size of U : ", U[str(update+1)].size())
             # #print(self.decoder_list[update])
             #
-            # loss[str(update+1)] = self.loss_function(F, batch.y)
+            loss[str(update+1)] = self.loss_function(F, batch.y)
             #
-            # if total_loss is None :
-            #     total_loss = loss[str(update+1)] * self.gamma**(self.k - update - 1)
-            # else :
-            #     total_loss += loss[str(update+1)] * self.gamma**(self.k - update - 1)
+            if total_loss is None :
+                total_loss = loss[str(update+1)] * self.gamma**(self.k - update - 1)
+            else :
+                total_loss += loss[str(update+1)] * self.gamma**(self.k - update - 1)
 
-            if update + 1 == self.k:
-                F = self.decoder(H)
-                loss[str(update + 1)] = self.loss_function(F, batch.y)
-                total_loss = loss[str(update + 1)]
+            # if update + 1 == self.k:
+            #     F = self.decoder(H)
+            #     loss[str(update + 1)] = self.loss_function(F, batch.y)
+            #     total_loss = loss[str(update + 1)]
 
         #print(torch.mean((U[str(self.k-1)] - data.x)**2))
 
