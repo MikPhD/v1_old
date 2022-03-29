@@ -4,7 +4,12 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setting for extrapolation" />
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,12 +221,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.MyPostProcess" />
       <item itemvalue="Python.Main" />
-      <item itemvalue="Python.prova" />
-      <item itemvalue="Python.MyPlot_stand_alone" />
       <item itemvalue="Python.MyPlot" />
+      <item itemvalue="Python.MyPlot_stand_alone" />
       <item itemvalue="Python.MyPostProcess (1)" />
+      <item itemvalue="Python.MyPostProcess" />
+      <item itemvalue="Python.prova" />
     </list>
     <recent_temporary>
       <list>
