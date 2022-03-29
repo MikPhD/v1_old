@@ -84,7 +84,7 @@ for k in k_list:
                     loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases, device=device)
 
                     #initialize the created dataset
-                    loader_train = DataLoader(loader_train, shuffle=True) #opt args: shuffle, batchsize
+                    loader_train = DataLoader(loader_train, shuffle=True, batch_size=3) #opt args: shuffle, batchsize
                     loader_val = DataLoader(loader_val)
 
                     print("#################### DSS NET parameter #######################")

@@ -122,7 +122,7 @@ class PostProcess():
 
 
         ######## loading forcing from GNN ################
-        F_gnn = np.load("./F.npy").flatten()
+        F_gnn = np.load("./results.npy").flatten()
 
         ######## loading forcing from CFD ################
         F_cfd = np.load("./110/F.npy").flatten()
@@ -158,9 +158,9 @@ class PostProcess():
 
 
         ######### plot results ##############
-        # plt.figure()
-        # self.plot(v_gnn.sub(0))
-        # plt.show()
+        plt.figure()
+        self.plot(v_gnn.sub(0))
+        plt.show()
         #
         plt.figure()
         self.plot(v_cfd.sub(0))
