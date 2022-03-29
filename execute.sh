@@ -4,7 +4,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=64G
 #SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:2
+#SBATCH --gres=gpu:4
 #SBATCH --gres-flags=enforce-binding
 #SBATCH --partition=all
 #SBATCH -t 48:00:00
