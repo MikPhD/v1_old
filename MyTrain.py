@@ -177,7 +177,7 @@ class Train_DSS:
             try:
                 MyPlot = Plot(self.set_name)
                 MyPlot.plot_loss()
-                MyPlot.plot_results("")
+                MyPlot.plot_results(epoch + 1)
             except:
                 print("errore di plot")
 
