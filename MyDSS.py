@@ -34,7 +34,7 @@ class MyOwnDSSNet(nn.Module):
         # loss_fn1 = nn.L1Loss()
         # loss_fn2 = nn.MSELoss()
         # loss_fn1 = torch.sqrt(torch.sum(torch.pow(torch.sub(F, y), 2)))
-        loss_fn1 = torch.mean(torch.pow(torch.sub(F, y), 5))
+        loss_fn1 = torch.mean(torch.pow(torch.sub(F, y), 4))
         loss_fn2 = torch.mean(torch.pow(torch.sub(F, y), 2))
         # loss = (0.5) * (loss_fn1(F, y) + loss_fn2)
         loss_first = loss_fn1

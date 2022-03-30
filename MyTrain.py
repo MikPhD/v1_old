@@ -83,14 +83,14 @@ class Train_DSS:
                 # sol_lu = torch.cat([data.x for data in train_data]).to(U[str(k)].device)
                 # sol_lu = torch.cat([(next(iter(train_data))).x]).to(U[str(k)].device)
 
-                train_loss_first.sum().backward(retain_graph=True)
+                # train_loss_first.sum().backward(retain_graph=True)
                 # grad1 = []
                 # for p in self.net.parameters():
                 #     grad1.append(p.grad.data.clone())
                 # grad1 = torch.cat([torch.flatten(grad.cpu()) for grad in grad1])
                 # optimizer.zero_grad()
 
-                train_loss_second.sum().backward(retain_graph=True)
+                # train_loss_second.sum().backward(retain_graph=True)
                 # grad2 = []
                 # for p in self.net.parameters():
                 #     grad2.append(p.grad.data.clone())
@@ -111,7 +111,7 @@ class Train_DSS:
                 # else:
                 #     alpha = torch.div(torch.dot(grad2, torch.t(diff)), torch.pow(torch.norm(diff), 2))
 
-                alpha = 0
+                alpha = 1
 
                 print(f'alpha: {alpha}')
 
