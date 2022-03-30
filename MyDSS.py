@@ -112,7 +112,7 @@ class Phi_to(MessagePassing):
 
     def forward(self, x, edge_index, edge_attr):
 
-        # edge_index, edge_attr = utils.dropout_adj(edge_index, edge_attr, p=0.2)
+        edge_index, edge_attr = utils.dropout_adj(edge_index, edge_attr, p=0.2)
 
         edge_index, edge_attr = utils.remove_self_loops(edge_index, edge_attr)
 

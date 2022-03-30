@@ -16,7 +16,7 @@ parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=20
 parser.add_argument('-r', '--restart', type=eval, default=False, choices=[True, False], help='Restart training option')
 parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['40'])
 parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['40'])
-parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=2)
+parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=1)
 
 args = parser.parse_args()
 

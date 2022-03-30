@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Results/20-10-01-003/results.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Results/30-40-01-003/results2.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Results/50-15-01-003/results.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/30-40-01-003/loss_train_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/30-40-01-003/loss_val_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/30-40-01-003/plot_loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/30-40-01-003plot_loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/50-15-01-003/loss_train_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/50-15-01-003/loss_val_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/50-15-01-003/plot_loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/50-15-01-003plot_loss.jpg" afterDir="false" />
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="setblank for slurm execution">
+      <change afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/30-40-01-003/results1.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/v1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/20-10-001-0003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/20-10-001-0003plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/30-40-01-003/results2.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Results/30-40-01-003/results2.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/30-40-01-003/loss_train_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/30-40-01-003/loss_train_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/30-40-01-003/loss_val_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/30-40-01-003/loss_val_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/30-40-01-003/plot_loss.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/30-40-01-003/plot_loss.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/30-40-01-003plot_loss.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/30-40-01-003plot_loss.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,13 +106,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/MyTrain.py</url>
-          <line>86</line>
-          <option name="timeStamp" value="23" />
+          <line>203</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MyDSS.py</url>
-          <line>54</line>
-          <option name="timeStamp" value="25" />
+          <url>file://$PROJECT_DIR$/MyPlot.py</url>
+          <line>121</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MyTrain.py</url>
+          <line>179</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
