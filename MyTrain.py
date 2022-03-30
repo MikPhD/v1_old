@@ -84,32 +84,34 @@ class Train_DSS:
                 # sol_lu = torch.cat([(next(iter(train_data))).x]).to(U[str(k)].device)
 
                 train_loss_first.sum().backward(retain_graph=True)
-                grad1 = []
-                for p in self.net.parameters():
-                    grad1.append(p.grad.data.clone())
-                grad1 = torch.cat([torch.flatten(grad.cpu()) for grad in grad1])
-                optimizer.zero_grad()
+                # grad1 = []
+                # for p in self.net.parameters():
+                #     grad1.append(p.grad.data.clone())
+                # grad1 = torch.cat([torch.flatten(grad.cpu()) for grad in grad1])
+                # optimizer.zero_grad()
 
                 train_loss_second.sum().backward(retain_graph=True)
-                grad2 = []
-                for p in self.net.parameters():
-                    grad2.append(p.grad.data.clone())
-                grad2 = torch.cat([torch.flatten(grad.cpu()) for grad in grad2])
-                optimizer.zero_grad()
+                # grad2 = []
+                # for p in self.net.parameters():
+                #     grad2.append(p.grad.data.clone())
+                # grad2 = torch.cat([torch.flatten(grad.cpu()) for grad in grad2])
+                # optimizer.zero_grad()
+                #
+                #
+                # v1v1 = torch.dot(torch.t(grad1), grad1)
+                # v1v2 = torch.dot(torch.t(grad1), grad2)
+                # v2v2 = torch.dot(torch.t(grad2), grad2)
+                #
+                # diff = torch.sub(grad2, grad1)
+                #
+                # if v1v2 >= v2v2:
+                #     alpha = 0
+                # elif v1v2 >= v1v1:
+                #     alpha = 1
+                # else:
+                #     alpha = torch.div(torch.dot(grad2, torch.t(diff)), torch.pow(torch.norm(diff), 2))
 
-
-                v1v1 = torch.dot(torch.t(grad1), grad1)
-                v1v2 = torch.dot(torch.t(grad1), grad2)
-                v2v2 = torch.dot(torch.t(grad2), grad2)
-
-                diff = torch.sub(grad2, grad1)
-
-                if v1v2 >= v2v2:
-                    alpha = 0
-                elif v1v2 >= v1v1:
-                    alpha = 1
-                else:
-                    alpha = torch.div(torch.dot(grad2, torch.t(diff)), torch.pow(torch.norm(diff), 2))
+                alpha = 0
 
                 print(f'alpha: {alpha}')
 
