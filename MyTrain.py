@@ -111,7 +111,7 @@ class Train_DSS:
                 # else:
                 #     alpha = torch.div(torch.dot(grad2, torch.t(diff)), torch.pow(torch.norm(diff), 2))
 
-                alpha = 0.5
+                alpha = 1
 
                 print(f'alpha: {alpha}')
 
