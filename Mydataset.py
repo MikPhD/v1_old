@@ -28,7 +28,12 @@ class MyOwnDataset(InMemoryDataset):
         else:
             path = self.processed_paths[2]
 
-        self.data, self.slices = torch.load(path)
+
+        if self.device == 'cpu':
+            self.data, self.slices = torch.load(path, map_location=torch.device('cpu'))
+        else:
+            self.data, self.slices = torch.load(path)
+
 
     @property
     def raw_file_names(self):
@@ -37,7 +42,6 @@ class MyOwnDataset(InMemoryDataset):
             dir = self.mode + "/" + h + "/"
 
             files.append(dir + "C.npy")
-            # files.append(self.mode + h + "coord.npy")
             files.append(dir + "D.npy")
             files.append(dir + "F.npy")
             files.append(dir + "re.npy")

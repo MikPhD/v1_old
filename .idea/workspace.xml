@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model_normal_final.pt" afterDir="false" />
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="definitive update">
+      <change afterPath="$PROJECT_DIR$/MyTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/87-18-001-0003/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Mesh.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Mesh_110.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Mesh_150.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Mesh_80.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Results.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Results_110.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Results_150.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Results_80.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/20-10-001-0003/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/20-10-01-003/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/30-40-01-003/results1.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/30-40-01-003/results2.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/50-15-01-003/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/20-10-001-0003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/20-10-001-0003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/20-10-001-0003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/20-10-001-0003/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/30-40-01-003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/30-40-01-003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/30-40-01-003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/30-40-01-003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/50-15-01-003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/50-15-01-003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/50-15-01-003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/50-15-01-003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mydataset.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
