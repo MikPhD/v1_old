@@ -94,7 +94,7 @@ class PostProcess():
 
         ######### plot results ##############
         plt.figure()
-        plot(v.sub(0))
+        self.plot(v.sub(0))
         plt.show()
 
     def differences(self):
