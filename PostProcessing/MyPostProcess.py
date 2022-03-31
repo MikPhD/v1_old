@@ -122,10 +122,10 @@ class PostProcess():
 
 
         ######## loading forcing from GNN ################
-        F_gnn = np.load("./results.npy").flatten()
+        F_gnn = np.load("./F_gnn.npy").flatten()
 
         ######## loading forcing from CFD ################
-        F_cfd = np.load("./110/F.npy").flatten()
+        F_cfd = np.load("./F_cfd.npy").flatten()
 
         ######## mesh coordinates ##############
         mesh_points = mesh.coordinates().tolist()

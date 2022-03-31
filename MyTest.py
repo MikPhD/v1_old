@@ -11,12 +11,23 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.axes_grid1.axes_divider import make_axes_locatable
 
 
-
 #check if gpu is available
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Running on : ', device)
 
 test_case = ['100']
+
+#clean processed folder (Model comes from an older version of PYG)
+if os.path.exists("./dataset/processed/data_val.pt"):
+    os.remove("./dataset/processed/data_val.pt")
+if os.path.exists("./dataset/processed/data_train.pt"):
+    os.remove("./dataset/processed/data_train.pt")
+if os.path.exists("./dataset/processed/data_test.pt"):
+    os.remove("./dataset/processed/data_test.pt")
+if os.path.exists("./dataset/processed/pre_filter.pt"):
+    os.remove("./dataset/processed/pre_filter.pt")
+if os.path.exists("./dataset/processed/pre_transform.pt"):
+    os.remove("./dataset/processed/pre_transform.pt")
 
 print("#################### DATA ADAPTING FOR GNN #######################")
 ################# inizio lettura file ##########################
