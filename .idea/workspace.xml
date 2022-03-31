@@ -5,8 +5,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8c0f229-b8a9-4b72-b7c1-29b29c7aebba" name="Changes" comment="alternating loss">
+      <change afterPath="$PROJECT_DIR$/MyTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/87-18-001-0003/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results_110.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results_150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results_80.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Mesh.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Mesh_110.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Mesh_150.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Mesh_80.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Results.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Results_110.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Results_150.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Results_80.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/processed/data_test.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/100/C.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/100/D.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/100/F.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/100/U.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/100/re.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/110/C.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/110/D.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/110/re.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/120/C.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/120/D.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/120/F.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/120/U.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/120/re.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/150/C.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/150/D.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/150/F.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/150/U.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/150/re.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/80/C.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/80/D.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/80/F.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/80/U.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/80/re.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/val/90/C.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/val/90/D.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/val/90/F.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/val/90/U.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/val/90/re.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/results.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/results.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model_normal_final.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mydataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mydataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Mesh.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/processed/data_train.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/processed/data_val.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/100/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/100/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/100/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/100/U.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/110/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/110/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/110/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/110/U.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/120/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/120/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/120/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/120/U.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/130/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/130/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/130/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/130/U.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/140/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/140/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/140/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/140/U.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/40/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/40/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/40/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/40/U.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/50/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/50/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/50/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/50/U.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/60/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/60/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/60/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/60/U.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/70/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/70/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/70/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/70/U.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/80/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/80/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/80/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/80/U.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/90/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/90/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/train/90/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/90/U.npy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +97,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="optuna" />
+        <entry key="$PROJECT_DIR$" value="gru" />
         <entry key="$PROJECT_DIR$/../v2" value="bcs" />
       </map>
     </option>
@@ -56,13 +130,15 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PostProcessing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Test/res_mesh" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="two.files.diff.last.used.file" value="$USER_HOME$/Scaricati/v1-095e098919acfe2f3d4b49c0d3d691175a39300c/MyPlot.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Test/res_mesh" />
+      <recent name="$PROJECT_DIR$/Model" />
       <recent name="$PROJECT_DIR$/PostProcessing" />
       <recent name="$PROJECT_DIR$/../v2/dataset/processed" />
     </key>
@@ -70,62 +146,20 @@
       <recent name="$PROJECT_DIR$/history/first" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MyPostProcess (1)">
-    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/cpu/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="MyPlot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.MyTest">
+    <configuration name="FRe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../re100_down" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyPlot.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="MyPlot_stand_alone" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="old_v1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/cpu/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyPlot_stand_alone.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../re100_down/FRe.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,6 +231,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="MyTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="v1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="prova" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -219,20 +274,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Main" />
-      <item itemvalue="Python.MyPlot" />
-      <item itemvalue="Python.MyPlot_stand_alone" />
       <item itemvalue="Python.MyPostProcess (1)" />
       <item itemvalue="Python.MyPostProcess" />
       <item itemvalue="Python.prova" />
+      <item itemvalue="Python.MyTest" />
+      <item itemvalue="Python.FRe" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MyPostProcess (1)" />
-        <item itemvalue="Python.Main" />
-        <item itemvalue="Python.MyPlot_stand_alone" />
-        <item itemvalue="Python.MyPlot" />
+        <item itemvalue="Python.MyTest" />
+        <item itemvalue="Python.FRe" />
         <item itemvalue="Python.prova" />
+        <item itemvalue="Python.MyPostProcess" />
+        <item itemvalue="Python.MyPostProcess (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -658,9 +712,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MyDSS.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/MyTest.py</url>
+          <line>122</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
