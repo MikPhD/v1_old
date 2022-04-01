@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="set alpha dynamic">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="set blank for slyurm execution">
+      <change afterPath="$PROJECT_DIR$/Results/40-32-01-003/results.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/40-32-01-003/loss_train_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/40-32-01-003/loss_val_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/40-32-01-003/plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/40-32-01-003/plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/40-32-01-003plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/40-32-01-003plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/processed/data_train.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/processed/data_val.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/processed/pre_filter.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/processed/pre_transform.pt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model_normal_final.pt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/30-40-01-003/results.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/30-40-01-003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/30-40-01-003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/30-40-01-003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/30-40-01-003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_train.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_val.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/pre_filter.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/pre_transform.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Mesh.h5" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,6 +181,14 @@
     </recent_temporary>
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="set blank for slyurm execution">
+      <created>1648817882947</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648817882947</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,6 +204,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="set blank for slyurm execution" />
+    <option name="LAST_COMMIT_MESSAGE" value="set blank for slyurm execution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -208,11 +219,6 @@
           <url>file://$PROJECT_DIR$/MyPlot.py</url>
           <line>121</line>
           <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MyDSS.py</url>
-          <line>173</line>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

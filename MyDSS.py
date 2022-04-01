@@ -27,7 +27,8 @@ class MyOwnDSSNet(nn.Module):
         self.phi_to = Phi_to(2*self.latent_dimension + 2, self.latent_dimension)
         self.phi_from = Phi_from(2*self.latent_dimension + 2, self.latent_dimension)
         self.phi_loop = Loop(2*self.latent_dimension+1, self.latent_dimension)
-        self.recurrent = Recurrent(4*self.latent_dimension+3, self.latent_dimension)
+        self.psy = Psy(4*self.latent_dimension + 3, self.latent_dimension)
+        self.recurrent = Recurrent(self.latent_dimension, self.latent_dimension)
         self.decoder = Decoder(self.latent_dimension, 2)
 
 
@@ -67,9 +68,11 @@ class MyOwnDSSNet(nn.Module):
             #concat = torch.cat([H[str(update)], mess_to, mess_from, loop, y], dim = 1)
             #print("Size concat : ", concat.size())
 
-            correction, _ = self.recurrent(concat)
+            elaborate = self.psy(concat)
+
+            correction, _ = self.recurrent(elaborate)
             correction = torch.squeeze(correction, 0)
-            correction = torch.reshape(correction, (correction.shape[0], correction.shape[1]))
+            # correction = torch.reshape(correction, (correction.shape[0], correction.shape[1]))
 
             #print("Correction size : ", correction.size())
             #print(self.psy_list[update])
@@ -163,6 +166,17 @@ class Loop(nn.Module): #never used
         tmp = torch.cat([x, x, loop], dim = 1)
 
         return self.MLP(tmp)
+
+class Psy(nn.Module):
+    def __init__(self, in_size, out_size):
+        super(Psy, self).__init__()
+
+        self.MLP = nn.Sequential(nn.Linear(in_size, out_size),
+                                 nn.ReLU(),
+                                 nn.Linear(out_size, out_size))
+
+    def forward(self, x):  # dimensione H + fi + fi + loop +B
+        return self.MLP(x)
 
 class Recurrent(nn.Module):
     def __init__(self, in_size, hidden_size):
