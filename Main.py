@@ -12,11 +12,11 @@ from torch_geometric.data import DataLoader
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=2)
+parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=50)
 parser.add_argument('-r', '--restart', type=eval, default=False, choices=[True, False], help='Restart training option')
 parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['40'])
 parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['40'])
-parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=2)
+parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=10)
 
 args = parser.parse_args()
 
@@ -72,9 +72,9 @@ loader_val = DataLoader(loader_val)
 
 print("#################### DSS NET parameter #######################")
 #create hyperparameter
-latent_dimension = 32
+latent_dimension = 15
 print("Latent space dim : ", latent_dimension)
-k = 40
+k = 20
 print("Number of updates : ", k)
 gamma = 0.1
 print("Gamma (loss function) : ", gamma)

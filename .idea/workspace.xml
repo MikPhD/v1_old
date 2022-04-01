@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="set blank for slyurm execution">
-      <change afterPath="$PROJECT_DIR$/Results/40-32-01-003/results.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/40-32-01-003/loss_train_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/40-32-01-003/loss_val_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/40-32-01-003/plot_loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/40-32-01-003/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/40-32-01-003plot_loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stats/40-32-01-003plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/processed/data_train.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/processed/data_val.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/processed/pre_filter.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/processed/pre_transform.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/20-15-01-003/results.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/20-15-01-003/loss_train_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/20-15-01-003/loss_val_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/20-15-01-003/plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/20-15-01-003/plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/20-15-01-003plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/20-15-01-003plot_results.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model_normal_final.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Mesh.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648817882947</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="set blank for slyurm execution">
+      <created>1648820421598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648820421598</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,11 +213,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MyTrain.py</url>
-          <line>203</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/MyPlot.py</url>
           <line>121</line>
