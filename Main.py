@@ -74,17 +74,12 @@ for k in k_list:
             for alpha in alpha_list:
                 for lr in lr_list:
 
-                    set_name = str(k) +'-'+ str(latent_dimension).replace(".","") +'-'+ str(alpha).replace(".","") +'-'+ str(lr).replace(".","")
-                    print("PARAMETER SET: k:{}, laten_dim:{}, alpha:{}, lr:{}".format(str(k), str(latent_dimension), str(alpha), str(lr)))
-                    os.makedirs("./Results/" + set_name, exist_ok=True)
-                    os.makedirs("./Stats/" + set_name, exist_ok=True)
-
                     print("#################### CREATING Inner DATASET #######################")
                     loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases, device=device)
                     loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases, device=device)
 
                     #initialize the created dataset
-                    loader_train = DataLoader(loader_train) #opt args: shuffle, batchsize
+                    loader_train = DataLoader(loader_train, shuffle=True) #opt args: shuffle, batchsize
                     loader_val = DataLoader(loader_val)
 
                     print("#################### DSS NET parameter #######################")

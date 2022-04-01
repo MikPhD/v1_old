@@ -83,42 +83,39 @@ class Train_DSS:
                 # sol_lu = torch.cat([data.x for data in train_data]).to(U[str(k)].device)
                 # sol_lu = torch.cat([(next(iter(train_data))).x]).to(U[str(k)].device)
 
-                train_loss_first.sum().backward(retain_graph=True)
-                l1_parameter = {}
-                for name, params in self.net.named_parameters():
-                    l1_parameter[name] = params.grad.clone()
-                    # print(l1_parameter[name])
+                # train_loss_first.sum().backward(retain_graph=True)
+                # grad1 = []
+                # for p in self.net.parameters():
+                #     grad1.append(p.grad.data.clone())
+                # grad1 = torch.cat([torch.flatten(grad.cpu()) for grad in grad1])
+                # optimizer.zero_grad()
 
-                optimizer.zero_grad()
-                train_loss_second.sum().backward(retain_graph=True)
-                l2_parameter = {}
-                for name, params in self.net.named_parameters():
-                    l2_parameter[name] = params.grad.clone()
+                # train_loss_second.sum().backward(retain_graph=True)
+                # grad2 = []
+                # for p in self.net.parameters():
+                #     grad2.append(p.grad.data.clone())
+                # grad2 = torch.cat([torch.flatten(grad.cpu()) for grad in grad2])
+                # optimizer.zero_grad()
+                #
+                #
+                # v1v1 = torch.dot(torch.t(grad1), grad1)
+                # v1v2 = torch.dot(torch.t(grad1), grad2)
+                # v2v2 = torch.dot(torch.t(grad2), grad2)
+                #
+                # diff = torch.sub(grad2, grad1)
+                #
+                # if v1v2 >= v2v2:
+                #     alpha = 0
+                # elif v1v2 >= v1v1:
+                #     alpha = 1
+                # else:
+                #     alpha = torch.div(torch.dot(grad2, torch.t(diff)), torch.pow(torch.norm(diff), 2))
 
-                v = np.array(0)
-                u = np.array(0)
-                for item in l1_parameter.values():
-                    v = np.append(v, item.cpu())
-                for item in l2_parameter.values():
-                    u = np.append(u, item.cpu())
-
-                norm_loss1 = np.linalg.norm(v)
-                norm_loss2 = np.linalg.norm(u)
-
-                diff = np.subtract(u, v)
-                norm_diff = np.linalg.norm(diff)
-
-                if np.dot(u, v) < (min(norm_loss1, norm_loss2))**2:
-                    alpha = np.divide(np.dot(v, -1*diff), (norm_diff)**2)
-
-                elif min(norm_loss2, norm_loss1) == norm_loss1:
-                    alpha = 0
-                elif min(norm_loss2, norm_loss1) == norm_loss2:
-                    alpha = 1
+                alpha = 1
 
                 print(f'alpha: {alpha}')
 
-                loss_tot = alpha *(train_loss_second) + (1-alpha) * (train_loss_first)
+                loss_tot = alpha *(train_loss_first) + (1-alpha) * (train_loss_second)
 
                 optimizer.zero_grad()
 
@@ -127,11 +124,11 @@ class Train_DSS:
                 torch.nn.utils.clip_grad_norm_(self.net.parameters(), 1.e-3)  # da riattivare
                 optimizer.step()
 
-                total_train_loss += (1-alpha) * train_loss_first.sum().item() + (alpha) * train_loss_second.sum().item()
-                final_loss += (1-alpha) * loss_dict1[str(k)].sum().item() + (alpha) * loss_dict2[str(k)].sum().item()
+                total_train_loss += (alpha) * train_loss_first.sum().item() + (1-alpha) * train_loss_second.sum().item()
+                final_loss += (alpha) * loss_dict1[str(k)].sum().item() + (1-alpha) * loss_dict2[str(k)].sum().item()
 
-                running_loss += (1-alpha) * train_loss_first.sum().item() + (alpha) * train_loss_second.sum().item()
-                running_final_loss += (1-alpha) * loss_dict1[str(k)].sum().item() + (alpha) * loss_dict2[str(k)].sum().item()
+                running_loss += (alpha) * train_loss_first.sum().item() + (1-alpha) * train_loss_second.sum().item()
+                running_final_loss += (alpha) * loss_dict1[str(k)].sum().item() + (1-alpha) * loss_dict2[str(k)].sum().item()
 
                 ##print during training set cycle loop
                 if (i + 1) % (len(loader_train) // 5 + 1) == 0:
@@ -149,7 +146,7 @@ class Train_DSS:
 
                 sys.stdout.flush()
 
-            self.hist["loss_train"].append(final_loss / len(loader_train))
+            self.hist["loss_train"].append(float(final_loss) / len(loader_train))
             print("Training loss = {:.5e}".format(total_train_loss / len(loader_train)))
 
             total_val_loss = 0
@@ -163,14 +160,14 @@ class Train_DSS:
                 for val_data in loader_val:
                     F, val_loss_first, val_loss_second, loss_dict1, loss_dict2 = self.net(val_data, epoch, self.n_epochs)
                     # sol_lu = val_data.x.to(U[str(k)].device) #da riattivare
-                    total_val_loss += (1-alpha) * val_loss_first.sum().item() + (alpha) * val_loss_second.sum().item()
-                    final_loss_val += (1-alpha) * loss_dict1[str(k)].sum().item() + (alpha) * loss_dict2[str(k)].sum().item()
+                    total_val_loss += (alpha) * val_loss_first.sum().item() + (1-alpha) * val_loss_second.sum().item()
+                    final_loss_val += (alpha) * loss_dict1[str(k)].sum().item() + (1-alpha) * loss_dict2[str(k)].sum().item()
                     # corr_val += corrcoef(U[str(k)], sol_lu)
                     # rmse_val += torch.sqrt(torch.mean(U[str(k)] - sol_lu) ** 2)
 
             scheduler.step(total_val_loss)
 
-            self.hist["loss_val"].append(final_loss_val / len(loader_val))
+            self.hist["loss_val"].append(float(final_loss_val) / len(loader_val))
             self.training_time = self.training_time + (time.time() - time_counter)
             print("Validation loss = {:.5e}".format(total_val_loss / len(loader_val)))
 

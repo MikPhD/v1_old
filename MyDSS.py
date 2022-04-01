@@ -33,8 +33,9 @@ class MyOwnDSSNet(nn.Module):
     def loss_function(self, F, y, update):
         # loss_fn1 = nn.L1Loss()
         # loss_fn2 = nn.MSELoss()
-        loss_fn1 = torch.mean(torch.pow(torch.abs(torch.sub(F, y)), 2))
-        loss_fn2 = torch.mean(torch.pow(torch.abs(torch.sub(F, y)), 4))
+        # loss_fn1 = torch.sqrt(torch.sum(torch.pow(torch.sub(F, y), 2)))
+        loss_fn1 = torch.mean(torch.pow(torch.sub(F, y), 4))
+        loss_fn2 = torch.mean(torch.pow(torch.sub(F, y), 2))
         # loss = (0.5) * (loss_fn1(F, y) + loss_fn2)
         loss_first = loss_fn1
         loss_second = loss_fn2
@@ -135,7 +136,7 @@ class MyOwnDSSNet(nn.Module):
 
 class Phi_to(MessagePassing):
     def __init__(self, in_channels, out_channels):
-        super(Phi_to, self).__init__(aggr='add', flow = 'source_to_target')
+        super(Phi_to, self).__init__(aggr='mean', flow = 'source_to_target')
         self.MLP = nn.Sequential(   nn.Linear(in_channels, out_channels),
                                     nn.ReLU(),
                                     nn.Linear(out_channels, out_channels))
@@ -156,7 +157,7 @@ class Phi_to(MessagePassing):
 
 class Phi_from(MessagePassing):
     def __init__(self, in_channels, out_channels):
-        super(Phi_from, self).__init__(aggr='add', flow = "target_to_source")
+        super(Phi_from, self).__init__(aggr='mean', flow = "target_to_source")
         self.MLP = nn.Sequential(   nn.Linear(in_channels, out_channels),
                                     nn.ReLU(),
                                     nn.Linear(out_channels, out_channels))
