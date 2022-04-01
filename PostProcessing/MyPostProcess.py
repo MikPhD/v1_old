@@ -63,7 +63,7 @@ class PostProcess():
     def plot_results(self):
         ####### loading mesh ########
         mesh = Mesh()
-        mesh_file = "./Mesh.h5"
+        mesh_file = "./110/Mesh.h5"
         with HDF5File(MPI.comm_world, mesh_file, "r") as h5file:
             h5file.read(mesh, "mesh", False)
             facet = MeshFunction("size_t", mesh, mesh.topology().dim() - 1)
@@ -100,7 +100,7 @@ class PostProcess():
     def differences(self):
         ####### loading mesh ########
         mesh = Mesh()
-        mesh_file = "./Mesh.h5"
+        mesh_file = "./110/Mesh.h5"
         with HDF5File(MPI.comm_world, mesh_file, "r") as h5file:
             h5file.read(mesh, "mesh", False)
             facet = MeshFunction("size_t", mesh, mesh.topology().dim() - 1)
