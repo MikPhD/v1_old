@@ -4,7 +4,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=64G
 #SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:2
 #SBATCH --gres-flags=enforce-binding
 #SBATCH --partition=all
 #SBATCH -t 48:00:00
@@ -13,5 +13,5 @@
 #SBATCH --mail-user=mik.quattromini@gmail.com
 #SBATCH --mail-type=begin
 
-srun python Main.py -e 200 -r False -tcase 40 50 60 70 80 90 100 120 130 140 150 -vcas 110 -n_out 200
+srun python Main.py -e 1000 -r False -tcase 40 50 60 70 80 90 100 120 130 140 150 -vcas 110 -n_out 1000
 
