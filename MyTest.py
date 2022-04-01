@@ -15,7 +15,7 @@ from mpl_toolkits.axes_grid1.axes_divider import make_axes_locatable
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Running on : ', device)
 
-test_case = ['100']
+test_case = ['110']
 
 #clean processed folder (Model comes from an older version of PYG)
 if os.path.exists("./dataset/processed/data_val.pt"):

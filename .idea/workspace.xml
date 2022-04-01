@@ -4,49 +4,25 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c0f229-b8a9-4b72-b7c1-29b29c7aebba" name="Changes" comment="added test script">
-      <change afterPath="$PROJECT_DIR$/PostProcessing/110/Mesh.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/F_cfd.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/F_gnn.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_03_22,_09_38_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_03_22__09_38__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/70-20-001-001plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/Mesh.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22,_17_05_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_22__17_05__Changes_.xml" beforeDir="false" />
+    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setblank for slurm execution">
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Mesh_downshift.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Results_downshift.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/110/C.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/110/D.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/110/re.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/v1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/F.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/Figure_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/Mesh.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/87-18-001-0003/F_gnn.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/87-18-001-0003/F_gnn.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results_110.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results_150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results_80.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/C.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/D.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/re.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/120/C.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/120/D.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/120/F.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/120/U.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/120/re.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/150/C.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/150/D.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/150/F.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/150/U.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/150/re.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/80/C.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/80/D.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/80/F.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/80/U.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/80/re.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/res_mesh/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh/Mesh.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/res_mesh/Results.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh/Results.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/processed/data_test.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_test.pt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,16 +72,16 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PostProcessing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Test/res_mesh" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="two.files.diff.last.used.file" value="$USER_HOME$/Scaricati/v1-095e098919acfe2f3d4b49c0d3d691175a39300c/MyPlot.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Test/res_mesh" />
       <recent name="$PROJECT_DIR$/PostProcessing" />
       <recent name="$PROJECT_DIR$/PostProcessing/110" />
-      <recent name="$PROJECT_DIR$/Test/res_mesh" />
       <recent name="$PROJECT_DIR$/Model" />
       <recent name="$PROJECT_DIR$/../v2/dataset/processed" />
     </key>
@@ -113,7 +89,7 @@
       <recent name="$PROJECT_DIR$/history/first" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MyPostProcess (1)">
+  <component name="RunManager" selected="Python.MyTest">
     <configuration name="FRe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -249,8 +225,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MyPostProcess (1)" />
         <item itemvalue="Python.MyTest" />
+        <item itemvalue="Python.MyPostProcess (1)" />
         <item itemvalue="Python.FRe" />
         <item itemvalue="Python.prova" />
         <item itemvalue="Python.MyPostProcess" />
