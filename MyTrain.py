@@ -134,9 +134,7 @@ class Train_DSS:
         print("Validation loss = {:.5e}".format(total_val_loss / len(loader_val)))
 
         torch.cuda.empty_cache()
-        print('ok1')
         sys.stdout.flush()
-        print('ok2')
         if final_loss_val / len(loader_val) <= min_val_loss:
 
             checkpoint = {
@@ -182,7 +180,6 @@ class Train_DSS:
 
             print("Intermediate Plot Saved!")
             del F, val_loss, loss_dict
-        print('ok3')
         if int(epoch + 1) == self.n_epochs:
             F_fin = F.cpu().numpy()
             np.save("./Results/" + self.set_name + "/results.npy", F_fin)
@@ -209,7 +206,6 @@ class Train_DSS:
 
             print("Final Results Saved")
             del F, val_loss, loss_dict
-        print('ok4')
 
         ## Save last model ##
         checkpoint = {

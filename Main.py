@@ -72,16 +72,16 @@ loader_val = DataLoader(loader_val)
 
 print("#################### DSS NET parameter #######################")
 #create hyperparameter
-latent_dimension = 15
+latent_dimension = 32
 print("Latent space dim : ", latent_dimension)
-k = 20
+k = 40
 print("Number of updates : ", k)
 gamma = 0.1
 print("Gamma (loss function) : ", gamma)
 # alpha = 1e-1
 alpha = 0.1
 print("Alpha (reduction correction) :", alpha)
-lr = 3e-2
+lr = 3e-3
 print("LR (Learning rate):", lr)
 
 ##create folder for different results ##
