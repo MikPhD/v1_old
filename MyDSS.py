@@ -69,6 +69,7 @@ class MyOwnDSSNet(nn.Module):
 
             correction, _ = self.recurrent(concat)
             correction = torch.squeeze(correction, 0)
+            correction = torch.reshape(correction, (correction.shape[0], correction.shape[1]))
 
             #print("Correction size : ", correction.size())
             #print(self.psy_list[update])
@@ -103,9 +104,7 @@ class MyOwnDSSNet(nn.Module):
 class Phi_to(MessagePassing):
     def __init__(self, in_channels, out_channels):
         super(Phi_to, self).__init__(aggr='mean', flow = 'source_to_target')
-        self.MLP = nn.Sequential(   nn.Linear(in_channels, in_channels//2),
-                                    nn.ReLU(),
-                                    nn.Linear(in_channels//2, out_channels),
+        self.MLP = nn.Sequential(   nn.Linear(in_channels, out_channels),
                                     nn.ReLU(),
                                     nn.Linear(out_channels, out_channels)
                                     )
@@ -169,7 +168,7 @@ class Recurrent(nn.Module):
     def __init__(self, in_size, hidden_size):
         super(Recurrent, self).__init__()
 
-        self.GRU = nn.GRU(input_size=in_size, hidden_size=hidden_size, num_layers=2, batch_first=True)
+        self.GRU = nn.GRU(input_size=in_size, hidden_size=hidden_size, num_layers=1, batch_first=True)
 
     def forward(self, x): #dimensione H + fi + fi + loop +B
         x = torch.reshape(x, (1, x.shape[0], x.shape[1]))

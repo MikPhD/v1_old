@@ -12,11 +12,11 @@ from torch_geometric.data import DataLoader
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=20)
+parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=2)
 parser.add_argument('-r', '--restart', type=eval, default=False, choices=[True, False], help='Restart training option')
-parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['40'])
-parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['40'])
-parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=1)
+parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['110'])
+parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['110'])
+parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=2)
 
 args = parser.parse_args()
 
@@ -67,14 +67,14 @@ loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases, d
 loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases, device=device)
 
 #initialize the created dataset
-loader_train = DataLoader(loader_train, shuffle=True) #opt args: shuffle, batchsize
+loader_train = DataLoader(loader_train) #opt args: shuffle, batchsize
 loader_val = DataLoader(loader_val)
 
 print("#################### DSS NET parameter #######################")
 #create hyperparameter
-latent_dimension = 40
+latent_dimension = 32
 print("Latent space dim : ", latent_dimension)
-k = 30
+k = 80
 print("Number of updates : ", k)
 gamma = 0.1
 print("Gamma (loss function) : ", gamma)
