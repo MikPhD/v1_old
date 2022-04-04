@@ -69,7 +69,7 @@ class MyOwnDSSNet(nn.Module):
             #print("Size concat : ", concat.size())
 
             elaborate = self.psy(concat)
-
+            #
             correction, _ = self.recurrent(elaborate)
             correction = torch.squeeze(correction, 0)
             # correction = torch.reshape(correction, (correction.shape[0], correction.shape[1]))
@@ -182,7 +182,7 @@ class Recurrent(nn.Module):
     def __init__(self, in_size, hidden_size):
         super(Recurrent, self).__init__()
 
-        self.GRU = nn.GRU(input_size=in_size, hidden_size=hidden_size, num_layers=1, batch_first=True)
+        self.GRU = nn.GRU(input_size=in_size, hidden_size=hidden_size)
 
     def forward(self, x): #dimensione H + fi + fi + loop +B
         x = torch.reshape(x, (1, x.shape[0], x.shape[1]))
