@@ -4,25 +4,19 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb186737-a9d9-4505-bea0-7b516877a01a" name="Changes" comment="setblank for slurm execution">
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Mesh_downshift.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/Results_downshift.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/raw/test/110/C.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/raw/test/110/D.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/raw/test/110/re.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/v1.iml" afterDir="false" />
+    <list default="true" id="ae26d9d8-a015-461c-a59a-688f9bb9d5c5" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/F_cfd.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/F_cfd.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/87-18-001-0003/F_gnn.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/87-18-001-0003/F_gnn.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/res_mesh/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh/Mesh.h5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/res_mesh/Results.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh/Results.h5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/processed/data_test.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_test.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/C.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/C.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/D.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/D.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +66,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Test/res_mesh" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PostProcessing" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="two.files.diff.last.used.file" value="$USER_HOME$/Scaricati/v1-095e098919acfe2f3d4b49c0d3d691175a39300c/MyPlot.py" />
@@ -89,7 +83,7 @@
       <recent name="$PROJECT_DIR$/history/first" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MyTest">
+  <component name="RunManager" selected="Python.MyPostProcess (1)">
     <configuration name="FRe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -217,16 +211,16 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.FRe" />
       <item itemvalue="Python.MyPostProcess (1)" />
       <item itemvalue="Python.MyPostProcess" />
-      <item itemvalue="Python.MyTest" />
       <item itemvalue="Python.prova" />
+      <item itemvalue="Python.MyTest" />
+      <item itemvalue="Python.FRe" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MyTest" />
         <item itemvalue="Python.MyPostProcess (1)" />
+        <item itemvalue="Python.MyTest" />
         <item itemvalue="Python.FRe" />
         <item itemvalue="Python.prova" />
         <item itemvalue="Python.MyPostProcess" />
@@ -236,18 +230,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a8c0f229-b8a9-4b72-b7c1-29b29c7aebba" name="Changes" comment="added test script" />
+      <changelist id="ae26d9d8-a015-461c-a59a-688f9bb9d5c5" name="Changes" comment="update" />
       <created>1642591769657</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00070" summary="set dropout p= 0.2&#10;StepLR -&gt; ReduceLrOnPlateau&#10;shuffle = true&#10;batch_size = 4">
-      <created>1644424832977</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1644424832977</updated>
     </task>
     <task id="LOCAL-00071" summary="iniziata nuova versione mikversion...">
       <created>1644427631027</created>
@@ -585,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648725359331</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="update">
+      <created>1648828588476</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1648828588476</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -624,7 +618,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added entire dataset" />
     <MESSAGE value="adjusted connection creation" />
     <MESSAGE value="adjusted and setted for slurm execution" />
     <MESSAGE value="completely setted new transformation" />
@@ -649,7 +642,8 @@
     <MESSAGE value="set blank for third optuna" />
     <MESSAGE value="setting for extrapolation" />
     <MESSAGE value="added test script" />
-    <option name="LAST_COMMIT_MESSAGE" value="added test script" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
