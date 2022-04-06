@@ -4,19 +4,11 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae26d9d8-a015-461c-a59a-688f9bb9d5c5" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
+    <list default="true" id="ae26d9d8-a015-461c-a59a-688f9bb9d5c5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/F_cfd.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/F_cfd.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/87-18-001-0003/F_gnn.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/87-18-001-0003/F_gnn.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh/Mesh.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh/Results.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh/Results.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_test.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_test.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/C.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/C.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/D.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/D.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

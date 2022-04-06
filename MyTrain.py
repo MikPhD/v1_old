@@ -28,7 +28,7 @@ class Train_DSS:
         optimizer = torch.optim.Adam(self.net.parameters(), lr = self.lr, weight_decay=0)
         # scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size = 50, gamma=0.1)
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.8, patience=50,
-                                                               min_lr=0.001, verbose=True)
+                                                               min_lr=0.0001, verbose=True)
         min_val_loss = 1.e-1
         epoch = 0
         return optimizer, scheduler, epoch, min_val_loss
