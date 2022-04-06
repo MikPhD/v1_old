@@ -4,17 +4,12 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="no self loop">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyCreateData.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyCreateData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Mesh.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/pre_filter.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/pre_transform.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/train/40/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/40/F.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/train/40/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/40/U.npy" afterDir="false" />
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="no bcs">
+      <change afterPath="$PROJECT_DIR$/dataset/processed/data_train.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/processed/data_val.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/processed/pre_filter.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/processed/pre_transform.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,20 +228,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00073" summary="stucked... recheck all...">
-      <created>1644848221442</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1644848221443</updated>
-    </task>
-    <task id="LOCAL-00074" summary="rebuild from scratch">
-      <created>1645033284475</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1645033284475</updated>
     </task>
     <task id="LOCAL-00075" summary="rebuild from scratch">
       <created>1645033634972</created>
@@ -577,7 +558,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649252084683</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="no bcs">
+      <created>1649253584176</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1649253584176</updated>
+    </task>
+    <task id="LOCAL-00123" summary="no bcs">
+      <created>1649253597969</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1649253597969</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -616,7 +611,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="completely setted new transformation" />
     <MESSAGE value="modified postprocess" />
     <MESSAGE value="modified postprocess (works!)" />
     <MESSAGE value="after call.. set to ground" />
@@ -641,7 +635,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="base case 1milion" />
     <MESSAGE value="no self loop" />
-    <option name="LAST_COMMIT_MESSAGE" value="no self loop" />
+    <MESSAGE value="no bcs" />
+    <option name="LAST_COMMIT_MESSAGE" value="no bcs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

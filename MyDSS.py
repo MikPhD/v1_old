@@ -27,7 +27,7 @@ class MyOwnDSSNet(nn.Module):
         self.phi_to_list = nn.ModuleList([Phi_to(2*self.latent_dimension + 2, self.latent_dimension) for i in range(self.k)])
         self.phi_from_list = nn.ModuleList([Phi_from(2*self.latent_dimension + 2, self.latent_dimension) for i in range(self.k)])
         self.phi_loop_list = nn.ModuleList([Loop(2*self.latent_dimension+1, self.latent_dimension) for i in range(self.k)])
-        self.psy_list = nn.ModuleList([Psy(3*self.latent_dimension + 3, self.latent_dimension) for i in range(self.k)])
+        self.psy_list = nn.ModuleList([Psy(4*self.latent_dimension + 3, self.latent_dimension) for i in range(self.k)])
         self.decoder_list = nn.ModuleList([Decoder(self.latent_dimension, 2) for i in range(self.k)])
 
     def loss_function(self, F, y):
@@ -60,10 +60,10 @@ class MyOwnDSSNet(nn.Module):
             mess_from = self.phi_from_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
             #print("Message_from size : ", mess_from.size())
 
-            # loop = self.phi_loop_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
+            loop = self.phi_loop_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
             #print("Message loop size :", loop.size())
 
-            concat = torch.cat([H[str(update)], mess_to, mess_from, batch.x], dim = 1)
+            concat = torch.cat([H[str(update)], mess_to, mess_from, loop, batch.x], dim = 1)
             #concat = torch.cat([H[str(update)], mess_to, mess_from, loop, y], dim = 1)
             #print("Size concat : ", concat.size())
 
@@ -134,25 +134,25 @@ class Phi_from(MessagePassing):
 
         return self.MLP(tmp)
 
-# class Loop(nn.Module): #never used
-#     def __init__(self, in_channels, out_channels):
-#         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-#         super(Loop, self).__init__()
-#         self.MLP = nn.Sequential(   nn.Linear(in_channels, out_channels),
-#                                     nn.ReLU(),
-#                                     nn.Linear(out_channels, out_channels))
-#
-#     def forward(self, x, edge_index, edge_attr):
-#         edge_index, edge_attr = utils.dropout_adj(edge_index, edge_attr, p=0.2)
-#
-#         edge_index, edge_attr = utils.add_self_loops(edge_index, edge_attr[:,0], num_nodes = x.size(0))
-#
-#         adj = utils.to_scipy_sparse_matrix(edge_index, edge_attr)
-#         loop = 1 - torch.tensor(adj.diagonal().reshape(-1,1), dtype = torch.float)
-#         loop = loop.to(self.device)
-#         tmp = torch.cat([x, x, loop], dim = 1)
-#
-#         return self.MLP(tmp)
+class Loop(nn.Module):
+    def __init__(self, in_channels, out_channels):
+        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        super(Loop, self).__init__()
+        self.MLP = nn.Sequential(   nn.Linear(in_channels, out_channels),
+                                    nn.ReLU(),
+                                    nn.Linear(out_channels, out_channels))
+
+    def forward(self, x, edge_index, edge_attr):
+        edge_index, edge_attr = utils.dropout_adj(edge_index, edge_attr, p=0.2)
+
+        edge_index, edge_attr = utils.add_self_loops(edge_index, edge_attr[:,0], num_nodes = x.size(0))
+
+        adj = utils.to_scipy_sparse_matrix(edge_index, edge_attr)
+        loop = 1 - torch.tensor(adj.diagonal().reshape(-1,1), dtype = torch.float)
+        loop = loop.to(self.device)
+        tmp = torch.cat([x, x, loop], dim = 1)
+
+        return self.MLP(tmp)
 
 class Psy(nn.Module):
     def __init__(self, in_size, out_size):
