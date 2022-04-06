@@ -4,11 +4,9 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae26d9d8-a015-461c-a59a-688f9bb9d5c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="modified loss_fn to norm L2 + norm L6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,11 +201,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.FRe" />
       <item itemvalue="Python.MyPostProcess (1)" />
       <item itemvalue="Python.MyPostProcess" />
-      <item itemvalue="Python.prova" />
       <item itemvalue="Python.MyTest" />
-      <item itemvalue="Python.FRe" />
+      <item itemvalue="Python.prova" />
     </list>
     <recent_temporary>
       <list>
