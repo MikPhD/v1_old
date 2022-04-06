@@ -4,9 +4,9 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="modified loss_fn to norm L2 + norm L6">
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="base case 1milion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,11 +201,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.FRe" />
       <item itemvalue="Python.MyPostProcess (1)" />
       <item itemvalue="Python.MyPostProcess" />
-      <item itemvalue="Python.MyTest" />
       <item itemvalue="Python.prova" />
+      <item itemvalue="Python.MyTest" />
+      <item itemvalue="Python.FRe" />
     </list>
     <recent_temporary>
       <list>
@@ -225,13 +225,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00071" summary="iniziata nuova versione mikversion...">
-      <created>1644427631027</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1644427631027</updated>
     </task>
     <task id="LOCAL-00072" summary="stucked... recheck all...">
       <created>1644597222874</created>
@@ -569,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648828588476</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="base case 1milion">
+      <created>1649251491096</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1649251491096</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -608,7 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adjusted connection creation" />
     <MESSAGE value="adjusted and setted for slurm execution" />
     <MESSAGE value="completely setted new transformation" />
     <MESSAGE value="modified postprocess" />
@@ -633,7 +632,8 @@
     <MESSAGE value="setting for extrapolation" />
     <MESSAGE value="added test script" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="base case 1milion" />
+    <option name="LAST_COMMIT_MESSAGE" value="base case 1milion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
