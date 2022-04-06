@@ -53,9 +53,9 @@ if not restart:
         os.remove("./Model/best_model_normal_final.pt")
 
 print("#################### DATA ADAPTING FOR GNN #######################")
-# createdata = CreateData()
-# createdata.transform(train_cases, 'train')
-# createdata.transform(val_cases, 'val')
+createdata = CreateData()
+createdata.transform(train_cases, 'train')
+createdata.transform(val_cases, 'val')
 
 # set of parameter from second cycle optimization optuna
 k_list = [87]
