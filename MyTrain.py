@@ -87,10 +87,10 @@ class Train_DSS:
             torch.nn.utils.clip_grad_norm_(self.net.parameters(), 1.e-3)  # da riattivare
             optimizer.step()
             total_train_loss += train_loss.sum().item()
-            final_loss += loss_dict[str(k)].sum().item()
+            # final_loss += loss_dict[str(k)].sum().item()
 
             running_loss += train_loss.sum().item()
-            running_final_loss += loss_dict[str(k)].sum().item()
+            # running_final_loss += loss_dict[str(k)].sum().item()
 
             ##print during training set cycle loop
             if (i + 1) % (len(loader_train) // 5 + 1) == 0:
@@ -108,8 +108,8 @@ class Train_DSS:
 
             sys.stdout.flush()
 
-        self.hist["loss_train"].append(final_loss / len(loader_train))
-        print("Training loss = {:.5e}".format(total_train_loss / len(loader_train)))
+        # self.hist["loss_train"].append(final_loss / len(loader_train))
+        # print("Training loss = {:.5e}".format(total_train_loss / len(loader_train)))
 
         total_val_loss = 0
         final_loss_val = 0
@@ -123,7 +123,7 @@ class Train_DSS:
                 F, val_loss, loss_dict = self.net(val_data)
                 # sol_lu = val_data.x.to(U[str(k)].device) #da riattivare
                 total_val_loss += val_loss.sum().item()
-                final_loss_val += loss_dict[str(k)].sum().item()
+                # final_loss_val += loss_dict[str(k)].sum().item()
                 # corr_val += corrcoef(U[str(k)], sol_lu)
                 # rmse_val += torch.sqrt(torch.mean(U[str(k)] - sol_lu) ** 2)
 
@@ -173,7 +173,7 @@ class Train_DSS:
             ## Save plot training ##
             try:
                 MyPlot = Plot(self.set_name)
-                MyPlot.plot_loss()
+                # MyPlot.plot_loss()
                 MyPlot.plot_results(epoch + 1)
             except:
                 print("errore di plot")
