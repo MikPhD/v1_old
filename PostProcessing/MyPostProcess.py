@@ -100,7 +100,7 @@ class PostProcess():
     def differences(self):
         ####### loading mesh ########
         mesh = Mesh()
-        mesh_file = "./Mesh.h5"
+        mesh_file = "../Results/Mesh.h5"
         with HDF5File(MPI.comm_world, mesh_file, "r") as h5file:
             h5file.read(mesh, "mesh", False)
             facet = MeshFunction("size_t", mesh, mesh.topology().dim() - 1)
@@ -114,18 +114,18 @@ class PostProcess():
         F_gnn = Function(Space)
         v_gnn, f_gnn = F_gnn.split(deepcopy=True)
 
-        F_cfd = Function(Space)
-        v_cfd, f_cfd = F_cfd.split(deepcopy=True)
+        # F_cfd = Function(Space)
+        # v_cfd, f_cfd = F_cfd.split(deepcopy=True)
 
         F_diff = Function(Space)
         v_diff, f_diff = F_diff.split(deepcopy=True)
 
 
         ######## loading forcing from GNN ################
-        F_gnn = np.load("./results.npy").flatten()
+        F_gnn = np.load("../Results/87-25-001-0003/results.npy").flatten()
 
-        ######## loading forcing from CFD ################
-        F_cfd = np.load("./110/F.npy").flatten()
+        # ######## loading forcing from CFD ################
+        # F_cfd = np.load("./110/F.npy").flatten()
 
         ######## mesh coordinates ##############
         mesh_points = mesh.coordinates().tolist()
@@ -137,21 +137,21 @@ class PostProcess():
             v_gnn.vector()[(index)] = F_gnn[i * 2]
             v_gnn.vector()[(index) + 1] = F_gnn[(i * 2) + 1]
 
-        for i, x in enumerate(mesh_points):
-            index = dofs_coordinates_prev.index(x)
-            v_cfd.vector()[(index)] = F_cfd[i * 2]
-            v_cfd.vector()[(index) + 1] = F_cfd[(i * 2) + 1]
-
-        v_diff.vector()[:] = v_cfd.vector()[:] - v_gnn.vector()[:]
+        # for i, x in enumerate(mesh_points):
+        #     index = dofs_coordinates_prev.index(x)
+        #     v_cfd.vector()[(index)] = F_cfd[i * 2]
+        #     v_cfd.vector()[(index) + 1] = F_cfd[(i * 2) + 1]
+        #
+        # v_diff.vector()[:] = v_cfd.vector()[:] - v_gnn.vector()[:]
 
         ######### plot results ##############
         plt.figure()
-        self.plot(v_gnn.sub(0))
+        self.plot(v_gnn.sub(1))
         plt.show()
         #
-        plt.figure()
-        self.plot(v_cfd.sub(0))
-        plt.show()
+        # plt.figure()
+        # self.plot(v_cfd.sub(0))
+        # plt.show()
 
         plt.figure()
         self.plot(v_diff.sub(0))

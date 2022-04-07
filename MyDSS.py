@@ -50,7 +50,7 @@ class MyOwnDSSNet(nn.Module):
         self.F_init = batch.x*0
 
         H = torch.zeros([batch.num_nodes, self.latent_dimension], dtype = torch.float, device = self.device)
-        H_tot = torch.zeros([self.k, batch.num_nodes, self.latent_dimension], dtype=torch.float, device=self.device)
+        # H_tot = torch.zeros([self.k, batch.num_nodes, self.latent_dimension], dtype=torch.float, device=self.device)
 
         F = self.decoder(H)# + self.U_init
         # set_trace()
@@ -74,7 +74,21 @@ class MyOwnDSSNet(nn.Module):
 
             H = H + self.alpha * elaborate
 
-            H_tot[update, : , :] = H
+            # H_tot[update, : , :] = H
+
+            new_hidden, last_hidden = self.recurrent(H)
+            last_hidden = torch.squeeze(last_hidden, 0)
+
+            H = last_hidden
+
+            F = self.decoder(H)
+
+            loss[str(update+1)] = self.loss_function(F, batch.y)
+            #
+            if total_loss is None :
+                total_loss = loss[str(update+1)] * self.gamma**(self.k - update - 1)
+            else :
+                total_loss += loss[str(update+1)] * self.gamma**(self.k - update - 1)
 
             #
             # correction, _ = self.recurrent(elaborate)
@@ -102,14 +116,6 @@ class MyOwnDSSNet(nn.Module):
             #     F = self.decoder(H)
             #     loss[str(update + 1)] = self.loss_function(F, batch.y)
             #     total_loss = loss[str(update + 1)]
-
-        new_hidden, last_hidden = self.recurrent(H_tot)
-        last_hidden = torch.squeeze(last_hidden, 0)
-        F = self.decoder(last_hidden)
-        loss = self.loss_function(F, batch.y)
-
-        total_loss = loss
-        #print(torch.mean((U[str(self.k-1)] - data.x)**2))
 
         return F, total_loss, loss
 
@@ -198,7 +204,7 @@ class Recurrent(nn.Module):
         self.GRU = nn.GRU(input_size=in_size, hidden_size=hidden_size)
 
     def forward(self, x): #dimensione H + fi + fi + loop +B
-        # x = torch.reshape(x, (1, x.shape[0], x.shape[1]))
+        x = torch.reshape(x, (1, x.shape[0], x.shape[1]))
         return self.GRU(x)
 
 
