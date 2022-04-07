@@ -4,8 +4,8 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="added test script">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="added new branch">
+      <change beforePath="$PROJECT_DIR$/MyCreateData.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyCreateData.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00076" summary="rebuild from scratch">
-      <created>1645035321187</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1645035321188</updated>
     </task>
     <task id="LOCAL-00077" summary="optuna setting blank for slurm">
       <created>1645438721535</created>
@@ -547,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649253816949</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="added new branch">
+      <created>1649326381980</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1649326381980</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -586,7 +586,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="modified postprocess" />
     <MESSAGE value="modified postprocess (works!)" />
     <MESSAGE value="after call.. set to ground" />
     <MESSAGE value="setted automatition" />
@@ -611,7 +610,8 @@
     <MESSAGE value="base case 1milion" />
     <MESSAGE value="no self loop" />
     <MESSAGE value="no bcs" />
-    <option name="LAST_COMMIT_MESSAGE" value="no bcs" />
+    <MESSAGE value="added new branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new branch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
