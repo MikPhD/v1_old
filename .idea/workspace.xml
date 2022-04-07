@@ -4,8 +4,11 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="no bcs">
-      <change beforePath="$PROJECT_DIR$/MyCreateData.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyCreateData.py" afterDir="false" />
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="added test script">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/v1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/Mesh.h5" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,6 +203,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.MyPostProcess" />
       <item itemvalue="Python.MyPostProcess (1)" />
       <item itemvalue="Python.prova" />
       <item itemvalue="Python.MyTest" />
