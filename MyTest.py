@@ -33,7 +33,7 @@ print("#################### DATA ADAPTING FOR GNN #######################")
 ################# inizio lettura file ##########################
 ######### lettura mesh #########
 mesh = Mesh()
-mesh_file = "./Test/res_mesh/Mesh.h5"
+mesh_file = "./Test/res_mesh/Mesh_downshift.h5"
 with HDF5File(MPI.comm_world, mesh_file, "r") as h5file:
     h5file.read(mesh, "mesh", False)
     facet = MeshFunction("size_t", mesh, mesh.topology().dim() - 1)
@@ -47,7 +47,7 @@ Space2 = FunctionSpace(mesh, VelocityElement2 * PressureElement2)
 u_glob2 = Function(Space2)
 f_glob2 = Function(Space2)
 
-with HDF5File(MPI.comm_world, "./Test/res_mesh/Results.h5", "r") as h5file:
+with HDF5File(MPI.comm_world, "./Test/res_mesh/Results_downshift.h5", "r") as h5file:
     h5file.read(u_glob2, "mean")
     h5file.read(f_glob2, "forcing")
 
@@ -77,25 +77,35 @@ for i in range(mesh.num_edges()):
     connection = np.array(mesh_connectivity(i)).astype(int)
     coord_vert1 = (mesh.coordinates()[connection[0]]).tolist()
     coord_vert2 = (mesh.coordinates()[connection[1]]).tolist()
-    if coord_vert1 and coord_vert2 in bmesh:
-        pass
-    elif coord_vert1 in bmesh:
-        distancex = coord_vert2[0] - coord_vert1[0]
-        distancey = coord_vert2[1] - coord_vert1[1]
-        C.append(list(connection))
-        D.append([distancex, distancey])
-    elif coord_vert2 in bmesh:
-        pass
-    else:
-        connection_rev = connection[::-1]
-        distancex = coord_vert2[0] - coord_vert1[0]
-        distancey = coord_vert2[1] - coord_vert1[1]
+    connection_rev = connection[::-1]
+    distancex = coord_vert2[0] - coord_vert1[0]
+    distancey = coord_vert2[1] - coord_vert1[1]
 
-        C.append(list(connection))
-        C.append(list(connection_rev))
+    C.append(list(connection))
+    C.append(list(connection_rev))
 
-        D.append([distancex, distancey])
-        D.append([-1 * distancex, -1 * distancey])
+    D.append([distancex, distancey])
+    D.append([-1 * distancex, -1 * distancey])
+
+    # if coord_vert1 and coord_vert2 in bmesh:
+    #     pass
+    # elif coord_vert1 in bmesh:
+    #     distancex = coord_vert2[0] - coord_vert1[0]
+    #     distancey = coord_vert2[1] - coord_vert1[1]
+    #     C.append(list(connection))
+    #     D.append([distancex, distancey])
+    # elif coord_vert2 in bmesh: ##never happen for how fenics order the points in the iteration
+    #     pass
+    # else:
+    #     connection_rev = connection[::-1]
+    #     distancex = coord_vert2[0]-coord_vert1[0]
+    #     distancey = coord_vert2[1]-coord_vert1[1]
+    #
+    #     C.append(list(connection))
+    #     C.append(list(connection_rev))
+    #
+    #     D.append([distancex, distancey])
+    #     D.append([-1 * distancex, -1 * distancey])
 
 ############## mean flow e forcing #####################
 ########### mappatura attraverso coordinate ############
@@ -189,7 +199,7 @@ F_gnn = np.load("./Test/" + set_name + "/F_gnn.npy").flatten()
 
 ####### loading mesh ########
 mesh = Mesh()
-mesh_file = "./Test/res_mesh/Mesh.h5"
+mesh_file = "./Test/res_mesh/Mesh_downshift.h5"
 with HDF5File(MPI.comm_world, mesh_file, "r") as h5file:
     h5file.read(mesh, "mesh", False)
     facet = MeshFunction("size_t", mesh, mesh.topology().dim() - 1)

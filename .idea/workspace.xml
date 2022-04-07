@@ -4,8 +4,22 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="added new branch">
-      <change beforePath="$PROJECT_DIR$/MyCreateData.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyCreateData.py" afterDir="false" />
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="added no bcs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/F_gnn.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/87-18-001-0003/F_gnn.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/87-18-001-0003/F_gnn.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Test/87-18-001-0003/plot_results.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/processed/data_test.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_test.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/processed/data_train.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/processed/data_val.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/C.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/C.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/D.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/D.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,24 +69,24 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PostProcessing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Model" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="two.files.diff.last.used.file" value="$USER_HOME$/Scaricati/v1-095e098919acfe2f3d4b49c0d3d691175a39300c/MyPlot.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Model" />
       <recent name="$PROJECT_DIR$/Test/res_mesh" />
       <recent name="$PROJECT_DIR$/PostProcessing" />
       <recent name="$PROJECT_DIR$/PostProcessing/110" />
-      <recent name="$PROJECT_DIR$/Model" />
       <recent name="$PROJECT_DIR$/../v2/dataset/processed" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/history/first" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.MyPostProcess (1)">
     <configuration name="FRe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -187,11 +201,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MyPostProcess (1)" />
+        <item itemvalue="Python.MyTest" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.FRe" />
-        <item itemvalue="Python.MyTest" />
         <item itemvalue="Python.prova" />
-        <item itemvalue="Python.MyPostProcess (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -203,13 +217,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00077" summary="optuna setting blank for slurm">
-      <created>1645438721535</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1645438721535</updated>
     </task>
     <task id="LOCAL-00078" summary="optuna setting blank for slurm">
       <created>1645439011774</created>
@@ -547,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649326381980</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="added no bcs">
+      <created>1649326582737</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1649326582737</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -586,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="modified postprocess (works!)" />
     <MESSAGE value="after call.. set to ground" />
     <MESSAGE value="setted automatition" />
     <MESSAGE value="changed StepLR -&gt; ReduceLROnPlateau" />
@@ -611,14 +624,15 @@
     <MESSAGE value="no self loop" />
     <MESSAGE value="no bcs" />
     <MESSAGE value="added new branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new branch" />
+    <MESSAGE value="added no bcs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added no bcs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/MyTest.py</url>
-          <line>133</line>
+          <line>143</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
