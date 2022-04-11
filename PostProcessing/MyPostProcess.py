@@ -63,7 +63,7 @@ class PostProcess():
     def plot_results(self):
         ####### loading mesh ########
         mesh = Mesh()
-        mesh_file = "./110/Mesh.h5"
+        mesh_file = "./Mesh.h5"
         with HDF5File(MPI.comm_world, mesh_file, "r") as h5file:
             h5file.read(mesh, "mesh", False)
             facet = MeshFunction("size_t", mesh, mesh.topology().dim() - 1)
@@ -100,7 +100,7 @@ class PostProcess():
     def differences(self):
         ####### loading mesh ########
         mesh = Mesh()
-        mesh_file = "../Test/res_mesh/Mesh.h5"
+        mesh_file = "./reference/Mesh.h5"
         with HDF5File(MPI.comm_world, mesh_file, "r") as h5file:
             h5file.read(mesh, "mesh", False)
             facet = MeshFunction("size_t", mesh, mesh.topology().dim() - 1)
@@ -122,10 +122,10 @@ class PostProcess():
 
 
         ######## loading forcing from GNN ################
-        F_gnn = np.load("../Test/87-18-001-0003/F_gnn.npy").flatten()
+        F_gnn = np.load("./results/F.npy").flatten()
 
         ######## loading forcing from CFD ################
-        F_cfd = np.load("../dataset/raw/test/110/F.npy").flatten()
+        F_cfd = np.load("./reference/F.npy").flatten()
 
         ######## mesh coordinates ##############
         mesh_points = mesh.coordinates().tolist()
