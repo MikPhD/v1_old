@@ -139,23 +139,23 @@ print("#################### DSS NET parameter #######################")
 #Load checkpoint
 checkpoint = torch.load('./res_mesh_model/Model.pt', map_location=torch.device('cpu'))
 
-# latent_dimension = checkpoint['lat_dim']
-# print("Latent space dim : ", latent_dimension)
-# k = checkpoint['k']
-# print("Number of updates : ", k)
-# gamma = checkpoint['gamma']
-# print("Gamma (loss function) : ", gamma)
-# alpha = checkpoint['alpha']
-# print("Alpha (reduction correction) :", alpha)
-#
-latent_dimension = 87
+latent_dimension = checkpoint['lat_dim']
 print("Latent space dim : ", latent_dimension)
-k = 18
+k = checkpoint['k']
 print("Number of updates : ", k)
-gamma = 0.1
+gamma = checkpoint['gamma']
 print("Gamma (loss function) : ", gamma)
-alpha = 1e-2
+alpha = checkpoint['alpha']
 print("Alpha (reduction correction) :", alpha)
+#
+# latent_dimension = 87
+# print("Latent space dim : ", latent_dimension)
+# k = 18
+# print("Number of updates : ", k)
+# gamma = 0.1
+# print("Gamma (loss function) : ", gamma)
+# alpha = 1e-2
+# print("Alpha (reduction correction) :", alpha)
 
 
 print("#################### CREATING NETWORKS #######################")
