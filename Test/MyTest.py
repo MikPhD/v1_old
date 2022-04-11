@@ -18,16 +18,16 @@ print('Running on : ', device)
 test_case = [input('Test case Reynolds number:')]
 
 #clean processed folder (Model comes from an older version of PYG)
-if os.path.exists("./dataset/processed/data_val.pt"):
-    os.remove("./dataset/processed/data_val.pt")
-if os.path.exists("./dataset/processed/data_train.pt"):
-    os.remove("./dataset/processed/data_train.pt")
-if os.path.exists("./dataset/processed/data_test.pt"):
-    os.remove("./dataset/processed/data_test.pt")
-if os.path.exists("./dataset/processed/pre_filter.pt"):
-    os.remove("./dataset/processed/pre_filter.pt")
-if os.path.exists("./dataset/processed/pre_transform.pt"):
-    os.remove("./dataset/processed/pre_transform.pt")
+if os.path.exists("../dataset/processed/data_val.pt"):
+    os.remove("../dataset/processed/data_val.pt")
+if os.path.exists("../dataset/processed/data_train.pt"):
+    os.remove("../dataset/processed/data_train.pt")
+if os.path.exists("../dataset/processed/data_test.pt"):
+    os.remove("../dataset/processed/data_test.pt")
+if os.path.exists("../dataset/processed/pre_filter.pt"):
+    os.remove("../dataset/processed/pre_filter.pt")
+if os.path.exists("../dataset/processed/pre_transform.pt"):
+    os.remove("../dataset/processed/pre_transform.pt")
 
 print("#################### DATA ADAPTING FOR GNN #######################")
 ################# inizio lettura file ##########################
@@ -139,13 +139,22 @@ print("#################### DSS NET parameter #######################")
 #Load checkpoint
 checkpoint = torch.load('./res_mesh_model/Model.pt', map_location=torch.device('cpu'))
 
-latent_dimension = checkpoint['lat_dim']
+# latent_dimension = checkpoint['lat_dim']
+# print("Latent space dim : ", latent_dimension)
+# k = checkpoint['k']
+# print("Number of updates : ", k)
+# gamma = checkpoint['gamma']
+# print("Gamma (loss function) : ", gamma)
+# alpha = checkpoint['alpha']
+# print("Alpha (reduction correction) :", alpha)
+#
+latent_dimension = 87
 print("Latent space dim : ", latent_dimension)
-k = checkpoint['k']
+k = 18
 print("Number of updates : ", k)
-gamma = checkpoint['gamma']
+gamma = 0.1
 print("Gamma (loss function) : ", gamma)
-alpha = checkpoint['alpha']
+alpha = 1e-2
 print("Alpha (reduction correction) :", alpha)
 
 
