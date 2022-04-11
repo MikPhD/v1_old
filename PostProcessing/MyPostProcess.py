@@ -146,7 +146,7 @@ class PostProcess():
 
         ######### plot results ##############
         plt.figure()
-        self.plot(v_gnn.sub(1))
+        self.plot(v_gnn.sub(0))
         plt.show()
         #
         plt.figure()
