@@ -7,9 +7,7 @@ import sys
 import torch
 import os
 import shutil
-from torch_geometric.data import DataListLoader
 from torch_geometric.data import DataLoader
-import math
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=10)
@@ -64,7 +62,7 @@ gamma_list=[0.1]
 alpha_list=[1e-2]
 lr_list=[3e-3]
 
-#check if gpu is available
+# check if gpu is available
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Running on : ', device)
 
@@ -105,7 +103,7 @@ for k in k_list:
 
 
                     print("#################### CREATING NETWORKS #######################")
-                    DSS = MyOwnDSSNet(latent_dimension = latent_dimension, k = k, gamma = gamma, alpha = alpha, device=device)
+                    DSS = MyOwnDSSNet(latent_dimension=latent_dimension, k=k, gamma=gamma, alpha=alpha, device=device)
                     # # # DSS = DataParallel(DSS)
                     DSS = DSS.to(device)
                     # # #DSS = DSS.double()
@@ -116,9 +114,11 @@ for k in k_list:
                     optimizer, scheduler, epoch, min_val_loss = train_dss.createOptimizerAndScheduler()
 
                     if restart:
-                        optimizer, scheduler, epoch, min_val_loss = train_dss.restart(optimizer, scheduler, path='Model/best_model.pt')
+                        optimizer, scheduler, epoch, min_val_loss = train_dss.restart(optimizer, scheduler,
+                                                                                      path='Model/best_model.pt')
 
-                    GNN = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
+                    GNN = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k,
+                                             n_output)
                     #
                     sys.stdout.flush()
 
