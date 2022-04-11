@@ -4,6 +4,9 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="removed myplot stand alone, try on forc_y">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="added test script">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/v1.iml" afterDir="false" />
@@ -203,6 +206,10 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.MyPostProcess" />
+      <item itemvalue="Python.MyPostProcess (1)" />
+      <item itemvalue="Python.prova" />
+      <item itemvalue="Python.MyTest" />
       <item itemvalue="Python.FRe" />
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.MyPostProcess (1)" />
