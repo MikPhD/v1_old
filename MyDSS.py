@@ -128,8 +128,7 @@ class Phi_to(MessagePassing):
         super(Phi_to, self).__init__(aggr='mean', flow = 'source_to_target')
         self.MLP = nn.Sequential(   nn.Linear(in_channels, out_channels),
                                     nn.ReLU(),
-                                    nn.Linear(out_channels, out_channels)
-                                    )
+                                    nn.Linear(out_channels, out_channels))
 
     def forward(self, x, edge_index, edge_attr):
 
@@ -148,10 +147,9 @@ class Phi_to(MessagePassing):
 class Phi_from(MessagePassing):
     def __init__(self, in_channels, out_channels):
         super(Phi_from, self).__init__(aggr='mean', flow = "target_to_source")
-        self.MLP = nn.Sequential(   nn.Linear(in_channels, in_channels),
+        self.MLP = nn.Sequential(   nn.Linear(in_channels, out_channels),
                                     nn.ReLU(),
-                                    nn.Linear(in_channels, out_channels),
-                                    )
+                                    nn.Linear(out_channels, out_channels))
 
     def forward(self, x, edge_index, edge_attr):
         edge_index, edge_attr = utils.dropout_adj(edge_index, edge_attr, p=0.2)
@@ -166,7 +164,7 @@ class Phi_from(MessagePassing):
 
         return self.MLP(tmp)
 
-class Loop(nn.Module): #never used
+class Loop(nn.Module):
     def __init__(self, in_channels, out_channels):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         super(Loop, self).__init__()
@@ -190,11 +188,10 @@ class Psy(nn.Module):
     def __init__(self, in_size, out_size):
         super(Psy, self).__init__()
 
-        self.MLP = nn.Sequential(nn.Linear(in_size, out_size),
-                                 nn.ReLU(),
-                                 nn.Linear(out_size, out_size))
-
-    def forward(self, x):  # dimensione H + fi + fi + loop +B
+        self.MLP = nn.Sequential(   nn.Linear(in_size, out_size),
+                                    nn.ReLU(),
+                                    nn.Linear(out_size, out_size))
+    def forward(self, x): #dimensione H + fi + fi + loop +B
         return self.MLP(x)
 
 class Recurrent(nn.Module):

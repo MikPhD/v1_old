@@ -7,9 +7,7 @@ import sys
 import torch
 import os
 import shutil
-from torch_geometric.data import DataListLoader
 from torch_geometric.data import DataLoader
-
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=50)
@@ -57,59 +55,71 @@ print("#################### DATA ADAPTING FOR GNN #######################")
 # createdata.transform(train_cases, 'train')
 # createdata.transform(val_cases, 'val')
 
-#check if gpu is available
+#set of parameter from second cycle optimization optuna
+k_list=[87]
+latent_dimension_list=[18]
+gamma_list=[0.1]
+alpha_list=[1e-2]
+lr_list=[3e-3]
+
+# check if gpu is available
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Running on : ', device)
 
+for k in k_list:
+    for latent_dimension in latent_dimension_list:
+        for gamma in gamma_list:
+            for alpha in alpha_list:
+                for lr in lr_list:
 
-print("#################### CREATING Inner DATASET #######################")
-loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases, device=device)
-loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases, device=device)
+                    print("#################### CREATING Inner DATASET #######################")
+                    loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases, device=device)
+                    loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases, device=device)
 
-#initialize the created dataset
-loader_train = DataLoader(loader_train) #opt args: shuffle, batchsize
-loader_val = DataLoader(loader_val)
+                    #initialize the created dataset
+                    loader_train = DataLoader(loader_train, shuffle=True) #opt args: shuffle, batchsize
+                    loader_val = DataLoader(loader_val)
 
-print("#################### DSS NET parameter #######################")
-#create hyperparameter
-latent_dimension = 25
-print("Latent space dim : ", latent_dimension)
-k = 87
-print("Number of updates : ", k)
-gamma = 0.1
-print("Gamma (loss function) : ", gamma)
-# alpha = 1e-1
-alpha = 0.01
-print("Alpha (reduction correction) :", alpha)
-lr = 3e-3
-print("LR (Learning rate):", lr)
+                    print("#################### DSS NET parameter #######################")
 
-##create folder for different results ##
-set_name = str(k) + '-' + str(latent_dimension).replace(".", "") + '-' + str(alpha).replace(".", "") + '-' + str(
-    lr).replace(".", "")
-print("PARAMETER SET: k:{}, laten_dim:{}, alpha:{}, lr:{}".format(str(k), str(latent_dimension), str(alpha), str(lr)))
-os.makedirs("./Results/" + set_name, exist_ok=True)
-os.makedirs("./Stats/" + set_name, exist_ok=True)
+                    #create hyperparameter
+                    latent_dimension = latent_dimension
+                    print("Latent space dim : ", latent_dimension)
+                    k = k
+                    print("Number of updates : ", k)
+                    gamma = gamma
+                    print("Gamma (loss function) : ", gamma)
+                    alpha = alpha
+                    print("Alpha (reduction correction) :", alpha)
+                    lr = lr
+                    print("LR (Learning rate):", lr)
+
+                    ##create folder for different results ##
+                    set_name = str(k) + '-' + str(latent_dimension).replace(".", "") + '-' + str(alpha).replace(".", "") + '-' + str(
+                        lr).replace(".", "")
+                    print("PARAMETER SET: k:{}, laten_dim:{}, alpha:{}, lr:{}".format(str(k), str(latent_dimension), str(alpha), str(lr)))
+                    os.makedirs("./Results/" + set_name, exist_ok=True)
+                    os.makedirs("./Stats/" + set_name, exist_ok=True)
 
 
-print("#################### CREATING NETWORKS #######################")
-DSS = MyOwnDSSNet(latent_dimension = latent_dimension, k = k, gamma = gamma, alpha = alpha, device=device)
-# # # DSS = DataParallel(DSS)
-DSS = DSS.to(device)
-# # #DSS = DSS.double()
+                    print("#################### CREATING NETWORKS #######################")
+                    DSS = MyOwnDSSNet(latent_dimension=latent_dimension, k=k, gamma=gamma, alpha=alpha, device=device)
+                    # # # DSS = DataParallel(DSS)
+                    DSS = DSS.to(device)
+                    # # #DSS = DSS.double()
 
-print("#################### TRAINING #######################")
-train_dss = Train_DSS(net=DSS, learning_rate=lr, n_epochs=n_epoch, device=device, set_name=set_name)
+                    print("#################### TRAINING #######################")
+                    train_dss = Train_DSS(net=DSS, learning_rate=lr, n_epochs=n_epoch, device=device, set_name=set_name)
 
-optimizer, scheduler, epoch, min_val_loss = train_dss.createOptimizerAndScheduler()
+                    optimizer, scheduler, epoch, min_val_loss = train_dss.createOptimizerAndScheduler()
 
-if restart:
-    optimizer, scheduler, epoch, min_val_loss = train_dss.restart(optimizer, scheduler, path='Model/best_model.pt')
+                    if restart:
+                        optimizer, scheduler, epoch, min_val_loss = train_dss.restart(optimizer, scheduler,
+                                                                                      path='Model/best_model.pt')
 
-for epoch in range(epoch, n_epoch):
-    GNN, validation_loss = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k, n_output)
+                    GNN = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k,
+                                             n_output)
+                    #
+                    sys.stdout.flush()
 
-sys.stdout.flush()
-
-del DSS, GNN, loader_val, loader_train, optimizer, scheduler
-
+                    del DSS, GNN, loader_val, loader_train, optimizer, scheduler
