@@ -51,16 +51,16 @@ if not restart:
         os.remove("./Model/best_model_normal_final.pt")
 
 print("#################### DATA ADAPTING FOR GNN #######################")
-createdata = CreateData()
-createdata.transform(train_cases, 'train')
-createdata.transform(val_cases, 'val')
+# createdata = CreateData()
+# createdata.transform(train_cases, 'train')
+# createdata.transform(val_cases, 'val')
 
-# set of parameter from second cycle optimization optuna
-k_list = [87]
-latent_dimension_list = [18]
-gamma_list = [0.1]
-alpha_list = [1e-2]
-lr_list = [3e-3]
+#set of parameter from second cycle optimization optuna
+k_list=[87]
+latent_dimension_list=[18]
+gamma_list=[0.1]
+alpha_list=[1e-2]
+lr_list=[3e-3]
 
 # check if gpu is available
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -72,25 +72,17 @@ for k in k_list:
             for alpha in alpha_list:
                 for lr in lr_list:
 
-                    set_name = str(k) + '-' + str(latent_dimension).replace(".", "") + '-' + str(alpha).replace(".",
-                                                                                                                "") + '-' + str(
-                        lr).replace(".", "")
-                    print("PARAMETER SET: k:{}, laten_dim:{}, alpha:{}, lr:{}".format(str(k), str(latent_dimension),
-                                                                                      str(alpha), str(lr)))
-                    os.makedirs("./Results/" + set_name, exist_ok=True)
-                    os.makedirs("./Stats/" + set_name, exist_ok=True)
-
                     print("#################### CREATING Inner DATASET #######################")
                     loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases, device=device)
                     loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases, device=device)
 
-                    # initialize the created dataset
-                    loader_train = DataLoader(loader_train, shuffle=True)  # opt args: shuffle, batchsize
+                    #initialize the created dataset
+                    loader_train = DataLoader(loader_train, shuffle=True) #opt args: shuffle, batchsize
                     loader_val = DataLoader(loader_val)
 
                     print("#################### DSS NET parameter #######################")
 
-                    # create hyperparameter
+                    #create hyperparameter
                     latent_dimension = latent_dimension
                     print("Latent space dim : ", latent_dimension)
                     k = k
@@ -103,13 +95,12 @@ for k in k_list:
                     print("LR (Learning rate):", lr)
 
                     ##create folder for different results ##
-                    set_name = str(k) + '-' + str(latent_dimension).replace(".", "") + '-' + str(alpha).replace(".",
-                                                                                                                "") + '-' + str(
+                    set_name = str(k) + '-' + str(latent_dimension).replace(".", "") + '-' + str(alpha).replace(".", "") + '-' + str(
                         lr).replace(".", "")
-                    print("PARAMETER SET: k:{}, laten_dim:{}, alpha:{}, lr:{}".format(str(k), str(latent_dimension),
-                                                                                      str(alpha), str(lr)))
+                    print("PARAMETER SET: k:{}, laten_dim:{}, alpha:{}, lr:{}".format(str(k), str(latent_dimension), str(alpha), str(lr)))
                     os.makedirs("./Results/" + set_name, exist_ok=True)
                     os.makedirs("./Stats/" + set_name, exist_ok=True)
+
 
                     print("#################### CREATING NETWORKS #######################")
                     DSS = MyOwnDSSNet(latent_dimension=latent_dimension, k=k, gamma=gamma, alpha=alpha, device=device)
