@@ -33,7 +33,7 @@ print("#################### DATA ADAPTING FOR GNN #######################")
 ################# inizio lettura file ##########################
 ######### lettura mesh #########
 mesh = Mesh()
-mesh_file = "./Test/res_mesh/Mesh.h5"
+mesh_file = "Test/res_mesh_model/Mesh.h5"
 with HDF5File(MPI.comm_world, mesh_file, "r") as h5file:
     h5file.read(mesh, "mesh", False)
     facet = MeshFunction("size_t", mesh, mesh.topology().dim() - 1)
@@ -47,7 +47,7 @@ Space2 = FunctionSpace(mesh, VelocityElement2 * PressureElement2)
 u_glob2 = Function(Space2)
 f_glob2 = Function(Space2)
 
-with HDF5File(MPI.comm_world, "./Test/res_mesh/Results.h5", "r") as h5file:
+with HDF5File(MPI.comm_world, "Test/res_mesh_model/Results.h5", "r") as h5file:
     h5file.read(u_glob2, "mean")
     h5file.read(f_glob2, "forcing")
 
@@ -189,7 +189,7 @@ F_gnn = np.load("./Test/" + set_name + "/F_gnn.npy").flatten()
 
 ####### loading mesh ########
 mesh = Mesh()
-mesh_file = "./Test/res_mesh/Mesh.h5"
+mesh_file = "Test/res_mesh_model/Mesh.h5"
 with HDF5File(MPI.comm_world, mesh_file, "r") as h5file:
     h5file.read(mesh, "mesh", False)
     facet = MeshFunction("size_t", mesh, mesh.topology().dim() - 1)
