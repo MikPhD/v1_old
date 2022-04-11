@@ -8,11 +8,16 @@ import datetime
 
 
 class Train_DSS:
-    def __init__(self, net, learning_rate = 0.01, n_epochs = 20, device = "cpu", set_name=""):
+    def __init__(self, net, learning_rate = 0.01, n_epochs = 20, device = "cpu", set_name="", k=80,
+                 latent_dimension=20, gamma=0.1, alpha=0.1):
 
         #Initialize training parameters
         self.set_name = set_name
         self.lr = learning_rate
+        self.k = k
+        self.lat_dim = latent_dimension
+        self.gamma = gamma
+        self.alpha = alpha
         self.n_epochs = n_epochs
         self.net = net
         self.device = device
@@ -90,7 +95,7 @@ class Train_DSS:
             print("Problema di PLOT!")
 
 
-    def trainDSS(self, loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch_in, k, n_output):
+    def trainDSS(self, loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch_in, n_output):
         for epoch in range(epoch_in, self.n_epochs):
             print(f'Epoch {epoch} of {self.n_epochs}:')
             time_counter = time.time()
@@ -159,7 +164,12 @@ class Train_DSS:
                     'scheduler': scheduler.state_dict(),
                     'loss_train': self.hist["loss_train"],
                     'loss_val': self.hist["loss_val"],
-                    'training_time': self.training_time
+                    'training_time': self.training_time,
+                    #parameter below, needed fo testing
+                    'k': self.k,
+                    'lat_dim': self.lat_dim,
+                    'gamma': self.gamma,
+                    'alpha': self.alpha
                 }
 
                 # save model
@@ -174,7 +184,7 @@ class Train_DSS:
 
             #------------------------------------EXPORT INTERMEDIATE RESULTS -----------------------------------------
             if int(epoch + 1) % n_output == 0:
-                self.export_results(F, k, epoch)
+                self.export_results(F, self.k, epoch)
 
             del F, val_loss, loss_dict
 
@@ -189,7 +199,12 @@ class Train_DSS:
             'scheduler': scheduler.state_dict(),
             'loss_train': self.hist["loss_train"],
             'loss_val': self.hist["loss_val"],
-            'training_time': self.training_time
+            'training_time': self.training_time,
+            # parameter below, needed fo testing
+            'k': self.k,
+            'lat_dim': self.lat_dim,
+            'gamma': self.gamma,
+            'alpha': self.alpha
         }
         self.save_model(checkpoint, dirName="Model", model_name="best_model_final")
 

@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="cleaner version">
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="cleaner version + standardize all wrt other branches">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/v1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model_normal_final.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/MyTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/110/F.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/Figure_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/Mesh.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/results.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/res_mesh/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/Mesh.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/res_mesh/Mesh_110.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/res_mesh/Mesh_150.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/res_mesh/Mesh_80.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/res_mesh/Results.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/Results.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/res_mesh/Results_110.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/res_mesh/Results_150.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/res_mesh/Results_80.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/history/first/87-18-001-0003plot_loss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/history/first/87-18-001-0003plot_results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/history/first/results450.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/history/first/results600.npy" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +54,12 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.MyTest">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -96,18 +123,40 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="MyTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="v1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/MyTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.MyDSS" />
       <item itemvalue="Python.MyPostProcess" />
+      <item itemvalue="Python.MyTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MyTest" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.MyPostProcess" />
         <item itemvalue="Python.MyDSS" />
         <item itemvalue="Python.Main" />
-        <item itemvalue="Python.MyDSS" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649339659659</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="cleaner version + standardize all wrt other branches">
+      <created>1649667520806</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649667520806</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,7 +221,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="set blank for slyurm execution" />
     <MESSAGE value="postprocess" />
-    <option name="LAST_COMMIT_MESSAGE" value="postprocess" />
+    <MESSAGE value="cleaner version + standardize all wrt other branches" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaner version + standardize all wrt other branches" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -179,6 +236,11 @@
           <url>file://$PROJECT_DIR$/MyDSS.py</url>
           <line>78</line>
           <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Test/MyTest.py</url>
+          <line>156</line>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

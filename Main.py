@@ -109,7 +109,8 @@ for k in k_list:
                     # # #DSS = DSS.double()
 
                     print("#################### TRAINING #######################")
-                    train_dss = Train_DSS(net=DSS, learning_rate=lr, n_epochs=n_epoch, device=device, set_name=set_name)
+                    train_dss = Train_DSS(net=DSS, learning_rate=lr, n_epochs=n_epoch, device=device, set_name=set_name,
+                                          k=k, latent_dimension=latent_dimension, gamma=gamma, alpha=alpha)
 
                     optimizer, scheduler, epoch, min_val_loss = train_dss.createOptimizerAndScheduler()
 
@@ -117,8 +118,7 @@ for k in k_list:
                         optimizer, scheduler, epoch, min_val_loss = train_dss.restart(optimizer, scheduler,
                                                                                       path='Model/best_model.pt')
 
-                    GNN = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, k,
-                                             n_output)
+                    GNN = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, n_output)
                     #
                     sys.stdout.flush()
 
