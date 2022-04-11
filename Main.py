@@ -7,9 +7,7 @@ import sys
 import torch
 import os
 import shutil
-from torch_geometric.data import DataListLoader
 from torch_geometric.data import DataLoader
-import math
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=1)
