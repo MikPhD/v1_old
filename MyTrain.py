@@ -82,17 +82,17 @@ class Train_DSS:
 
             if last:
                 MyPlot.plot_results("")
+                print("Last Plot Saved!")
             else:
                 MyPlot.plot_results(epoch + 1)
+                print("Intermediate Plot Saved!")
         except:
             print("Problema di PLOT!")
-
-        print("Intermediate Plot Saved!")
-
 
 
     def trainDSS(self, loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch_in, k, n_output):
         for epoch in range(epoch_in, self.n_epochs):
+            print(f'Epoch: {epoch} of {self.set_name}:')
             time_counter = time.time()
 
             #--------------------------------TRAIN---------------------------------------------------------
