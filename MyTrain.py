@@ -92,7 +92,7 @@ class Train_DSS:
 
     def trainDSS(self, loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch_in, k, n_output):
         for epoch in range(epoch_in, self.n_epochs):
-            print(f'Epoch: {epoch} of {self.set_name}:')
+            print(f'Epoch {epoch} of {self.n_epochs}:')
             time_counter = time.time()
 
             #--------------------------------TRAIN---------------------------------------------------------
@@ -147,6 +147,7 @@ class Train_DSS:
 
             #------------------------------- CHECKPOINT ---------------------------------------------------
             intermediate_time = datetime.timedelta(seconds=self.training_time)
+            intermediate_time = intermediate_time - datetime.timedelta(microseconds=intermediate_time.microseconds) #avoid to print microseconds
 
             if total_val_loss / len(loader_val) <= min_val_loss:
 
