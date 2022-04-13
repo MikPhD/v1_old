@@ -1,4 +1,4 @@
-from MyDSS import MyOwnDSSNet
+from NN_test import MyOwnDSSNet
 from Mydataset import MyOwnDataset
 
 from torch_geometric.data import DataLoader
