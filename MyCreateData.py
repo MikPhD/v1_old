@@ -85,25 +85,35 @@ class CreateData:
                 coord_vert1 = (mesh.coordinates()[connection[0]]).tolist()
                 coord_vert2 = (mesh.coordinates()[connection[1]]).tolist()
 
-                if coord_vert1 and coord_vert2 in bmesh:
-                    pass
-                elif coord_vert1 in bmesh:
-                    distancex = coord_vert2[0] - coord_vert1[0]
-                    distancey = coord_vert2[1] - coord_vert1[1]
-                    C.append(list(connection))
-                    D.append([distancex, distancey])
-                elif coord_vert2 in bmesh: ##never happen for how fenics order the points in the iteration
-                    pass
-                else:
-                    connection_rev = connection[::-1]
-                    distancex = coord_vert2[0]-coord_vert1[0]
-                    distancey = coord_vert2[1]-coord_vert1[1]
+                connection_rev = connection[::-1]
+                distancex = coord_vert2[0]-coord_vert1[0]
+                distancey = coord_vert2[1]-coord_vert1[1]
 
-                    C.append(list(connection))
-                    C.append(list(connection_rev))
+                C.append(list(connection))
+                C.append(list(connection_rev))
 
-                    D.append([distancex, distancey])
-                    D.append([-1 * distancex, -1 * distancey])
+                D.append([distancex, distancey])
+                D.append([-1 * distancex, -1 * distancey])
+
+                # if coord_vert1 and coord_vert2 in bmesh:
+                #     pass
+                # elif coord_vert1 in bmesh:
+                #     distancex = coord_vert2[0] - coord_vert1[0]
+                #     distancey = coord_vert2[1] - coord_vert1[1]
+                #     C.append(list(connection))
+                #     D.append([distancex, distancey])
+                # elif coord_vert2 in bmesh: ##never happen for how fenics order the points in the iteration
+                #     pass
+                # else:
+                #     connection_rev = connection[::-1]
+                #     distancex = coord_vert2[0]-coord_vert1[0]
+                #     distancey = coord_vert2[1]-coord_vert1[1]
+                #
+                #     C.append(list(connection))
+                #     C.append(list(connection_rev))
+                #
+                #     D.append([distancex, distancey])
+                #     D.append([-1 * distancex, -1 * distancey])
 
 
 
