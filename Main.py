@@ -11,7 +11,7 @@ from torch_geometric.data import DataLoader
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=1000)
-parser.add_argument('-r', '--restart', type=eval, default=True, choices=[True, False], help='Restart training option')
+parser.add_argument('-r', '--restart', type=eval, default=False, choices=[True, False], help='Restart training option')
 parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['90'])
 parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['90'])
 parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=10)
