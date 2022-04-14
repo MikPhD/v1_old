@@ -33,7 +33,7 @@ class MyOwnDSSNet(nn.Module):
         self.phi_to = Phi_to(2*self.latent_dimension +2, self.latent_dimension)
         self.phi_from = Phi_from(2*self.latent_dimension +2, self.latent_dimension)
         self.loop = Loop(2*self.latent_dimension+1, self.latent_dimension)
-        self.psy = Psy(4*self.latent_dimension, self.latent_dimension)
+        self.psy = Psy(4*self.latent_dimension+3, self.latent_dimension)
         self.decoder =Decoder(self.latent_dimension, 2)
 
     def loss_function(self, F, y):
@@ -59,19 +59,28 @@ class MyOwnDSSNet(nn.Module):
         # set_trace()
 
         H = self.encoder(batch.x)
-        for update in range(60):
+
+        for update in range(self.k):
             mess_to = self.phi_to(H, batch.edge_index, batch.edge_attr)
             mess_from = self.phi_from(H, batch.edge_index, batch.edge_attr)
             loop = self.loop(H, batch.edge_index, batch.edge_attr)
 
-            concat = torch.cat([H, mess_to, mess_from, loop], dim=1)
+            concat = torch.cat([H, mess_to, mess_from, loop, batch.x], dim=1)
 
             H = self.psy(concat)
+            F = self.decoder(H)
 
-        F = self.decoder(H)
+            loss = self.loss_function(F, batch.y)
+            total_loss = loss
 
-        loss = self.loss_function(F, batch.y)
-        total_loss = loss
+            # if total_loss is None :
+            #     total_loss = loss * self.gamma**(self.k - update - 1)
+            # else :
+            #     total_loss += loss * self.gamma**(self.k - update - 1)
+
+
+        # loss = self.loss_function(F, batch.y)
+
 
         # for update in range(self.k) :
         #     # set_trace()

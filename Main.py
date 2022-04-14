@@ -12,9 +12,9 @@ from torch_geometric.data import DataLoader
 parser = argparse.ArgumentParser()
 parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=1000)
 parser.add_argument('-r', '--restart', type=eval, default=False, choices=[True, False], help='Restart training option')
-parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['90'])
-parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['90'])
-parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=10)
+parser.add_argument('-tcase', '--traincase', help='train cases', nargs="+", default=['150'])
+parser.add_argument('-vcase', '--valcase', help='validation cases', nargs="+", default=['150'])
+parser.add_argument('-n_out', '--n_output', help='output each n_out epoch', type=int, default=100)
 
 args = parser.parse_args()
 
@@ -61,8 +61,8 @@ print("#################### DATA ADAPTING FOR GNN #######################")
 # createdata.transform(val_cases, 'val')
 
 #set of parameter from second cycle optimization optuna
-k_list=[87]
-latent_dimension_list=[18]
+k_list=[2]
+latent_dimension_list=[50]
 gamma_list=[0.1]
 alpha_list=[1e-2]
 lr_list=[3e-3]

@@ -5,112 +5,113 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="test zone added">
+      <change afterPath="$PROJECT_DIR$/Results/10-18-001-0003/results10.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/10-18-001-0003/results100.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/10-18-001-0003/results110.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/10-18-001-0003/results120.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/10-18-001-0003/results130.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/10-18-001-0003/results140.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/10-18-001-0003/results20.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/10-18-001-0003/results30.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/10-18-001-0003/results40.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/10-18-001-0003/results50.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/10-18-001-0003/results60.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/10-18-001-0003/results70.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/10-18-001-0003/results80.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/10-18-001-0003/results90.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results10.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results100.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results110.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results120.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results130.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results140.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results150.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results160.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results170.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results180.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results190.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results20.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results30.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results40.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results50.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results60.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results70.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results80.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-18-001-0003/results90.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-50-001-0003/results100.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/2-50-001-0003/results200.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/87-18-001-0003/results20.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/87-18-001-0003/results30.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/87-18-001-0003/results40.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/87-18-001-0003/results50.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/loss_train_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/loss_val_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/plot_results10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/plot_results100.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/plot_results110.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/plot_results120.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/plot_results130.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/plot_results140.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/plot_results20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/plot_results30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/plot_results40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/plot_results50.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/plot_results60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/plot_results70.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/plot_results80.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003/plot_results90.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/10-18-001-0003plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/loss_train_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/loss_val_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results100.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results110.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results120.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results130.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results140.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results180.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results190.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results50.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results70.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results80.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003/plot_results90.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-18-001-0003plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-50-001-0003/loss_train_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-50-001-0003/loss_val_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-50-001-0003/plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-50-001-0003/plot_results100.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-50-001-0003/plot_results200.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-50-001-0003plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/2-50-001-0003plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results50.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results1.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results10.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results100.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results1000.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results110.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results120.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results130.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results140.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results150.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results160.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results170.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results180.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results190.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results2.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results20.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results200.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results210.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results220.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results230.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results240.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results250.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results260.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results270.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results280.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results290.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results3.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results30.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results300.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results3000.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results310.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results320.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results330.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results340.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results350.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results360.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results370.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results380.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results390.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results40.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results400.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results410.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results50.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results500.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results60.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results70.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results80.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results90.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/87-18-001-03/results300.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results1000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results110.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results120.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results130.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results140.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results160.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results170.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results190.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results210.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results220.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results230.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results240.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results260.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results270.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results290.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results3000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results310.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results320.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results330.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results340.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results360.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results370.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results380.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results390.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results410.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results60.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results70.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results80.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results90.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-03/loss_train_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-03/loss_val_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-03/plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-03plot_loss.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/87-18-001-0003/results10.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Results/87-18-001-0003/results10.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Mesh.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_train_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_train_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_val_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_val_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_loss.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_loss.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003plot_loss.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003plot_loss.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stats/87-18-001-0003plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Stats/87-18-001-0003plot_results.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/NN_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/NN_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/processed/data_train.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_train.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/processed/data_val.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_val.pt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,13 +309,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00078" summary="optuna setting blank for slurm">
-      <created>1645439011774</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1645439011774</updated>
     </task>
     <task id="LOCAL-00079" summary="optuna setting blank for slurm">
       <created>1645464405603</created>
@@ -652,7 +646,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649926154896</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="test zone added">
+      <created>1649926631332</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1649926631332</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -728,8 +729,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/MyDSS.py</url>
-          <line>60</line>
-          <option name="timeStamp" value="52" />
+          <line>63</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
