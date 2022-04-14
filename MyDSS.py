@@ -24,11 +24,16 @@ class MyOwnDSSNet(nn.Module):
         self.device = device
 
         #Neural network
-        self.phi_to_list = nn.ModuleList([Phi_to(2*self.latent_dimension + 2, self.latent_dimension) for i in range(self.k)])
-        self.phi_from_list = nn.ModuleList([Phi_from(2*self.latent_dimension + 2, self.latent_dimension) for i in range(self.k)])
-        self.phi_loop_list = nn.ModuleList([Loop(2*self.latent_dimension+1, self.latent_dimension) for i in range(self.k)])
-        self.psy_list = nn.ModuleList([Psy(4*self.latent_dimension + 3, self.latent_dimension) for i in range(self.k)])
-        self.decoder_list = nn.ModuleList([Decoder(self.latent_dimension, 2) for i in range(self.k)])
+        # self.phi_to_list = nn.ModuleList([Phi_to(2*self.latent_dimension + 2, self.latent_dimension) for i in range(self.k)])
+        # self.phi_from_list = nn.ModuleList([Phi_from(2*self.latent_dimension + 2, self.latent_dimension) for i in range(self.k)])
+        # self.phi_loop_list = nn.ModuleList([Loop(2*self.latent_dimension+1, self.latent_dimension) for i in range(self.k)])
+        # self.psy_list = nn.ModuleList([Psy(4*self.latent_dimension + 3, self.latent_dimension) for i in range(self.k)])
+        # self.decoder_list = nn.ModuleList([Decoder(self.latent_dimension, 2) for i in range(self.k)])
+        self.encoder = Encoder(3, self.latent_dimension)
+        self.phi_to = Phi_to(2*self.latent_dimension +2, self.latent_dimension)
+        self.phi_from = Phi_from(2*self.latent_dimension +2, self.latent_dimension)
+        self.psy = Psy(3*self.latent_dimension, self.latent_dimension)
+        self.decoder =Decoder(self.latent_dimension, 2)
 
     def loss_function(self, F, y):
         loss_fn1 = nn.MSELoss()
@@ -41,57 +46,82 @@ class MyOwnDSSNet(nn.Module):
     def forward(self, batch):
 
         #Initialisation
-        H = {}
-        F = {}
+        # H = {}
+        # F = {}
         loss = {}
         total_loss = None
 
-        self.F_init = batch.x*0
+        # self.F_init = batch.x*0
 
-        H['0'] = torch.zeros([batch.num_nodes, self.latent_dimension], dtype = torch.float, device = self.device)
-        F['0'] = self.decoder_list[0](H['0'])# + self.U_init
+        # H['0'] = torch.zeros([batch.num_nodes, self.latent_dimension], dtype = torch.float, device = self.device)
+        # F['0'] = self.decoder_list[0](H['0'])# + self.U_init
         # set_trace()
 
-        for update in range(self.k) :
-            # set_trace()
-            mess_to = self.phi_to_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
-            #print("Message_To size : ", mess_to.size())
+        H = self.encoder(batch.x)
+        for update in range(30):
+            mess_to = self.phi_to(H, batch.edge_index, batch.edge_attr)
+            mess_from = self.phi_from(H, batch.edge_index, batch.edge_attr)
 
-            mess_from = self.phi_from_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
-            #print("Message_from size : ", mess_from.size())
+            concat = torch.cat([H, mess_to, mess_from], dim=1)
 
-            loop = self.phi_loop_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
-            #print("Message loop size :", loop.size())
+            H = self.psy(concat)
 
-            concat = torch.cat([H[str(update)], mess_to, mess_from, loop, batch.x], dim = 1)
-            #concat = torch.cat([H[str(update)], mess_to, mess_from, loop, y], dim = 1)
-            #print("Size concat : ", concat.size())
+        F = self.decoder(H)
 
-            correction = self.psy_list[update](concat)
-            #print("Correction size : ", correction.size())
-            #print(self.psy_list[update])
+        loss = self.loss_function(F, batch.y)
+        total_loss = loss
 
-            H[str(update+1)] = H[str(update)] + self.alpha*correction
-            #print("H+1 size : ", H[str(update+1)].size())
-
-            F[str(update+1)] = self.decoder_list[update](H[str(update+1)])
-            #print("Size of U : ", U[str(update+1)].size())
-            #print(self.decoder_list[update])
-
-            loss[str(update+1)] = self.loss_function(F[str(update+1)], batch.y)
-
-            if total_loss is None :
-                total_loss = loss[str(update+1)] * self.gamma**(self.k - update - 1)
-            else :
-                total_loss += loss[str(update+1)] * self.gamma**(self.k - update - 1)
-
-        #print(torch.mean((U[str(self.k-1)] - data.x)**2))
+        # for update in range(self.k) :
+        #     # set_trace()
+        #     mess_to = self.phi_to_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
+        #     #print("Message_To size : ", mess_to.size())
+        #
+        #     mess_from = self.phi_from_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
+        #     #print("Message_from size : ", mess_from.size())
+        #
+        #     loop = self.phi_loop_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
+        #     #print("Message loop size :", loop.size())
+        #
+        #     concat = torch.cat([H[str(update)], mess_to, mess_from, loop, batch.x], dim = 1)
+        #     #concat = torch.cat([H[str(update)], mess_to, mess_from, loop, y], dim = 1)
+        #     #print("Size concat : ", concat.size())
+        #
+        #     correction = self.psy_list[update](concat)
+        #     #print("Correction size : ", correction.size())
+        #     #print(self.psy_list[update])
+        #
+        #     H[str(update+1)] = H[str(update)] + self.alpha*correction
+        #     #print("H+1 size : ", H[str(update+1)].size())
+        #
+        #     F[str(update+1)] = self.decoder_list[update](H[str(update+1)])
+        #     #print("Size of U : ", U[str(update+1)].size())
+        #     #print(self.decoder_list[update])
+        #
+        #     loss[str(update+1)] = self.loss_function(F[str(update+1)], batch.y)
+        #
+        #     if total_loss is None :
+        #         total_loss = loss[str(update+1)] * self.gamma**(self.k - update - 1)
+        #     else :
+        #         total_loss += loss[str(update+1)] * self.gamma**(self.k - update - 1)
+        #
+        # #print(torch.mean((U[str(self.k-1)] - data.x)**2))
 
         return F, total_loss, loss
 
 #######################################################################################################################################################
 ####################################################### NEURAL NETWORKS ###############################################################################
 #######################################################################################################################################################
+
+class Encoder(nn.Module):
+    def __init__(self, in_size, out_size):
+        super(Encoder, self).__init__()
+
+        self.MLP = nn.Sequential(   nn.Linear(in_size, in_size),
+                                    nn.ReLU(),
+                                    nn.Linear(in_size, out_size))
+    def forward(self, x):
+
+        return self.MLP(x)
 
 class Phi_to(MessagePassing):
     def __init__(self, in_channels, out_channels):
