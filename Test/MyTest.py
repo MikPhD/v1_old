@@ -1,4 +1,4 @@
-from MyDSS import MyOwnDSSNet
+from NN_test import MyOwnDSSNet
 from Mydataset import MyOwnDataset
 
 from torch_geometric.data import DataLoader
@@ -18,22 +18,22 @@ print('Running on : ', device)
 test_case = [input('Test case Reynolds number:')]
 
 #clean processed folder (Model comes from an older version of PYG)
-if os.path.exists("./dataset/processed/data_val.pt"):
-    os.remove("./dataset/processed/data_val.pt")
-if os.path.exists("./dataset/processed/data_train.pt"):
-    os.remove("./dataset/processed/data_train.pt")
-if os.path.exists("./dataset/processed/data_test.pt"):
-    os.remove("./dataset/processed/data_test.pt")
-if os.path.exists("./dataset/processed/pre_filter.pt"):
-    os.remove("./dataset/processed/pre_filter.pt")
-if os.path.exists("./dataset/processed/pre_transform.pt"):
-    os.remove("./dataset/processed/pre_transform.pt")
+if os.path.exists("../dataset/processed/data_val.pt"):
+    os.remove("../dataset/processed/data_val.pt")
+if os.path.exists("../dataset/processed/data_train.pt"):
+    os.remove("../dataset/processed/data_train.pt")
+if os.path.exists("../dataset/processed/data_test.pt"):
+    os.remove("../dataset/processed/data_test.pt")
+if os.path.exists("../dataset/processed/pre_filter.pt"):
+    os.remove("../dataset/processed/pre_filter.pt")
+if os.path.exists("../dataset/processed/pre_transform.pt"):
+    os.remove("../dataset/processed/pre_transform.pt")
 
 print("#################### DATA ADAPTING FOR GNN #######################")
 ################# inizio lettura file ##########################
 ######### lettura mesh #########
 mesh = Mesh()
-mesh_file = "./res_mesh_model/Mesh.h5"
+mesh_file = "./res_mesh_model/Mesh_downshift.h5"
 with HDF5File(MPI.comm_world, mesh_file, "r") as h5file:
     h5file.read(mesh, "mesh", False)
     facet = MeshFunction("size_t", mesh, mesh.topology().dim() - 1)
@@ -47,7 +47,7 @@ Space2 = FunctionSpace(mesh, VelocityElement2 * PressureElement2)
 u_glob2 = Function(Space2)
 f_glob2 = Function(Space2)
 
-with HDF5File(MPI.comm_world, "./res_mesh_model/Results.h5", "r") as h5file:
+with HDF5File(MPI.comm_world, "./res_mesh_model/Results_downshift.h5", "r") as h5file:
     h5file.read(u_glob2, "mean")
     h5file.read(f_glob2, "forcing")
 
@@ -147,6 +147,15 @@ gamma = checkpoint['gamma']
 print("Gamma (loss function) : ", gamma)
 alpha = checkpoint['alpha']
 print("Alpha (reduction correction) :", alpha)
+#
+# latent_dimension = 87
+# print("Latent space dim : ", latent_dimension)
+# k = 18
+# print("Number of updates : ", k)
+# gamma = 0.1
+# print("Gamma (loss function) : ", gamma)
+# alpha = 1e-2
+# print("Alpha (reduction correction) :", alpha)
 
 
 print("#################### CREATING NETWORKS #######################")
