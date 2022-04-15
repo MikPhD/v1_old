@@ -4,49 +4,21 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="update test zone">
-      <change afterPath="$PROJECT_DIR$/Test/Model.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/down/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/down_confined/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/down_confined/GNN.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/down_confined/Mesh.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/downstream/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/downstream/Mesh.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/downstream/Results.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/downstream/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g1/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g1/Mesh.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g1/Results.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g1/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/square/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/square/Mesh.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/square/Results.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/upstream/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/upstream/Mesh.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/upstream/Results.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh/upstream/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/processed/data_test.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/processed/pre_filter.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/processed/pre_transform.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/raw/test/60/C.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/raw/test/60/D.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/raw/test/60/F.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/raw/test/60/U.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/raw/test/60/re.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/v1.iml" afterDir="false" />
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="test done">
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/flipflop/re55_g1_5/Mesh.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g2/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g2/Mesh.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g2/Results.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g_1_5/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g_1_5/Mesh.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g_1_5/Results.h5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/MyTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/NN_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/NN_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/Mesh_downshift.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh/down/Mesh.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/Model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/Results_downshift.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh/down/Results.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/100/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/100/F.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/100/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/100/U.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/C.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/C.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/D.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/D.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/processed/data_test.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_test.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/60/C.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/60/C.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/60/D.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/60/D.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/60/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/60/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/60/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/60/U.npy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,18 +68,18 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Test/res_mesh/flipflop/re55_g1_5" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="two.files.diff.last.used.file" value="$USER_HOME$/Scaricati/v1-095e098919acfe2f3d4b49c0d3d691175a39300c/MyPlot.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Test/res_mesh/flipflop/re55_g1_5" />
+      <recent name="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g2" />
+      <recent name="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g_1_5" />
       <recent name="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g1" />
       <recent name="$PROJECT_DIR$/Test/res_mesh/flipflop" />
-      <recent name="$PROJECT_DIR$/Test/res_mesh/upstream" />
-      <recent name="$PROJECT_DIR$/Test/res_mesh/downstream" />
-      <recent name="$PROJECT_DIR$/Test/res_mesh/down_confined" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g1" />
@@ -242,18 +214,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ae26d9d8-a015-461c-a59a-688f9bb9d5c5" name="Changes" comment="update" />
+      <changelist id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="update test zone" />
       <created>1642591769657</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00077" summary="optuna setting blank for slurm">
-      <created>1645438721535</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1645438721535</updated>
     </task>
     <task id="LOCAL-00078" summary="optuna setting blank for slurm">
       <created>1645439011774</created>
@@ -591,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649833353734</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="test done">
+      <created>1650020881126</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1650020881126</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -630,7 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="modified postprocess (works!)" />
     <MESSAGE value="after call.. set to ground" />
     <MESSAGE value="setted automatition" />
     <MESSAGE value="changed StepLR -&gt; ReduceLROnPlateau" />
@@ -655,7 +626,8 @@
     <MESSAGE value="no self loop" />
     <MESSAGE value="no bcs" />
     <MESSAGE value="update test zone" />
-    <option name="LAST_COMMIT_MESSAGE" value="update test zone" />
+    <MESSAGE value="test done" />
+    <option name="LAST_COMMIT_MESSAGE" value="test done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

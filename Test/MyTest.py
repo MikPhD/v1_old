@@ -16,8 +16,8 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Running on : ', device)
 
 # test_case = [input('Test case Reynolds number:')]
-test_case = ['60'] #Reynolds number
-case_name = 'flipflop/re60_g1' #down, square, down_confined, downstream, upstream, flipflop/re60_g1
+test_case = ['55'] #Reynolds number
+case_name = 'flipflop/re55_g1_5' #down, square, down_confined, downstream, upstream, flipflop/re60_g1, flipflop/re60_g1_5, flipflop/re60_g2, flipflop/re55_g1_5
 
 #clean processed folder (Model comes from an older version of PYG)
 if os.path.exists("../dataset/processed/data_val.pt"):
