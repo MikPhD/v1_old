@@ -4,7 +4,50 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="update test zone" />
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="update test zone">
+      <change afterPath="$PROJECT_DIR$/Test/Model.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/down/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/down_confined/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/down_confined/GNN.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/down_confined/Mesh.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/downstream/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/downstream/Mesh.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/downstream/Results.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/downstream/plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g1/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g1/Mesh.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g1/Results.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g1/plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/square/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/square/Mesh.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/square/Results.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/upstream/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/upstream/Mesh.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/upstream/Results.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/res_mesh/upstream/plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/processed/data_test.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/processed/pre_filter.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/processed/pre_transform.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/60/C.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/60/D.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/60/F.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/60/U.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/raw/test/60/re.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/v1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/MyTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/NN_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/NN_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/Mesh_downshift.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh/down/Mesh.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/Model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/Results_downshift.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh/down/Results.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/100/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/100/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/100/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/100/U.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/C.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/C.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/D.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/D.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,24 +96,27 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Test/res_mesh_model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g1" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="two.files.diff.last.used.file" value="$USER_HOME$/Scaricati/v1-095e098919acfe2f3d4b49c0d3d691175a39300c/MyPlot.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Test/res_mesh_model" />
-      <recent name="$PROJECT_DIR$/Test" />
-      <recent name="$PROJECT_DIR$/Test/res_mesh" />
-      <recent name="$PROJECT_DIR$/PostProcessing" />
-      <recent name="$PROJECT_DIR$/PostProcessing/110" />
+      <recent name="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g1" />
+      <recent name="$PROJECT_DIR$/Test/res_mesh/flipflop" />
+      <recent name="$PROJECT_DIR$/Test/res_mesh/upstream" />
+      <recent name="$PROJECT_DIR$/Test/res_mesh/downstream" />
+      <recent name="$PROJECT_DIR$/Test/res_mesh/down_confined" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Test/res_mesh/flipflop/re60_g1" />
+      <recent name="$PROJECT_DIR$/Test/res_mesh/down" />
+      <recent name="$PROJECT_DIR$/Test" />
       <recent name="$PROJECT_DIR$/history/first" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.MyTest (1)">
     <configuration name="FRe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -134,22 +180,22 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MyPostProcess" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="v2" />
+    <configuration name="MyTest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../v2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../v2/MyPostProcess.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/MyTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -176,42 +222,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="prova" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="v1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prova.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.FRe" />
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.MyPostProcess (1)" />
-      <item itemvalue="Python.MyPostProcess" />
       <item itemvalue="Python.MyTest" />
-      <item itemvalue="Python.prova" />
+      <item itemvalue="Python.MyTest (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MyTest (1)" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.MyPostProcess (1)" />
         <item itemvalue="Python.MyTest" />
         <item itemvalue="Python.FRe" />
-        <item itemvalue="Python.prova" />
       </list>
     </recent_temporary>
   </component>
