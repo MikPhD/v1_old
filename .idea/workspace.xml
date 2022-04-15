@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="cleaner version + setted postprocess and test">
-      <change afterPath="$PROJECT_DIR$/PostProcessing/reference/F.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/reference/Mesh.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/results/F.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
-    </list>
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="test for TEST - not yet done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
