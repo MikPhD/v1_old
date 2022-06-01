@@ -34,11 +34,11 @@ for i in val_cases:
     src = os.path.join("../Dataset", i, "Mesh.h5")
     dst = "./Results/Mesh.h5"
     shutil.copyfile(src, dst)
-
-## Copy NET file in Test - needed for Test ##
-src = os.path.join("./MyDSS.py")
-dst = "./Test/NN_test.py"
-shutil.copyfile(src, dst)
+#
+# ## Copy NET file in Test - needed for Test ##
+# src = os.path.join("./MyDSS.py")
+# dst = "./Test/NN_test.py"
+# shutil.copyfile(src, dst)
 
 ## Setting blank for new execution ##
 if not restart:
@@ -56,9 +56,9 @@ if not restart:
         os.remove("./Model/best_model_normal_final.pt")
 
 print("#################### DATA ADAPTING FOR GNN #######################")
-# createdata = CreateData()
-# createdata.transform(train_cases, 'train')
-# createdata.transform(val_cases, 'val')
+createdata = CreateData()
+createdata.transform(train_cases, 'train')
+createdata.transform(val_cases, 'val')
 
 #set of parameter from second cycle optimization optuna
 k_list=[87]

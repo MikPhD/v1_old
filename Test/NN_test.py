@@ -134,7 +134,7 @@ class Phi_from(MessagePassing):
 
         return self.MLP(tmp)
 
-class Loop(nn.Module):
+class Loop(nn.Module): #never used
     def __init__(self, in_channels, out_channels):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         super(Loop, self).__init__()
