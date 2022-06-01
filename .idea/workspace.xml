@@ -4,10 +4,27 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="update test zone">
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/MyTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/NN_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/NN_test.py" afterDir="false" />
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="update master config">
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/cavity/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/cavity/Mesh.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/cavity/Results.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/down_confined/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/downshift/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/downshift/plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/flipflop_re60g1/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/flipflop_re60g1/plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re130/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re130/Mesh.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re130/plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare/Mesh.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare/plot_results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/very_down/F_gnn.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/very_down/Mesh.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/very_down/plot_results.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/reference/F.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostProcessing/results/F.npy" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,15 +70,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Test/res_mesh_model" />
-    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="two.files.diff.last.used.file" value="$USER_HOME$/Scaricati/v1-095e098919acfe2f3d4b49c0d3d691175a39300c/MyPlot.py" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "/home/michele/Scrivania/NeuralNet/v1/PostProcessing/cases"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Test/res_mesh_model" />
@@ -227,13 +240,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00077" summary="optuna setting blank for slurm">
-      <created>1645438721535</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1645438721535</updated>
     </task>
     <task id="LOCAL-00078" summary="optuna setting blank for slurm">
       <created>1645439011774</created>
@@ -571,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649833353734</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="update master config">
+      <created>1654073986910</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1654073986910</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -610,7 +623,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="after call.. set to ground" />
     <MESSAGE value="setted automatition" />
     <MESSAGE value="changed StepLR -&gt; ReduceLROnPlateau" />
     <MESSAGE value="fake" />
@@ -635,7 +647,8 @@
     <MESSAGE value="no bcs" />
     <MESSAGE value="update test zone" />
     <MESSAGE value="upload train_square files" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload train_square files" />
+    <MESSAGE value="update master config" />
+    <option name="LAST_COMMIT_MESSAGE" value="update master config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
