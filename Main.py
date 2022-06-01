@@ -34,11 +34,11 @@ for i in val_cases:
     src = os.path.join("../Dataset", i, "Mesh.h5")
     dst = "./Results/Mesh.h5"
     shutil.copyfile(src, dst)
-
-## Copy NET file in Test - needed for Test ##
-src = os.path.join("./MyDSS.py")
-dst = "./Test/NN_test.py"
-shutil.copyfile(src, dst)
+#
+# ## Copy NET file in Test - needed for Test ##
+# src = os.path.join("./MyDSS.py")
+# dst = "./Test/NN_test.py"
+# shutil.copyfile(src, dst)
 
 ## Setting blank for new execution ##
 if not restart:

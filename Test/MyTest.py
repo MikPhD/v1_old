@@ -15,6 +15,7 @@ from mpl_toolkits.axes_grid1.axes_divider import make_axes_locatable
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Running on : ', device)
 
+case_name = input('Insert case name: [downshift, re130, very_down, down_confined, flipflop_re60g1, cavity, tiltsquare]')
 test_case = [input('Test case Reynolds number:')]
 
 #clean processed folder (Model comes from an older version of PYG)
@@ -33,7 +34,7 @@ print("#################### DATA ADAPTING FOR GNN #######################")
 ################# inizio lettura file ##########################
 ######### lettura mesh #########
 mesh = Mesh()
-mesh_file = "./res_mesh_model/Mesh_downshift.h5"
+mesh_file = "res_mesh_model/"+ case_name + "/Mesh.h5"
 with HDF5File(MPI.comm_world, mesh_file, "r") as h5file:
     h5file.read(mesh, "mesh", False)
     facet = MeshFunction("size_t", mesh, mesh.topology().dim() - 1)
@@ -47,7 +48,7 @@ Space2 = FunctionSpace(mesh, VelocityElement2 * PressureElement2)
 u_glob2 = Function(Space2)
 f_glob2 = Function(Space2)
 
-with HDF5File(MPI.comm_world, "./res_mesh_model/Results_downshift.h5", "r") as h5file:
+with HDF5File(MPI.comm_world, "res_mesh_model/" + case_name + "/Results.h5", "r") as h5file:
     h5file.read(u_glob2, "mean")
     h5file.read(f_glob2, "forcing")
 
@@ -118,8 +119,8 @@ U = U_P
 ######################### Fine creazione elementi############################
 
 ###################### Salvataggio file Numpy ##############################
-os.makedirs("./dataset/raw/test/" + test_case[0], exist_ok=True)
-specific_dir = "./dataset/raw/test/" + test_case[0]
+os.makedirs("../dataset/raw/test/" + test_case[0], exist_ok=True)
+specific_dir = "../dataset/raw/test/" + test_case[0]
 np.save(specific_dir + "/C.npy", C)
 np.save(specific_dir + "/D.npy", D)
 np.save(specific_dir + "/U.npy", U)
@@ -131,7 +132,7 @@ np.save(specific_dir + "/re.npy", int(test_case[0]))
 print("Trasformazione file di completata!")
 
 print("#################### CREATING Inner DATASET #######################")
-loader_test = MyOwnDataset(root='./dataset', mode='test', cases=test_case, device=device)
+loader_test = MyOwnDataset(root='../dataset', mode='test', cases=test_case, device=device)
 #initialize the created dataset
 loader_test = DataLoader(loader_test)
 
@@ -139,13 +140,17 @@ print("#################### DSS NET parameter #######################")
 #Load checkpoint
 checkpoint = torch.load('./res_mesh_model/Model.pt', map_location=torch.device('cpu'))
 
-latent_dimension = checkpoint['lat_dim']
+# latent_dimension = checkpoint['lat_dim']
+latent_dimension = 18
 print("Latent space dim : ", latent_dimension)
-k = checkpoint['k']
+# k = checkpoint['k']
+k = 87
 print("Number of updates : ", k)
-gamma = checkpoint['gamma']
+# gamma = checkpoint['gamma']
+gamma = 0.1
 print("Gamma (loss function) : ", gamma)
-alpha = checkpoint['alpha']
+# alpha = checkpoint['alpha']
+alpha = 0.01
 print("Alpha (reduction correction) :", alpha)
 #
 # latent_dimension = 87
@@ -175,16 +180,16 @@ with torch.no_grad():
 print("Test loss = {:.5e}".format(total_test_loss / len(loader_test)))
 
 ##create folder for different results ##
-set_name = str(k) + '-' + str(latent_dimension).replace(".", "") + '-' + str(alpha).replace(".", "").replace(".", "")
+# set_name = str(k) + '-' + str(latent_dimension).replace(".", "") + '-' + str(alpha).replace(".", "").replace(".", "")
 print("PARAMETER SET: k:{}, laten_dim:{}, alpha:{}".format(str(k), str(latent_dimension), str(alpha)))
-os.makedirs("./" + set_name, exist_ok=True)
+os.makedirs("./res_mesh_model/" + case_name, exist_ok=True)
 
 #detach result for plot
 F_gnn = F[str(k)].cpu().numpy()
-np.save("./" + set_name + "/F_gnn.npy", F_gnn)
+np.save("./res_mesh_model/" + case_name + "/F_gnn.npy", F_gnn)
 
 print("#################### PLOT RESULTS #######################")
-F_gnn = np.load("./" + set_name + "/F_gnn.npy").flatten()
+F_gnn = np.load("./res_mesh_model/" + case_name + "/F_gnn.npy").flatten()
 
 ####### initializing holder ########
 VelocityElement = VectorElement("CG", mesh.ufl_cell(), 1)
@@ -236,7 +241,7 @@ cax = divider.append_axes('right', "4%", pad="2%")
 colorbar_format = '% 1.1f'
 cbar = plt.colorbar(mpl.cm.ScalarMappable(norm=norm, cmap=cmap), cax=cax, format=colorbar_format)
 
-fig_plot.savefig("./" + set_name + "/plot_results.jpg")
+fig_plot.savefig("./res_mesh_model/" + case_name + "/plot_results.jpg")
 plt.close(fig_plot)
 
 

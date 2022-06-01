@@ -4,7 +4,11 @@
     <option name="SCOPE_TYPE" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="update test zone" />
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="update test zone">
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/MyTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/NN_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/NN_test.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -606,7 +610,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="modified postprocess (works!)" />
     <MESSAGE value="after call.. set to ground" />
     <MESSAGE value="setted automatition" />
     <MESSAGE value="changed StepLR -&gt; ReduceLROnPlateau" />
@@ -631,7 +634,8 @@
     <MESSAGE value="no self loop" />
     <MESSAGE value="no bcs" />
     <MESSAGE value="update test zone" />
-    <option name="LAST_COMMIT_MESSAGE" value="update test zone" />
+    <MESSAGE value="upload train_square files" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload train_square files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
