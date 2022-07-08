@@ -29,8 +29,9 @@ class MyOwnDSSNet(nn.Module):
         self.phi_to_list = nn.ModuleList([Phi_to(2*self.latent_dimension + 2, self.latent_dimension) for i in range(self.k)])
         self.phi_from_list = nn.ModuleList([Phi_from(2*self.latent_dimension + 2, self.latent_dimension) for i in range(self.k)])
         self.phi_loop_list = nn.ModuleList([Loop(2*self.latent_dimension+1, self.latent_dimension) for i in range(self.k)])
-        self.psy_list = nn.ModuleList([Psy(4*self.latent_dimension + 3, self.latent_dimension) for i in range(self.k)])
-        self.decoder_list = nn.ModuleList([Decoder(self.latent_dimension, 2) for i in range(self.k)])
+        self.psy_list = nn.ModuleList([Psy(1*self.latent_dimension + 3, self.latent_dimension) for i in range(self.k)])
+        # self.decoder_list = nn.ModuleList([Decoder(self.latent_dimension, 2) for i in range(self.k)])
+        self.decoder = Decoder(self.latent_dimension, 2)
 
     def loss_function(self, F, y):
         loss_fn1 = nn.MSELoss()
@@ -51,7 +52,7 @@ class MyOwnDSSNet(nn.Module):
         self.F_init = batch.x*0
 
         H['0'] = torch.zeros([batch.num_nodes, self.latent_dimension], dtype = torch.float, device = self.device)
-        F['0'] = self.decoder_list[0](H['0'])# + self.U_init
+        F['0'] = self.decoder(H['0'])# + self.U_init
         # set_trace()
 
         df_onbound = pd.DataFrame()
@@ -72,7 +73,7 @@ class MyOwnDSSNet(nn.Module):
             loop = self.phi_loop_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
             #print("Message loop size :", loop.size())
 
-            concat = torch.cat([H[str(update)], mess_to, mess_from, loop, batch.x], dim = 1)
+            concat = torch.cat([H[str(update)], batch.x], dim = 1)
             #concat = torch.cat([H[str(update)], mess_to, mess_from, loop, y], dim = 1)
             #print("Size concat : ", concat.size())
 
@@ -90,7 +91,8 @@ class MyOwnDSSNet(nn.Module):
             df_random2[str(update)] = H[str(update)][623].detach().numpy() #103 - coord(14.224,5)
 
 
-            F[str(update+1)] = self.decoder_list[update](H[str(update+1)])
+            # F[str(update+1)] = self.decoder_list[update](H[str(update+1)])
+            F[str(update+1)] = self.decoder(H[str(update+1)])
             #print("Size of U : ", U[str(update+1)].size())
             #print(self.decoder_list[update])
 
