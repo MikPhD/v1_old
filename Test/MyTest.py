@@ -15,7 +15,9 @@ from mpl_toolkits.axes_grid1.axes_divider import make_axes_locatable
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Running on : ', device)
 
-case_name = input('Insert case name: [downshift, re130, very_down, down_confined, flipflop_re60g1, cavity, tiltsquare]')
+case_name = input('Insert case name: [downshift, re130, re200, very_down, down_confined, flipflop_re60g1, '
+                  'cavity, tiltsquare, tiltsquare_smooth, upstream, flipflop_re55g1_5, flipflop_re60g1_5, '
+                  're260, re110, square]')
 test_case = [input('Test case Reynolds number:')]
 
 #clean processed folder (Model comes from an older version of PYG)
@@ -126,6 +128,8 @@ np.save(specific_dir + "/D.npy", D)
 np.save(specific_dir + "/U.npy", U)
 np.save(specific_dir + "/F.npy", F)
 np.save(specific_dir + "/re.npy", int(test_case[0]))
+
+np.save("./res_mesh_model/" + case_name + "/F_dns.npy", F)
 ################# Fine salvataggio file ##################################
 
 ################# Print interface ########################################
@@ -138,7 +142,7 @@ loader_test = DataLoader(loader_test)
 
 print("#################### DSS NET parameter #######################")
 #Load checkpoint
-checkpoint = torch.load('./res_mesh_model/Model.pt', map_location=torch.device('cpu'))
+checkpoint = torch.load('./Model.pt', map_location=torch.device('cpu'))
 
 # latent_dimension = checkpoint['lat_dim']
 latent_dimension = 18

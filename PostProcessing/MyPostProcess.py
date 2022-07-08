@@ -16,7 +16,7 @@ class PostProcess():
         xy = mesh.coordinates()
         return tri.Triangulation(xy[:, 0], xy[:, 1], mesh.cells())
 
-    def plot(self, obj):
+    def plot(self, obj, label):
         # plt.gca().set_aspect('equal')
         mesh = obj.function_space().mesh()
 
@@ -28,10 +28,27 @@ class PostProcess():
             else:
                 x = mesh.coordinates()[:, 0]
                 y = mesh.coordinates()[:, 1]
+
+                #trick to center the axes wrt the cilinder
+                if label == "gnn":
+                    x -= 11.25
+                    y -= 5
+
                 t = mesh.cells()
                 v = obj.compute_vertex_values(mesh)
-                vmin = v.min()
-                vmax = v.max()
+                # vmin = v.min()
+                # vmax = v.max()
+
+                # if label == 'gnn':
+                #     vmin = -0.6
+                #     vmax = 0.4
+                # else:
+                #     vmin = -0.2
+                #     vmax = 0.1
+                #
+                vmin = -0.45
+                vmax = 0.35
+
                 v[v < vmin] = vmin + 1e-12
                 v[v > vmax] = vmax - 1e-12
                 from matplotlib.ticker import ScalarFormatter
@@ -47,13 +64,14 @@ class PostProcess():
                 p = ax.triplot(x, y, t, '-', lw=0.5, alpha=0.0)
                 ax.set_xlim([x.min(), x.max()])
                 ax.set_ylim([y.min(), y.max()])
-                ax.set_xlabel(' $\it{Coordinata\:x}$')
-                ax.set_ylabel(' $\it{Coordinata\:y}$')
+                ax.set_xlabel(' $\it{\:x}$')
+                ax.set_ylabel(' $\it{\:y}$')
                 # tit = plt.title('Componente x del tensore di Reynolds')
                 divider = make_axes_locatable(plt.gca())
                 cax = divider.append_axes('right', "4%", pad="2%")
                 colorbar_format = '% 1.1f'
                 cbar = plt.colorbar(mpl.cm.ScalarMappable(norm=norm, cmap=cmap), cax=cax, format=colorbar_format)
+                fig.savefig("./cases/" + case_name + f"/plot_{label}.png")
 
 
         elif isinstance(obj, Mesh):
@@ -96,10 +114,10 @@ class PostProcess():
         self.plot(v.sub(0))
         plt.show()
 
-    def differences(self):
+    def differences(self, case_name):
         ####### loading mesh ########
         mesh = Mesh()
-        mesh_file = "./reference/Mesh.h5"
+        mesh_file = "./cases/" + case_name + "/Mesh.h5"
         with HDF5File(MPI.comm_world, mesh_file, "r") as h5file:
             h5file.read(mesh, "mesh", False)
             facet = MeshFunction("size_t", mesh, mesh.topology().dim() - 1)
@@ -121,10 +139,10 @@ class PostProcess():
 
 
         ######## loading forcing from GNN ################
-        F_gnn = np.load("./results/F.npy").flatten()
+        F_gnn = np.load("./cases/" + case_name + "/F_gnn.npy").flatten()
 
         ######## loading forcing from CFD ################
-        F_cfd = np.load("./reference/F.npy").flatten()
+        F_cfd = np.load("./cases/" + case_name + "/F_dns.npy").flatten()
 
         ######## mesh coordinates ##############
         mesh_points = mesh.coordinates().tolist()
@@ -144,24 +162,20 @@ class PostProcess():
         v_diff.vector()[:] = v_cfd.vector()[:] - v_gnn.vector()[:]
 
         ######### plot results ##############
-        plt.figure()
-        self.plot(v_gnn.sub(0))
-        plt.show()
+        self.plot(v_gnn.sub(0), "gnn")
         #
-        plt.figure()
-        self.plot(v_cfd.sub(0))
-        plt.show()
+        self.plot(v_cfd.sub(0), "dns")
 
-        plt.figure()
-        self.plot(v_diff.sub(0))
-        plt.show()
+        self.plot(v_diff.sub(0), "diff")
 
         print(f"Norma della differenza delle funzioni: {norm(v_diff, 'L2')}")
         print(f"Norma della differenza delle funzioni normalizzata: {norm(v_diff, 'L2')/norm(v_cfd, 'L2')}")
 
 
-
+case_name = input('Insert case name: [downshift, re130, re200, very_down, down_confined, flipflop_re60g1, '
+                  'cavity, tiltsquare, tiltsquare_smooth, upstream, flipflop_re55g1_5, flipflop_re60g1_5, '
+                  're260, re110, square]')
 post_process = PostProcess()
 # post_process.plot_results()
-post_process.differences()
+post_process.differences(case_name)
 
