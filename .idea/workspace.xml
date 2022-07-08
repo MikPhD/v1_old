@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="update master config">
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/cavity/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/cavity/Mesh.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/cavity/Results.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/down_confined/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/downshift/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/downshift/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/flipflop_re60g1/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/flipflop_re60g1/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re130/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re130/Mesh.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re130/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare/Mesh.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/very_down/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/very_down/Mesh.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/very_down/plot_results.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/reference/F.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/results/F.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="gru" />
+        <entry key="$PROJECT_DIR$" value="master" />
         <entry key="$PROJECT_DIR$/../v2" value="bcs" />
       </map>
     </option>
@@ -70,45 +52,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "/home/michele/Scrivania/NeuralNet/v1/PostProcessing/cases"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;/home/michele/Scrivania/NeuralNet/v1/PostProcessing/cases/tiltsquare_smooth&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PostProcessing/cases/tiltsquare_smooth" />
+      <recent name="$PROJECT_DIR$/Test/res_mesh_model/tiltsquare_smooth" />
       <recent name="$PROJECT_DIR$/Test/res_mesh_model" />
-      <recent name="$PROJECT_DIR$/Test" />
-      <recent name="$PROJECT_DIR$/Test/res_mesh" />
-      <recent name="$PROJECT_DIR$/PostProcessing" />
-      <recent name="$PROJECT_DIR$/PostProcessing/110" />
+      <recent name="$PROJECT_DIR$/PostProcessing/cases/square" />
+      <recent name="$PROJECT_DIR$/PostProcessing/cases" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/history/first" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Main">
-    <configuration name="FRe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="v1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../re100_down" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../re100_down/FRe.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -215,38 +176,30 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.FRe" />
+      <item itemvalue="Python.MyPostProcess" />
+      <item itemvalue="Python.prova" />
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.MyPostProcess (1)" />
-      <item itemvalue="Python.MyPostProcess" />
       <item itemvalue="Python.MyTest" />
-      <item itemvalue="Python.prova" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Main" />
-        <item itemvalue="Python.MyPostProcess (1)" />
-        <item itemvalue="Python.MyTest" />
-        <item itemvalue="Python.FRe" />
         <item itemvalue="Python.prova" />
+        <item itemvalue="Python.MyTest" />
+        <item itemvalue="Python.MyPostProcess" />
+        <item itemvalue="Python.MyPostProcess (1)" />
+        <item itemvalue="Python.Main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ae26d9d8-a015-461c-a59a-688f9bb9d5c5" name="Changes" comment="update" />
+      <changelist id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="update master config" />
       <created>1642591769657</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642591769657</updated>
-    </task>
-    <task id="LOCAL-00078" summary="optuna setting blank for slurm">
-      <created>1645439011774</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1645439011774</updated>
     </task>
     <task id="LOCAL-00079" summary="optuna setting blank for slurm">
       <created>1645464405603</created>
@@ -584,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654073986910</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="update master config">
+      <created>1657266424206</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1657266424207</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

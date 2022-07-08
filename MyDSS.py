@@ -10,6 +10,8 @@ from pdb import set_trace
 import sys
 import os
 
+import pandas as pd
+
 
 class MyOwnDSSNet(nn.Module):
 
@@ -52,6 +54,13 @@ class MyOwnDSSNet(nn.Module):
         F['0'] = self.decoder_list[0](H['0'])# + self.U_init
         # set_trace()
 
+        df_onbound = pd.DataFrame()
+        df_nearbound = pd.DataFrame()
+        df_inbulk = pd.DataFrame()
+        df_random1 = pd.DataFrame()
+        df_random2 = pd.DataFrame()
+
+
         for update in range(self.k) :
             # set_trace()
             mess_to = self.phi_to_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
@@ -74,6 +83,13 @@ class MyOwnDSSNet(nn.Module):
             H[str(update+1)] = H[str(update)] + self.alpha*correction
             #print("H+1 size : ", H[str(update+1)].size())
 
+            df_onbound[str(update)] = H[str(update)][0].detach().numpy() #0 - coord(0,0)
+            df_nearbound[str(update)] = H[str(update)][275].detach().numpy() #275 - coord(0.4,0.6)
+            df_inbulk[str(update)] = H[str(update)][103].detach().numpy() #103 - coord(14.224,5)
+            df_random1[str(update)] = H[str(update)][1500].detach().numpy() #103 - coord(14.224,5)
+            df_random2[str(update)] = H[str(update)][623].detach().numpy() #103 - coord(14.224,5)
+
+
             F[str(update+1)] = self.decoder_list[update](H[str(update+1)])
             #print("Size of U : ", U[str(update+1)].size())
             #print(self.decoder_list[update])
@@ -84,6 +100,13 @@ class MyOwnDSSNet(nn.Module):
                 total_loss = loss[str(update+1)] * self.gamma**(self.k - update - 1)
             else :
                 total_loss += loss[str(update+1)] * self.gamma**(self.k - update - 1)
+
+        df_onbound.to_csv('./df_onbound.csv', index=False)
+        df_nearbound.to_csv('./df_nearbound.csv', index=False)
+        df_inbulk.to_csv('./df_inbulk.csv', index=False)
+        df_random1.to_csv('./df_random1.csv', index=False)
+        df_random2.to_csv('./df_random2.csv', index=False)
+
 
         #print(torch.mean((U[str(self.k-1)] - data.x)**2))
 
