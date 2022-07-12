@@ -110,6 +110,7 @@ class Train_DSS:
 
                 #training operation
                 optimizer.zero_grad()
+                torch.autograd.set_detect_anomaly(True)
                 F, train_loss, loss_dict = self.net(train_data)
 
                 train_loss.sum().backward()

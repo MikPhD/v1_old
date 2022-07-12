@@ -28,7 +28,7 @@ class MyOwnDSSNet(nn.Module):
         self.phi_from = Phi_from(2*self.latent_dimension + 2, self.latent_dimension)
         self.phi_loop = Loop(2*self.latent_dimension+1, self.latent_dimension)
         self.psy = Psy(4*self.latent_dimension + 3, self.latent_dimension)
-        self.recurrent = Recurrent(self.latent_dimension, self.latent_dimension)
+        self.recurrent = Recurrent(4*self.latent_dimension+3, self.latent_dimension)
         self.decoder = Decoder(self.latent_dimension, 2)
 
 
@@ -70,16 +70,16 @@ class MyOwnDSSNet(nn.Module):
             #concat = torch.cat([H[str(update)], mess_to, mess_from, loop, y], dim = 1)
             #print("Size concat : ", concat.size())
 
-            elaborate = self.psy(concat)
-
-            H = H + self.alpha * elaborate
+            # elaborate = self.psy(concat)
+            #
+            # H = H + self.alpha * elaborate
 
             # H_tot[update, : , :] = H
 
-            new_hidden, last_hidden = self.recurrent(H)
-            last_hidden = torch.squeeze(last_hidden, 0)
+            new_embedded, last_hidden = self.recurrent(concat)
+            new_embedded_elaborate = torch.squeeze(new_embedded, 1)
 
-            H = last_hidden
+            H += (new_embedded_elaborate * self.alpha)
 
             F = self.decoder(H)
 
@@ -198,10 +198,10 @@ class Recurrent(nn.Module):
     def __init__(self, in_size, hidden_size):
         super(Recurrent, self).__init__()
 
-        self.GRU = nn.GRU(input_size=in_size, hidden_size=hidden_size)
+        self.GRU = nn.GRU(input_size=in_size, hidden_size=hidden_size, batch_first=True)
 
     def forward(self, x): #dimensione H + fi + fi + loop +B
-        x = torch.reshape(x, (1, x.shape[0], x.shape[1]))
+        x = torch.reshape(x, (x.shape[0], 1, x.shape[1]))
         return self.GRU(x)
 
 
