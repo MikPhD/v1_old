@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="cleaner version + setted postprocess and test">
-      <change afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDSS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/NN_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/NN_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/execute.sh" beforeDir="false" afterPath="$PROJECT_DIR$/execute.sh" afterDir="false" />
+    <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="update rnn">
+      <change afterPath="$PROJECT_DIR$/Model/best_model_final.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/87-18-001-0003/results10.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_train_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/loss_val_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003/plot_results10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003plot_loss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stats/87-18-001-0003plot_results.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Model/best_model.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyTrain.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649672508326</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update rnn">
+      <created>1657616696398</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657616696398</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,7 +228,8 @@
     <MESSAGE value="postprocess" />
     <MESSAGE value="cleaner version + standardize all wrt other branches" />
     <MESSAGE value="cleaner version + setted postprocess and test" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaner version + setted postprocess and test" />
+    <MESSAGE value="update rnn" />
+    <option name="LAST_COMMIT_MESSAGE" value="update rnn" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
