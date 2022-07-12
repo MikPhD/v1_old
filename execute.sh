@@ -13,5 +13,5 @@
 #SBATCH --mail-user=mik.quattromini@gmail.com
 #SBATCH --mail-type=begin,end,fail
 
-srun python Main.py -e 200 -r False -tcase 90 -vcas 90 -n_out 10
+srun python Main.py -e 2000 -r False -tcase 40, 50, 60, 70, 80, 90, 100, 120, 130, 140, 150 -vcas 110 -n_out 100
 

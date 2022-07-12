@@ -79,7 +79,7 @@ class MyOwnDSSNet(nn.Module):
             new_embedded, last_hidden = self.recurrent(concat)
             new_embedded_elaborate = torch.squeeze(new_embedded, 1)
 
-            H += (new_embedded_elaborate * self.alpha)
+            H = new_embedded_elaborate * self.alpha + H
 
             F = self.decoder(H)
 
