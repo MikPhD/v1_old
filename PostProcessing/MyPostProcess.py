@@ -5,6 +5,7 @@ import numpy as np
 import matplotlib as mpl
 from collections import OrderedDict
 from mpl_toolkits.axes_grid1.axes_divider import make_axes_locatable
+from matplotlib.ticker import FormatStrFormatter
 
 
 class PostProcess():
@@ -46,8 +47,8 @@ class PostProcess():
                 #     vmin = -0.2
                 #     vmax = 0.1
                 #
-                vmin = -0.45
-                vmax = 0.35
+                vmin = -0.01
+                vmax = 0.01
 
                 v[v < vmin] = vmin + 1e-12
                 v[v > vmax] = vmax - 1e-12
@@ -69,7 +70,8 @@ class PostProcess():
                 # tit = plt.title('Componente x del tensore di Reynolds')
                 divider = make_axes_locatable(plt.gca())
                 cax = divider.append_axes('right', "4%", pad="2%")
-                colorbar_format = '% 1.1f'
+
+                colorbar_format = '% 1.3f'
                 cbar = plt.colorbar(mpl.cm.ScalarMappable(norm=norm, cmap=cmap), cax=cax, format=colorbar_format)
                 fig.savefig("./cases/" + case_name + f"/plot_{label}.png")
 
