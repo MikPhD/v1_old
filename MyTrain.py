@@ -6,7 +6,6 @@ import os
 from MyPlot import Plot
 import datetime
 
-
 class Train_DSS:
     def __init__(self, net, learning_rate = 0.01, n_epochs = 20, device = "cpu", set_name="", k=80,
                  latent_dimension=20, gamma=0.1, alpha=0.1):
