@@ -29,7 +29,7 @@ n_output = args.n_output
 # val_cases = ['40']
 # test_cases = ['110']
 
-## Copy Mesh file in Results - needed for plot ##
+## Copy Mesh file in Results - needed for plot #
 for i in val_cases:
     src = os.path.join("../Dataset", i, "Mesh.h5")
     dst = "./Results/Mesh.h5"
