@@ -207,4 +207,4 @@ class Train_DSS:
         }
         self.save_model(checkpoint, dirName="Model", model_name="best_model_final")
 
-        return self.net
+        return self.net, total_val_loss
