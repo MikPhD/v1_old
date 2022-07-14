@@ -175,12 +175,12 @@ study_name = "gru_optuna"  # Unique identifier of the study.
 storage_name = "sqlite:///{}.db".format(study_name)
 ##################################################################################
 
-pruner = MedianPruner(n_startup_trials=5, n_warmup_steps=1000, interval_steps=10, n_min_trials=10)
+pruner = MedianPruner(n_startup_trials=7, n_warmup_steps=1000, interval_steps=10, n_min_trials=10)
 study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner,
-                            sampler=TPESampler(n_startup_trials=20, constant_liar=True))
+                            sampler=TPESampler(n_startup_trials=3))
 
 counter_trial = 0
-study.optimize(objective, n_trials=100)
+study.optimize(objective, n_trials=1000)
 
 pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
 complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
