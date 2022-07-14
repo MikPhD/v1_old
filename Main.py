@@ -8,6 +8,14 @@ import torch
 import os
 import shutil
 from torch_geometric.data import DataLoader
+import optuna
+from optuna.trial import TrialState
+from optuna.pruners import ThresholdPruner, MedianPruner
+from optuna import TrialPruned
+import math
+import logging
+from optuna.samplers import TPESampler
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-e', '--n_epoch', help='epoch number', type=int, default=10)
@@ -29,7 +37,7 @@ n_output = args.n_output
 # val_cases = ['40']
 # test_cases = ['110']
 
-## Copy Mesh file in Results - needed for plot #
+## Copy Mesh file in Results - needed for plot ##
 for i in val_cases:
     src = os.path.join("../Dataset", i, "Mesh.h5")
     dst = "./Results/Mesh.h5"
@@ -56,75 +64,149 @@ if not restart:
         os.remove("./Model/best_model_normal_final.pt")
 
 print("#################### DATA ADAPTING FOR GNN #######################")
-createdata = CreateData()
-createdata.transform(train_cases, 'train')
-createdata.transform(val_cases, 'val')
+# createdata = CreateData()
+# createdata.transform(train_cases, 'train')
+# createdata.transform(val_cases, 'val')
 
-#set of parameter from second cycle optimization optuna
-k_list=[87]
-latent_dimension_list=[18]
-gamma_list=[0.1]
-alpha_list=[1e-2]
-lr_list=[3e-3]
-
-# check if gpu is available
+#check if gpu is available
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Running on : ', device)
 
-for k in k_list:
-    for latent_dimension in latent_dimension_list:
-        for gamma in gamma_list:
-            for alpha in alpha_list:
-                for lr in lr_list:
+torch.cuda.empty_cache()
 
-                    print("#################### CREATING Inner DATASET #######################")
-                    loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases, device=device)
-                    loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases, device=device)
+def objective(trial):
 
-                    #initialize the created dataset
-                    loader_train = DataLoader(loader_train, shuffle=True) #opt args: shuffle, batchsize
-                    loader_val = DataLoader(loader_val)
+    global counter_trial
+    counter_trial += 1
+    if counter_trial % 20 == 0:
+        fig_optuna = optuna.visualization.plot_contour(study)
+        fig_optuna.show()
+        fig_optuna.write_image("./fig_optuna.jpeg")
 
-                    print("#################### DSS NET parameter #######################")
+        fig_importance = optuna.visualization.plot_param_importances(study)
+        fig_importance.show()
+        fig_importance.write_image("./fig_importance.jpeg")
 
-                    #create hyperparameter
-                    latent_dimension = latent_dimension
-                    print("Latent space dim : ", latent_dimension)
-                    k = k
-                    print("Number of updates : ", k)
-                    gamma = gamma
-                    print("Gamma (loss function) : ", gamma)
-                    alpha = alpha
-                    print("Alpha (reduction correction) :", alpha)
-                    lr = lr
-                    print("LR (Learning rate):", lr)
+        fig_intermediate = optuna.visualization.plot_intermediate_values(study)
+        fig_intermediate.show()
+        fig_intermediate.write_image("./fig_intermediate.jpeg")
 
-                    ##create folder for different results ##
-                    set_name = str(k) + '-' + str(latent_dimension).replace(".", "") + '-' + str(alpha).replace(".", "") + '-' + str(
-                        lr).replace(".", "")
-                    print("PARAMETER SET: k:{}, laten_dim:{}, alpha:{}, lr:{}".format(str(k), str(latent_dimension), str(alpha), str(lr)))
-                    os.makedirs("./Results/" + set_name, exist_ok=True)
-                    os.makedirs("./Stats/" + set_name, exist_ok=True)
+    torch.cuda.empty_cache()
+
+    print("#################### CREATING Inner DATASET #######################")
+    loader_train = MyOwnDataset(root='./dataset', mode='train', cases=train_cases, device=device)
+    loader_val = MyOwnDataset(root='./dataset', mode='val', cases=val_cases, device=device)
+
+    #initialize the created dataset
+    loader_train = DataLoader(loader_train) #opt args: shuffle, batchsize
+    loader_val = DataLoader(loader_val)
 
 
-                    print("#################### CREATING NETWORKS #######################")
-                    DSS = MyOwnDSSNet(latent_dimension=latent_dimension, k=k, gamma=gamma, alpha=alpha, device=device)
-                    # # # DSS = DataParallel(DSS)
-                    DSS = DSS.to(device)
-                    # # #DSS = DSS.double()
+    print("#################### DSS NET parameter #######################")
+    #create hyperparameter
+    latent_dimension = trial.suggest_int("latent_dimension", 1,50)
+    print("Latent space dim : ", latent_dimension)
+    k = trial.suggest_int("k", 1, 100)
+    print("Number of updates : ", k)
+    # gamma = (trial.suggest_discrete_uniform("gamma", 0.001, 1, 0.1))
+    gamma = 0.1
+    print("Gamma (loss function) : ", gamma)
+    # alpha = (trial.suggest_discrete_uniform("alpha", 0.001, 20, 0.1))
+    alpha = 1e-2
+    print("Alpha (reduction correction) :", alpha)
+    # lr = (trial.suggest_discrete_uniform("lr", 0.0001, 10, 0.1)) #lr between 0.001 and 0.009
+    lr = 3e-3
+    print("LR (Learning rate):", lr)
 
-                    print("#################### TRAINING #######################")
-                    train_dss = Train_DSS(net=DSS, learning_rate=lr, n_epochs=n_epoch, device=device, set_name=set_name,
-                                          k=k, latent_dimension=latent_dimension, gamma=gamma, alpha=alpha)
+    ##create folder for different results ##
+    set_name = str(k) + '-' + str(latent_dimension).replace(".", "") + '-' + str(alpha).replace(".", "") + '-' + str(
+        lr).replace(".", "")
+    print("PARAMETER SET: k:{}, laten_dim:{}, alpha:{}, lr:{}".format(str(k), str(latent_dimension), str(alpha), str(lr)))
+    os.makedirs("./Results/" + set_name, exist_ok=True)
+    os.makedirs("./Stats/" + set_name, exist_ok=True)
 
-                    optimizer, scheduler, epoch, min_val_loss = train_dss.createOptimizerAndScheduler()
 
-                    if restart:
-                        optimizer, scheduler, epoch, min_val_loss = train_dss.restart(optimizer, scheduler,
-                                                                                      path='Model/best_model.pt')
+    print("#################### CREATING NETWORKS #######################")
+    DSS = MyOwnDSSNet(latent_dimension = latent_dimension, k = k, gamma = gamma, alpha = alpha, device=device)
+    # # # DSS = DataParallel(DSS)
+    DSS = DSS.to(device)
+    # # #DSS = DSS.double()
 
-                    GNN = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, n_output)
-                    #
-                    sys.stdout.flush()
+    print("#################### TRAINING #######################")
+    train_dss = Train_DSS(net=DSS, learning_rate=lr, n_epochs=n_epoch, device=device, set_name=set_name,
+                          k=k, latent_dimension=latent_dimension, gamma=gamma, alpha=alpha)
 
-                    del DSS, GNN, loader_val, loader_train, optimizer, scheduler
+    optimizer, scheduler, epoch, min_val_loss = train_dss.createOptimizerAndScheduler()
+
+    if restart:
+        optimizer, scheduler, epoch, min_val_loss = train_dss.restart(optimizer, scheduler, path='Model/best_model.pt')
+
+    for epoch in range(epoch, n_epoch):
+        GNN, validation_loss = train_dss.trainDSS(loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch, n_output)
+
+        trial.report(validation_loss, epoch)
+
+        if math.isnan(validation_loss) or math.isinf(validation_loss):
+            break
+
+        # Handle pruning based on the intermediate value.
+        if trial.should_prune():
+            raise optuna.TrialPruned()
+
+        # # use of cuda.memory
+        # with open('./Memory_allocated.txt', 'a') as mem_alloc_file:
+        #     mem_alloc_file.write(f'memory allocated:{str(torch.cuda.memory_allocated(device))}\n')
+        #     mem_alloc_file.write(f'memory reserved:{str(torch.cuda.memory_reserved(device))}\n')
+        #     mem_alloc_file.write(f'max_memory allocated: {str(torch.cuda.max_memory_allocated(device))}\n')
+        #     mem_alloc_file.write(f'max_memory reserved: {str(torch.cuda.max_memory_reserved(device))}\n')
+        #
+        # with open('./Memory_summary.txt', 'a') as mem_summ_file:
+        #     mem_summ_file.write(f'memory allocated:{str(torch.cuda.memory_summary(device))}\n')
+
+        return validation_loss
+
+    sys.stdout.flush()
+
+    del DSS, GNN, loader_val, loader_train, optimizer, scheduler
+
+################## to be uncommented only when want to log #######################
+optuna.logging.get_logger("optuna").addHandler(logging.StreamHandler(sys.stdout))
+study_name = "gru_optuna"  # Unique identifier of the study.
+storage_name = "sqlite:///{}.db".format(study_name)
+##################################################################################
+
+pruner = MedianPruner(n_startup_trials=5, n_warmup_steps=1000, interval_steps=10, n_min_trials=10)
+study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner,
+                            sampler=TPESampler(n_startup_trials=20, constant_liar=True))
+
+counter_trial = 0
+study.optimize(objective, n_trials=100)
+
+pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
+complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
+
+print("Study statistics: ")
+print("  Number of finished trials: ", len(study.trials))
+print("  Number of pruned trials: ", len(pruned_trials))
+print("  Number of complete trials: ", len(complete_trials))
+
+print("Best trial:")
+trial = study.best_trial
+
+print("  Value: ", trial.value)
+
+print("  Params: ")
+for key, value in trial.params.items():
+    print("    {}: {}".format(key, value))
+
+fig_optuna = optuna.visualization.plot_contour(study)
+fig_optuna.show()
+fig_optuna.write_image("./fig_optuna.jpeg")
+
+fig_importance = optuna.visualization.plot_param_importances(study)
+fig_importance.show()
+fig_importance.write_image("./fig_importance.jpeg")
+
+fig_intermediate = optuna.visualization.plot_intermediate_values(study)
+fig_intermediate.show()
+fig_intermediate.write_image("./fig_intermediate.jpeg")
