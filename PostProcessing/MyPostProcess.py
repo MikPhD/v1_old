@@ -37,8 +37,8 @@ class PostProcess():
 
                 t = mesh.cells()
                 v = obj.compute_vertex_values(mesh)
-                # vmin = v.min()
-                # vmax = v.max()
+                vmin = v.min()
+                vmax = v.max()
 
                 # if label == 'gnn':
                 #     vmin = -0.6
@@ -47,8 +47,8 @@ class PostProcess():
                 #     vmin = -0.2
                 #     vmax = 0.1
                 #
-                vmin = -0.01
-                vmax = 0.01
+                # vmin = -0.01
+                # vmax = 0.01
 
                 v[v < vmin] = vmin + 1e-12
                 v[v > vmax] = vmax - 1e-12
@@ -176,7 +176,7 @@ class PostProcess():
 
 case_name = input('Insert case name: [downshift, re130, re200, very_down, down_confined, flipflop_re60g1, '
                   'cavity, tiltsquare, tiltsquare_smooth, upstream, flipflop_re55g1_5, flipflop_re60g1_5, '
-                  're260, re110, square]')
+                  're260, re110, square, re40, re50]')
 post_process = PostProcess()
 # post_process.plot_results()
 post_process.differences(case_name)

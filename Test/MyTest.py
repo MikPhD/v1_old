@@ -17,7 +17,7 @@ print('Running on : ', device)
 
 case_name = input('Insert case name: [downshift, re130, re200, very_down, down_confined, flipflop_re60g1, '
                   'cavity, tiltsquare, tiltsquare_smooth, upstream, flipflop_re55g1_5, flipflop_re60g1_5, '
-                  're260, re110, square]')
+                  're260, re110, square, re150, re40, re50]')
 test_case = [input('Test case Reynolds number:')]
 
 #clean processed folder (Model comes from an older version of PYG)
