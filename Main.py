@@ -106,7 +106,7 @@ def objective(trial):
     #create hyperparameter
     latent_dimension = trial.suggest_int("latent_dimension", 1,50)
     print("Latent space dim : ", latent_dimension)
-    k = trial.suggest_int("k", 1, 100)
+    k = trial.suggest_int("k", 20, 90)
     print("Number of updates : ", k)
     # gamma = (trial.suggest_discrete_uniform("gamma", 0.001, 1, 0.1))
     gamma = 0.1
@@ -175,7 +175,7 @@ study_name = "gru_optuna"  # Unique identifier of the study.
 storage_name = "sqlite:///{}.db".format(study_name)
 ##################################################################################
 
-pruner = MedianPruner(n_startup_trials=7, n_warmup_steps=1000, interval_steps=10, n_min_trials=10)
+pruner = MedianPruner(n_startup_trials=1, n_warmup_steps=10, interval_steps=10, n_min_trials=1)
 study = optuna.create_study(study_name=study_name, storage=storage_name, load_if_exists=True, direction="minimize", pruner=pruner,
                             sampler=TPESampler(n_startup_trials=3))
 
