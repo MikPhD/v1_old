@@ -1,3 +1,5 @@
+__pycache__/
+.idea
 workspace.xml
 *.xml
 __pycache__/
