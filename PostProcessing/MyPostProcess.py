@@ -40,6 +40,11 @@ class PostProcess():
                 vmin = v.min()
                 vmax = v.max()
 
+                print(f'vmax {vmax}, vmin {vmin}')
+
+                # vmin = -0.2287
+                # vmax = 0.3112
+
                 # if label == 'gnn':
                 #     vmin = -0.6
                 #     vmax = 0.4
@@ -176,7 +181,7 @@ class PostProcess():
 
 case_name = input('Insert case name: [downshift, re130, re200, very_down, down_confined, flipflop_re60g1, '
                   'cavity, tiltsquare, tiltsquare_smooth, upstream, flipflop_re55g1_5, flipflop_re60g1_5, '
-                  're260, re110, square, re40, re50]')
+                  're260, re100, re110, square, re40, re50, re180]')
 post_process = PostProcess()
 # post_process.plot_results()
 post_process.differences(case_name)
