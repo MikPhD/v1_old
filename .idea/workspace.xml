@@ -2,127 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="623b51ca-523a-40a0-9135-2adc4ac1fd93" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/flipflop_re60g1_5/Results.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re130/Results.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re150/F_dns.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re150/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re150/Mesh.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re150/Results.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re150/plot_diff.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re150/plot_dns.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re150/plot_gnn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re180/Results.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re180/plot_diff.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re180/plot_dns.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re180/plot_gnn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re180/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re200/Results.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/re200/plot_diff.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostProcessing/cases/very_down/Results.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Model_old.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh_model/re100/F_dns.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh_model/re100/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh_model/re100/Mesh.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh_model/re100/Results.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh_model/re100/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh_model/re180/F_dns.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh_model/re180/F_gnn.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh_model/re180/Mesh.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh_model/re180/Results.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/res_mesh_model/re180/plot_results.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/raw/test/180/C.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/raw/test/180/D.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/raw/test/180/F.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/raw/test/180/U.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/raw/test/180/re.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/v1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/best_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/MyPostProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/flipflop_re60g1_5/F_dns.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/flipflop_re60g1_5/F_dns.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/flipflop_re60g1_5/F_gnn.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/flipflop_re60g1_5/F_gnn.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/flipflop_re60g1_5/plot_diff.png" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/flipflop_re60g1_5/plot_diff.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/flipflop_re60g1_5/plot_dns.png" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/flipflop_re60g1_5/plot_dns.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/flipflop_re60g1_5/plot_gnn.png" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/flipflop_re60g1_5/plot_gnn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/re110/F_dns.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/re110/F_gnn.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/re110/Mesh.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/re130/F_dns.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/re130/F_dns.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/re130/F_gnn.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/re130/F_gnn.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/re130/plot_diff.png" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/re130/plot_diff.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/re130/plot_dns.png" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/re130/plot_dns.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/re130/plot_gnn.png" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/re130/plot_gnn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/re200/F_dns.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/re200/F_dns.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/re200/F_gnn.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/re200/F_gnn.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/re200/plot_diff_re200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/re200/plot_dns.png" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/re200/plot_dns.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/re200/plot_gnn.png" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/re200/plot_gnn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare_smooth/F_dns.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare_smooth/F_dns.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare_smooth/F_gnn.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare_smooth/F_gnn.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare_smooth/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare_smooth/Mesh.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare_smooth/plot_diff.png" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare_smooth/plot_diff.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare_smooth/plot_dns.png" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare_smooth/plot_dns.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare_smooth/plot_gnn.png" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/tiltsquare_smooth/plot_gnn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/very_down/F_dns.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/very_down/F_dns.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/very_down/F_gnn.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/very_down/F_gnn.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/very_down/plot_diff.png" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/very_down/plot_diff.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/very_down/plot_dns.png" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/very_down/plot_dns.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcessing/cases/very_down/plot_gnn.png" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcessing/cases/very_down/plot_gnn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Mesh.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Model.pt" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Model.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/MyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/MyTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/downshift/F_dns.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/downshift/F_gnn.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/downshift/Results.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/downshift/Results.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/downshift/plot_results.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/flipflop_re60g1_5/F_dns.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/flipflop_re60g1_5/F_dns.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/flipflop_re60g1_5/F_gnn.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/flipflop_re60g1_5/F_gnn.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/flipflop_re60g1_5/Results.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/flipflop_re60g1_5/Results.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/flipflop_re60g1_5/plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/flipflop_re60g1_5/plot_results.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/re130/F_dns.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/re130/F_dns.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/re130/F_gnn.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/re130/F_gnn.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/re130/Results.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/re130/Results.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/re130/plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/re130/plot_results.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/re150/F_dns.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/re150/F_dns.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/re150/F_gnn.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/re150/F_gnn.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/re150/plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/re150/plot_results.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/re200/F_dns.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/re200/F_dns.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/re200/F_gnn.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/re200/F_gnn.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/re200/Results.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/re200/Results.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/re200/plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/re200/plot_results.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/tiltsquare_smooth/F_dns.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/tiltsquare_smooth/F_dns.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/tiltsquare_smooth/F_gnn.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/tiltsquare_smooth/F_gnn.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/tiltsquare_smooth/Mesh.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/tiltsquare_smooth/Mesh.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/tiltsquare_smooth/Results.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/tiltsquare_smooth/Results.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/tiltsquare_smooth/plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/tiltsquare_smooth/plot_results.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/very_down/F_dns.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/very_down/F_dns.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/very_down/F_gnn.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/very_down/F_gnn.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/very_down/Results.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/very_down/Results.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/res_mesh_model/very_down/plot_results.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Test/res_mesh_model/very_down/plot_results.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_test.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_test.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_train.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_train.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/processed/data_val.pt" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/processed/data_val.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/100/C.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/100/C.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/100/D.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/100/D.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/100/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/100/F.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/100/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/100/U.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/F.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/110/U.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/130/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/130/F.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/130/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/130/U.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/150/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/150/F.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/150/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/150/U.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/200/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/200/F.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/200/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/200/U.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/60/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/60/F.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/test/60/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/test/60/U.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/train/40/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/40/F.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/train/40/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/train/40/U.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/val/40/C.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/val/40/C.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/val/40/D.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/val/40/D.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/val/40/F.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/val/40/F.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/raw/val/40/U.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/raw/val/40/U.npy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="gru_optuna" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -155,15 +35,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/quattromini/Desktop/v1&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/quattromini/Desktop/v1",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/PostProcessing/cases/tiltsquare_smooth" />
@@ -395,6 +276,7 @@
       <workItem from="1665480185976" duration="918000" />
       <workItem from="1665562861805" duration="634000" />
       <workItem from="1665584650363" duration="408000" />
+      <workItem from="1667381060905" duration="2894000" />
     </task>
     <task id="LOCAL-00012" summary="update">
       <created>1661352902732</created>
@@ -403,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661352902732</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update">
+      <created>1667381273249</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667381273249</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
