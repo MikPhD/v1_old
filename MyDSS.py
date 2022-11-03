@@ -9,7 +9,7 @@ from MyTrain import Train_DSS
 from pdb import set_trace
 import sys
 import os
-
+from solver import solve_direct
 
 class MyOwnDSSNet(nn.Module):
 
@@ -30,10 +30,13 @@ class MyOwnDSSNet(nn.Module):
         self.psy_list = nn.ModuleList([Psy(4*self.latent_dimension + 3, self.latent_dimension) for i in range(self.k)])
         self.decoder_list = nn.ModuleList([Decoder(self.latent_dimension, 2) for i in range(self.k)])
 
-    def loss_function(self, F, y):
-        loss_fn1 = nn.MSELoss()
+    def loss_function(self, F, x):
+        loss = solve_direct(F, x)
+
+
+        # loss_fn1 = nn.MSELoss()
         # loss_fn2 = torch.mean(torch.pow(torch.abs(torch.sub(F,y)), 0.5))
-        loss = loss_fn1(F, y)
+        # loss = loss_fn1(F, y)
         # loss = torch.norm(F - y)/torch.norm(y)
         # loss = (F - y)
         return loss
@@ -74,16 +77,17 @@ class MyOwnDSSNet(nn.Module):
             H[str(update+1)] = H[str(update)] + self.alpha*correction
             #print("H+1 size : ", H[str(update+1)].size())
 
-            F[str(update+1)] = self.decoder_list[update](H[str(update+1)])
+            if update >= self.k - 2:
+                F[str(update+1)] = self.decoder_list[update](H[str(update+1)])
             #print("Size of U : ", U[str(update+1)].size())
             #print(self.decoder_list[update])
 
-            loss[str(update+1)] = self.loss_function(F[str(update+1)], batch.y)
+                loss[str(update+1)] = self.loss_function(F[str(update+1)], batch.x)
 
-            if total_loss is None :
-                total_loss = loss[str(update+1)] * self.gamma**(self.k - update - 1)
-            else :
-                total_loss += loss[str(update+1)] * self.gamma**(self.k - update - 1)
+                if total_loss is None :
+                    total_loss = loss[str(update+1)] * self.gamma**(self.k - update - 1)
+                else :
+                    total_loss += loss[str(update+1)] * self.gamma**(self.k - update - 1)
 
         #print(torch.mean((U[str(self.k-1)] - data.x)**2))
 
