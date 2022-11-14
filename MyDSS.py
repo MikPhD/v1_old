@@ -30,9 +30,13 @@ class MyOwnDSSNet(nn.Module):
         self.psy_list = nn.ModuleList([Psy(4*self.latent_dimension + 3, self.latent_dimension) for i in range(self.k)])
         self.decoder_list = nn.ModuleList([Decoder(self.latent_dimension, 2) for i in range(self.k)])
 
-    def loss_function(self, F, x):
-        loss = solve_direct(F, x)
+    def loss_function(self, F, Re):
+        w = solve_direct(F, Re)
 
+        # set the costu function
+        # adjoint
+        # multiplicate gradient
+        # compute loss
 
         # loss_fn1 = nn.MSELoss()
         # loss_fn2 = torch.mean(torch.pow(torch.abs(torch.sub(F,y)), 0.5))
@@ -55,7 +59,7 @@ class MyOwnDSSNet(nn.Module):
         F['0'] = self.decoder_list[0](H['0'])# + self.U_init
         # set_trace()
 
-        for update in range(self.k) :
+        for update in range(self.k):
             # set_trace()
             mess_to = self.phi_to_list[update](H[str(update)], batch.edge_index, batch.edge_attr)
             #print("Message_To size : ", mess_to.size())
@@ -77,17 +81,16 @@ class MyOwnDSSNet(nn.Module):
             H[str(update+1)] = H[str(update)] + self.alpha*correction
             #print("H+1 size : ", H[str(update+1)].size())
 
-            if update >= self.k - 2:
-                F[str(update+1)] = self.decoder_list[update](H[str(update+1)])
-            #print("Size of U : ", U[str(update+1)].size())
-            #print(self.decoder_list[update])
+            F[str(update+1)] = self.decoder_list[update](H[str(update+1)])
+        #print("Size of U : ", U[str(update+1)].size())
+        #print(self.decoder_list[update])
 
-                loss[str(update+1)] = self.loss_function(F[str(update+1)], batch.x)
+            loss[str(update+1)] = self.loss_function(F[str(update+1)], int(batch.x[0][2].item()))
 
-                if total_loss is None :
-                    total_loss = loss[str(update+1)] * self.gamma**(self.k - update - 1)
-                else :
-                    total_loss += loss[str(update+1)] * self.gamma**(self.k - update - 1)
+            if total_loss is None :
+                total_loss = loss[str(update+1)] * self.gamma**(self.k - update - 1)
+            else :
+                total_loss += loss[str(update+1)] * self.gamma**(self.k - update - 1)
 
         #print(torch.mean((U[str(self.k-1)] - data.x)**2))
 

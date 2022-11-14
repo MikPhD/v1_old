@@ -8,12 +8,12 @@ import datetime
 
 
 class Train_DSS:
-    def __init__(self, net, learning_rate = 0.01, n_epochs = 20, device = "cpu", set_name=""):
+    def __init__(self, net, learning_rate = 0.01, n_epochs_tot = 20, device = "cpu", set_name=""):
 
         #Initialize training parameters
         self.set_name = set_name
         self.lr = learning_rate
-        self.n_epochs = n_epochs
+        self.n_epochs_tot = n_epochs_tot
         self.net = net
         self.device = device
         self.training_time = 0
@@ -91,8 +91,8 @@ class Train_DSS:
 
 
     def trainDSS(self, loader_train, loader_val, optimizer, scheduler, min_val_loss, epoch_in, k, n_output):
-        for epoch in range(epoch_in, self.n_epochs):
-            print(f'Epoch {epoch} of {self.n_epochs}:')
+        for epoch in range(epoch_in, self.n_epochs_tot):
+            print(f'Epoch {epoch} of {self.n_epochs_tot}:')
             time_counter = time.time()
 
             #--------------------------------TRAIN---------------------------------------------------------

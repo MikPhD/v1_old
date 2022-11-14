@@ -86,8 +86,8 @@ class Plot:
                 colorbar_format = '% 1.1f'
                 cbar = plt.colorbar(mpl.cm.ScalarMappable(norm=norm, cmap=cmap), cax=cax, format=colorbar_format)
 
-                fig_plot.savefig("Stats/" + self.set_name + "plot_results.jpg")
-                fig_plot.savefig("Stats/" + self.set_name + "/plot_results" + str(n_epoch) + ".jpg")
+                fig_plot.savefig("Stats/plot_results.jpg")
+                # fig_plot.savefig("Stats/" + self.set_name + "/plot_results" + str(n_epoch) + ".jpg")
                 plt.close(fig_plot)
 
 
